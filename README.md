@@ -14,7 +14,8 @@ doğrulama uyarısı ekler.
 
 ## Kapsam (v0.6)
 
-- İki beceri: **tymm-ders-planlama** ve **tymm-baglam-testi**
+- Dört beceri: **tymm-ders-planlama**, **tymm-baglam-testi**,
+  **tymm-acik-uclu-sinav**, **tymm-ders-farklilastirma**
 - Dört branş: **matematik, Türkçe, fen bilimleri, sosyal bilgiler**
 - Kapsam hedefi: **5-8 ortaokul** (5-6-7 TYMM; 8 eski program)
 - Doğrulanmış veri: **dört branş × 5-6-7. sınıf** — resmî tema/ünite
@@ -39,12 +40,15 @@ skills/tymm-baglam-testi/
   references/test-diger-branslar.md Türkçe/fen/sosyal yanılgı envanteri + bağlam aileleri
 skills/tymm-acik-uclu-sinav/
   SKILL.md                     Ortak yazılı: dağılım tablosu + açık uçlu sınav + puanlama anahtarı
+skills/tymm-ders-farklilastirma/
+  SKILL.md                     Destekleme + Zenginleştirme etkinlik paketleri (resmî desen)
 KULLANIM.md                    Öğretmenler için istem rehberi (açık/örtük/kapsam dışı örnekler)
 evals/
   tymm-ders-planlama/rubrik-matematik.csv   (14 kriter)
   tymm-baglam-testi/rubrik-matematik.csv    (15 kriter)
   tymm-acik-uclu-sinav/rubrik-matematik.csv (10 kriter)
-  tetikleme/tetikleme-seti.csv              (29 istem — KULLANIM.md ile aynı set)
+  tymm-ders-farklilastirma/rubrik-matematik.csv (10 kriter)
+  tetikleme/tetikleme-seti.csv              (33 istem — KULLANIM.md ile aynı set)
 ```
 
 ## Kurulum (claude.ai)
@@ -67,6 +71,19 @@ kopyalamanız yeterlidir.
 3. `evals/` altına branş rubriğini ekleyin.
 
 ## Sürüm notları
+
+- **v0.8.1 — Dördüncü beceri: `tymm-ders-farklilastirma`.** Resmî
+  *Farklılaştırma Etkinlikleri Öğretmen Kılavuz Kitabı*'nın yaklaşımı ve
+  etkinlik deseni beceriye aktarıldı: **Destekleme** (somut örnek,
+  materyal, görselleştirme, akran/dijital destek — hedef düşürülmeden) ve
+  **Zenginleştirme** (içerik çerçevesinden uzaklaşmadan derinleştirme).
+  Her paket resmî künyeyi izler: tema/etkinlik adı, amaç, uygulama
+  önerisi, araç gereç, basamaklı öğretmen yönergesi + **Ek 1** öğrenci
+  sayfası + **Ek 2** değerlendirme. "Üç düzeye ayır" istekleri resmî
+  yapıya çevrilir (destekleme + ana materyal + zenginleştirme);
+  "kolay/orta/zor" dili kullanılmaz. Desteklemede yanılgı envanterinden
+  en az bir yaygın hata etkinlik içinde önlenir. 10 kriterlik rubrik
+  (F01-F10); tetikleme setine F01-F04 eklendi, K04 yenilendi.
 
 - **v0.8.0 — Üçüncü beceri: `tymm-acik-uclu-sinav`.** MEB yönetmeliğine
   uygun ortak yazılı paketi üretir: konu soru dağılım tablosu (sınav öncesi
@@ -191,7 +208,7 @@ kopyalamanız yeterlidir.
 - [x] Simülasyon paketini rubrikle puanlama (11/14 tam → v0.3 düzeltmeleri)
 - [ ] Gerçek sınıf denemesi
 - [x] `tymm-baglam-testi` becerisi (düzeyli bağlam testleri)
-- [ ] `tymm-ders-farklilastirma` becerisi (mevcut dersi kademelendirme)
+- [x] `tymm-ders-farklilastirma` becerisi (mevcut dersi kademelendirme) — v0.8.1
 - [x] Test soru yazım kurallarını resmî kılavuzdan yeniden yazma (v0.7.1)
 - [x] KULLANIM.md — öğretmen istem rehberi + tetikleme eval tohumu (v0.7.2)
 - [ ] Konu anlatımı ve test çıktılarının ilk rubrik puanlaması

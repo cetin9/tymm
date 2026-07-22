@@ -1,0 +1,11 @@
+kriter_id,boyut,kriter,kanit
+F01,Hizalama,Hedef çıktı kodu+ifadesi her pakette birebir; destekleme hedefi düşürmüyor (aynı çıktı),İki paketin künyesi
+F02,Hizalama,Mevcut materyal verildiyse aynı kavram seti ve bağlam evreni korunmuş,Materyal→paket karşılaştırması
+F03,Resmî desen,Künye alanları tam (tema, ad, amaç, uygulama, araç gereç, yönerge) ve yönerge öğretmene basamaklı emir kipiyle,Künye blokları
+F04,Resmî desen,Ek 1 öğrenci sayfası + Ek 2 değerlendirme her pakette var; Ek 2 ölçütleri süreç bileşenlerinden,Ek sayfalar
+F05,Destekleme,Somut örnek/görselleştirme/materyal + akran veya dijital destek ögesi içeriyor,Destekleme paketi
+F06,Destekleme,Yanılgı envanterinden en az bir yaygın hata etkinlik içinde açıkça önleniyor,Destekleme Ek 1
+F07,Zenginleştirme,İçerik çerçevesi içinde derinleştirme; sonraki sınıf konusuna geçmiyor; üst düzey düşünme istemi var,Zenginleştirme Ek 1
+F08,Ayrışma,İki paket aynı senaryonun kopyası değil; düzey dili yok (kolay/zor etiketi kullanılmamış),İki paketin karşılaştırması
+F09,Çıktı kalitesi,A4 kuralları + dipnot standardı; "etkinlikler örnektir, uyarlanabilir" notu teslimde var,Dosya yapısı + teslim notu
+F10,Dil,Öğretmen yönergesi ve öğrenci sayfası hedef kitleye uygun doğal Türkçe; iç terim sızıntısı yok,Belgelerin tamamı

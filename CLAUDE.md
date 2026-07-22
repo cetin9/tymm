@@ -13,6 +13,8 @@ Tüm çıktılar ve iletişim Türkçedir.
   çoktan seçmeli test setleri + ayrı cevap anahtarı
 - `skills/tymm-acik-uclu-sinav/` — yönetmeliğe uygun ortak yazılı: konu soru
   dağılım tablosu + açık uçlu/kısa cevaplı sınav + dereceli puanlama anahtarı
+- `skills/tymm-ders-farklilastirma/` — mevcut ders/kağıt/konu için resmî
+  desende Destekleme + Zenginleştirme etkinlik paketleri (Ek 1 / Ek 2)
 
 ## Değiştirilemez mimari kararlar
 
@@ -96,6 +98,9 @@ hangi üretim hatasından doğduğunu not et.
 4. ~~Tema işleniş sırasını taslak yıllık plan xlsx'lerinden ekle~~
    ✅ v0.7.4 (`references/tema-sirasi.md` — 5-6. sınıf dört branş; 7. sınıf
    sırası kaynakta yok, resmî numara sırası + teyit notu varsayılır).
-5. Açık uçlu ortak yazılı sınav becerisi; `tymm-ders-farklilastirma`
-   (resmî farklılaştırma etkinlik kitaplarından); 2. dönem; gerçek sınıf
-   denemesi.
+5. ~~Açık uçlu ortak yazılı sınav becerisi~~ ✅ v0.8.0;
+   ~~`tymm-ders-farklilastirma`~~ ✅ v0.8.1 (resmî kılavuz kitap deseni:
+   Destekleme + Zenginleştirme, künye + Ek 1/Ek 2);
+   ~~2. dönem~~ ✅ v0.7.3 (tüm üniteler);
+   **gerçek sınıf denemesi** → öğretmenin adımı: bir paketi sınıfta
+   uygula, bulguları rubrikle puanla, beceri dosyasına geri yaz.

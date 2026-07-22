@@ -1,7 +1,8 @@
 # KULLANIM — Öğretmenler için istem rehberi
 
-Bu belge, TYMM öğretim becerilerini (ders paketi ve bağlam testi) kurmuş
-bir öğretmenin Claude'a **nasıl istek yazacağını** örneklerle gösterir.
+Bu belge, TYMM öğretim becerilerini (ders paketi, bağlam testi, ortak
+yazılı, farklılaştırma) kurmuş bir öğretmenin Claude'a **nasıl istek
+yazacağını** örneklerle gösterir.
 Kurulum için `README.md`'ye bakın.
 
 Buradaki örnek istemler aynı zamanda becerilerin tetikleme testlerinin
@@ -113,6 +114,24 @@ puanlama anahtarı** (örnek yanıtlar ve kısmi puan basamaklarıyla).
 | A01 | 6. sınıf matematik 1. dönem 2. ortak yazılısını hazırla; kapsam ilk 9 hafta. |
 | A02 | Fen 5 için Ü1-Ü2'den açık uçlu yazılı + puanlama anahtarı istiyorum. |
 
+## 3c. Farklılaştırma istemek (`tymm-ders-farklilastirma`)
+
+Mevcut bir dersi/kağıdı veya konuyu resmî yaklaşımla iki yönde açar:
+**Destekleme** (somut örnek, materyal, akran desteğiyle aynı hedefe
+ulaştırma) ve **Zenginleştirme** (içerik çerçevesi içinde derinleştirme).
+Çıktı, resmî Farklılaştırma Etkinlikleri Kılavuz Kitabı desenindedir
+(etkinlik künyesi + Ek 1 öğrenci sayfası + Ek 2 değerlendirme).
+
+| # | Örnek istem |
+|---|---|
+| F01 | Bu çalışma kağıdını sınıfımdaki seviye farkına göre farklılaştırır mısın? |
+| F02 | Bölünebilme konusunda hızlı bitirenlere zenginleştirme etkinliği lazım. |
+| F03 | Kesirlerde zorlanan öğrencilerim için destekleme etkinliği hazırla. |
+
+Not: "Üç düzeye ayır" derseniz resmî yapı korunur — destekleme sürümü +
+ana materyal + zenginleştirme sürümü üçlüsü sunulur; "kolay/orta/zor"
+etiketi kullanılmaz.
+
 ---
 
 ## 4. Bilmeniz gereken sınır durumları
@@ -136,7 +155,7 @@ normal sohbet olarak:
 | K01 | MAT.6.1.2'nin süreç bileşenleri neler? | Salt çıktı sorgusu; doğrudan yanıtlanır. |
 | K02 | Şu soruyu çözer misin: 738 sayısı 4'e bölünür mü? | Tek soru çözümü. |
 | K03 | Elimdeki 10 soruluk testi analiz et, hangi sorular zayıf? | Hazır testin tahlili/puanlaması. |
-| K04 | Hazırladığım çalışma kağıdını üç düzeye ayırır mısın? | Mevcut materyali farklılaştırma — ileride ayrı beceri olacak (`tymm-ders-farklilastirma`). |
+| K04 | Sınav puanlarından dönem sonu ortalamalarını hesaplar mısın? | Not verme/hesaplama; doğrudan yanıtlanır. |
 | K05 | Sınıfım için yıllık plan çıkarır mısın? | Yıllık plan/zümre evrakı beceri kapsamında değil. |
 | K06 | Veli toplantısı daveti yazar mısın? | Evrak işi. |
 

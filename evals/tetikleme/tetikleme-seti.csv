@@ -23,8 +23,12 @@ S06,sinir,"(Plan üretimi sürerken) Bir de test olsun.",tymm-baglam-testi,Planl
 K01,kapsam-disi,"MAT.6.1.2'nin süreç bileşenleri neler?",hicbiri,Salt çıktı sorgusu; doğrudan yanıt
 K02,kapsam-disi,"Şu soruyu çözer misin: 738 sayısı 4'e bölünür mü?",hicbiri,Tek soru çözümü; doğrudan yanıt
 K03,kapsam-disi,"Elimdeki 10 soruluk testi analiz et, hangi sorular zayıf?",hicbiri,Hazır test tahlili; doğrudan yanıt
-K04,kapsam-disi,"Hazırladığım çalışma kağıdını üç düzeye ayırır mısın?",hicbiri,Mevcut materyal farklılaştırma; ileride tymm-ders-farklilastirma
+K04,kapsam-disi,"Sınav puanlarından dönem sonu ortalamalarını hesaplar mısın?",hicbiri,Not verme/hesaplama; doğrudan yanıt
 K05,kapsam-disi,"Sınıfım için yıllık plan çıkarır mısın?",hicbiri,Yıllık plan/zümre evrakı kapsam dışı; beceri dışı yardım
 K06,kapsam-disi,"Veli toplantısı daveti yazar mısın?",hicbiri,Evrak işi; doğrudan yardım
 A01,acik,"6. sınıf matematik 1. dönem 2. ortak yazılısını hazırla; kapsam ilk 9 hafta.",tymm-acik-uclu-sinav,tema-sirasi.md ile kapsam belirlenir; 3 belge üretilir
 A02,acik,"Fen 5 için Ü1-Ü2 kapsamında açık uçlu yazılı ve puanlama anahtarı istiyorum.",tymm-acik-uclu-sinav,Kısmi puan basamakları süreç bileşenlerine bağlanır
+F01,acik,"Bu çalışma kağıdını sınıfımdaki seviye farkına göre farklılaştırır mısın?",tymm-ders-farklilastirma,Mevcut materyalin kavram seti korunur; destekleme+zenginleştirme paketleri
+F02,acik,"Bölünebilme konusunda hızlı bitirenlere zenginleştirme etkinliği lazım.",tymm-ders-farklilastirma,Yalnız zenginleştirme paketi; içerik çerçevesi içinde derinleştirme
+F03,ortuk,"Kesirlerde zorlanan öğrencilerim var, aynı hedefe nasıl ulaştırırım?",tymm-ders-farklilastirma,Destekleme paketi; hedef düşürülmez
+F04,sinir,"Hazırladığım çalışma kağıdını üç düzeye ayırır mısın?",tymm-ders-farklilastirma,Resmî yapıya çevrilir: destekleme + ana materyal + zenginleştirme; kolay/zor etiketi yok

@@ -194,8 +194,8 @@ dosyanın basılıp dağıtılacağı).
 
 ## Kapsam dışı
 
-- Mevcut bir dersi/kağıdı kademelere ayırma (gelecekteki
-  `tymm-ders-farklilastirma` becerisinin işi)
+- Mevcut bir dersi/kağıdı kademelere ayırma (`tymm-ders-farklilastirma`
+  becerisinin işi — öğretmeni oraya yönlendir)
 - Çoktan seçmeli test/deneme üretimi (`tymm-baglam-testi` becerisinin işi —
   öğretmen test isterse o beceriye yönlendir), not verme, dilekçe-evrak
   işleri
