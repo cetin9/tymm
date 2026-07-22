@@ -1,0 +1,28 @@
+id,kategori,istem,beklenen_beceri,beklenen_davranis
+DP01,acik,"6. sınıf matematikte bölünebilme kuralları için ders planı hazırlar mısın?",tymm-ders-planlama,Netleştirmeden önce beceri yüklenir; 3 belge üretilir
+DP02,acik,"Yarınki derse günlük plan lazım: 6. sınıf Türkçe, hikâye unsurları, 2 ders saati.",tymm-ders-planlama,Soru sormadan üretime geçilir (sınıf+konu+süre tam)
+DP03,acik,"Güneş sistemi konusunda etkinlik planı ve çalışma kağıdı istiyorum, 6. sınıf fen.",tymm-ders-planlama,Fen referansı + 6-sinif-fen verisi kullanılır
+DP04,acik,"5. sınıf çarpma işlemi: plan + 2 çalışma kağıdı olsun, ikincisi eve ödev.",tymm-ders-planlama,Kağıt 2 ev pekiştirmesi olarak amaç ayrışmalı üretilir
+DP05,acik,"Bölünebilme planına akıllı tahtada açacağım bir konu anlatımı da ekler misin?",tymm-ders-planlama,konu-anlatimi.md okunur; 4. belge eklenir
+DP06,ortuk,"Yarın 6'larda çarpanlar ve katları işleyeceğim.",tymm-ders-planlama,Örtük niyet; plan kelimesi geçmeden tetiklenir
+DP07,ortuk,"Pazartesi ışığın yansımasını anlatacağım, elimde hiçbir materyal yok.",tymm-ders-planlama,Branş fen olarak çıkarılır; sınıf sorulur
+DP08,ortuk,"Sosyal bilgilerde İslam medeniyeti konusuna giriyorum, sınıfa ne götürsem?",tymm-ders-planlama,Örtük niyet; tek turda ≤3 netleştirme
+DP09,ortuk,"Kesirlerde sıralamayı bir türlü kavratamadım, haftaya baştan alacağım.",tymm-ders-planlama,Yeniden öğretim niyeti planlama isteğidir
+T01,acik,"Bölünebilme kurallarından üç düzeyli test seti hazırla, 6. sınıf.",tymm-baglam-testi,kilavuz-ilkeleri + test-matematik okunur; 4 belge üretilir
+T02,acik,"Kesirler konusundan 10 soruluk çoktan seçmeli tarama testi.",tymm-baglam-testi,Tek test istenirse düzey sayısı netleştirilir veya tek düzey üretilir
+T03,acik,"Işık ünitesinden yaprak test istiyorum.",tymm-baglam-testi,Yaprak test tetikleyicidir; branş fen
+T04,acik,"6. sınıf sosyalden deneme bölümü gibi 10 soru, cevap anahtarı ayrı olsun.",tymm-baglam-testi,Deneme bölümü tetikleyicidir; anahtar zaten daima ayrı
+T05,ortuk,"Konuyu bitirdik, çocukları bir yoklamak istiyorum — soru seti hazırlar mısın?",tymm-baglam-testi,Tarama niyeti; sınıf/konu netleştirilir
+T06,ortuk,"Öğrencilerimin bölünebilmede hangi düzeyde olduğunu görmek istiyorum.",tymm-baglam-testi,Düzey belirleme niyeti üç düzeyli set ile karşılanır
+S01,sinir,"Ortak yazılı için matematikten 10 çoktan seçmeli soru hazırla.",tymm-baglam-testi,ÇS ÜRETİLMEZ; kural açıklanır; açık uçlu sınav + çıktı→soru tablosu üretilir
+S02,sinir,"8. sınıf üslü ifadelerden test.",tymm-baglam-testi,Eski program: kazanım dili; süreç bileşeni zorlanmaz; teyit notu
+S03,sinir,"7. sınıf fen, kuvvet konusu için plan.",tymm-ders-planlama,TYMM ama veri dosyası yok; doğrulama uyarısıyla ilerlenir
+S04,sinir,"İngilizce 5. sınıf için ders planı.",hicbiri,Desteklenmeyen branş açıkça söylenir; beceri dışı yardım sunulur
+S05,sinir,"Test istiyorum.",tymm-baglam-testi,Beceri netleştirmeden ÖNCE yüklenir; tek mesajda ≤3 soru
+S06,sinir,"(Plan üretimi sürerken) Bir de test olsun.",tymm-baglam-testi,Planlama bitince test becerisine geçilir; iki iş karıştırılmaz
+K01,kapsam-disi,"MAT.6.1.2'nin süreç bileşenleri neler?",hicbiri,Salt çıktı sorgusu; doğrudan yanıt
+K02,kapsam-disi,"Şu soruyu çözer misin: 738 sayısı 4'e bölünür mü?",hicbiri,Tek soru çözümü; doğrudan yanıt
+K03,kapsam-disi,"Elimdeki 10 soruluk testi analiz et, hangi sorular zayıf?",hicbiri,Hazır test tahlili; doğrudan yanıt
+K04,kapsam-disi,"Hazırladığım çalışma kağıdını üç düzeye ayırır mısın?",hicbiri,Mevcut materyal farklılaştırma; ileride tymm-ders-farklilastirma
+K05,kapsam-disi,"Sınıfım için yıllık plan çıkarır mısın?",hicbiri,Yıllık plan/zümre evrakı kapsam dışı; beceri dışı yardım
+K06,kapsam-disi,"Veli toplantısı daveti yazar mısın?",hicbiri,Evrak işi; doğrudan yardım

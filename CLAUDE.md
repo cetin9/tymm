@@ -85,8 +85,9 @@ hangi üretim hatasından doğduğunu not et.
 1. ~~`test-matematik.md` kurallarını Çoktan Seçmeli Soru Yazım
    Kılavuzu'ndan yeniden yaz~~ ✅ v0.7.1 (`kilavuz-ilkeleri.md` +
    yeniden yazılmış `test-matematik.md`; rubrik T11-T15).
-2. `KULLANIM.md` — öğretmenler için örnek promptlar (açık/örtük/kapsam dışı);
-   aynı set tetikleme evallerinin tohumu olur.
+2. ~~`KULLANIM.md` — öğretmenler için örnek promptlar~~ ✅ v0.7.2
+   (27 istem: açık/örtük/sınır/kapsam dışı; makine okunur eşi
+   `evals/tetikleme/tetikleme-seti.csv` — iki liste birlikte güncellenir).
 3. Türkçe → Sosyal kazanım dosyaları (5-6-7), sonra fen tamamlama.
 4. Tema işleniş sırasını taslak yıllık plan xlsx'lerinden ekle.
 5. Açık uçlu ortak yazılı sınav becerisi; `tymm-ders-farklilastirma`

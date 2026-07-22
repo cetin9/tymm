@@ -36,9 +36,11 @@ skills/tymm-baglam-testi/
   references/kilavuz-ilkeleri.md    ⚠️ ZORUNLU İLK OKUMA — resmî soru yazım kılavuzu ilkeleri
   references/test-matematik.md      Matematik yanılgı envanteri + bağlam aileleri
   references/test-diger-branslar.md Türkçe/fen/sosyal yanılgı envanteri + bağlam aileleri
+KULLANIM.md                    Öğretmenler için istem rehberi (açık/örtük/kapsam dışı örnekler)
 evals/
   tymm-ders-planlama/rubrik-matematik.csv   (14 kriter)
   tymm-baglam-testi/rubrik-matematik.csv    (15 kriter)
+  tetikleme/tetikleme-seti.csv              (27 istem — KULLANIM.md ile aynı set)
 ```
 
 ## Kurulum (claude.ai)
@@ -61,6 +63,13 @@ kopyalamanız yeterlidir.
 3. `evals/` altına branş rubriğini ekleyin.
 
 ## Sürüm notları
+
+- **v0.7.2 — KULLANIM.md ve tetikleme eval tohumu.** Öğretmenler için istem
+  rehberi eklendi: açık/örtük/sınır/kapsam dışı 27 örnek istem, varsayılanlar
+  tablosu, ortak yazılı kuralı ve ipuçları. Aynı set makine okunur biçimde
+  `evals/tetikleme/tetikleme-seti.csv` dosyasına yazıldı (id · kategori ·
+  istem · beklenen beceri · beklenen davranış); iki liste birlikte
+  güncellenir.
 
 - **v0.7.1 — Test becerisinin resmî kılavuza hizalanması.** `tymm-baglam-testi`
   soru yazım kuralları, MEB'in *TYMM Bağlam Temelli Çoktan Seçmeli Soru
@@ -141,6 +150,7 @@ kopyalamanız yeterlidir.
 - [x] `tymm-baglam-testi` becerisi (düzeyli bağlam testleri)
 - [ ] `tymm-ders-farklilastirma` becerisi (mevcut dersi kademelendirme)
 - [x] Test soru yazım kurallarını resmî kılavuzdan yeniden yazma (v0.7.1)
+- [x] KULLANIM.md — öğretmen istem rehberi + tetikleme eval tohumu (v0.7.2)
 - [ ] Konu anlatımı ve test çıktılarının ilk rubrik puanlaması
 - [x] Diğer branşlar: Türkçe, Fen Bilimleri, Sosyal Bilgiler (6. sınıf)
 - [x] 5. sınıf fen verisi (1. dönem) — resmî kaynaktan doğrulandı
