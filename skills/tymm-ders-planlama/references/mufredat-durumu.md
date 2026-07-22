@@ -19,9 +19,11 @@ durumu (öğretmen tarafından teyit edilmiştir):**
 | 8 | **Eski program** | Kazanım | `F.8.1.1.1` (nokta öncesi tek harf) |
 
 > **NOTLAR:**
-> - 7. sınıf TYMM'ye yeni geçtiği için `kazanimlar/` klasöründe 7. sınıf
->   veri dosyaları henüz yoktur; 7. sınıf isteğinde beceri doğrulama
->   uyarısıyla ilerler ve resmî program verisinin eklenmesini önerir.
+> - `kazanimlar/` klasöründe 5-6-7. sınıf **dört branşın** (matematik,
+>   Türkçe, fen, sosyal) verisi resmî tema/ünite sayfalarından birebir
+>   mevcuttur. Türkçe dosyalarında süreç bileşeni dökümü yoktur (resmî
+>   tema sayfaları yayımlamaz); Türkçe'de süreç bileşeni gerektiğinde
+>   doğrulama notu düşülür.
 > - 8. sınıf eski programdadır: "öğrenme çıktısı" değil **"kazanım"** denir,
 >   süreç bileşeni katmanı zorlanmaz, LGS hazırlık bağlamı geçerli olabilir.
 > - 2027-2028'de 8. sınıfın da geçmesi beklenir; o yıl bu tablo yeniden

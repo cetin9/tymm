@@ -113,7 +113,7 @@ kullanılamaz.** Bu yüzden:
 |---|---|---|
 | S01 | *"Ortak yazılı için matematikten 10 çoktan seçmeli soru hazırla."* | Çoktan seçmeli üretilmez; kural bir cümleyle açıklanır, açık uçlu sınav üretilir. |
 | S02 | *"8. sınıf üslü ifadelerden test."* | 8. sınıf eski programdadır: "öğrenme çıktısı" değil **kazanım** dili kullanılır, belgeye teyit notu düşülür. |
-| S03 | *"7. sınıf fen, kuvvet konusu için plan."* | 7. sınıf TYMM'dedir ama doğrulanmış veri dosyası henüz yok; üretim yapılır, belgeye doğrulama uyarısı eklenir. |
+| S03 | *"7. sınıf Türkçe temasından süreç bileşenlerine bağlı ölçme."* | Türkçe'nin resmî tema sayfaları süreç bileşeni dökümü yayımlamaz; çıktı düzeyinde üretilir, süreç bileşeni gerekiyorsa belgeye doğrulama notu düşülür. |
 | S04 | *"İngilizce 5. sınıf için ders planı."* | Desteklenmeyen branş (matematik, Türkçe, fen, sosyal dışı): açıkça söylenir, beceri dışında elden gelen yardım yapılır. |
 | S05 | *"Test istiyorum."* (sınıf/konu yok) | Beceri yine devreye girer; tek mesajda en fazla üç netleştirme sorusu sorulur. |
 | S06 | Ders paketi hazırlanırken *"bir de test olsun"* derseniz | İki iş ayrı becerilerle sırayla yapılır; ikisini tek istemde de isteyebilirsiniz. |

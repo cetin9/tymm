@@ -16,8 +16,9 @@ doğrulama uyarısı ekler.
 
 - İki beceri: **tymm-ders-planlama** ve **tymm-baglam-testi**
 - Dört branş: **matematik, Türkçe, fen bilimleri, sosyal bilgiler**
-- Kapsam hedefi: **5-8 ortaokul** (5-6 TYMM; 7-8 için müfredat durumu kontrol edilir)
-- Doğrulanmış veri: **5. sınıf fen (Ü1-3), 6. sınıf fen (Ü1-4)** — resmî MEB kaynaklarından birebir
+- Kapsam hedefi: **5-8 ortaokul** (5-6-7 TYMM; 8 eski program)
+- Doğrulanmış veri: **dört branş × 5-6-7. sınıf** — resmî tema/ünite
+  sayfalarından birebir (Türkçe'de süreç bileşeni dökümü kaynakta yok)
 - Çıktı: A4 baskıya hazır 3 HTML — ders planı, çalışma kağıdı (100 puanlık,
   KB1/KB2/KB3 kademeli), öğrenme kanıtları (cevap anahtarı + gözlem odakları)
 
@@ -63,6 +64,24 @@ kopyalamanız yeterlidir.
 3. `evals/` altına branş rubriğini ekleyin.
 
 ## Sürüm notları
+
+- **v0.7.3 — Veri katmanı tamamlandı: dört branş × 5-6-7. sınıf.** 57 resmî
+  tema/ünite/öğrenme alanı sayfası (tymm.meb.gov.tr PDF'leri) ayrıştırılarak
+  9 kazanım dosyası üretildi/yeniden kuruldu:
+  - **Fen 5/6/7:** tüm üniteler, süreç bileşenleriyle (28/36/36 çıktı) —
+    önceki kısmi dosyaların (5: Ü1-3, 6: Ü1-4) yerini tam sürüm aldı.
+  - **Sosyal 5/6/7:** tüm öğrenme alanları, süreç bileşenleriyle
+    (19/18/17 çıktı) — doğrulanmamış 6. sınıf dosyası değiştirildi.
+  - **Türkçe 5/6/7:** tema bazlı çıktı listeleri birebir (100/100/102 tekil
+    kod). Resmî tema sayfaları süreç bileşeni dökümü yayımlamadığından
+    dosyalara bu sınırı belirten not eklendi; beceriler Türkçe'de süreç
+    bileşeni katmanını zorlamaz.
+  - Her tema/ünite başlığında ders saati, alan/kavramsal beceriler,
+    eğilimler, SDB, değerler, okuryazarlık, disiplinler arası ilişkiler,
+    içerik çerçevesi ve anahtar kavramlar da resmî sayfadan aktarıldı.
+  - Kaynaktaki bir dizgi hatası ayrıştırıcıda tolere edildi
+    (`SB 7.1.1.` → `SB.7.1.1.`); 2. dönem üniteleri dahil olduğundan yol
+    haritasındaki "2. dönem çıktı verileri" maddesi de kapandı.
 
 - **v0.7.2 — KULLANIM.md ve tetikleme eval tohumu.** Öğretmenler için istem
   rehberi eklendi: açık/örtük/sınır/kapsam dışı 27 örnek istem, varsayılanlar
@@ -154,8 +173,8 @@ kopyalamanız yeterlidir.
 - [ ] Konu anlatımı ve test çıktılarının ilk rubrik puanlaması
 - [x] Diğer branşlar: Türkçe, Fen Bilimleri, Sosyal Bilgiler (6. sınıf)
 - [x] 5. sınıf fen verisi (1. dönem) — resmî kaynaktan doğrulandı
-- [ ] 5-6. sınıf: matematik, Türkçe, sosyal verilerini resmî kaynaktan yeniden kur
-- [ ] 2. dönem ünitelerinin çıktı verileri
+- [x] 5-6-7. sınıf: dört branşın verisi resmî kaynaktan kuruldu (v0.7.3)
+- [x] 2. dönem ünitelerinin çıktı verileri (v0.7.3 — tüm üniteler dahil)
 - [ ] Açık uçlu ortak yazılı sınav becerisi (yönetmeliğe uygun)
 - [ ] 7-8. sınıf: güncel müfredat durumuna göre karar
 - [ ] Diğer sınıf düzeyleri (5-8)

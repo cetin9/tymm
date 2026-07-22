@@ -16,7 +16,7 @@ T05,ortuk,"Konuyu bitirdik, çocukları bir yoklamak istiyorum — soru seti haz
 T06,ortuk,"Öğrencilerimin bölünebilmede hangi düzeyde olduğunu görmek istiyorum.",tymm-baglam-testi,Düzey belirleme niyeti üç düzeyli set ile karşılanır
 S01,sinir,"Ortak yazılı için matematikten 10 çoktan seçmeli soru hazırla.",tymm-baglam-testi,ÇS ÜRETİLMEZ; kural açıklanır; açık uçlu sınav + çıktı→soru tablosu üretilir
 S02,sinir,"8. sınıf üslü ifadelerden test.",tymm-baglam-testi,Eski program: kazanım dili; süreç bileşeni zorlanmaz; teyit notu
-S03,sinir,"7. sınıf fen, kuvvet konusu için plan.",tymm-ders-planlama,TYMM ama veri dosyası yok; doğrulama uyarısıyla ilerlenir
+S03,sinir,"7. sınıf Türkçe temasından süreç bileşenlerine bağlı ölçme istiyorum.",tymm-ders-planlama,Türkçe tema sayfaları süreç bileşeni yayımlamaz; çıktı düzeyi + doğrulama notu
 S04,sinir,"İngilizce 5. sınıf için ders planı.",hicbiri,Desteklenmeyen branş açıkça söylenir; beceri dışı yardım sunulur
 S05,sinir,"Test istiyorum.",tymm-baglam-testi,Beceri netleştirmeden ÖNCE yüklenir; tek mesajda ≤3 soru
 S06,sinir,"(Plan üretimi sürerken) Bir de test olsun.",tymm-baglam-testi,Planlama bitince test becerisine geçilir; iki iş karıştırılmaz

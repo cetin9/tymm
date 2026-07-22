@@ -9,7 +9,8 @@ biçimi farklarıdır.
 
 ## Ortak ilke
 Çıktı eşlemesi `../tymm-ders-planlama/references/kazanimlar/` altındaki
-6. sınıf dosyalarından yapılır (tek veri kaynağı). Çıktı ifadesi anahtara
+sınıf-branş dosyalarından yapılır (tek veri kaynağı; 5-6-7. sınıf ×
+dört branş mevcut). Çıktı ifadesi anahtara
 birebir aktarılır. Düzey mimarisi ve seçenek dengesi kuralları matematikle
 aynıdır (Temel 6-3-1 / Gelişen 3-5-2 / İleri 1-4-5; hiçbir harf 10 soruda
 4'ten fazla / 1'den az).

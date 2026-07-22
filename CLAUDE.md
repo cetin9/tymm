@@ -55,9 +55,9 @@ Tüm çıktılar ve iletişim Türkçedir.
 | Veri | Durum |
 |------|-------|
 | Matematik 5/6/7 | ✅ resmî tema sayfalarından birebir (23/24/30 çıktı; süreç bileşenleri dahil; sınıf başına 172 tema-saat + 8 okul temelli = 180) |
-| Fen 5 (Ü1-3), Fen 6 (Ü1-4) | ✅ doğrulandı (1. dönem); kalan üniteler eksik |
-| Türkçe 6, Sosyal 6 | ⚠️ doğrulanmamış — resmî temalardan yeniden kurulacak |
-| Türkçe/Sosyal 5 ve 7 | ❌ yok |
+| Fen 5/6/7 | ✅ tüm üniteler resmî ünite sayfalarından birebir (28/36/36 çıktı; süreç bileşenleri dahil) |
+| Sosyal 5/6/7 | ✅ tüm öğrenme alanları resmî sayfalardan birebir (19/18/17 çıktı; süreç bileşenleri dahil) |
+| Türkçe 5/6/7 | ✅ çıktı düzeyinde resmî tema sayfalarından birebir (100/100/102 tekil kod); ⚠️ süreç bileşeni dökümü tema sayfalarında yayımlanmıyor — gerekirse doğrulama notu düşülür |
 | beceri-cercevesi.md | ✅ birincil kaynaklardan; yalnız D2/D12 ad eşleşmesi alfabetik çıkarım (dosyada işaretli) |
 
 ## Kaynaklar
@@ -88,7 +88,9 @@ hangi üretim hatasından doğduğunu not et.
 2. ~~`KULLANIM.md` — öğretmenler için örnek promptlar~~ ✅ v0.7.2
    (27 istem: açık/örtük/sınır/kapsam dışı; makine okunur eşi
    `evals/tetikleme/tetikleme-seti.csv` — iki liste birlikte güncellenir).
-3. Türkçe → Sosyal kazanım dosyaları (5-6-7), sonra fen tamamlama.
+3. ~~Türkçe → Sosyal kazanım dosyaları (5-6-7), sonra fen tamamlama~~
+   ✅ v0.7.3 (57 resmî tema/ünite/alan sayfası ayrıştırıldı; 9 dosya —
+   Türkçe süreç bileşenleri hariç, kaynak yayımlamıyor).
 4. Tema işleniş sırasını taslak yıllık plan xlsx'lerinden ekle.
 5. Açık uçlu ortak yazılı sınav becerisi; `tymm-ders-farklilastirma`
    (resmî farklılaştırma etkinlik kitaplarından); 2. dönem; gerçek sınıf

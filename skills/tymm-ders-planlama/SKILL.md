@@ -7,8 +7,8 @@ description: >
   hakkında herhangi bir netleştirme sorusu sormadan ÖNCE bu beceriyi yükle.
   Bir öğretmenin sıfırdan yeni ders içeriği istediği her durumda kullan —
   sınıf, branş veya konu henüz söylenmemiş olsa bile. Desteklenen branşlar:
-  matematik, Türkçe, fen bilimleri, sosyal bilgiler (6. sınıf kazanım
-  verisiyle). Açık isteklerde ("ders planı", "günlük plan", "etkinlik planı") ve örtük öğretmen niyetinde
+  matematik, Türkçe, fen bilimleri, sosyal bilgiler (5-6-7. sınıf öğrenme
+  çıktısı verisiyle). Açık isteklerde ("ders planı", "günlük plan", "etkinlik planı") ve örtük öğretmen niyetinde
   ("yarın çarpanlar ve katları işleyeceğim", "6'lara bölünebilme anlatacağım")
   tetiklenir. Not verme, hazır bir rubrik, sınav geri bildirimi veya salt
   kazanım/çıktı sorgusu için YÜKLEME — bunları doğrudan yanıtla. Farklılaştırılmış
@@ -80,10 +80,13 @@ dosyası" gibi teknik terimler kullanıcıya asla görünmez.
    açıkça söyle, en yakın yardımı beceri dışında sun.
 
 2. **Sınıf düzeyi verisi.** `references/kazanimlar/` klasöründe ilgili
-   sınıf-branş dosyasının olup olmadığına bak (mevcut:
-   `6-sinif-matematik.md`, `6-sinif-turkce.md`, `6-sinif-fen-bilimleri.md`,
-   `6-sinif-sosyal-bilgiler.md`). Bu, Adım 2'nin hangi yoldan ilerleyeceğini
-   belirler. Beceri, veri dosyası olmadan da tam çalışır.
+   sınıf-branş dosyasının olup olmadığına bak (mevcut: 5-6-7. sınıf ×
+   matematik/türkçe/fen-bilimleri/sosyal-bilgiler — 12 dosya;
+   `<sinif>-sinif-<brans>.md`). Bu, Adım 2'nin hangi yoldan ilerleyeceğini
+   belirler. Beceri, veri dosyası olmadan da tam çalışır. Türkçe
+   dosyalarında süreç bileşeni dökümü yoktur (resmî tema sayfaları
+   yayımlamaz); Türkçe planlarında süreç bileşeni katmanı zorlanmaz,
+   gerekirse doğrulama notu düşülür.
 
 ---
 
