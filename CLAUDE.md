@@ -71,12 +71,13 @@ klasör yerel olarak `sources/` altına indirilmiş kabul edilir. Beklenen yapı
 `sources/TEMEL ÖĞRETİM PROGRAMLARI/<branş> <sınıf>. sınıf/...` (tema başına
 PDF), kökte çerçeve PDF'leri, `sources/DERS KİTAPLARI/`,
 `sources/farklılaştırma etkinlik kitapları/`, `sources/TASLAK YILLIK PLANLAR/`.
-PDF → metin: `pdftotext -layout`. Matematik tema ayrıştırıcısı örneği için
-sohbet geçmişindeki `parse_tema.py` / `gen_mat.py` yaklaşımı esas alınabilir:
-sayfa üstbilgilerini temizle, "Öğrenme Çıktıları ve Süreç Bileşenleri" →
-"İçerik Çerçevesi" arasını al, `MAT.x.y.z` üzerinden böl, bileşen imleçleri
-`a b c ç d e f g ğ h` (ğ dahil!), hece kopmalarını derlem tabanlı onar
-("ya da" gibi meşru ikilileri birleştirme).
+PDF → metin: `pdftotext -layout -enc UTF-8`. Türkçe/fen/sosyal kazanım
+üretim hattı **depodadır**: `tools/pdf_metin_cikar.py` +
+`tools/kazanim_uret.py` (notlar: `tools/README.md` — MAX_PATH, görünmez
+U+E000-F8FF karakterleri, `SB 7.1.1.` dizgi toleransı). Matematik için
+sohbet geçmişindeki `parse_tema.py` / `gen_mat.py` yaklaşımı: bileşen
+imleçleri `a b c ç d e f g ğ h` (ğ dahil!), hece kopmalarını derlem
+tabanlı onar ("ya da" gibi meşru ikilileri birleştirme).
 
 ## Çalışma döngüsü
 
