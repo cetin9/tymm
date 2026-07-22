@@ -91,7 +91,9 @@ hangi üretim hatasından doğduğunu not et.
 3. ~~Türkçe → Sosyal kazanım dosyaları (5-6-7), sonra fen tamamlama~~
    ✅ v0.7.3 (57 resmî tema/ünite/alan sayfası ayrıştırıldı; 9 dosya —
    Türkçe süreç bileşenleri hariç, kaynak yayımlamıyor).
-4. Tema işleniş sırasını taslak yıllık plan xlsx'lerinden ekle.
+4. ~~Tema işleniş sırasını taslak yıllık plan xlsx'lerinden ekle~~
+   ✅ v0.7.4 (`references/tema-sirasi.md` — 5-6. sınıf dört branş; 7. sınıf
+   sırası kaynakta yok, resmî numara sırası + teyit notu varsayılır).
 5. Açık uçlu ortak yazılı sınav becerisi; `tymm-ders-farklilastirma`
    (resmî farklılaştırma etkinlik kitaplarından); 2. dönem; gerçek sınıf
    denemesi.

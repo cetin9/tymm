@@ -127,6 +127,11 @@ haliyle** yaz. Çıktı ifadesini ezberden yeniden yazmak kritik hatadır.
 Konu birden çok temaya değiyorsa en güçlü eşleşen tek temayı ana hedef yap,
 diğerlerini "ilişkili çıktılar" olarak listele.
 
+**İşleniş sırası:** Öğretmen hafta/ay belirtirse, karışık tekrar kağıdı
+istenirse veya "şu ana kadar işlenenler" kapsamı gerekirse
+`references/tema-sirasi.md` dosyasını oku — işleniş sırası tema
+numarasını izlemez ve "önceki çıktılar" bu sıraya göre belirlenir.
+
 **Veri dosyası yoksa (yedek yol):** Sınıf ve konu için en iyi bilgiye dayalı
 çıktı tahminiyle ilerle ve planın sonuna şu dipnotu ekle:
 *"Bu planın öğrenme çıktısı eşlemesi resmî program dosyasından

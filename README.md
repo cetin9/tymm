@@ -65,6 +65,16 @@ kopyalamanız yeterlidir.
 
 ## Sürüm notları
 
+- **v0.7.4 — Tema işleniş sırası.** MEB taslak çerçeve yıllık planları
+  (xlsx) ayrıştırılarak `tymm-ders-planlama/references/tema-sirasi.md`
+  eklendi: 5-6. sınıf × dört branş için hafta → tema tabloları (geçiş
+  haftaları işaretli). Kritik bulgu: işleniş sırası tema numarasını
+  izlemiyor (ör. matematik 5 yıla Tema 3 ile başlıyor; matematik 6 dördüncü
+  haftada Tema 5'e geçiyor). Karışık tekrar kağıdı ve dönem tarama testi
+  "önceki çıktılar"ı artık bu sıradan seçiyor; iki SKILL.md de dosyaya
+  bağlandı. 7. sınıf sırası kaynakta yok (2025-26'da eski programdaydı):
+  resmî numara sırası varsayılıp belgeye teyit notu düşülüyor.
+
 - **v0.7.3 — Veri katmanı tamamlandı: dört branş × 5-6-7. sınıf.** 57 resmî
   tema/ünite/öğrenme alanı sayfası (tymm.meb.gov.tr PDF'leri) ayrıştırılarak
   9 kazanım dosyası üretildi/yeniden kuruldu:

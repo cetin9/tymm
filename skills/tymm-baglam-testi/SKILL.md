@@ -64,6 +64,10 @@ belgelere sızmaz).
 geneli mi. Varsayılanlar: 3 test × 10 soru, 4 seçenek (A-D), süre önerisi
 test başına 20 dk, tek çıktı odağı.
 
+Dönem/yıl tarama testi veya "şu ana kadar işlenenler" kapsamı istenirse
+`../tymm-ders-planlama/references/tema-sirasi.md` dosyasından işleniş
+sırasına bak — kapsam tema numarasına göre değil bu sıraya göre seçilir.
+
 ## Adım 2 — Düzey mimarisi
 
 Her düzey kendi **bağlam ailesinden** beslenir (ör. Düzey 1: market/kantin,
