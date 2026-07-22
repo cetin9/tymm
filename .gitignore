@@ -1,0 +1,9 @@
+# Resmî MEB kaynakları (1,5 GB PDF/XLSX) depoya girmez:
+# telif MEB'e aittir ve dosyalar öğretmenin "TYMM" Drive klasöründen indirilir.
+# Beklenen yapı için CLAUDE.md → "Kaynaklar" bölümüne bakın.
+sources/
+
+# Geçici üretim çıktıları
+*.tmp
+.DS_Store
+Thumbs.db

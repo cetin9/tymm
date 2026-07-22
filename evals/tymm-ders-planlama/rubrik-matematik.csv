@@ -1,0 +1,15 @@
+kriter_id,boyut,kriter,kanit
+M01,Hizalama,Plan tek bir ana öğrenme çıktısına bağlanmış ve çıktı ifadesi veri dosyasındaki haliyle aktarılmış,Kimlik bölümünde kod + birebir çıktı ifadesi
+M02,Hizalama,Süreç bileşenleri tanımlanmış ve ölçme araçlarıyla (çıkış kartı/gözlem) eşleştirilmiş,Öğrenme kanıtları bölümünde bileşen→araç eşlemesi
+M03,Hizalama,Tema ders saati ağırlığına uygun gerçekçi kapsam iddiası var,Kimlik bölümünde hedeflenen dilim ifadesi
+M04,Pedagoji,Ders gerçek yaşam senaryosuyla açılıyor ve kavram senaryodan çıkarılıyor,Akış tablosunda Bağlam→Keşif→Kavramsallaştırma sırası
+M05,Pedagoji,KB1/KB2/KB3 kademelenmesi hem etkinliklerde hem çalışma kağıdı bölümlerinde görünür,A/B/C bölümleri ve kademe etiketleri
+M06,Pedagoji,En az bir MAB somut etkinlik anına bağlanmış (etiket yığını yok),Beceri bağlantıları bölümü
+M07,Pedagoji,Konuya özgü en az 2 kavram yanılgısı + yüzeye çıkarma/müdahale stratejisi var,Yanılgı tablosu
+M08,Pedagoji,Zamanlama 40 dk ders saatine göre bölünmüş ve toplam süreyle tutarlı,Akış tablosu süre sütunu
+M09,Kapsayıcılık,Destekleme ve zenginleştirme çekirdek içeriği değiştirmeden tanımlanmış,Farklılaştırma bölümü
+M10,Çıktı kalitesi,Çalışma kağıdında cevap/ipucu yok; puanlar görünür ve toplam tam 100,Puan rozetleri + toplam satırı
+M11,Çıktı kalitesi,Cevap anahtarı ayrı belgede; KB3 için kabul ölçütleri tek cümleye indirgenmemiş,ogrenme-kanitlari dosyası
+M12,Çıktı kalitesi,Üç belge de A4 şablon kurallarına uygun (bölünmeyen bloklar; ayrı anahtar sayfası),HTML yapısı
+M13,Dil,Tüm metinler doğal öğretmen/öğrenci Türkçesiyle; teknik iç terim sızıntısı yok,Belgelerin tamamı
+M14,Hizalama,Kağıtta adlandırılan her kavram ders planı akışında (en geç Kavramsallaştırma) inşa edilmiş; dolgu kavramlar Varsayımlar satırında bildirilmiş,Soru→aşama eşlemesi + kimlik tablosu Varsayımlar satırı

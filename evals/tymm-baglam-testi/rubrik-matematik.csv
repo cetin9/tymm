@@ -1,0 +1,16 @@
+kriter_id,boyut,kriter,kanit
+T01,Hizalama,Testler tek hedef çıktıya bağlı ve ifade anahtar belgesinde birebir aktarılmış,Anahtar üst bilgisi
+T02,Hizalama,Soru kavramları çıktı + dolgu kavram listesiyle sınırlı,Soru→kavram taraması
+T03,Düzey,KB dağılımı düzey tablosuna uygun (6-3-1 / 3-5-2 / 1-4-5),Anahtardaki KB etiketleri
+T04,Düzey,Her düzey kendi bağlam ailesinden; testler birbirinin kopyası değil,Üç testin senaryo karşılaştırması
+T05,Soru kalitesi,Her soruda işlevsel bağlam var; bağlamsız salt işlem kökü yok,Kök taraması
+T06,Soru kalitesi,Her soruda en az iki çeldirici yanılgı envanterinden ve anahtar tabloda etiketli,Çeldirici→yanılgı tablosu
+T07,Soru kalitesi,Tek doğru cevap; hepsi/hiçbiri yok; olumsuz kök ≤2 ve vurgulu,Testlerin tamamı
+T08,Denge,Hiçbir harf 10 soruda 4'ten fazla / 1'den az doğru değil; sayısal seçenekler artan sırada,Anahtardaki dağılım sayımı
+T09,Çıktı kalitesi,Anahtar ayrı dosyada; testlerde cevap/ipucu sızıntısı yok; A4 kuralları ve dipnot standardı uygulanmış,Dört belgenin yapısı
+T10,Dil,Öğrenci düzeyinde doğal Türkçe; iç terim sızıntısı yok; düzey adları Temel/Gelişen/İleri,Belgelerin tamamı
+T11,Kılavuz uyumu,Her soru işlevsellik testini geçiyor (bağlam olmadan çözülemiyor) ve çözüm için gereken bilgi bağlamda hazır verilmemiş,Soru→bağlam çapraz okuması
+T12,Kılavuz uyumu,Aynı bağlamdan yazılan sorular bağımsız çözülebiliyor; ipucu zinciri yok,Ortak bağlamlı soru grupları
+T13,Kılavuz uyumu,Seçenekler uzunluk/dil/sayı biçimi bakımından homojen ve bağlamdan birebir alıntı içermiyor,Seçenek taraması
+T14,Kılavuz uyumu,Bağlamlar erişilebilir ve tarafsız (dar erişimli alan/marka/gelir varsayımı yok); görseller yeni veri taşıyor,Bağlam ve görsel taraması
+T15,İzlenebilirlik,Anahtarda soru başına süreç bileşeni harfi ve bağlam adı kayıtlı; gerçek veri kullanıldıysa kaynak belirtilmiş,Anahtar tabloları
