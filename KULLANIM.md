@@ -98,12 +98,20 @@ etiketleri ve puanlamayla). Düzey adedi ve soru sayısı değiştirilebilir.
 ### ⚠️ Ortak yazılı sınav kuralı
 
 MEB yönetmeliğine göre **ortak yazılı sınavlarda çoktan seçmeli soru
-kullanılamaz.** Bu yüzden:
+kullanılamaz.** Bu yüzden ürettiğimiz her test *"alıştırma/tarama/deneme
+amaçlıdır"* ibaresi taşır; ortak yazılı için aşağıdaki ayrı beceri devreye
+girer.
 
-- Ürettiğimiz her test *"alıştırma/tarama/deneme amaçlıdır"* ibaresi taşır.
-- **"Ortak yazılı için soru"** isterseniz çoktan seçmeli üretilmez;
-  yönetmeliğe uygun **açık uçlu / kısa cevaplı** sınav hazırlanır ve hedef
-  çıktılar "çıktı → soru sayısı" tablosuyla listelenir.
+## 3b. Ortak yazılı istemek (`tymm-acik-uclu-sinav`)
+
+Çıktısı: **konu soru dağılım tablosu** (sınavdan önce öğrenciyle
+paylaşılır) + **açık uçlu/kısa cevaplı sınav kağıdı** + **dereceli
+puanlama anahtarı** (örnek yanıtlar ve kısmi puan basamaklarıyla).
+
+| # | Örnek istem |
+|---|---|
+| A01 | 6. sınıf matematik 1. dönem 2. ortak yazılısını hazırla; kapsam ilk 9 hafta. |
+| A02 | Fen 5 için Ü1-Ü2'den açık uçlu yazılı + puanlama anahtarı istiyorum. |
 
 ---
 
@@ -111,7 +119,7 @@ kullanılamaz.** Bu yüzden:
 
 | # | Durum | Ne olur |
 |---|---|---|
-| S01 | *"Ortak yazılı için matematikten 10 çoktan seçmeli soru hazırla."* | Çoktan seçmeli üretilmez; kural bir cümleyle açıklanır, açık uçlu sınav üretilir. |
+| S01 | *"Ortak yazılı için matematikten 10 çoktan seçmeli soru hazırla."* | Çoktan seçmeli üretilmez; kural bir cümleyle açıklanır ve `tymm-acik-uclu-sinav` ile açık uçlu paket üretilir. |
 | S02 | *"8. sınıf üslü ifadelerden test."* | 8. sınıf eski programdadır: "öğrenme çıktısı" değil **kazanım** dili kullanılır, belgeye teyit notu düşülür. |
 | S03 | *"7. sınıf Türkçe temasından süreç bileşenlerine bağlı ölçme."* | Türkçe'nin resmî tema sayfaları süreç bileşeni dökümü yayımlamaz; çıktı düzeyinde üretilir, süreç bileşeni gerekiyorsa belgeye doğrulama notu düşülür. |
 | S04 | *"İngilizce 5. sınıf için ders planı."* | Desteklenmeyen branş (matematik, Türkçe, fen, sosyal dışı): açıkça söylenir, beceri dışında elden gelen yardım yapılır. |

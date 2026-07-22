@@ -1,0 +1,11 @@
+kriter_id,boyut,kriter,kanit
+Y01,Yönetmelik,Sınavda yalnızca açık uçlu/kısa cevaplı soru var; çoktan seçmeli/DY/eşleştirme yok,Sınav kağıdının tamamı
+Y02,Hizalama,Konu soru dağılım tablosu var; her satırda çıktı kodu+ifade birebir ve süreç bileşeni belirtilmiş,Dağılım tablosu
+Y03,Hizalama,Kapsamdaki her çıktıya en az bir soru; puanlar saat ağırlığıyla orantılı; tek çıktı ≤25 puan,Dağılım tablosu + kazanım dosyası
+Y04,Soru kalitesi,Her soru bağlam temelli ve işlevsellik testini geçiyor; bağlamsız salt işlem/tanım sorusu yok,Soru taraması
+Y05,Soru kalitesi,En az 2 soru gerekçelendirme/muhakeme istiyor; alt maddeler bağımsız çözülebiliyor (ipucu zinciri yok),Soru taraması
+Y06,Soru kalitesi,Kavramlar çıktı + dolgu kavram listesiyle sınırlı,Soru→kavram taraması
+Y07,Puanlama,Anahtar ayrı belgede; soru başına örnek yanıt + süreç bileşenine bağlı kısmi puan basamakları; basamak toplamı = soru puanı; genel toplam 100,Puanlama anahtarı
+Y08,Puanlama,Yaygın hata satırları yanılgı envanterinden ve puan kararı belirtilmiş,Anahtar hata satırları
+Y09,Çıktı kalitesi,A4 kuralları + dipnot standardı; öğrenci kağıdında cevap/anahtar sızıntısı yok; yanıt alanları yeterli,Üç belgenin yapısı
+Y10,Dil,Sınıf düzeyinde doğal Türkçe; yönergeler net; iç terim sızıntısı yok; 8. sınıfta kazanım dili,Belgelerin tamamı

@@ -11,6 +11,8 @@ Tüm çıktılar ve iletişim Türkçedir.
   öğrenme kanıtları + isteğe bağlı etkileşimli konu anlatımı (A4/ekran HTML)
 - `skills/tymm-baglam-testi/` — düzeyli (Temel/Gelişen/İleri) bağlam temelli
   çoktan seçmeli test setleri + ayrı cevap anahtarı
+- `skills/tymm-acik-uclu-sinav/` — yönetmeliğe uygun ortak yazılı: konu soru
+  dağılım tablosu + açık uçlu/kısa cevaplı sınav + dereceli puanlama anahtarı
 
 ## Değiştirilemez mimari kararlar
 

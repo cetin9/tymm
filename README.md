@@ -37,11 +37,14 @@ skills/tymm-baglam-testi/
   references/kilavuz-ilkeleri.md    ⚠️ ZORUNLU İLK OKUMA — resmî soru yazım kılavuzu ilkeleri
   references/test-matematik.md      Matematik yanılgı envanteri + bağlam aileleri
   references/test-diger-branslar.md Türkçe/fen/sosyal yanılgı envanteri + bağlam aileleri
+skills/tymm-acik-uclu-sinav/
+  SKILL.md                     Ortak yazılı: dağılım tablosu + açık uçlu sınav + puanlama anahtarı
 KULLANIM.md                    Öğretmenler için istem rehberi (açık/örtük/kapsam dışı örnekler)
 evals/
   tymm-ders-planlama/rubrik-matematik.csv   (14 kriter)
   tymm-baglam-testi/rubrik-matematik.csv    (15 kriter)
-  tetikleme/tetikleme-seti.csv              (27 istem — KULLANIM.md ile aynı set)
+  tymm-acik-uclu-sinav/rubrik-matematik.csv (10 kriter)
+  tetikleme/tetikleme-seti.csv              (29 istem — KULLANIM.md ile aynı set)
 ```
 
 ## Kurulum (claude.ai)
@@ -64,6 +67,17 @@ kopyalamanız yeterlidir.
 3. `evals/` altına branş rubriğini ekleyin.
 
 ## Sürüm notları
+
+- **v0.8.0 — Üçüncü beceri: `tymm-acik-uclu-sinav`.** MEB yönetmeliğine
+  uygun ortak yazılı paketi üretir: konu soru dağılım tablosu (sınav öncesi
+  öğrenciyle paylaşılır) + açık uçlu/kısa cevaplı sınav kağıdı + dereceli
+  puanlama anahtarı (örnek yanıtlar, süreç bileşenine bağlı kısmi puan
+  basamakları, yanılgı envanterinden yaygın hata satırları). Bağlam
+  kurgulama/işlevsellik/bilişsel yük ilkelerini `kilavuz-ilkeleri.md`'den,
+  veriyi ortak `kazanimlar/` katmanından, kapsamı `tema-sirasi.md`'den alır.
+  `tymm-baglam-testi` ve `mufredat-durumu.md` ortak yazılı isteklerini artık
+  bu beceriye yönlendirir. 10 kriterlik rubrik (Y01-Y10) ve tetikleme setine
+  A01-A02 + güncellenen S01 eklendi.
 
 - **v0.7.4 — Tema işleniş sırası.** MEB taslak çerçeve yıllık planları
   (xlsx) ayrıştırılarak `tymm-ders-planlama/references/tema-sirasi.md`
@@ -185,7 +199,7 @@ kopyalamanız yeterlidir.
 - [x] 5. sınıf fen verisi (1. dönem) — resmî kaynaktan doğrulandı
 - [x] 5-6-7. sınıf: dört branşın verisi resmî kaynaktan kuruldu (v0.7.3)
 - [x] 2. dönem ünitelerinin çıktı verileri (v0.7.3 — tüm üniteler dahil)
-- [ ] Açık uçlu ortak yazılı sınav becerisi (yönetmeliğe uygun)
+- [x] Açık uçlu ortak yazılı sınav becerisi (yönetmeliğe uygun) — v0.8.0
 - [ ] 7-8. sınıf: güncel müfredat durumuna göre karar
 - [ ] Diğer sınıf düzeyleri (5-8)
 

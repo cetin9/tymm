@@ -14,7 +14,7 @@ T03,acik,"Işık ünitesinden yaprak test istiyorum.",tymm-baglam-testi,Yaprak t
 T04,acik,"6. sınıf sosyalden deneme bölümü gibi 10 soru, cevap anahtarı ayrı olsun.",tymm-baglam-testi,Deneme bölümü tetikleyicidir; anahtar zaten daima ayrı
 T05,ortuk,"Konuyu bitirdik, çocukları bir yoklamak istiyorum — soru seti hazırlar mısın?",tymm-baglam-testi,Tarama niyeti; sınıf/konu netleştirilir
 T06,ortuk,"Öğrencilerimin bölünebilmede hangi düzeyde olduğunu görmek istiyorum.",tymm-baglam-testi,Düzey belirleme niyeti üç düzeyli set ile karşılanır
-S01,sinir,"Ortak yazılı için matematikten 10 çoktan seçmeli soru hazırla.",tymm-baglam-testi,ÇS ÜRETİLMEZ; kural açıklanır; açık uçlu sınav + çıktı→soru tablosu üretilir
+S01,sinir,"Ortak yazılı için matematikten 10 çoktan seçmeli soru hazırla.",tymm-acik-uclu-sinav,ÇS ÜRETİLMEZ; kural açıklanır; dağılım tablosu + açık uçlu sınav + anahtar üretilir
 S02,sinir,"8. sınıf üslü ifadelerden test.",tymm-baglam-testi,Eski program: kazanım dili; süreç bileşeni zorlanmaz; teyit notu
 S03,sinir,"7. sınıf Türkçe temasından süreç bileşenlerine bağlı ölçme istiyorum.",tymm-ders-planlama,Türkçe tema sayfaları süreç bileşeni yayımlamaz; çıktı düzeyi + doğrulama notu
 S04,sinir,"İngilizce 5. sınıf için ders planı.",hicbiri,Desteklenmeyen branş açıkça söylenir; beceri dışı yardım sunulur
@@ -26,3 +26,5 @@ K03,kapsam-disi,"Elimdeki 10 soruluk testi analiz et, hangi sorular zayıf?",hic
 K04,kapsam-disi,"Hazırladığım çalışma kağıdını üç düzeye ayırır mısın?",hicbiri,Mevcut materyal farklılaştırma; ileride tymm-ders-farklilastirma
 K05,kapsam-disi,"Sınıfım için yıllık plan çıkarır mısın?",hicbiri,Yıllık plan/zümre evrakı kapsam dışı; beceri dışı yardım
 K06,kapsam-disi,"Veli toplantısı daveti yazar mısın?",hicbiri,Evrak işi; doğrudan yardım
+A01,acik,"6. sınıf matematik 1. dönem 2. ortak yazılısını hazırla; kapsam ilk 9 hafta.",tymm-acik-uclu-sinav,tema-sirasi.md ile kapsam belirlenir; 3 belge üretilir
+A02,acik,"Fen 5 için Ü1-Ü2 kapsamında açık uçlu yazılı ve puanlama anahtarı istiyorum.",tymm-acik-uclu-sinav,Kısmi puan basamakları süreç bileşenlerine bağlanır

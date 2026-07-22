@@ -61,9 +61,9 @@ tablosu senaryosuna** göre hazırlanır (hangi çıktıdan kaç soru sorulacağ
   deneme amaçlıdır; ortak yazılı sınavlarda çoktan seçmeli soru
   kullanılamaz."*
 - Öğretmen **ortak yazılı sınav** için soru isterse: çoktan seçmeli
-  üretilmez; açık uçlu / kısa cevaplı sınav üretilir ve mümkünse hedef
-  çıktılar konu soru dağılım tablosu mantığıyla (çıktı → soru sayısı)
-  listelenir.
+  üretilmez; bu iş `tymm-acik-uclu-sinav` becerisinindir (konu soru
+  dağılım tablosu + açık uçlu sınav + dereceli puanlama anahtarı). Beceri
+  kurulu değilse aynı kurallarla açık uçlu / kısa cevaplı sınav üretilir.
 - Ders planlarındaki değerlendirme önerileri de bu ayrımı gözetir: sınıf içi
   ölçme araçları (çalışma kâğıdı, grid, tanılayıcı dallanmış ağaç, kontrol
   listesi, dereceli puanlama anahtarı) serbesttir; **ortak yazılı** söz

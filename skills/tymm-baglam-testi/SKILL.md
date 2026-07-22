@@ -40,9 +40,9 @@ belgelere sızmaz).
      tarama / deneme amaçlıdır; ortak yazılı sınavda kullanılamaz"** ibaresi
      ZORUNLU olarak eklenir.
    - Öğretmen açıkça **ortak yazılı sınav** için soru isterse, çoktan seçmeli
-     ÜRETME. Bunun yerine açık uçlu / kısa cevaplı sınav üret ve hedef
-     çıktıları "çıktı → soru sayısı" biçiminde listele (konu soru dağılım
-     tablosu mantığı). Öğretmene bu kuralı bir cümleyle açıkla.
+     ÜRETME. Bu iş `tymm-acik-uclu-sinav` becerisinindir: o beceriyi kullan
+     (kuruluysa) veya kural gereği açık uçlu / kısa cevaplı sınav + konu
+     soru dağılım tablosu üret. Öğretmene kuralı bir cümleyle açıkla.
 
 1. `references/kilavuz-ilkeleri.md` dosyasını ŞİMDİ oku — resmî TYMM
    Bağlam Temelli Çoktan Seçmeli Soru Yazım Kılavuzu'ndan türetilmiş ortak
