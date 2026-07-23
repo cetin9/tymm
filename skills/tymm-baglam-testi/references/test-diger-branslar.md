@@ -60,6 +60,18 @@ değerlendirme.
   toplama sanma (zıt yönde)
 - Işık: yansıma açısını normale değil yüzeye göre ölçme; her yüzeyi ayna
   sanma
+- Hücre ve canlının yapısı: hücreyi içi boş bir oda/kutu sanma; hücre
+  duvarı ile hücre zarını aynı yapı sanma; "duvarı varsa zarı yoktur"
+  sanma; bitki hücresinde mitokondri bulunmadığını sanma (fotosentez
+  yapıyor diye); kloroplast ile mitokondriyi yer değiştirme; hücreyi
+  çıplak gözle görülebilir sanma
+- Hücre-doku-organ hiyerarşisi: doku ile organı yer değiştirme; sistemi
+  organizmadan büyük sanma; her canlıda organ bulunduğunu sanma (tek
+  hücrelileri yok sayma); "büyük olan daha karmaşıktır" varsayımı
+- Destek ve hareket: kemiği cansız/taş gibi sanma; kıkırdağın kemiğe
+  dönüşmediğini sanma; bütün eklemleri hareketli sanma (oynamaz eklemi
+  yok sayma); kasların hem itip hem çektiğini sanma (kaslar kasılırken
+  çeker); kasın kemiğe doğrudan yapıştığını sanma (kiriş/tendon atlanır)
 - Madde-ısı: ağır cismi yoğun sanma; hâl değişiminde sıcaklığın sürekli
   arttığını sanma
 - Elektrik: kalın telin direncini yüksek sanma; iletken-yalıtkan karışması

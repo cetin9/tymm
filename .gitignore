@@ -7,3 +7,6 @@ sources/
 *.tmp
 .DS_Store
 Thumbs.db
+
+# Beceri çıktıları (öğretmene teslim; depo dışı)
+ciktilar/
