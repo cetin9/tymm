@@ -76,6 +76,12 @@ Bağlam ayrıca:
 
 - **Tek doğru cevap.** "Hepsi", "Hiçbiri", "A ve B" gibi seçenekler
   kullanılmaz; öğrenci muhakeme yapmadan eler veya seçer.
+  > **Üretim uyarısı:** Bu kural en çok "Tabloya göre ortak/farklı yapı
+  > hangisidir?" biçimindeki sorularda çiğneniyor — tabloda birden çok
+  > doğru aday olunca dördüncü seçenek "Hiçbiri ortak değildir"e kayıyor.
+  > Çözüm: soruyu yapı seçtirmek yerine **veriden çıkarım yaptırmaya**
+  > çevir ("Tabloya göre 2. hücre için hangisi söylenebilir?"); böylece
+  > dört seçenek de gerekçeli birer yargı olur.
 - **Çeldirici = teşhis aracı.** Rastgele yanlış değil; konuyu eksik
   öğrenen veya yanlış yapılandıran öğrencinin düşeceği kavram
   yanılgısından ya da muhakeme hatasından türetilir. Bilişsel görüşme
