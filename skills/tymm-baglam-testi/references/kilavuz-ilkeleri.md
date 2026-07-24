@@ -38,6 +38,15 @@ açıkça verilmesi**. O soru alan becerisini değil okuduğunu anlamayı ölçe
 Doğru denge — bağlamda durum/veri verilir, çözüm için öğrencinin alan
 bilgisini bağlama **transfer etmesi** gerekir.
 
+> **Üretim uyarısı — adlandırma sızıntısı:** Soru bir **sınıflandırma**
+> istiyorsa (bu hücre bitki mi hayvan mı, bu madde saydam mı, bu eklem
+> hareketli mi), örneği/canlıyı **adıyla verme** — ad, cevabı sızdırır.
+> "Yaprak hücresinin hangi canlıya ait olduğunu yazınız" işlevsizdir:
+> öğrenci tabloyu okumadan "yaprak → bitki" der. Doğrusu, örneği
+> **anonimleştir** ("1. hücre / 2. hücre", "K/L/M preparatı") ve
+> sınıflandırmayı verilerden (hücre duvarı + kloroplast → bitki)
+> yaptır. Ad ancak sınıflandırma **sorunun konusu değilse** verilir.
+
 Bağlam ayrıca:
 - Sınıf düzeyine uygun dil, söz varlığı ve cümle uzunluğu taşır.
 - **Erişilebilir** olur: yalnızca belirli bir sosyoekonomik çevrenin
