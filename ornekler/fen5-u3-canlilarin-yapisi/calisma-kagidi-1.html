@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Çalışma Kâğıdı 1 — Mikroskop Masası</title>
+<style>
+  :root{--murekkep:#1a1a2e; --vurgu:#0f4c81; --acik:#e8f0f7; --cizgi:#c9d4de; --puan:#0f4c81;}
+  *{box-sizing:border-box; margin:0; padding:0;}
+  @page{size:A4; margin:14mm 12mm;}
+  html,body{font-family:'Segoe UI',Calibri,Arial,sans-serif; color:var(--murekkep);
+    font-size:10.5pt; line-height:1.45;}
+  @media screen{body{background:#666; padding:20px;}
+    .sayfa{width:210mm; min-height:297mm; margin:0 auto 20px; background:#fff;
+      padding:14mm 12mm; box-shadow:0 2px 8px rgba(0,0,0,.3);}}
+  @media print{.sayfa{page-break-after:always;} .sayfa:last-child{page-break-after:auto;}}
+  .ust-serit{display:flex; justify-content:space-between; align-items:flex-end;
+    border-bottom:3px solid var(--vurgu); padding-bottom:6px; margin-bottom:8px;}
+  .ust-serit h1{font-size:15pt; color:var(--vurgu);}
+  .ust-serit .meta{font-size:9pt; text-align:right; color:#444;}
+  .ogrenci-satiri{display:flex; gap:16px; font-size:10pt; margin:8px 0 4px;}
+  .ogrenci-satiri span{flex:1; border-bottom:1px solid var(--murekkep); padding-bottom:2px;}
+  .senaryo{border:2px solid var(--vurgu); background:var(--acik); border-radius:6px;
+    padding:9px 13px; margin:9px 0; page-break-inside:avoid;}
+  .senaryo .etiket{font-weight:700; color:var(--vurgu); font-size:9pt;
+    text-transform:uppercase; letter-spacing:.05em; display:block; margin-bottom:3px;}
+  h2.bolum{background:var(--vurgu); color:#fff; font-size:11pt; padding:4px 10px;
+    margin:13px 0 7px; border-radius:3px; page-break-after:avoid;}
+  h2.bolum .bp{float:right; font-weight:400; font-size:10pt;}
+  .soru{margin:9px 0; page-break-inside:avoid;}
+  .soru .no{font-weight:700; color:var(--vurgu);}
+  .puan{float:right; font-size:9pt; font-weight:700; color:var(--puan);
+    border:1.5px solid var(--puan); border-radius:10px; padding:1px 8px;}
+  table.veri{width:100%; border-collapse:collapse; margin:6px 0; font-size:9.5pt;}
+  table.veri th,table.veri td{border:1px solid var(--vurgu); padding:5px 7px; text-align:center;}
+  table.veri th{background:var(--acik);}
+  table.veri td.sol{text-align:left;}
+  table.veri td.bos{height:9mm; background:#fcfdfe;}
+  .cevap-kutusu{border:1px solid var(--cizgi); border-radius:4px; margin-top:4px;}
+  .k-kisa{min-height:11mm;} .k-orta{min-height:19mm;} .k-buyuk{min-height:27mm;}
+  .cizgi-satir{border-bottom:1px dotted #888; height:8mm; margin-top:3px;}
+  svg{display:block; margin:6px auto;}
+  .toplam-not{text-align:right; font-weight:700; color:var(--vurgu);
+    border-top:2px solid var(--vurgu); margin-top:10px; padding-top:5px;}
+  .dipnot{font-size:8.5pt; color:#555; border-top:1px solid var(--cizgi);
+    margin-top:10px; padding-top:4px;}
+</style>
+</head>
+<body>
+
+<div class="sayfa">
+  <div class="ust-serit">
+    <h1>Çalışma Kâğıdı 1 — Mikroskop Masası</h1>
+    <div class="meta">Fen Bilimleri · 5. Sınıf · 3. Ünite<br>Ders içi uygulama · 100 puan</div>
+  </div>
+  <div class="ogrenci-satiri"><span>Adı Soyadı:</span><span>Sınıfı / No:</span><span>Tarih:</span></div>
+
+  <div class="senaryo">
+    <span class="etiket">Senaryo</span>
+    Fen laboratuvarında iki hazır preparat var: bir <strong>yeşil yaprak örneği</strong>
+    ve bir <strong>yanak içi örneği</strong>. Sınıf, mikroskopta gördüklerini
+    aşağıdaki şemalara çizmiş ve bir gözlem tablosu tutmuştur. Şimdi sıra sende:
+    bu gözlemleri okuyup değerlendireceksin.
+  </div>
+
+  <svg viewBox="0 0 600 210" role="img" aria-labelledby="k1svg">
+    <title id="k1svg">Numaralandırılmış yapıları olan bitki ve hayvan hücresi şeması</title>
+    <rect x="25" y="35" width="230" height="150" fill="#f2fbf4" stroke="#1f7a4d" stroke-width="6"/>
+    <rect x="37" y="47" width="206" height="126" fill="#fff" stroke="#4aa66f" stroke-width="2.5"/>
+    <circle cx="140" cy="110" r="27" fill="#fff" stroke="#0f4c81" stroke-width="2.5"/>
+    <ellipse cx="85" cy="72" rx="18" ry="10" fill="#dff0e2" stroke="#1f7a4d" stroke-width="1.5"/>
+    <ellipse cx="200" cy="150" rx="15" ry="9" fill="#fbe6d4" stroke="#c1743a" stroke-width="1.5"/>
+    <text x="140" y="25" font-size="12" text-anchor="middle" font-weight="bold">1. HÜCRE</text>
+    <g font-size="13" font-weight="bold" fill="#a33">
+      <text x="12" y="42">①</text><text x="46" y="60">②</text>
+      <text x="140" y="115" text-anchor="middle">③</text><text x="85" y="77" text-anchor="middle">④</text>
+      <text x="200" y="155" text-anchor="middle">⑤</text>
+    </g>
+    <ellipse cx="440" cy="110" rx="115" ry="72" fill="#fff" stroke="#4aa66f" stroke-width="2.5"/>
+    <circle cx="440" cy="107" r="27" fill="#fff" stroke="#0f4c81" stroke-width="2.5"/>
+    <ellipse cx="380" cy="72" rx="15" ry="9" fill="#fbe6d4" stroke="#c1743a" stroke-width="1.5"/>
+    <text x="440" y="25" font-size="12" text-anchor="middle" font-weight="bold">2. HÜCRE</text>
+    <g font-size="13" font-weight="bold" fill="#a33">
+      <text x="325" y="60">⑥</text><text x="440" y="112" text-anchor="middle">⑦</text>
+    </g>
+  </svg>
+
+  <h2 class="bolum">A BÖLÜMÜ — Gözlem ve Tanıma <span class="bp">30 puan</span></h2>
+
+  <div class="soru">
+    <span class="puan">12 puan</span>
+    <span class="no">A1.</span> Şemadaki numaralı yapıların adlarını yazınız.
+    <table class="veri">
+      <tr><th>①</th><th>②</th><th>③</th><th>④</th><th>⑤</th><th>⑥</th></tr>
+      <tr><td class="bos"></td><td class="bos"></td><td class="bos"></td>
+          <td class="bos"></td><td class="bos"></td><td class="bos"></td></tr>
+    </table>
+  </div>
+
+  <div class="soru">
+    <span class="puan">10 puan</span>
+    <span class="no">A2.</span> Sınıfın tuttuğu gözlem tablosu yarım kalmıştır.
+    Boş kutulara <strong>“var”</strong> veya <strong>“yok”</strong> yazarak tabloyu
+    tamamlayınız.
+    <table class="veri">
+      <tr><th style="width:40%">Yapı</th><th>1. hücre (yaprak)</th><th>2. hücre (yanak)</th></tr>
+      <tr><td class="sol">Hücre zarı</td><td>var</td><td class="bos"></td></tr>
+      <tr><td class="sol">Hücre duvarı</td><td class="bos"></td><td class="bos"></td></tr>
+      <tr><td class="sol">Çekirdek</td><td class="bos"></td><td>var</td></tr>
+      <tr><td class="sol">Kloroplast</td><td class="bos"></td><td class="bos"></td></tr>
+      <tr><td class="sol">Mitokondri</td><td class="bos"></td><td>var</td></tr>
+    </table>
+  </div>
+
+  <div class="soru">
+    <span class="puan">8 puan</span>
+    <span class="no">A3.</span> Aşağıdaki cümleleri uygun kelimelerle tamamlayınız.
+    <p style="margin-top:5px;">a) Canlılığın temel birimi ……………………………………… dır.</p>
+    <p>b) Hücreler çok küçük olduğu için ancak ……………………………………… ile görülebilir.</p>
+    <p>c) Bitki hücresini dıştan saran sert yapıya ……………………………………… denir.</p>
+    <p>ç) Hücrenin yönetim merkezi ……………………………………… tir.</p>
+  </div>
+
+  <div class="dipnot">Sayfa 1/2 — Yapay zekâ desteğiyle hazırlanmıştır; uygulamadan
+    önce öğretmen incelemesi gerekir.</div>
+</div>
+
+<div class="sayfa">
+  <h2 class="bolum">B BÖLÜMÜ — Karşılaştırma ve İlişki Kurma <span class="bp">40 puan</span></h2>
+
+  <div class="soru">
+    <span class="puan">14 puan</span>
+    <span class="no">B1.</span> A2’deki tabloyu kullanarak iki hücrenin
+    <strong>ortak</strong> ve <strong>farklı</strong> yapılarını aşağıya yazınız.
+    <table class="veri">
+      <tr><th>İkisinde de bulunanlar</th><th>Yalnız yaprak (bitki) hücresinde bulunanlar</th></tr>
+      <tr><td class="bos" style="height:26mm"></td><td class="bos" style="height:26mm"></td></tr>
+    </table>
+  </div>
+
+  <div class="soru">
+    <span class="puan">14 puan</span>
+    <span class="no">B2.</span> Aşağıdaki kavramları <strong>en küçükten en büyüğe</strong>
+    doğru sıralayınız ve her basamağa insan vücudundan bir örnek yazınız.
+    <p style="margin:5px 0; font-style:italic;">organ · hücre · organizma · doku · sistem</p>
+    <table class="veri">
+      <tr><th>Sıra</th><th>Basamağın adı</th><th>Örnek</th></tr>
+      <tr><td>1</td><td class="bos"></td><td class="bos"></td></tr>
+      <tr><td>2</td><td class="bos"></td><td class="bos"></td></tr>
+      <tr><td>3</td><td class="bos"></td><td class="bos"></td></tr>
+      <tr><td>4</td><td class="bos"></td><td class="bos"></td></tr>
+      <tr><td>5</td><td class="bos"></td><td class="bos"></td></tr>
+    </table>
+  </div>
+
+  <div class="soru">
+    <span class="puan">12 puan</span>
+    <span class="no">B3.</span> Bir öğrenci şöyle demiştir:
+    <em>“Mide bir dokudur, çünkü içinde kas hücreleri var.”</em>
+    Bu ifade doğru mudur? Cevabınızı gerekçesiyle açıklayınız.
+    <div class="cevap-kutusu k-orta"></div>
+  </div>
+
+  <h2 class="bolum">C BÖLÜMÜ — Değerlendirme ve Problem <span class="bp">30 puan</span></h2>
+
+  <div class="soru">
+    <span class="puan">15 puan</span>
+    <span class="no">C1.</span> Ayşe, mikroskopta gördüğü <strong>yaprak (bitki) hücresini</strong>
+    defterine çizmiş ve yanına şu notu düşmüştür:
+    <div class="senaryo" style="margin:6px 0;">
+      <em>“Bu hücrenin hücre duvarı var, o yüzden hücre zarı çizmedim.
+      Ayrıca bitkiler kendi besinini ürettiği için mitokondri de çizmedim.”</em>
+    </div>
+    Ayşe’nin çiziminde <strong>iki</strong> hata vardır. Hataları yazınız ve her biri
+    için doğrusunun ne olduğunu açıklayınız.
+    <div class="cevap-kutusu k-buyuk"></div>
+  </div>
+
+  <div class="soru">
+    <span class="puan">15 puan</span>
+    <span class="no">C2.</span> Öğretmen, üzerinde etiket olmayan yeni bir preparat
+    getirmiştir. Mikroskopta bakan grup şunları görmüştür:
+    <table class="veri">
+      <tr><th>Gözlenen</th><th>Hücre zarı</th><th>Çekirdek</th><th>Kloroplast</th><th>Hücre duvarı</th></tr>
+      <tr><td class="sol">Durum</td><td>var</td><td>var</td><td>yok</td><td>görülemedi</td></tr>
+    </table>
+    <p style="margin-top:5px;"><strong>a)</strong> Grup, bu hücrenin bitki mi hayvan mı
+    olduğuna kesin karar verebilir mi? Cevabınızı gerekçelendiriniz. <em>(8 puan)</em></p>
+    <div class="cevap-kutusu k-orta"></div>
+    <p style="margin-top:5px;"><strong>b)</strong> Kesin karar verebilmek için grubun
+    hangi ek gözlemi yapması gerekir? Yazınız. <em>(7 puan)</em></p>
+    <div class="cevap-kutusu k-orta"></div>
+  </div>
+
+  <div class="toplam-not">TOPLAM: 100 puan</div>
+  <div class="dipnot">
+    Ölçülen çıktılar: FB.5.3.1.1 · FB.5.3.1.2 — Sayfa 2/2 —
+    Yapay zekâ desteğiyle hazırlanmıştır; uygulamadan önce öğretmen incelemesi gerekir.
+  </div>
+</div>
+
+</body>
+</html>

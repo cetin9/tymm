@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Fen Bilimleri 5 — Ortak Yazılı Sınav</title>
+<style>
+  :root{--murekkep:#1a1a2e; --vurgu:#0f4c81; --acik:#e8f0f7;
+        --cizgi:#c9d4de; --puan:#0f4c81;}
+  *{box-sizing:border-box; margin:0; padding:0;}
+  @page{size:A4; margin:14mm 12mm;}
+  html,body{font-family:'Segoe UI',Calibri,Arial,sans-serif;
+    color:var(--murekkep); font-size:10.5pt; line-height:1.45;}
+  @media screen{
+    body{background:#666; padding:20px;}
+    .sayfa{width:210mm; min-height:297mm; margin:0 auto 20px;
+      background:#fff; padding:14mm 12mm; box-shadow:0 2px 8px rgba(0,0,0,.3);}
+  }
+  @media print{.sayfa{page-break-after:always;} .sayfa:last-child{page-break-after:auto;}}
+  .ust-serit{display:flex; justify-content:space-between; align-items:flex-end;
+    border-bottom:3px solid var(--vurgu); padding-bottom:6px; margin-bottom:8px;}
+  .ust-serit h1{font-size:15pt; color:var(--vurgu);}
+  .ust-serit .meta{font-size:9pt; text-align:right; color:#444;}
+  .ogrenci-satiri{display:flex; gap:16px; font-size:10pt; margin:8px 0 4px;}
+  .ogrenci-satiri span{flex:1; border-bottom:1px solid var(--murekkep); padding-bottom:2px;}
+  .yonerge{font-size:9.5pt; background:var(--acik); border-left:4px solid var(--vurgu);
+    padding:7px 10px; margin:8px 0 12px;}
+  .soru{margin:14px 0; page-break-inside:avoid;}
+  .soru .no{font-weight:700; color:var(--vurgu);}
+  .puan{float:right; font-size:9pt; font-weight:700; color:var(--puan);
+    border:1.5px solid var(--puan); border-radius:10px; padding:1px 8px;}
+  .senaryo{border:2px solid var(--vurgu); background:var(--acik);
+    border-radius:6px; padding:9px 13px; margin:7px 0; page-break-inside:avoid;}
+  .senaryo .etiket{font-weight:700; color:var(--vurgu); font-size:9pt;
+    text-transform:uppercase; letter-spacing:.05em; display:block; margin-bottom:3px;}
+  table.veri{width:100%; border-collapse:collapse; margin:7px 0; font-size:9.5pt;}
+  table.veri th{background:#fff; font-size:9pt;}
+  table.veri th, table.veri td{border:1px solid var(--vurgu); padding:4px 7px; text-align:center;}
+  table.veri td.sol{text-align:left;}
+  .madde{margin:6px 0 2px;}
+  .cevap-kutusu{border:1px solid var(--cizgi); border-radius:4px; margin-top:4px;}
+  .k-kisa{min-height:12mm;}
+  .k-orta{min-height:22mm;}
+  .k-buyuk{min-height:30mm;}
+  .toplam-not{text-align:right; font-weight:700; color:var(--vurgu);
+    border-top:2px solid var(--vurgu); margin-top:10px; padding-top:5px;}
+  .dipnot{font-size:8.5pt; color:#555; border-top:1px solid var(--cizgi);
+    margin-top:10px; padding-top:4px;}
+</style>
+</head>
+<body>
+
+<!-- ================== SAYFA 1 ================== -->
+<div class="sayfa">
+  <div class="ust-serit">
+    <h1>Fen Bilimleri Ortak Yazılı Sınavı</h1>
+    <div class="meta">5. Sınıf · 1–4. Ünite<br>Süre: 40 dakika · 100 puan</div>
+  </div>
+
+  <div class="ogrenci-satiri">
+    <span>Adı Soyadı:</span><span>Sınıfı / No:</span><span>Tarih:</span>
+  </div>
+
+  <div class="yonerge">
+    Sınavda <strong>6 soru</strong> vardır, tamamı cevaplanacaktır. Her sorunun
+    puanı sağ üstte yazılıdır. Cevaplarınızı ayrılan kutuların içine, okunaklı
+    biçimde yazınız. <strong>Sadece sonuç değil, gerekçeniz de puanlanacaktır.</strong>
+  </div>
+
+  <div class="soru">
+    <span class="puan">16 puan</span>
+    <span class="no">1.</span> Elif, bir ay boyunca her akşam aynı saatte Ay’a
+    bakıp gördüğü aydınlık kısmı defterine kaydetmiştir. Kayıtlarından bazıları
+    aşağıdaki tablodadır.
+
+    <div class="senaryo">
+      <span class="etiket">Elif’in gözlem defteri</span>
+      <table class="veri">
+        <tr><th>Gözlem günü</th><th>3. gün</th><th>7. gün</th><th>11. gün</th><th>15. gün</th></tr>
+        <tr><td class="sol">Görünen aydınlık kısım</td><td>çok ince</td><td>yarım</td>
+            <td>yarımdan büyük</td><td>tam yuvarlak</td></tr>
+      </table>
+      Elif ayrıca şunu not etmiştir: <em>“Gökyüzü açık olan bütün gecelerde Ay’ın
+      aynı yüzünü gördüm; hiç arka tarafını göremedim.”</em>
+    </div>
+
+    <div class="madde"><strong>a)</strong> Elif’in kaydettiği verilere göre 3. günden
+    15. güne kadar Ay’ın görünen aydınlık kısmında nasıl bir değişim olmuştur?
+    Bu değişimin sebebini yazınız. <em>(8 puan)</em></div>
+    <div class="cevap-kutusu k-orta"></div>
+
+    <div class="madde"><strong>b)</strong> Elif’in “hep aynı yüzünü gördüm” notu,
+    Ay’ın hangi iki hareketi hakkında bilgi verir? Açıklayınız. <em>(8 puan)</em></div>
+    <div class="cevap-kutusu k-orta"></div>
+  </div>
+
+  <div class="soru">
+    <span class="puan">16 puan</span>
+    <span class="no">2.</span> Mert, okulun fen laboratuvarındaki dinamometreyle
+    çantasındaki üç cismi tek tek asarak ölçüm yapmış ve okuduğu değerleri
+    kaydetmiştir.
+
+    <div class="senaryo">
+      <span class="etiket">Mert’in ölçüm kaydı</span>
+      <table class="veri">
+        <tr><th>Ölçülen cisim</th><th>Dinamometrede okunan değer</th></tr>
+        <tr><td class="sol">Kalem kutusu</td><td>4 N</td></tr>
+        <tr><td class="sol">Su matarası (dolu)</td><td>9 N</td></tr>
+        <tr><td class="sol">Beslenme çantası</td><td>6 N</td></tr>
+      </table>
+      Mert defterine <em>“Su matarasının kütlesini 9 N buldum.”</em> diye yazmıştır.
+    </div>
+
+    <div class="madde"><strong>a)</strong> Mert’in ölçtüğü cisimlerden hangisine etki
+    eden kuvvet en büyüktür? Yazınız. <em>(4 puan)</em></div>
+    <div class="cevap-kutusu k-kisa"></div>
+
+    <div class="madde"><strong>b)</strong> Mert’in defterine yazdığı cümlede bir hata
+    vardır. Hatanın ne olduğunu yazıp cümleyi doğru biçimde yeniden yazınız.
+    <em>(12 puan)</em></div>
+    <div class="cevap-kutusu k-orta"></div>
+  </div>
+
+  <div class="dipnot">
+    Sayfa 1/3 — Yapay zekâ desteğiyle hazırlanmıştır; uygulamadan önce öğretmen
+    incelemesi gerekir.
+  </div>
+</div>
+
+<!-- ================== SAYFA 2 ================== -->
+<div class="sayfa">
+  <div class="soru">
+    <span class="puan">18 puan</span>
+    <span class="no">3.</span> Bir sınıf, aynı oyuncak arabayı her seferinde aynı
+    kuvvetle iterek farklı zeminlerde denemiş ve arabanın durana kadar aldığı
+    yolu ölçmüştür.
+
+    <div class="senaryo">
+      <span class="etiket">Deney sonuçları</span>
+      <table class="veri">
+        <tr><th>Zemin</th><th>Buz pisti</th><th>Parke</th><th>Asfalt</th><th>Halı</th></tr>
+        <tr><td class="sol">Arabanın aldığı yol</td><td>310 cm</td><td>180 cm</td>
+            <td>95 cm</td><td>40 cm</td></tr>
+      </table>
+    </div>
+
+    <div class="madde"><strong>a)</strong> Sonuçlara göre sürtünme kuvvetinin en fazla
+    olduğu zemin hangisidir? Hangi veriye bakarak karar verdiğinizi yazınız.
+    <em>(6 puan)</em></div>
+    <div class="cevap-kutusu k-orta"></div>
+
+    <div class="madde"><strong>b)</strong> Bu deneyin sonuçlarından yola çıkarak
+    sürtünme kuvveti ile cismin aldığı yol arasındaki ilişkiyi bir cümlelik genel
+    bir kural hâlinde yazınız. <em>(6 puan)</em></div>
+    <div class="cevap-kutusu k-orta"></div>
+
+    <div class="madde"><strong>c)</strong> Sınıf, aynı deneyi bir de ıslak seramik
+    zeminde yapacaktır. Arabanın alacağı yolun yaklaşık kaç cm olmasını beklersiniz?
+    Tahmininizi gerekçesiyle birlikte yazınız. <em>(6 puan)</em></div>
+    <div class="cevap-kutusu k-orta"></div>
+  </div>
+
+  <div class="soru">
+    <span class="puan">16 puan</span>
+    <span class="no">4.</span> Bir öğrenci grubu mikroskopta iki farklı hücreyi
+    incelemiş ve gördükleri yapıları tabloya işaretlemiştir.
+
+    <div class="senaryo">
+      <span class="etiket">Mikroskop inceleme tablosu</span>
+      <table class="veri">
+        <tr><th>Görülen yapı</th><th>1. hücre</th><th>2. hücre</th></tr>
+        <tr><td class="sol">Hücre zarı</td><td>var</td><td>var</td></tr>
+        <tr><td class="sol">Çekirdek</td><td>var</td><td>var</td></tr>
+        <tr><td class="sol">Sitoplazma</td><td>var</td><td>var</td></tr>
+        <tr><td class="sol">Hücre duvarı</td><td>yok</td><td>var</td></tr>
+        <tr><td class="sol">Kloroplast</td><td>yok</td><td>var</td></tr>
+      </table>
+    </div>
+
+    <div class="madde"><strong>a)</strong> Hangi hücre bitki hücresidir? Tablodaki
+    hangi yapılara bakarak karar verdiğinizi yazınız. <em>(8 puan)</em></div>
+    <div class="cevap-kutusu k-orta"></div>
+
+    <div class="madde"><strong>b)</strong> İki hücrenin ortak olan yapılarından
+    ikisini yazınız ve bu ortaklığın ne anlama geldiğini bir cümleyle açıklayınız.
+    <em>(8 puan)</em></div>
+    <div class="cevap-kutusu k-orta"></div>
+  </div>
+
+  <div class="dipnot">
+    Sayfa 2/3 — Yapay zekâ desteğiyle hazırlanmıştır; uygulamadan önce öğretmen
+    incelemesi gerekir.
+  </div>
+</div>
+
+<!-- ================== SAYFA 3 ================== -->
+<div class="sayfa">
+  <div class="soru">
+    <span class="puan">18 puan</span>
+    <span class="no">5.</span> Ali, bir kâğıda vücuduyla ilgili şu kavramları
+    <strong>karışık sırayla</strong> yazmıştır:
+
+    <div class="senaryo">
+      <span class="etiket">Ali’nin kâğıdı</span>
+      <p style="text-align:center; font-size:11pt;">
+      <strong>mide &nbsp;·&nbsp; sindirim sistemi &nbsp;·&nbsp; insan
+      &nbsp;·&nbsp; mide hücresi &nbsp;·&nbsp; kas dokusu</strong></p>
+      Ali, arkadaşına <em>“Vücutta en küçük yapı organdır, çünkü gözle
+      görebiliyoruz.”</em> demiştir.
+    </div>
+
+    <div class="madde"><strong>a)</strong> Ali’nin yazdığı kavramları en küçük
+    yapıdan en büyüğe doğru sıralayınız. <em>(8 puan)</em></div>
+    <div class="cevap-kutusu k-orta"></div>
+
+    <div class="madde"><strong>b)</strong> Ali’nin arkadaşına söylediği cümle doğru
+    mudur? Cevabınızı gerekçesiyle açıklayınız. <em>(10 puan)</em></div>
+    <div class="cevap-kutusu k-buyuk"></div>
+  </div>
+
+  <div class="soru">
+    <span class="puan">16 puan</span>
+    <span class="no">6.</span> Zeynep, karanlık odada bir el fenerinin önüne
+    sırayla farklı maddeler tutmuş ve duvarda oluşan görüntüyü not etmiştir.
+
+    <div class="senaryo">
+      <span class="etiket">Zeynep’in gözlem notu</span>
+      <table class="veri">
+        <tr><th>Fenerin önüne tutulan madde</th><th>Duvarda gözlenen</th></tr>
+        <tr><td class="sol">Temiz cam</td><td>Işık geçti, arkası net görüldü</td></tr>
+        <tr><td class="sol">Buzlu cam</td><td>Işık geçti ama arkası bulanık görüldü</td></tr>
+        <tr><td class="sol">Tahta levha</td><td>Işık geçmedi, koyu bir gölge oluştu</td></tr>
+        <tr><td class="sol">Yağlı kâğıt</td><td>Işık geçti ama arkası bulanık görüldü</td></tr>
+      </table>
+    </div>
+
+    <div class="madde"><strong>a)</strong> Zeynep’in denediği maddeleri, ışığı
+    geçirme durumlarına göre gruplayınız ve her grubu adlandırınız.
+    <em>(9 puan)</em></div>
+    <div class="cevap-kutusu k-orta"></div>
+
+    <div class="madde"><strong>b)</strong> Zeynep, tahta levhanın arkasında oluşan
+    koyu gölgeye “tam gölge” demiştir. Tahta levhanın bu gölgeyi oluşturmasının
+    sebebini yazınız. <em>(7 puan)</em></div>
+    <div class="cevap-kutusu k-orta"></div>
+  </div>
+
+  <div class="toplam-not">TOPLAM: 100 puan &nbsp;·&nbsp; Başarılar dilerim.</div>
+
+  <div class="dipnot">
+    Ölçülen çıktılar: FB.5.1.2.1 · FB.5.2.1.1 · FB.5.2.3.1 · FB.5.3.1.1 ·
+    FB.5.3.1.2 · FB.5.4.2.1 — Sayfa 3/3 —
+    Yapay zekâ desteğiyle hazırlanmıştır; uygulamadan önce öğretmen incelemesi gerekir.
+  </div>
+</div>
+
+</body>
+</html>

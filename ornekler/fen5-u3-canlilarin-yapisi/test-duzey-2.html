@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Düzey 2 — Gelişen · Canlıların Yapısına Yolculuk</title>
+<style>
+  :root{--murekkep:#1a1a2e; --vurgu:#0f4c81; --acik:#e8f0f7; --cizgi:#c9d4de;}
+  *{box-sizing:border-box; margin:0; padding:0;}
+  @page{size:A4; margin:14mm 12mm;}
+  html,body{font-family:'Segoe UI',Calibri,Arial,sans-serif; color:var(--murekkep);
+    font-size:10.5pt; line-height:1.45;}
+  @media screen{body{background:#666; padding:20px;}
+    .sayfa{width:210mm; min-height:297mm; margin:0 auto 20px; background:#fff;
+      padding:14mm 12mm; box-shadow:0 2px 8px rgba(0,0,0,.3);}}
+  @media print{.sayfa{page-break-after:always;} .sayfa:last-child{page-break-after:auto;}}
+  .ust-serit{display:flex; justify-content:space-between; align-items:flex-end;
+    border-bottom:3px solid var(--vurgu); padding-bottom:6px; margin-bottom:8px;}
+  .ust-serit h1{font-size:15pt; color:var(--vurgu);}
+  .ust-serit .meta{font-size:9pt; text-align:right; color:#444;}
+  .ogrenci-satiri{display:flex; gap:16px; font-size:10pt; margin:8px 0 4px;}
+  .ogrenci-satiri span{flex:1; border-bottom:1px solid var(--murekkep); padding-bottom:2px;}
+  .yonerge{font-size:9.5pt; background:var(--acik); border-left:4px solid var(--vurgu);
+    padding:6px 10px; margin:7px 0 10px;}
+  .soru{margin:11px 0; page-break-inside:avoid;}
+  .soru .no{font-weight:700; color:var(--vurgu);}
+  .kok{margin-bottom:4px;}
+  ol.sec{list-style:none; margin:0 0 0 10px;}
+  ol.sec li{margin:2px 0;}
+  table.veri{width:100%; border-collapse:collapse; margin:5px 0; font-size:9.5pt;}
+  table.veri th,table.veri td{border:1px solid var(--vurgu); padding:4px 7px; text-align:center;}
+  table.veri th{background:var(--acik);}
+  table.veri td.sol{text-align:left;}
+  .dipnot{font-size:8.5pt; color:#555; border-top:1px solid var(--cizgi);
+    margin-top:10px; padding-top:4px;}
+  .uyari-ibare{font-weight:700; color:#8a3b12;}
+</style>
+</head>
+<body>
+
+<div class="sayfa">
+  <div class="ust-serit">
+    <h1>Düzey 2 — Gelişen</h1>
+    <div class="meta">Fen Bilimleri · 5. Sınıf · 3. Ünite<br>10 soru · Önerilen süre: 20 dk</div>
+  </div>
+  <div class="ogrenci-satiri"><span>Adı Soyadı:</span><span>Sınıfı / No:</span><span>Tarih:</span></div>
+  <div class="yonerge">Her soruda yalnızca <strong>bir</strong> doğru cevap vardır.
+    Soruların bir kısmı tablo veya gözlem kaydı içerir; karar vermeden önce veriyi
+    dikkatle inceleyiniz.</div>
+
+  <div class="soru"><span class="no">1.</span>
+    <div class="kok">Bir laboratuvar grubu üç preparatı inceleyip kayıt tuttu.
+    <table class="veri">
+      <tr><th>Preparat</th><th>Hücre zarı</th><th>Çekirdek</th><th>Hücre duvarı</th><th>Kloroplast</th></tr>
+      <tr><td class="sol">K</td><td>var</td><td>var</td><td>var</td><td>var</td></tr>
+      <tr><td class="sol">L</td><td>var</td><td>var</td><td>yok</td><td>yok</td></tr>
+      <tr><td class="sol">M</td><td>var</td><td>var</td><td>var</td><td>yok</td></tr>
+    </table>
+    Kayda göre hangi preparatların <strong>kesinlikle bitki hücresi</strong> olduğu
+    söylenebilir?</div>
+    <ol class="sec">
+      <li>A) Yalnız K</li>
+      <li>B) Yalnız L</li>
+      <li>C) K ve M</li>
+      <li>D) L ve M</li>
+    </ol>
+  </div>
+
+  <div class="soru"><span class="no">2.</span>
+    <div class="kok">Bir öğrenci defterine şunu yazdı: <em>“Soğan hücresinin hücre
+    duvarı olduğu için hücre zarına ihtiyacı yoktur.”</em> Öğretmeni bu cümlenin
+    yanlış olduğunu söyledi. Öğretmenin gerekçesi hangisi olmalıdır?</div>
+    <ol class="sec">
+      <li>A) Hücre duvarı hücre zarının dışında bulunur; bitki hücresinde ikisi birden vardır.</li>
+      <li>B) Bitki hücresinde hücre duvarı bulunmaz, yalnız zar bulunur.</li>
+      <li>C) Hücre zarı yalnızca hayvan hücrelerinde bulunur.</li>
+      <li>D) Hücre duvarı ile hücre zarı aynı yapının iki adıdır.</li>
+    </ol>
+  </div>
+
+  <div class="soru"><span class="no">3.</span>
+    <div class="kok">Bir öğrenci vücudundaki yapıları şöyle eşleştirdi:
+    <table class="veri">
+      <tr><th>Basamak</th><th>Öğrencinin verdiği örnek</th></tr>
+      <tr><td class="sol">Hücre</td><td>kas hücresi</td></tr>
+      <tr><td class="sol">Doku</td><td>kalp</td></tr>
+      <tr><td class="sol">Organ</td><td>kas dokusu</td></tr>
+      <tr><td class="sol">Sistem</td><td>dolaşım sistemi</td></tr>
+    </table>
+    Öğrencinin hatası nedir?</div>
+    <ol class="sec">
+      <li>A) Hücre basamağına yanlış örnek vermiştir.</li>
+      <li>B) Sistem basamağına yanlış örnek vermiştir.</li>
+      <li>C) Bütün basamaklar doğrudur, hata yoktur.</li>
+      <li>D) Doku ve organ örneklerinin yerini değiştirmiştir.</li>
+    </ol>
+  </div>
+
+  <div class="soru"><span class="no">4.</span>
+    <div class="kok">Bir öğrenci, kolunu bükerken ve açarken ön ve arka koldaki
+    kasların sertliğini elleyerek not etti.
+    <table class="veri">
+      <tr><th>Hareket</th><th>Ön koldaki kas</th><th>Arka koldaki kas</th></tr>
+      <tr><td class="sol">Kolu bükme</td><td>sert (kasılmış)</td><td>gevşek</td></tr>
+      <tr><td class="sol">Kolu açma</td><td>gevşek</td><td>sert (kasılmış)</td></tr>
+    </table>
+    Bu gözlemden çıkarılabilecek <strong>en doğru</strong> sonuç hangisidir?</div>
+    <ol class="sec">
+      <li>A) Kaslar hem itme hem çekme yapabilir.</li>
+      <li>B) Kaslar yalnız çeker; zıt hareket için karşı kas kasılır.</li>
+      <li>C) Kolu hareket ettiren yapı kemiktir, kaslar yalnız destek olur.</li>
+      <li>D) İki kas aynı anda kasılarak hareketi sağlar.</li>
+    </ol>
+  </div>
+
+  <div class="dipnot">Sayfa 1/3 — <span class="uyari-ibare">Alıştırma, tarama ve deneme
+    amaçlıdır; ortak yazılı sınavda çoktan seçmeli soru kullanılamaz.</span>
+    Yapay zekâ desteğiyle hazırlanmıştır; uygulamadan önce öğretmen incelemesi gerekir.</div>
+</div>
+
+<div class="sayfa">
+  <div class="soru"><span class="no">5.</span>
+    <div class="kok">Bir sınıf, vücuttaki üç bölgede kemiklerin ne kadar hareket
+    ettiğini ölçtü.
+    <table class="veri">
+      <tr><th>Bölge</th><th>Gözlenen hareket</th></tr>
+      <tr><td class="sol">Omuz</td><td>her yöne geniş hareket</td></tr>
+      <tr><td class="sol">Omurga (bel)</td><td>sınırlı, az miktarda eğilme</td></tr>
+      <tr><td class="sol">Kafatası</td><td>hareket gözlenmedi</td></tr>
+    </table>
+    Bu verilere göre aşağıdakilerden hangisi söylenebilir?</div>
+    <ol class="sec">
+      <li>A) Kafatasında eklem bulunmadığı için hareket yoktur.</li>
+      <li>B) Yalnız omuzda eklem vardır, diğerlerinde yoktur.</li>
+      <li>C) Üç bölgede de eklem vardır; eklemlerin hareket miktarı farklıdır.</li>
+      <li>D) Hareket miktarı, o bölgedeki kemik sayısına bağlıdır.</li>
+    </ol>
+  </div>
+
+  <div class="soru"><span class="no">6.</span>
+    <div class="kok">Bir öğrenci “Bitki hücresi kendi besinini ürettiği için
+    mitokondriye ihtiyaç duymaz.” dedi. Bu görüşü çürüten açıklama hangisidir?</div>
+    <ol class="sec">
+      <li>A) Bitki hücresinde kloroplast bulunmaz, o yüzden besin üretemez.</li>
+      <li>B) Kloroplast besin üretir; üretilen besinden enerji açığa çıkarmak mitokondrinin işidir.</li>
+      <li>C) Bitkiler enerjiye ihtiyaç duymayan canlılardır.</li>
+      <li>D) Mitokondri yalnızca karanlıkta çalışır, gündüz gereksizdir.</li>
+    </ol>
+  </div>
+
+  <div class="soru"><span class="no">7.</span>
+    <div class="kok">Bir öğrenci mikroskopta incelediği hücrenin çizimini yaptı ancak
+    şu iki yapıyı çizmedi: hücre zarı ve mitokondri. Öğrenci gerekçe olarak
+    <em>“Hücre duvarı zaten var, ayrıca bitki fotosentez yapıyor.”</em> dedi.
+    Öğrencinin çizimindeki eksikler için hangisi doğrudur?</div>
+    <ol class="sec">
+      <li>A) İki yapı da eksiktir; bitki hücresinde hem hücre zarı hem mitokondri bulunur.</li>
+      <li>B) Yalnız hücre zarı eksiktir; mitokondri gerçekten bulunmaz.</li>
+      <li>C) Yalnız mitokondri eksiktir; hücre zarı gerçekten bulunmaz.</li>
+      <li>D) Eksik yoktur, çizim doğrudur.</li>
+    </ol>
+  </div>
+
+  <div class="dipnot">Sayfa 2/3 — <span class="uyari-ibare">Alıştırma, tarama ve deneme
+    amaçlıdır; ortak yazılı sınavda çoktan seçmeli soru kullanılamaz.</span>
+    Yapay zekâ desteğiyle hazırlanmıştır; uygulamadan önce öğretmen incelemesi gerekir.</div>
+</div>
+
+<div class="sayfa">
+  <div class="soru"><span class="no">8.</span>
+    <div class="kok">Bir okul, öğrencilerin sırt ağrısı şikâyetlerini kaydetti.
+    <table class="veri">
+      <tr><th>Grup</th><th>Çanta taşıma biçimi</th><th>Sırt ağrısı bildiren öğrenci</th></tr>
+      <tr><td class="sol">1. grup</td><td>tek omuzda</td><td>18 öğrenci</td></tr>
+      <tr><td class="sol">2. grup</td><td>iki omuzda dengeli</td><td>5 öğrenci</td></tr>
+    </table>
+    Bu verilere dayanarak okulun vereceği <strong>en uygun</strong> öneri hangisidir?</div>
+    <ol class="sec">
+      <li>A) Çanta ağırlığının sırt ağrısıyla ilgisi yoktur.</li>
+      <li>B) Öğrenciler çantalarını hiç taşımamalıdır.</li>
+      <li>C) Sırt ağrısı yalnızca kas zayıflığından kaynaklanır.</li>
+      <li>D) Çanta iki omuza dengeli asılmalı, ağırlık eşit dağıtılmalıdır.</li>
+    </ol>
+  </div>
+
+  <div class="soru"><span class="no">9.</span>
+    <div class="kok">Bir öğrenci destek ve hareket sistemi sağlığı hakkında dört
+    kaynak buldu.
+    <table class="veri">
+      <tr><th>Kaynak</th><th>İçerik</th></tr>
+      <tr><td class="sol">1</td><td class="sol">Vitamin satan firmanın sayfası: “Tek çözüm bizim ürünümüz”</td></tr>
+      <tr><td class="sol">2</td><td class="sol">Üniversite hastanesinin bilgilendirme sayfası</td></tr>
+      <tr><td class="sol">3</td><td class="sol">Çok beğenilen bir sosyal medya gönderisi</td></tr>
+      <tr><td class="sol">4</td><td class="sol">Anonim bir blog yazısı</td></tr>
+    </table>
+    Öğrenci bilgiyi hangi kaynaktan almalı ve neden?</div>
+    <ol class="sec">
+      <li>A) 1 — ürünü üreten firma konuyu en iyi bilir.</li>
+      <li>B) 2 — uzmanlarca hazırlanır ve denetlenir.</li>
+      <li>C) 3 — çok kişi beğendiği için doğrudur.</li>
+      <li>D) 4 — internette en kolay ulaşılan kaynaktır.</li>
+    </ol>
+  </div>
+
+  <div class="soru"><span class="no">10.</span>
+    <div class="kok">Bir öğrenci mide hakkında şunları biliyor: içinde kas dokusu var,
+    içini kaplayan farklı bir doku daha var ve sindirim sisteminin bir parçası.
+    Buna göre mide için hangisi <strong>doğrudur</strong>?</div>
+    <ol class="sec">
+      <li>A) Mide bir dokudur, çünkü kas hücrelerinden oluşur.</li>
+      <li>B) Mide bir sistemdir, çünkü birden fazla doku içerir.</li>
+      <li>C) Mide bir organdır, çünkü farklı dokular birlikte çalışır.</li>
+      <li>D) Mide bir hücredir, çünkü tek bir görevi vardır.</li>
+    </ol>
+  </div>
+
+  <div class="dipnot">
+    Ölçülen çıktılar: FB.5.3.1.1 · FB.5.3.1.2 · FB.5.3.2.1 · FB.5.3.2.2 — Sayfa 3/3 —
+    <span class="uyari-ibare">Alıştırma, tarama ve deneme amaçlıdır; ortak yazılı
+    sınavda çoktan seçmeli soru kullanılamaz.</span>
+    Yapay zekâ desteğiyle hazırlanmıştır; uygulamadan önce öğretmen incelemesi gerekir.
+  </div>
+</div>
+
+</body>
+</html>

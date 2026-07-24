@@ -43,6 +43,7 @@ skills/tymm-acik-uclu-sinav/
 skills/tymm-ders-farklilastirma/
   SKILL.md                     Destekleme + Zenginleştirme etkinlik paketleri (resmî desen)
 KULLANIM.md                    Öğretmenler için istem rehberi (açık/örtük/kapsam dışı örnekler)
+ornekler/                      Denetimden geçmiş referans paketler (sınıfta denenmiş örnek çıktılar)
 evals/
   tymm-ders-planlama/rubrik-matematik.csv   (14 kriter)
   tymm-baglam-testi/rubrik-matematik.csv    (15 kriter)

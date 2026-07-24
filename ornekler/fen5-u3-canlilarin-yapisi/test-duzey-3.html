@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Düzey 3 — İleri · Canlıların Yapısına Yolculuk</title>
+<style>
+  :root{--murekkep:#1a1a2e; --vurgu:#0f4c81; --acik:#e8f0f7; --cizgi:#c9d4de;}
+  *{box-sizing:border-box; margin:0; padding:0;}
+  @page{size:A4; margin:14mm 12mm;}
+  html,body{font-family:'Segoe UI',Calibri,Arial,sans-serif; color:var(--murekkep);
+    font-size:10.5pt; line-height:1.45;}
+  @media screen{body{background:#666; padding:20px;}
+    .sayfa{width:210mm; min-height:297mm; margin:0 auto 20px; background:#fff;
+      padding:14mm 12mm; box-shadow:0 2px 8px rgba(0,0,0,.3);}}
+  @media print{.sayfa{page-break-after:always;} .sayfa:last-child{page-break-after:auto;}}
+  .ust-serit{display:flex; justify-content:space-between; align-items:flex-end;
+    border-bottom:3px solid var(--vurgu); padding-bottom:6px; margin-bottom:8px;}
+  .ust-serit h1{font-size:15pt; color:var(--vurgu);}
+  .ust-serit .meta{font-size:9pt; text-align:right; color:#444;}
+  .ogrenci-satiri{display:flex; gap:16px; font-size:10pt; margin:8px 0 4px;}
+  .ogrenci-satiri span{flex:1; border-bottom:1px solid var(--murekkep); padding-bottom:2px;}
+  .yonerge{font-size:9.5pt; background:var(--acik); border-left:4px solid var(--vurgu);
+    padding:6px 10px; margin:7px 0 10px;}
+  .soru{margin:11px 0; page-break-inside:avoid;}
+  .soru .no{font-weight:700; color:var(--vurgu);}
+  .kok{margin-bottom:4px;}
+  ol.sec{list-style:none; margin:0 0 0 10px;}
+  ol.sec li{margin:2px 0;}
+  table.veri{width:100%; border-collapse:collapse; margin:5px 0; font-size:9.5pt;}
+  table.veri th,table.veri td{border:1px solid var(--vurgu); padding:4px 7px; text-align:center;}
+  table.veri th{background:var(--acik);}
+  table.veri td.sol{text-align:left;}
+  .dipnot{font-size:8.5pt; color:#555; border-top:1px solid var(--cizgi);
+    margin-top:10px; padding-top:4px;}
+  .uyari-ibare{font-weight:700; color:#8a3b12;}
+</style>
+</head>
+<body>
+
+<div class="sayfa">
+  <div class="ust-serit">
+    <h1>Düzey 3 — İleri</h1>
+    <div class="meta">Fen Bilimleri · 5. Sınıf · 3. Ünite<br>10 soru · Önerilen süre: 20 dk</div>
+  </div>
+  <div class="ogrenci-satiri"><span>Adı Soyadı:</span><span>Sınıfı / No:</span><span>Tarih:</span></div>
+  <div class="yonerge">Bu testte sorular bir <strong>iddiayı değerlendirmeni</strong>,
+    <strong>eksik veriyi fark etmeni</strong> veya <strong>kanıt aramanı</strong>
+    isteyebilir. Karar vermeden önce verilenleri dikkatle inceleyiniz.</div>
+
+  <div class="soru"><span class="no">1.</span>
+    <div class="kok">Bir grup, etiketi düşmüş bir preparatı inceledi ve şunları kaydetti:
+    hücre zarı <strong>var</strong>, çekirdek <strong>var</strong>, kloroplast
+    <strong>yok</strong>, hücre duvarı <strong>görülemedi</strong>. Grup
+    “Bu bir hayvan hücresidir.” sonucuna vardı. Bu sonuç için ne söylenebilir?</div>
+    <ol class="sec">
+      <li>A) Doğrudur; kloroplastın olmaması hayvan hücresi olduğunu kanıtlar.</li>
+      <li>B) Doğrudur; hücre duvarı görülemediğine göre yoktur.</li>
+      <li>C) Yanlıştır; bu veriler kesinlikle bitki hücresi olduğunu gösterir.</li>
+      <li>D) Kesin sonuca varılamaz; hücre duvarının durumu netleştirilmelidir.</li>
+    </ol>
+  </div>
+
+  <div class="soru"><span class="no">2.</span>
+    <div class="kok">Bir öğrenci, bitkinin farklı kısımlarından aldığı hücreleri
+    inceledi.
+    <table class="veri">
+      <tr><th>Örnek</th><th>Alındığı yer</th><th>Hücre duvarı</th><th>Kloroplast</th></tr>
+      <tr><td class="sol">1</td><td class="sol">Yaprak</td><td>var</td><td>var</td></tr>
+      <tr><td class="sol">2</td><td class="sol">Kök</td><td>var</td><td>yok</td></tr>
+    </table>
+    Öğrenci “2. örnek bitki hücresi olamaz, çünkü kloroplastı yok.” dedi. Bu
+    çıkarım neden hatalıdır?</div>
+    <ol class="sec">
+      <li>A) Işık almayan kök hücrelerinde kloroplast bulunmaz; hücre duvarı bitki hücresi olduğunu gösterir.</li>
+      <li>B) Kloroplast bütün bitki hücrelerinde bulunmak zorundadır, öğrenci haklıdır.</li>
+      <li>C) Kök hücrelerinde hücre duvarı da bulunmaz, tablo yanlıştır.</li>
+      <li>D) Kloroplast yalnızca hayvan hücrelerinde bulunur.</li>
+    </ol>
+  </div>
+
+  <div class="soru"><span class="no">3.</span>
+    <div class="kok">Bir sınıf “Kaslar iter mi çeker mi?” sorusunu araştırırken
+    bir öğrencinin kolu üzerinde dört ayrı ölçüm yapıp sonuçları kaydetti.
+    <table class="veri">
+      <tr><th>Ölçüm</th><th>Ne ölçüldü?</th><th>Sonuç</th></tr>
+      <tr><td class="sol">1</td><td class="sol">Kolun uzunluğu</td><td>58 cm</td></tr>
+      <tr><td class="sol">2</td><td class="sol">Kol kemiğinin sertliği</td><td>çok sert</td></tr>
+      <tr><td class="sol">3</td><td class="sol">Bükerken ve açarken ön/arka kasın durumu</td>
+          <td>bükerken ön kas kasılıyor, açarken arka kas kasılıyor</td></tr>
+      <tr><td class="sol">4</td><td class="sol">Kolun havada tutulabildiği süre</td><td>3 dakika</td></tr>
+    </table>
+    Sınıfın sorusunu <strong>doğrudan yanıtlayan</strong> kanıt hangi ölçümdür?</div>
+    <ol class="sec">
+      <li>A) 1. ölçüm</li>
+      <li>B) 2. ölçüm</li>
+      <li>C) 3. ölçüm</li>
+      <li>D) 4. ölçüm</li>
+    </ol>
+  </div>
+
+  <div class="soru"><span class="no">4.</span>
+    <div class="kok">Bir öğrenci <em>“Vücutta gözle görebildiğim yapılar en temel
+    yapılardır; göremediğim şeyler o kadar önemli değildir.”</em> dedi. Sınıf,
+    bazı yapıları inceleyip aşağıdaki bilgileri topladı.
+    <table class="veri">
+      <tr><th>Yapı</th><th>Yaklaşık boyut</th><th>Çıplak gözle görülür mü?</th></tr>
+      <tr><td class="sol">Hücre</td><td>mikroskobik (çok küçük)</td><td>Hayır</td></tr>
+      <tr><td class="sol">Kas dokusu</td><td>birkaç mm</td><td>Güçlükle</td></tr>
+      <tr><td class="sol">Kalp (organ)</td><td>yaklaşık 12 cm</td><td>Evet</td></tr>
+    </table>
+    Tablodaki bilgilerden hangisi öğrencinin iddiasını <strong>en güçlü</strong>
+    biçimde çürütür?</div>
+    <ol class="sec">
+      <li>A) Canlılığın temel birimi olan hücrenin çıplak gözle görülememesi</li>
+      <li>B) Kalp gibi organların çıplak gözle görülebilmesi</li>
+      <li>C) Kas dokusunun güçlükle görülebilmesi</li>
+      <li>D) Organların hücrelerden daha büyük olması</li>
+    </ol>
+  </div>
+
+  <div class="dipnot">Sayfa 1/3 — <span class="uyari-ibare">Alıştırma, tarama ve deneme
+    amaçlıdır; ortak yazılı sınavda çoktan seçmeli soru kullanılamaz.</span>
+    Yapay zekâ desteğiyle hazırlanmıştır; uygulamadan önce öğretmen incelemesi gerekir.</div>
+</div>
+
+<div class="sayfa">
+  <div class="soru"><span class="no">5.</span>
+    <div class="kok">İki öğrenci tartışıyor:
+    <br><em>Ali:</em> “Kalp bir organdır, çünkü içinde farklı dokular birlikte çalışır.”
+    <br><em>Ece:</em> “Kalp bir dokudur, çünkü tamamı kas hücrelerinden oluşur.”
+    <br>Bu tartışma için ne söylenebilir?</div>
+    <ol class="sec">
+      <li>A) Ece haklıdır; kalpte yalnız kas dokusu bulunur.</li>
+      <li>B) Ali haklıdır; kalpte kas dokusunun yanında başka dokular da vardır.</li>
+      <li>C) İkisi de haklıdır; kalp hem doku hem organdır.</li>
+      <li>D) İkisi de haksızdır; kalp bir sistemdir.</li>
+    </ol>
+  </div>
+
+  <div class="soru"><span class="no">6.</span>
+    <div class="kok">Bir araştırmacı, kırık bir kemiğin iyileşmesini haftalarca izledi.
+    <table class="veri">
+      <tr><th>Hafta</th><th>1. hafta</th><th>3. hafta</th><th>6. hafta</th><th>10. hafta</th></tr>
+      <tr><td class="sol">Kırık bölgedeki durum</td><td>boşluk var</td><td>yumuşak doku oluştu</td>
+          <td>sertleşme başladı</td><td>kemik birleşti</td></tr>
+    </table>
+    Bu veriler aşağıdaki iddialardan hangisini <strong>doğrudan destekler</strong>?</div>
+    <ol class="sec">
+      <li>A) Kemikler vücudun en sert yapılarıdır.</li>
+      <li>B) Kemik sayısı yaşla birlikte azalır.</li>
+      <li>C) Kemikler yalnızca kalsiyumdan oluşur.</li>
+      <li>D) Kemik canlı bir yapıdır; kendini onarabilir.</li>
+    </ol>
+  </div>
+
+  <div class="soru"><span class="no">7.</span>
+    <div class="kok">Bir sınıf, “Isınma hareketi sakatlanmayı azaltır mı?” sorusunu
+    araştırmak istiyor. İki grup oluşturuyorlar. Araştırmanın güvenilir olması için
+    iki grup arasında <strong>yalnız</strong> hangi durum farklı olmalıdır?</div>
+    <ol class="sec">
+      <li>A) Grupların oynadığı oyun türü</li>
+      <li>B) Grupların antrenman süresi</li>
+      <li>C) Grupların ısınma hareketi yapıp yapmaması</li>
+      <li>D) Grupların oyuncu sayısı</li>
+    </ol>
+  </div>
+
+  <div class="dipnot">Sayfa 2/3 — <span class="uyari-ibare">Alıştırma, tarama ve deneme
+    amaçlıdır; ortak yazılı sınavda çoktan seçmeli soru kullanılamaz.</span>
+    Yapay zekâ desteğiyle hazırlanmıştır; uygulamadan önce öğretmen incelemesi gerekir.</div>
+</div>
+
+<div class="sayfa">
+  <div class="soru"><span class="no">8.</span>
+    <div class="kok">Bir öğrenci internette şu iki bilgiyi buldu:
+    <table class="veri">
+      <tr><th>Kaynak</th><th>İddia</th><th>Dayanak</th></tr>
+      <tr><td class="sol">X</td><td class="sol">“Süt kemiği zayıflatır.”</td>
+          <td class="sol">Yazarı belirsiz bir gönderi, kaynak gösterilmemiş</td></tr>
+      <tr><td class="sol">Y</td><td class="sol">“Kalsiyum ve D vitamini kemik gelişimi için gereklidir.”</td>
+          <td class="sol">Sağlık Bakanlığı yayını, uzman denetimli</td></tr>
+    </table>
+    Öğrencinin bu iki bilgiyi değerlendirirken izlemesi gereken <strong>en doğru
+    yol</strong> hangisidir?</div>
+    <ol class="sec">
+      <li>A) Y’yi esas almalı; iddianın kim tarafından ve hangi dayanakla yayımlandığına bakmalıdır.</li>
+      <li>B) X’i esas almalı; farklı düşünen kaynak daha doğrudur.</li>
+      <li>C) İkisini de eşit derecede doğru kabul etmelidir.</li>
+      <li>D) İnternetteki bilgilerin hepsini reddetmelidir.</li>
+    </ol>
+  </div>
+
+  <div class="soru"><span class="no">9.</span>
+    <div class="kok">Bir öğrenci “Vücudumda eklem olan her yer hareket eder.”
+    iddiasını sınamak istiyor. Bu iddiayı <strong>çürütmek</strong> için hangi
+    karşı örneği kullanmalıdır?</div>
+    <ol class="sec">
+      <li>A) Dirsek ekleminin kolu bükmesi</li>
+      <li>B) Kafatası kemikleri arasındaki eklemlerin oynamaması</li>
+      <li>C) Diz ekleminin yürürken çalışması</li>
+      <li>D) Omuz ekleminin her yöne dönmesi</li>
+    </ol>
+  </div>
+
+  <div class="soru"><span class="no">10.</span>
+    <div class="kok">Bir grup, hücreden organizmaya giden yapı basamaklarını
+    bir posterde göstermek istiyor. Posterin <strong>bilimsel olarak doğru</strong>
+    olması için aşağıdaki ifadelerden hangisi postere yazılmamalıdır, yani hangisi
+    <strong>DOĞRU DEĞİLDİR</strong>?</div>
+    <ol class="sec">
+      <li>A) Aynı görevi yapan hücreler bir araya gelerek dokuyu oluşturur.</li>
+      <li>B) Farklı dokular birlikte çalışarak organı oluşturur.</li>
+      <li>C) Birlikte çalışan organlar sistemi oluşturur.</li>
+      <li>D) Sistemler bir araya gelerek dokuları oluşturur.</li>
+    </ol>
+  </div>
+
+  <div class="dipnot">
+    Ölçülen çıktılar: FB.5.3.1.1 · FB.5.3.1.2 · FB.5.3.2.1 · FB.5.3.2.2 — Sayfa 3/3 —
+    <span class="uyari-ibare">Alıştırma, tarama ve deneme amaçlıdır; ortak yazılı
+    sınavda çoktan seçmeli soru kullanılamaz.</span>
+    Yapay zekâ desteğiyle hazırlanmıştır; uygulamadan önce öğretmen incelemesi gerekir.
+  </div>
+</div>
+
+</body>
+</html>

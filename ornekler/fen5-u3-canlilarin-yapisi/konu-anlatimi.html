@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Canlıların Yapısına Yolculuk — Konu Anlatımı</title>
+<style>
+  :root{--murekkep:#1a1a2e; --vurgu:#0f4c81; --acik:#e8f0f7; --cizgi:#c9d4de;
+        --yesil:#1f7a4d; --kirmizi:#a33; --sari:#f6c453;}
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{font-family:'Segoe UI',Calibri,Arial,sans-serif; color:var(--murekkep);
+    font-size:17px; line-height:1.55; background:#f2f5f8; padding:16px;}
+  .kap{max-width:960px; margin:0 auto;}
+  header{background:var(--vurgu); color:#fff; border-radius:10px;
+    padding:18px 22px; margin-bottom:16px;}
+  header h1{font-size:26px; margin-bottom:4px;}
+  header p{font-size:15px; opacity:.92;}
+  section{background:#fff; border-radius:10px; padding:18px 22px; margin-bottom:16px;
+    box-shadow:0 1px 4px rgba(0,0,0,.08);}
+  h2{color:var(--vurgu); font-size:21px; margin-bottom:8px;
+     border-bottom:2px solid var(--acik); padding-bottom:5px;}
+  h3{color:var(--vurgu); font-size:18px; margin:14px 0 6px;}
+  p{margin:8px 0;}
+  .soru-asili{background:var(--sari); color:#4a3708; border-radius:8px;
+    padding:12px 16px; margin:12px 0; font-weight:600;}
+  svg{display:block; max-width:100%; height:auto; margin:12px auto;}
+  .kartlar{display:flex; flex-wrap:wrap; gap:12px; margin:12px 0;}
+  .kart{flex:1 1 260px; border:2px solid var(--vurgu); border-radius:10px;
+    background:var(--acik); padding:0; overflow:hidden;}
+  .kart button.on{width:100%; min-height:48px; background:var(--vurgu); color:#fff;
+    border:0; font-size:16px; font-weight:700; cursor:pointer; padding:12px;
+    text-align:left; font-family:inherit;}
+  .kart button.on:after{content:" ▾"; float:right;}
+  .kart.acik button.on:after{content:" ▴";}
+  .kart .arka{display:none; padding:12px 14px; font-size:15.5px; background:#fff;}
+  .kart.acik .arka{display:block;}
+  .ornek{color:var(--yesil); font-weight:600;}
+  .karsi{color:var(--kirmizi); font-weight:600;}
+  table{width:100%; border-collapse:collapse; margin:10px 0; font-size:15.5px;}
+  th,td{border:1px solid var(--cizgi); padding:7px 9px; text-align:left;}
+  th{background:var(--acik); color:var(--vurgu);}
+  td.orta{text-align:center;}
+  .kesif-hucre{cursor:pointer; min-height:48px;}
+  .kesif-hucre:hover{background:#eef6ff;}
+  .gizli{visibility:hidden;}
+  .acildi{visibility:visible;}
+  .isaret-var{color:var(--yesil); font-weight:700;}
+  .isaret-yok{color:var(--kirmizi); font-weight:700;}
+  .alistirma{border-left:5px solid var(--vurgu); background:#f7fafd;
+    padding:12px 16px; margin:14px 0; border-radius:0 8px 8px 0;}
+  .secenek{display:block; width:100%; text-align:left; min-height:48px;
+    margin:6px 0; padding:11px 14px; font-size:16px; font-family:inherit;
+    border:2px solid var(--cizgi); border-radius:8px; background:#fff; cursor:pointer;}
+  .secenek:hover{border-color:var(--vurgu);}
+  .secenek.secili{border-color:var(--vurgu); background:var(--acik); font-weight:600;}
+  .kontrol{min-height:48px; padding:11px 22px; font-size:16px; font-weight:700;
+    font-family:inherit; color:#fff; background:var(--vurgu); border:0;
+    border-radius:8px; cursor:pointer; margin-top:6px;}
+  .donut{display:none; margin-top:10px; padding:11px 14px; border-radius:8px; font-size:15.5px;}
+  .donut.gorunur{display:block;}
+  .donut.dogru{background:#e6f5ee; border-left:5px solid var(--yesil); color:#14532d;}
+  .donut.yanlis{background:#fdecec; border-left:5px solid var(--kirmizi); color:#7a1f1f;}
+  .video-kose{border:2px dashed var(--vurgu); border-radius:10px;
+    background:var(--acik); padding:14px 18px;}
+  .video-kose .alan{background:#fff; border:1px solid var(--cizgi); border-radius:6px;
+    min-height:56px; margin-top:10px; padding:10px 12px; color:#777; font-style:italic;}
+  .dipnot{font-size:13px; color:#555; text-align:center; padding:14px 8px 4px;}
+  @media (max-width:600px){body{font-size:16px; padding:10px;} .kap{max-width:100%;}}
+</style>
+</head>
+<body>
+<div class="kap">
+
+<header>
+  <h1>Canlıların Yapısına Yolculuk</h1>
+  <p>Fen Bilimleri · 5. Sınıf · 3. Ünite — Hücreden organizmaya, destekten harekete</p>
+</header>
+
+<!-- ============ 1. BAĞLAM SAHNESİ ============ -->
+<section>
+  <h2>1. Bir soruyla başlayalım</h2>
+  <p>Deniz, okul bahçesinde koşarken düştü ve bileği acıdı. Sağlık görevlisi
+  bileğine baktı, sonra da şöyle dedi:
+  <em>“Kemiğinde bir sorun yok, canını yakan yer eklemin çevresi.”</em></p>
+  <p>Deniz merak etti: Bileğinin içinde tam olarak <strong>ne</strong> var?
+  Kemik nerede bitiyor, eklem nerede başlıyor? Ve daha da küçüğüne inersek,
+  bütün bu yapılar neyden yapılmış?</p>
+
+  <svg viewBox="0 0 620 200" role="img" aria-labelledby="bahce-baslik">
+    <title id="bahce-baslik">Okul bahçesinde düşen öğrenci ve bileğine bakan sağlık görevlisi</title>
+    <rect x="0" y="150" width="620" height="50" fill="#cfe3cf"/>
+    <rect x="0" y="0" width="620" height="150" fill="#eaf3fb"/>
+    <circle cx="540" cy="40" r="24" fill="#f6c453"/>
+    <rect x="40" y="70" width="90" height="80" fill="#d8c3a5" stroke="#a08a6d" stroke-width="2"/>
+    <rect x="55" y="90" width="25" height="25" fill="#eaf3fb" stroke="#a08a6d"/>
+    <rect x="92" y="90" width="25" height="25" fill="#eaf3fb" stroke="#a08a6d"/>
+    <text x="85" y="140" font-size="11" text-anchor="middle" fill="#6b5b45">okul</text>
+    <!-- oturan öğrenci -->
+    <circle cx="300" cy="112" r="15" fill="#f2c9a0" stroke="#c99b6e" stroke-width="2"/>
+    <path d="M300 127 L300 152 L275 152" stroke="#0f4c81" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <path d="M300 134 L330 145" stroke="#0f4c81" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <circle cx="336" cy="147" r="8" fill="#f2c9a0" stroke="#a33" stroke-width="2.5"/>
+    <text x="336" y="172" font-size="12" text-anchor="middle" fill="#a33" font-weight="bold">bilek</text>
+    <!-- görevli -->
+    <circle cx="395" cy="85" r="15" fill="#f2c9a0" stroke="#c99b6e" stroke-width="2"/>
+    <rect x="382" y="100" width="26" height="45" fill="#ffffff" stroke="#c9d4de" stroke-width="2"/>
+    <path d="M382 112 L350 143" stroke="#f2c9a0" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <rect x="388" y="106" width="14" height="4" fill="#a33"/><rect x="393" y="101" width="4" height="14" fill="#a33"/>
+  </svg>
+
+  <div class="soru-asili">
+    Bu ünite boyunca peşine düşeceğimiz soru:
+    <br>“Vücudumuzdaki en küçük yapı hangisidir ve o küçük yapıdan koca bir
+    <em>insan</em> nasıl ortaya çıkar?”
+  </div>
+</section>
+
+<!-- ============ 2. KEŞİF ALANI ============ -->
+<section>
+  <h2>2. Keşif: iki hücreyi karşılaştıralım</h2>
+  <p>Fen laboratuvarında iki preparat inceleniyor: bir <strong>yeşil yaprak
+  örneği</strong> (su bitkisi yaprağı gibi) ve bir <strong>yanak içi örneği</strong>.
+  Aşağıdaki tabloda önce <strong>tahmin et</strong>, sonra satıra tıklayıp
+  mikroskopta gerçekte ne görüldüğünü aç.</p>
+
+  <table>
+    <tr><th>Yapı</th><th class="orta">Yaprak (bitki)</th><th class="orta">Yanak (hayvan)</th><th>Neden?</th></tr>
+    <tbody id="kesif"></tbody>
+  </table>
+  <p style="font-size:15px;color:#666;">Satırlara tıklayarak açabilirsin.</p>
+
+  <svg viewBox="0 0 640 250" role="img" aria-labelledby="hucre-baslik">
+    <title id="hucre-baslik">Bitki hücresi ve hayvan hücresinin yan yana şeması</title>
+    <!-- bitki -->
+    <rect x="30" y="40" width="240" height="170" fill="#dff0e2" stroke="#1f7a4d" stroke-width="6"/>
+    <rect x="42" y="52" width="216" height="146" fill="#f2fbf4" stroke="#4aa66f" stroke-width="2.5"/>
+    <circle cx="150" cy="120" r="30" fill="#b7d7ea" stroke="#0f4c81" stroke-width="2.5"/>
+    <text x="150" y="125" font-size="12" text-anchor="middle" fill="#0f4c81">çekirdek</text>
+    <ellipse cx="90" cy="80" rx="20" ry="11" fill="#57b368"/>
+    <ellipse cx="215" cy="165" rx="20" ry="11" fill="#57b368"/>
+    <ellipse cx="200" cy="75" rx="14" ry="9" fill="#e08a3c"/>
+    <rect x="70" y="150" width="60" height="35" fill="#cfe8f5" stroke="#5aa9cf" stroke-width="2"/>
+    <text x="100" y="172" font-size="10" text-anchor="middle" fill="#31708f">koful</text>
+    <text x="150" y="30" font-size="14" text-anchor="middle" font-weight="bold" fill="#1f7a4d">BİTKİ HÜCRESİ</text>
+    <text x="150" y="228" font-size="11" text-anchor="middle" fill="#1f7a4d">kalın dış çizgi = hücre duvarı</text>
+    <!-- hayvan -->
+    <ellipse cx="490" cy="125" rx="125" ry="85" fill="#f2fbf4" stroke="#4aa66f" stroke-width="2.5"/>
+    <circle cx="490" cy="120" r="30" fill="#b7d7ea" stroke="#0f4c81" stroke-width="2.5"/>
+    <text x="490" y="125" font-size="12" text-anchor="middle" fill="#0f4c81">çekirdek</text>
+    <ellipse cx="425" cy="80" rx="14" ry="9" fill="#e08a3c"/>
+    <ellipse cx="555" cy="160" rx="14" ry="9" fill="#e08a3c"/>
+    <text x="490" y="30" font-size="14" text-anchor="middle" font-weight="bold" fill="#1f7a4d">HAYVAN HÜCRESİ</text>
+    <text x="490" y="228" font-size="11" text-anchor="middle" fill="#1f7a4d">tek ince çizgi = hücre zarı</text>
+    <!-- lejant -->
+    <ellipse cx="300" cy="238" rx="9" ry="6" fill="#57b368"/><text x="313" y="242" font-size="11">kloroplast</text>
+    <ellipse cx="390" cy="238" rx="9" ry="6" fill="#e08a3c"/><text x="403" y="242" font-size="11">mitokondri</text>
+  </svg>
+</section>
+
+<!-- ============ 3. KURAL KARTLARI ============ -->
+<section>
+  <h2>3. Bilgi kartları</h2>
+  <p>Her kartın başlığına dokun; arkasında bir <span class="ornek">örnek</span>
+  ve bir <span class="karsi">karşı örnek</span> var.</p>
+  <div class="kartlar" id="kartlar"></div>
+</section>
+
+<!-- ============ 4. HİYERARŞİ ============ -->
+<section>
+  <h2>4. Hücreden organizmaya</h2>
+  <p>Aynı görevi yapan hücreler bir araya gelir, birbirini tamamlayan yapılar
+  oluşur. Küçükten büyüğe giden bu yolun her basamağının bir adı vardır.</p>
+
+  <svg viewBox="0 0 660 150" role="img" aria-labelledby="hiy-baslik">
+    <title id="hiy-baslik">Hücre, doku, organ, sistem ve organizma basamaklarını gösteren şema</title>
+    <g font-size="12" text-anchor="middle">
+      <circle cx="60" cy="60" r="22" fill="#dff0e2" stroke="#1f7a4d" stroke-width="2.5"/>
+      <circle cx="60" cy="60" r="7" fill="#b7d7ea"/>
+      <text x="60" y="105" font-weight="bold" fill="#0f4c81">HÜCRE</text>
+      <text x="60" y="122" font-size="11">mide hücresi</text>
+
+      <g fill="#dff0e2" stroke="#1f7a4d" stroke-width="2">
+        <circle cx="176" cy="48" r="12"/><circle cx="198" cy="60" r="12"/>
+        <circle cx="176" cy="72" r="12"/><circle cx="154" cy="60" r="12"/>
+      </g>
+      <text x="176" y="105" font-weight="bold" fill="#0f4c81">DOKU</text>
+      <text x="176" y="122" font-size="11">kas dokusu</text>
+
+      <path d="M270 40 q45 -10 60 25 q10 35 -30 45 q-45 5 -45 -30 z"
+            fill="#f7d9c4" stroke="#c1743a" stroke-width="2.5"/>
+      <text x="296" y="105" font-weight="bold" fill="#0f4c81">ORGAN</text>
+      <text x="296" y="122" font-size="11">mide</text>
+
+      <g stroke="#c1743a" stroke-width="2.5" fill="#f7d9c4">
+        <ellipse cx="430" cy="45" rx="20" ry="13"/>
+        <path d="M430 58 q-8 22 6 34" fill="none"/>
+        <ellipse cx="443" cy="97" rx="17" ry="11"/>
+      </g>
+      <text x="430" y="125" font-weight="bold" fill="#0f4c81">SİSTEM</text>
+      <text x="430" y="142" font-size="11">sindirim sistemi</text>
+
+      <circle cx="580" cy="42" r="14" fill="#f2c9a0" stroke="#c99b6e" stroke-width="2"/>
+      <path d="M580 56 L580 88 M580 64 L562 78 M580 64 L598 78 M580 88 L566 108 M580 88 L594 108"
+            stroke="#0f4c81" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <text x="580" y="128" font-weight="bold" fill="#0f4c81">ORGANİZMA</text>
+      <text x="580" y="145" font-size="11">insan</text>
+
+      <g stroke="#0f4c81" stroke-width="2.5" fill="none" marker-end="url(#ok)">
+        <path d="M88 60 L128 60"/><path d="M216 60 L248 60"/>
+        <path d="M340 60 L392 60"/><path d="M462 60 L544 60"/>
+      </g>
+    </g>
+    <defs><marker id="ok" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0 0 L9 4.5 L0 9 z" fill="#0f4c81"/></marker></defs>
+  </svg>
+
+  <p><strong>Dikkat:</strong> Bir yapının gözle görülebilmesi onun “en küçük”
+  olduğu anlamına gelmez. Hücreler o kadar küçüktür ki ancak mikroskopla
+  görülebilir — ama canlılığın <em>temel birimi</em> onlardır.</p>
+</section>
+
+<!-- ============ 5. DESTEK VE HAREKET ============ -->
+<section>
+  <h2>5. Deniz’in bileğine geri dönelim</h2>
+  <p>Vücudumuza şeklini veren, bizi ayakta tutan ve hareket etmemizi sağlayan
+  yapılar <strong>destek ve hareket sistemini</strong> oluşturur. Üç grup
+  yapı birlikte çalışır:</p>
+
+  <svg viewBox="0 0 620 190" role="img" aria-labelledby="dh-baslik">
+    <title id="dh-baslik">Kemik, eklem ve kasın birlikte çalışmasını gösteren kol şeması</title>
+    <rect x="0" y="0" width="620" height="190" fill="#fbfdff"/>
+    <rect x="70" y="55" width="150" height="22" rx="10" fill="#f0ece2" stroke="#a89c85" stroke-width="2.5"/>
+    <rect x="255" y="55" width="150" height="22" rx="10" fill="#f0ece2" stroke="#a89c85" stroke-width="2.5"/>
+    <circle cx="237" cy="66" r="22" fill="#cfe8f5" stroke="#5aa9cf" stroke-width="2.5"/>
+    <path d="M95 50 q60 -34 120 0" stroke="#c1435a" stroke-width="13" fill="none" stroke-linecap="round"/>
+    <text x="145" y="20" font-size="13" text-anchor="middle" fill="#c1435a" font-weight="bold">KAS (kasılır, çeker)</text>
+    <text x="145" y="100" font-size="13" text-anchor="middle" fill="#7a6f58" font-weight="bold">KEMİK</text>
+    <text x="237" y="112" font-size="13" text-anchor="middle" fill="#31708f" font-weight="bold">EKLEM</text>
+    <text x="330" y="100" font-size="13" text-anchor="middle" fill="#7a6f58" font-weight="bold">KEMİK</text>
+    <line x1="95" y1="50" x2="88" y2="62" stroke="#8a8a8a" stroke-width="5" stroke-linecap="round"/>
+    <line x1="215" y1="50" x2="222" y2="62" stroke="#8a8a8a" stroke-width="5" stroke-linecap="round"/>
+    <text x="470" y="45" font-size="13" fill="#555">Kas kasılınca <tspan font-weight="bold">çeker</tspan>,</text>
+    <text x="470" y="66" font-size="13" fill="#555">kemik eklemden</text>
+    <text x="470" y="87" font-size="13" fill="#555">bükülür.</text>
+    <text x="470" y="120" font-size="12" fill="#8a8a8a">gri çizgiler: kirişler</text>
+    <text x="470" y="139" font-size="12" fill="#8a8a8a">(kası kemiğe bağlar)</text>
+    <text x="310" y="175" font-size="12" text-anchor="middle" fill="#666">
+      Kaslar itmez — yalnızca kasılıp çeker. Bu yüzden kaslar çift çalışır.</text>
+  </svg>
+
+  <h3>Sağlığı için ne yapmalı?</h3>
+  <p>Dengeli beslenme (kalsiyum ve D vitamini), düzenli hareket, doğru duruş,
+  ağır çantayı iki omuza dengeli asmak, spordan önce ısınmak. Bu bilgileri
+  ararken <strong>kaynağın güvenilir olması</strong> gerekir: Sağlık
+  Bakanlığı sayfaları, üniversite hastanelerinin siteleri, ders kitabı ve
+  öğretmenin önerdiği kaynaklar güvenilirdir; sosyal medyada dolaşan
+  “kesin çözüm” içerikleri değildir.</p>
+</section>
+
+<!-- ============ 6. MİNİ ALIŞTIRMALAR ============ -->
+<section>
+  <h2>6. Kendini dene</h2>
+  <p>Bu bölümde <strong>puan yoktur</strong> — amaç, yanlış anladığın bir yer
+  varsa hemen fark etmen.</p>
+  <div id="alistirmalar"></div>
+</section>
+
+<!-- ============ 7. VİDEO KÖŞESİ ============ -->
+<section>
+  <h2>7. Video köşesi</h2>
+  <div class="video-kose">
+    <strong>Öğretmenim, buraya kendi bağlantınızı ekleyin.</strong>
+    <p style="font-size:15px;margin-top:6px;">Bu konu için uygun bir izleme
+    önerisi: mikroskop altında bitki ve hayvan hücresinin karşılaştırıldığı
+    kısa bir kayıt veya kas-kemik-eklem çalışmasını gösteren bir animasyon.</p>
+    <div class="alan">Bağlantınızı buraya yapıştırın (EBA, okul hesabı vb.)</div>
+  </div>
+</section>
+
+<!-- ============ 8. ÖZET ============ -->
+<section>
+  <h2>8. Tek bakışta özet</h2>
+  <table>
+    <tr><th>Soru</th><th>Cevabın anahtarı</th></tr>
+    <tr><td>Bir hücre bitki hücresi mi?</td>
+        <td>Hücre <strong>duvarı</strong> ve <strong>kloroplast</strong> varsa evet.</td></tr>
+    <tr><td>İki hücrenin ortak yanı ne?</td>
+        <td>Hücre zarı, çekirdek, sitoplazma, mitokondri — ikisinde de vardır.</td></tr>
+    <tr><td>Küçükten büyüğe sıra nedir?</td>
+        <td>hücre → doku → organ → sistem → organizma</td></tr>
+    <tr><td>Destek ve hareket neyle sağlanır?</td>
+        <td>Kemik + eklem + kas birlikte; kaslar kasılıp <strong>çeker</strong>.</td></tr>
+    <tr><td>Bilgi nereden alınmalı?</td>
+        <td>Resmî sağlık kurumları, ders kitabı, öğretmen önerisi — kaynak doğrulanır.</td></tr>
+  </table>
+  <p style="margin-top:12px;"><strong>Sırada ne var?</strong> Bu konuyu ne kadar
+  öğrendiğini görmek için çalışma kâğıtlarını ve testleri çöz.</p>
+</section>
+
+<div class="dipnot">
+  Ölçülen çıktılar: FB.5.3.1.1 · FB.5.3.1.2 · FB.5.3.2.1 · FB.5.3.2.2 —
+  Yapay zekâ desteğiyle hazırlanmıştır; uygulamadan önce öğretmen incelemesi gerekir.
+  <br>Bu belge ekran kullanımı içindir; baskı düzeni garanti edilmez.
+</div>
+
+</div>
+
+<script>
+/* ---------- 2. Keşif tablosu ---------- */
+var kesifVeri = [
+  ["Hücre zarı","var","var","İkisinde de vardır; hücrenin sınırıdır ve madde geçişini denetler."],
+  ["Hücre duvarı","var","yok","Yalnız bitki hücresinde bulunur; hücreye sertlik ve dayanıklılık verir."],
+  ["Çekirdek","var","var","İkisinde de vardır; hücrenin yönetim merkezidir."],
+  ["Kloroplast","var","yok","Yalnız bitki hücresinde; besin üretimini (fotosentez) burada yapar."],
+  ["Mitokondri","var","var","İkisinde de vardır — bitki hücresi de enerji üretmek zorundadır."],
+  ["Koful","var (büyük)","var (küçük)","İkisinde de bulunur; bitki hücresindeki çok daha büyüktür."]
+];
+var tb = document.getElementById("kesif");
+kesifVeri.forEach(function(s){
+  var tr = document.createElement("tr");
+  tr.className = "kesif-hucre";
+  tr.innerHTML = "<td><strong>"+s[0]+"</strong></td>"+
+    "<td class='orta gizli'><span class='"+(s[1].indexOf("yok")===0?"isaret-yok":"isaret-var")+"'>"+s[1]+"</span></td>"+
+    "<td class='orta gizli'><span class='"+(s[2].indexOf("yok")===0?"isaret-yok":"isaret-var")+"'>"+s[2]+"</span></td>"+
+    "<td class='gizli' style='font-size:14.5px'>"+s[3]+"</td>";
+  tr.onclick = function(){
+    var h = tr.querySelectorAll(".gizli, .acildi");
+    for (var i=0;i<h.length;i++){ h[i].className = h[i].className.replace("gizli","acildi"); }
+    tr.style.background = "#f2fbf4";
+  };
+  tb.appendChild(tr);
+});
+
+/* ---------- 3. Kural kartları ---------- */
+var kartlar = [
+  ["Hücre canlılığın temel birimidir",
+   "Her canlı hücrelerden oluşur ve hücre içi boş bir kutu değildir; içi sitoplazma ve görev yapan organellerle doludur.",
+   "Bir bakteri tek bir hücreden oluşur ve yine de canlıdır: beslenir, çoğalır.",
+   "“Hücre boş bir odacıktır” demek yanlıştır — içinde çekirdek, mitokondri gibi çalışan yapılar bulunur."],
+  ["Hücre duvarı ile hücre zarı aynı şey değildir",
+   "Hücre zarı bütün hücrelerde bulunur. Hücre duvarı ise zarın DIŞINDA, yalnız bitki hücresinde bulunan ek bir yapıdır.",
+   "Yaprak (bitki) hücresinde hem hücre zarı hem de onu saran hücre duvarı vardır.",
+   "“Duvarı varsa zarı yoktur” demek yanlıştır — bitki hücresinde ikisi birden bulunur."],
+  ["Bitki hücresinde de mitokondri vardır",
+   "Kloroplast besin üretir, mitokondri ise besinden enerji açığa çıkarır. Bitki hücresinin ikisine de ihtiyacı vardır.",
+   "Yaprak hücresi gündüz besin üretir, o besinden enerji elde etmek için mitokondrisini kullanır.",
+   "“Bitki fotosentez yapıyor, o hâlde mitokondriye gerek yok” demek yanlıştır."],
+  ["Kemik canlı bir yapıdır",
+   "Kemikler beslenir, büyür ve kırıldığında kendini onarabilir. Bebeklikte kıkırdak olan yapıların bir kısmı zamanla kemikleşir.",
+   "Kırılan bir kemiğin birkaç haftada kaynaması, kemiğin canlı olduğunun kanıtıdır.",
+   "“Kemik taş gibi cansız bir maddedir” demek yanlıştır."],
+  ["Bütün eklemler hareketli değildir",
+   "Eklem, iki kemiğin birleştiği yerdir. Bazıları çok hareketlidir, bazıları az, bazıları ise hiç oynamaz.",
+   "Omuz eklemi her yöne döner; kafatası kemikleri arasındaki eklemler ise oynamaz.",
+   "“Eklem varsa orası mutlaka hareket eder” demek yanlıştır."],
+  ["Kaslar iter değil, çeker",
+   "Kas kasıldığında kısalır ve bağlı olduğu kemiği kendine doğru çeker. İtme yapamadığı için kaslar çiftler hâlinde çalışır.",
+   "Kolu bükerken ön taraftaki kas kasılıp çeker; kolu açarken arka taraftaki kas kasılır.",
+   "“Kas kolu ileri iter” demek yanlıştır — karşı taraftaki kas çektiği için kol açılır."]
+];
+var kk = document.getElementById("kartlar");
+kartlar.forEach(function(k){
+  var d = document.createElement("div");
+  d.className = "kart";
+  d.innerHTML = "<button class='on' type='button'>"+k[0]+"</button>"+
+    "<div class='arka'><p>"+k[1]+"</p>"+
+    "<p><span class='ornek'>Örnek:</span> "+k[2]+"</p>"+
+    "<p><span class='karsi'>Karşı örnek:</span> "+k[3]+"</p></div>";
+  d.querySelector("button").onclick = function(){
+    d.className = (d.className.indexOf("acik")>-1) ? "kart" : "kart acik";
+  };
+  kk.appendChild(d);
+});
+
+/* ---------- 6. Mini alıştırmalar ---------- */
+var sorular = [
+  {s:"Bir öğrenci mikroskopta incelediği hücrede <strong>hücre duvarı</strong> ve <strong>kloroplast</strong> gördü. Bu hücre için ne söylenebilir?",
+   c:["Bitki hücresidir.","Hayvan hücresidir.","Hücre zarı yoktur.","Çekirdeği yoktur."],
+   d:0,
+   g:["Doğru. Hücre duvarı ve kloroplast yalnız bitki hücresinde bulunur.",
+      "Hayvan hücresinde ne hücre duvarı ne de kloroplast bulunur.",
+      "Duvarın olması zarın olmadığı anlamına gelmez; bitki hücresinde ikisi birden vardır.",
+      "Kloroplast görülmesi çekirdeğin yokluğunu göstermez; bitki hücresinde çekirdek vardır."]},
+  {s:"Aşağıdaki sıralamalardan hangisi küçükten büyüğe doğru <strong>doğru</strong> verilmiştir?",
+   c:["hücre → doku → organ → sistem → organizma","doku → hücre → organ → sistem → organizma",
+      "hücre → organ → doku → sistem → organizma","hücre → doku → sistem → organ → organizma"],
+   d:0,
+   g:["Doğru. Hücreler dokuyu, dokular organı, organlar sistemi, sistemler organizmayı oluşturur.",
+      "Doku hücrelerden oluşur; bu yüzden hücre dokudan önce gelir.",
+      "Organ, dokuların bir araya gelmesiyle oluşur; doku organdan önce gelmelidir.",
+      "Sistem, organlardan oluşur; bu yüzden organ sistemden önce gelmelidir."]},
+  {s:"Kolunu büken bir öğrenci “Kasım kolumu ileri itti.” dedi. Bu ifade için ne söylenir?",
+   c:["Yanlıştır; kas kasılıp kemiği çeker.","Doğrudur; kaslar hem iter hem çeker.",
+      "Doğrudur; kaslar yalnız iter.","Yanlıştır; kolu hareket ettiren kemiktir."],
+   d:0,
+   g:["Doğru. Kas kasılınca kısalır ve kemiği kendine doğru çeker; itme yapamaz.",
+      "Kaslar itme yapamaz. Ters yönde hareket, karşı taraftaki kasın çekmesiyle olur.",
+      "Tam tersi — kaslar iter değil çeker.",
+      "Kemik kendi başına hareket edemez; hareketi sağlayan kastır."]},
+  {s:"Bir öğrenci “Kemik cansızdır, çünkü taş gibi serttir.” dedi. Bu iddiayı çürüten kanıt hangisidir?",
+   c:["Kırılan kemiğin zamanla kendi kendine kaynaması","Kemiklerin sert olması",
+      "Kemiklerin beyaz renkte olması","İskelette çok sayıda kemik bulunması"],
+   d:0,
+   g:["Doğru. Yalnız canlı yapılar kendini onarabilir; kemiğin kaynaması canlı olduğunu gösterir.",
+      "Sertlik canlılık hakkında bilgi vermez; sert olan pek çok cansız madde vardır.",
+      "Renk, bir yapının canlı olup olmadığını göstermez.",
+      "Sayı, canlılıkla ilgili bir kanıt değildir."]},
+  {s:"Destek ve hareket sisteminin sağlığı hakkında bilgi arayan bir öğrenci için <strong>en güvenilir</strong> kaynak hangisidir?",
+   c:["Sağlık Bakanlığının resmî internet sayfası","Bir arkadaşın anlattıkları",
+      "Sosyal medyada çok beğenilen bir gönderi","Reklam veren bir vitamin firmasının sayfası"],
+   d:0,
+   g:["Doğru. Resmî sağlık kurumlarının yayınları uzmanlarca denetlenir.",
+      "Kişisel aktarımlar doğrulanmamış bilgi içerebilir.",
+      "Beğeni sayısı doğruluk göstergesi değildir.",
+      "Ürün satan bir kaynak tarafsız olmayabilir."]},
+  {s:"Bir öğrenci “Bitki hücresi fotosentez yaptığı için mitokondriye ihtiyaç duymaz.” dedi. Doğru açıklama hangisidir?",
+   c:["Yanlış; bitki hücresi ürettiği besinden enerji açığa çıkarmak için mitokondri kullanır.",
+      "Doğru; kloroplast mitokondrinin işini de yapar.","Doğru; bitkiler enerjiye ihtiyaç duymaz.",
+      "Yanlış; bitki hücresinde kloroplast bulunmaz."],
+   d:0,
+   g:["Doğru. Kloroplast besin üretir, mitokondri o besinden enerji açığa çıkarır; ikisi farklı iştir.",
+      "Kloroplast besin üretir ama enerjiye dönüştürme işini mitokondri yapar.",
+      "Bütün canlılar yaşamak için enerjiye ihtiyaç duyar.",
+      "Bitki hücresinde kloroplast vardır; hatalı olan ifadenin bu kısmı değildir."]}
+];
+var alan = document.getElementById("alistirmalar");
+sorular.forEach(function(q, qi){
+  var box = document.createElement("div");
+  box.className = "alistirma";
+  var h = "<p><strong>"+(qi+1)+".</strong> "+q.s+"</p>";
+  q.c.forEach(function(c, ci){
+    h += "<button class='secenek' type='button' data-i='"+ci+"'>"+
+         String.fromCharCode(65+ci)+") "+c+"</button>";
+  });
+  h += "<button class='kontrol' type='button'>Kontrol et</button><div class='donut'></div>";
+  box.innerHTML = h;
+  var secili = null;
+  var btns = box.querySelectorAll(".secenek");
+  for (var i=0;i<btns.length;i++){
+    btns[i].onclick = (function(b){ return function(){
+      for (var j=0;j<btns.length;j++){ btns[j].className = "secenek"; }
+      b.className = "secenek secili";
+      secili = parseInt(b.getAttribute("data-i"),10);
+    };})(btns[i]);
+  }
+  box.querySelector(".kontrol").onclick = function(){
+    var d = box.querySelector(".donut");
+    if (secili === null){
+      d.className = "donut gorunur yanlis";
+      d.innerHTML = "Önce bir seçenek işaretle.";
+      return;
+    }
+    var dogruMu = (secili === q.d);
+    d.className = "donut gorunur " + (dogruMu ? "dogru" : "yanlis");
+    d.innerHTML = (dogruMu ? "✓ " : "✗ ") + q.g[secili];
+  };
+  alan.appendChild(box);
+});
+</script>
+</body>
+</html>

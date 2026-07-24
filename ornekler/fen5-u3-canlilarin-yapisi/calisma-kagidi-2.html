@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Çalışma Kâğıdı 2 — Antrenman Günü</title>
+<style>
+  :root{--murekkep:#1a1a2e; --vurgu:#0f4c81; --acik:#e8f0f7; --cizgi:#c9d4de; --puan:#0f4c81;}
+  *{box-sizing:border-box; margin:0; padding:0;}
+  @page{size:A4; margin:14mm 12mm;}
+  html,body{font-family:'Segoe UI',Calibri,Arial,sans-serif; color:var(--murekkep);
+    font-size:10.5pt; line-height:1.45;}
+  @media screen{body{background:#666; padding:20px;}
+    .sayfa{width:210mm; min-height:297mm; margin:0 auto 20px; background:#fff;
+      padding:14mm 12mm; box-shadow:0 2px 8px rgba(0,0,0,.3);}}
+  @media print{.sayfa{page-break-after:always;} .sayfa:last-child{page-break-after:auto;}}
+  .ust-serit{display:flex; justify-content:space-between; align-items:flex-end;
+    border-bottom:3px solid var(--vurgu); padding-bottom:6px; margin-bottom:8px;}
+  .ust-serit h1{font-size:15pt; color:var(--vurgu);}
+  .ust-serit .meta{font-size:9pt; text-align:right; color:#444;}
+  .ogrenci-satiri{display:flex; gap:16px; font-size:10pt; margin:8px 0 4px;}
+  .ogrenci-satiri span{flex:1; border-bottom:1px solid var(--murekkep); padding-bottom:2px;}
+  .senaryo{border:2px solid var(--vurgu); background:var(--acik); border-radius:6px;
+    padding:9px 13px; margin:9px 0; page-break-inside:avoid;}
+  .senaryo .etiket{font-weight:700; color:var(--vurgu); font-size:9pt;
+    text-transform:uppercase; letter-spacing:.05em; display:block; margin-bottom:3px;}
+  h2.bolum{background:var(--vurgu); color:#fff; font-size:11pt; padding:4px 10px;
+    margin:13px 0 7px; border-radius:3px; page-break-after:avoid;}
+  h2.bolum .bp{float:right; font-weight:400; font-size:10pt;}
+  .soru{margin:9px 0; page-break-inside:avoid;}
+  .soru .no{font-weight:700; color:var(--vurgu);}
+  .puan{float:right; font-size:9pt; font-weight:700; color:var(--puan);
+    border:1.5px solid var(--puan); border-radius:10px; padding:1px 8px;}
+  table.veri{width:100%; border-collapse:collapse; margin:6px 0; font-size:9.5pt;}
+  table.veri th,table.veri td{border:1px solid var(--vurgu); padding:5px 7px; text-align:center;}
+  table.veri th{background:var(--acik);}
+  table.veri td.sol{text-align:left;}
+  table.veri td.bos{height:9mm; background:#fcfdfe;}
+  .cevap-kutusu{border:1px solid var(--cizgi); border-radius:4px; margin-top:4px;}
+  .k-kisa{min-height:11mm;} .k-orta{min-height:19mm;} .k-buyuk{min-height:27mm;}
+  svg{display:block; margin:6px auto;}
+  .uyari{font-size:9pt; color:#8a3b12; background:#fdf3ec; border-left:4px solid #8a3b12;
+    padding:5px 9px; margin:6px 0;}
+  .toplam-not{text-align:right; font-weight:700; color:var(--vurgu);
+    border-top:2px solid var(--vurgu); margin-top:10px; padding-top:5px;}
+  .dipnot{font-size:8.5pt; color:#555; border-top:1px solid var(--cizgi);
+    margin-top:10px; padding-top:4px;}
+</style>
+</head>
+<body>
+
+<div class="sayfa">
+  <div class="ust-serit">
+    <h1>Çalışma Kâğıdı 2 — Antrenman Günü</h1>
+    <div class="meta">Fen Bilimleri · 5. Sınıf · 3. Ünite<br>Ev pekiştirmesi · 100 puan</div>
+  </div>
+  <div class="ogrenci-satiri"><span>Adı Soyadı:</span><span>Sınıfı / No:</span><span>Tarih:</span></div>
+
+  <div class="senaryo">
+    <span class="etiket">Senaryo</span>
+    Okulun basketbol takımı antrenmana çıkmıştır. Antrenör ısınma hareketleriyle
+    başlatır: kollar bükülür, dizler kırılır, boyun sağa sola çevrilir. Kaptan
+    Deniz, geçen hafta bileğini incittiği için bu antrenmanda daha dikkatlidir.
+    Antrenör, sakatlanmaları önlemek için takıma bir bilgilendirme yapacaktır.
+  </div>
+
+  <svg viewBox="0 0 600 180" role="img" aria-labelledby="k2svg">
+    <title id="k2svg">Isınma hareketi yapan sporcu ve bükülen kolun kas-kemik-eklem şeması</title>
+    <rect x="0" y="0" width="600" height="180" fill="#fbfdff"/>
+    <circle cx="95" cy="42" r="17" fill="#f2c9a0" stroke="#c99b6e" stroke-width="2"/>
+    <path d="M95 59 L95 105 M95 70 L66 88 M95 70 L124 88 M95 105 L74 145 M95 105 L116 145"
+          stroke="#0f4c81" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <circle cx="140" cy="60" r="11" fill="#e08a3c"/>
+    <text x="95" y="168" font-size="11" text-anchor="middle" fill="#555">ısınma hareketi</text>
+
+    <rect x="250" y="70" width="115" height="19" rx="9" fill="#f0ece2" stroke="#a89c85" stroke-width="2.5"/>
+    <rect x="392" y="70" width="115" height="19" rx="9" fill="#f0ece2" stroke="#a89c85" stroke-width="2.5"/>
+    <circle cx="379" cy="79" r="19" fill="#cfe8f5" stroke="#5aa9cf" stroke-width="2.5"/>
+    <path d="M268 66 q50 -30 96 0" stroke="#c1435a" stroke-width="11" fill="none" stroke-linecap="round"/>
+    <line x1="268" y1="66" x2="262" y2="76" stroke="#8a8a8a" stroke-width="4.5" stroke-linecap="round"/>
+    <line x1="364" y1="66" x2="370" y2="76" stroke="#8a8a8a" stroke-width="4.5" stroke-linecap="round"/>
+    <g font-size="12" font-weight="bold" fill="#a33">
+      <text x="316" y="42">Ⓐ</text><text x="307" y="105">Ⓑ</text>
+      <text x="379" y="115" text-anchor="middle">Ⓒ</text><text x="245" y="90">Ⓓ</text>
+    </g>
+  </svg>
+
+  <h2 class="bolum">A BÖLÜMÜ — Yapıları Tanıma <span class="bp">30 puan</span></h2>
+
+  <div class="soru">
+    <span class="puan">12 puan</span>
+    <span class="no">A1.</span> Şemadaki Ⓐ, Ⓑ, Ⓒ ve Ⓓ ile gösterilen yapıların adlarını
+    yazınız.
+    <table class="veri">
+      <tr><th>Ⓐ</th><th>Ⓑ</th><th>Ⓒ</th><th>Ⓓ</th></tr>
+      <tr><td class="bos"></td><td class="bos"></td><td class="bos"></td><td class="bos"></td></tr>
+    </table>
+  </div>
+
+  <div class="soru">
+    <span class="puan">10 puan</span>
+    <span class="no">A2.</span> Aşağıdaki yapıları uygun sütuna yerleştirerek tabloyu
+    doldurunuz.
+    <p style="margin:4px 0; font-style:italic;">kafatası · kalp kası · omurga · dirsek ·
+    kol kası · diz · kaburga · mide kası</p>
+    <table class="veri">
+      <tr><th>Kemik</th><th>Eklem</th><th>Kas</th></tr>
+      <tr><td class="bos" style="height:20mm"></td><td class="bos"></td><td class="bos"></td></tr>
+    </table>
+  </div>
+
+  <div class="soru">
+    <span class="puan">8 puan</span>
+    <span class="no">A3.</span> Aşağıdaki cümlelerin başına doğruysa <strong>D</strong>,
+    yanlışsa <strong>Y</strong> yazınız.
+    <p style="margin-top:4px;">(……) Kemikler cansız yapılardır, kırıldıklarında kendi kendilerine onarılamaz.</p>
+    <p>(……) Kafatası kemikleri arasındaki eklemler oynamaz eklemlerdir.</p>
+    <p>(……) Kaslar kasıldığında kısalır ve bağlı olduğu kemiği çeker.</p>
+    <p>(……) Kaslar kemiklere kirişler (tendonlar) aracılığıyla bağlanır.</p>
+  </div>
+
+  <div class="dipnot">Sayfa 1/2 — Yapay zekâ desteğiyle hazırlanmıştır; uygulamadan
+    önce öğretmen incelemesi gerekir.</div>
+</div>
+
+<div class="sayfa">
+  <h2 class="bolum">B BÖLÜMÜ — Sınıflandırma ve İlişki Kurma <span class="bp">40 puan</span></h2>
+
+  <div class="soru">
+    <span class="puan">14 puan</span>
+    <span class="no">B1.</span> Antrenör, takıma eklemleri tanıtmak için üç hareket
+    yaptırmıştır. Her hareketteki eklemin <strong>hareket miktarını</strong>
+    (çok hareketli / az hareketli / oynamaz) yazıp bir örnek eklem adı veriniz.
+    <table class="veri">
+      <tr><th>Hareket</th><th>Eklemin hareket miktarı</th><th>Eklem adı</th></tr>
+      <tr><td class="sol">Kolu omuzdan her yöne çevirme</td><td class="bos"></td><td class="bos"></td></tr>
+      <tr><td class="sol">Gövdeyi hafifçe yana eğme (omurga)</td><td class="bos"></td><td class="bos"></td></tr>
+      <tr><td class="sol">Kafatasını elleyip bastırma</td><td class="bos"></td><td class="bos"></td></tr>
+    </table>
+  </div>
+
+  <div class="soru">
+    <span class="puan">14 puan</span>
+    <span class="no">B2.</span> Deniz kolunu bükerken ön koldaki kas kasılır.
+    <p style="margin-top:4px;"><strong>a)</strong> Kas kasıldığında kola ne olur?
+    Kısaca açıklayınız. <em>(6 puan)</em></p>
+    <div class="cevap-kutusu k-kisa"></div>
+    <p style="margin-top:5px;"><strong>b)</strong> Kolun tekrar açılabilmesi için ne
+    gerekir? Kasların neden <strong>çiftler hâlinde</strong> çalıştığını açıklayınız.
+    <em>(8 puan)</em></p>
+    <div class="cevap-kutusu k-orta"></div>
+  </div>
+
+  <div class="soru">
+    <span class="puan">12 puan</span>
+    <span class="no">B3.</span> Bir oyuncu şöyle demiştir:
+    <em>“Vücudumda eklem olan her yer hareket eder; hareket etmeyen yerde eklem yoktur.”</em>
+    Bu ifade doğru mudur? Bir örnek vererek gerekçelendiriniz.
+    <div class="cevap-kutusu k-orta"></div>
+  </div>
+
+  <h2 class="bolum">C BÖLÜMÜ — Sağlık Kararı ve Kaynak Değerlendirme <span class="bp">30 puan</span></h2>
+
+  <div class="soru">
+    <span class="puan">16 puan</span>
+    <span class="no">C1.</span> Deniz, “kemiklerimi nasıl güçlendiririm?” sorusunun
+    cevabını aramış ve dört kaynak bulmuştur.
+    <table class="veri">
+      <tr><th>Kaynak</th><th>Ne diyor?</th></tr>
+      <tr><td class="sol">1. Sağlık Bakanlığının resmî sayfası</td>
+          <td class="sol">Kalsiyumdan zengin beslenme, D vitamini için güneş ışığı, düzenli hareket</td></tr>
+      <tr><td class="sol">2. Bir vitamin firmasının reklam sayfası</td>
+          <td class="sol">“Sadece bizim hapımızı kullanın, başka hiçbir şeye gerek yok”</td></tr>
+      <tr><td class="sol">3. Sosyal medyada çok beğenilen bir gönderi</td>
+          <td class="sol">“Süt içmeyin, kemiği zayıflatır”</td></tr>
+      <tr><td class="sol">4. Fen ders kitabı</td>
+          <td class="sol">Dengeli beslenme, düzenli egzersiz, doğru duruş</td></tr>
+    </table>
+    <p style="margin-top:5px;"><strong>a)</strong> Deniz hangi kaynaklara güvenmelidir?
+    Numaralarını yazınız. <em>(6 puan)</em></p>
+    <div class="cevap-kutusu k-kisa"></div>
+    <p style="margin-top:5px;"><strong>b)</strong> Güvenmemesi gereken kaynakları seçip
+    <strong>her biri için ayrı bir gerekçe</strong> yazınız. <em>(10 puan)</em></p>
+    <div class="cevap-kutusu k-orta"></div>
+  </div>
+
+  <div class="soru">
+    <span class="puan">14 puan</span>
+    <span class="no">C2.</span> Antrenör, takım için bir “sakatlanmayı önleme” afişi
+    hazırlayacaktır. Destek ve hareket sistemini korumaya yönelik <strong>üç öneri</strong>
+    yazınız ve her önerinin <strong>hangi yapıyı</strong> (kemik / eklem / kas)
+    koruduğunu belirtiniz.
+    <table class="veri">
+      <tr><th>Öneri</th><th>Koruduğu yapı</th></tr>
+      <tr><td class="bos" style="height:12mm"></td><td class="bos"></td></tr>
+      <tr><td class="bos" style="height:12mm"></td><td class="bos"></td></tr>
+      <tr><td class="bos" style="height:12mm"></td><td class="bos"></td></tr>
+    </table>
+    <div class="uyari">Güvenlik notu: Isınma hareketlerini zorlamadan, ağrı hissettiğin
+      noktada durarak yapmalısın. Ağrı geçmiyorsa mutlaka bir yetişkine söyle.</div>
+  </div>
+
+  <div class="toplam-not">TOPLAM: 100 puan</div>
+  <div class="dipnot">
+    Ölçülen çıktılar: FB.5.3.2.1 · FB.5.3.2.2 — Sayfa 2/2 —
+    Yapay zekâ desteğiyle hazırlanmıştır; uygulamadan önce öğretmen incelemesi gerekir.
+  </div>
+</div>
+
+</body>
+</html>

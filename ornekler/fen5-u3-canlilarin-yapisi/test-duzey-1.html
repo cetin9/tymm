@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Düzey 1 — Temel · Canlıların Yapısına Yolculuk</title>
+<style>
+  :root{--murekkep:#1a1a2e; --vurgu:#0f4c81; --acik:#e8f0f7; --cizgi:#c9d4de;}
+  *{box-sizing:border-box; margin:0; padding:0;}
+  @page{size:A4; margin:14mm 12mm;}
+  html,body{font-family:'Segoe UI',Calibri,Arial,sans-serif; color:var(--murekkep);
+    font-size:10.5pt; line-height:1.45;}
+  @media screen{body{background:#666; padding:20px;}
+    .sayfa{width:210mm; min-height:297mm; margin:0 auto 20px; background:#fff;
+      padding:14mm 12mm; box-shadow:0 2px 8px rgba(0,0,0,.3);}}
+  @media print{.sayfa{page-break-after:always;} .sayfa:last-child{page-break-after:auto;}}
+  .ust-serit{display:flex; justify-content:space-between; align-items:flex-end;
+    border-bottom:3px solid var(--vurgu); padding-bottom:6px; margin-bottom:8px;}
+  .ust-serit h1{font-size:15pt; color:var(--vurgu);}
+  .ust-serit .meta{font-size:9pt; text-align:right; color:#444;}
+  .ogrenci-satiri{display:flex; gap:16px; font-size:10pt; margin:8px 0 4px;}
+  .ogrenci-satiri span{flex:1; border-bottom:1px solid var(--murekkep); padding-bottom:2px;}
+  .yonerge{font-size:9.5pt; background:var(--acik); border-left:4px solid var(--vurgu);
+    padding:6px 10px; margin:7px 0 10px;}
+  .soru{margin:11px 0; page-break-inside:avoid;}
+  .soru .no{font-weight:700; color:var(--vurgu);}
+  .kok{margin-bottom:4px;}
+  ol.sec{list-style:none; margin:0 0 0 10px;}
+  ol.sec li{margin:2px 0;}
+  table.veri{width:100%; border-collapse:collapse; margin:5px 0; font-size:9.5pt;}
+  table.veri th,table.veri td{border:1px solid var(--vurgu); padding:4px 7px; text-align:center;}
+  table.veri th{background:var(--acik);}
+  table.veri td.sol{text-align:left;}
+  .dipnot{font-size:8.5pt; color:#555; border-top:1px solid var(--cizgi);
+    margin-top:10px; padding-top:4px;}
+  .uyari-ibare{font-weight:700; color:#8a3b12;}
+</style>
+</head>
+<body>
+
+<div class="sayfa">
+  <div class="ust-serit">
+    <h1>Düzey 1 — Temel</h1>
+    <div class="meta">Fen Bilimleri · 5. Sınıf · 3. Ünite<br>10 soru · Önerilen süre: 20 dk</div>
+  </div>
+  <div class="ogrenci-satiri"><span>Adı Soyadı:</span><span>Sınıfı / No:</span><span>Tarih:</span></div>
+  <div class="yonerge">Her soruda yalnızca <strong>bir</strong> doğru cevap vardır.
+    Doğru seçeneği işaretleyiniz.</div>
+
+  <div class="soru"><span class="no">1.</span>
+    <div class="kok">Mutfakta annesine yardım eden Ece, bir soğanın ince zarını
+    kopardı ve okuldan getirdiği mikroskopla inceledi. Gördüğü her hücrenin
+    etrafında, hücre zarının dışında <strong>kalın ve sert bir duvar</strong>
+    olduğunu fark etti. Ece’nin incelediği hücre için ne söylenebilir?</div>
+    <ol class="sec">
+      <li>A) Hayvan hücresidir.</li>
+      <li>B) Bitki hücresidir.</li>
+      <li>C) Hücre zarı yoktur.</li>
+      <li>D) Çekirdeği bulunmaz.</li>
+    </ol>
+  </div>
+
+  <div class="soru"><span class="no">2.</span>
+    <div class="kok">Bir öğrenci parmağının ucuna çıplak gözle bakıp
+    “Hücrelerimi göremiyorum.” dedi. Öğretmeni ona hücreleri görebilmesi için bir
+    araç gerektiğini söyledi. Bu araç aşağıdakilerden hangisidir?</div>
+    <ol class="sec">
+      <li>A) Termometre</li>
+      <li>B) Dinamometre</li>
+      <li>C) Mikroskop</li>
+      <li>D) Büyüteçli cetvel</li>
+    </ol>
+  </div>
+
+  <div class="soru"><span class="no">3.</span>
+    <div class="kok">Fen kulübü, panoya vücudumuzun yapı basamaklarını
+    <strong>en küçükten en büyüğe</strong> doğru asacaktır. Panodaki sıralama
+    hangisi olmalıdır?</div>
+    <ol class="sec">
+      <li>A) hücre → doku → organ → sistem → organizma</li>
+      <li>B) doku → hücre → organ → sistem → organizma</li>
+      <li>C) hücre → organ → doku → sistem → organizma</li>
+      <li>D) hücre → doku → sistem → organ → organizma</li>
+    </ol>
+  </div>
+
+  <div class="soru"><span class="no">4.</span>
+    <div class="kok">Bir öğrenci kolunu bükerken dirseğine dokundu ve
+    “Burada iki kemiğin birleştiği yeri hissediyorum.” dedi. Öğrencinin
+    hissettiği yapının adı nedir?</div>
+    <ol class="sec">
+      <li>A) Kas</li>
+      <li>B) Kıkırdak doku</li>
+      <li>C) Kiriş</li>
+      <li>D) Eklem</li>
+    </ol>
+  </div>
+
+  <div class="soru"><span class="no">5.</span>
+    <div class="kok">Saksıdaki bir çiçeğin yaprakları güneş görünce yeşil kalır,
+    karanlıkta bırakılınca solar. Yaprak hücrelerinde bulunan ve
+    <strong>besin üretimini</strong> sağlayan yapı hangisidir?</div>
+    <ol class="sec">
+      <li>A) Kloroplast</li>
+      <li>B) Mitokondri</li>
+      <li>C) Çekirdek</li>
+      <li>D) Koful</li>
+    </ol>
+  </div>
+
+  <div class="soru"><span class="no">6.</span>
+    <div class="kok">Bir sporcu maç öncesi ısınırken omzunu her yöne çeviriyor,
+    ancak kafasının üst kısmındaki kemikleri hiç oynatamıyor. Buna göre
+    <strong>eklem</strong> için hangisi doğrudur?</div>
+    <ol class="sec">
+      <li>A) Her eklem çok hareketlidir.</li>
+      <li>B) Eklem yalnızca kaslar arasında bulunur.</li>
+      <li>C) Eklemler iki kemiğin birleştiği yerdir; bazıları oynamaz.</li>
+      <li>D) Eklem bulunan yerde kemik bulunmaz.</li>
+    </ol>
+  </div>
+
+  <div class="dipnot">Sayfa 1/2 — <span class="uyari-ibare">Alıştırma, tarama ve deneme
+    amaçlıdır; ortak yazılı sınavda çoktan seçmeli soru kullanılamaz.</span>
+    Yapay zekâ desteğiyle hazırlanmıştır; uygulamadan önce öğretmen incelemesi gerekir.</div>
+</div>
+
+<div class="sayfa">
+  <div class="soru"><span class="no">7.</span>
+    <div class="kok">Bir grup, iki hücreyi mikroskopta inceleyip aşağıdaki tabloyu
+    hazırladı.
+    <table class="veri">
+      <tr><th>Yapı</th><th>1. hücre</th><th>2. hücre</th></tr>
+      <tr><td class="sol">Hücre zarı</td><td>var</td><td>var</td></tr>
+      <tr><td class="sol">Çekirdek</td><td>var</td><td>var</td></tr>
+      <tr><td class="sol">Hücre duvarı</td><td>var</td><td>yok</td></tr>
+      <tr><td class="sol">Kloroplast</td><td>var</td><td>yok</td></tr>
+    </table>
+    Tabloya göre <strong>2. hücre</strong> için hangisi söylenebilir?</div>
+    <ol class="sec">
+      <li>A) Bitki hücresidir, çünkü çekirdeği vardır.</li>
+      <li>B) Hayvan hücresidir, çünkü hücre duvarı ve kloroplastı yoktur.</li>
+      <li>C) Hücre zarı bulunmadığı için hücre sayılmaz.</li>
+      <li>D) Kloroplastı olduğu için kendi besinini üretir.</li>
+    </ol>
+  </div>
+
+  <div class="soru"><span class="no">8.</span>
+    <div class="kok">Deniz, elindeki topu göğsüne doğru çekerken ön kolundaki kasın
+    sertleştiğini fark etti. Kas sertleştiğinde (kasıldığında) ne olur?</div>
+    <ol class="sec">
+      <li>A) Uzar ve kemiği iter.</li>
+      <li>B) Uzunluğu değişmez, yalnız sertleşir.</li>
+      <li>C) Kemiği iterek kolu açar.</li>
+      <li>D) Kısalır ve bağlı olduğu kemiği çeker.</li>
+    </ol>
+  </div>
+
+  <div class="soru"><span class="no">9.</span>
+    <div class="kok">Bir öğrenci “Kemiklerimi nasıl güçlendiririm?” sorusunun cevabını
+    aramaktadır. Aşağıdaki kaynaklardan hangisi <strong>en güvenilirdir</strong>?</div>
+    <ol class="sec">
+      <li>A) Sağlık Bakanlığının resmî internet sayfası</li>
+      <li>B) Bir sporcunun sosyal medya gönderisi</li>
+      <li>C) Vitamin satan bir firmanın reklam sayfası</li>
+      <li>D) Sınıf arkadaşının anlattıkları</li>
+    </ol>
+  </div>
+
+  <div class="soru"><span class="no">10.</span>
+    <div class="kok">Bir öğrenci “Kemik cansız bir maddedir, taş gibidir.” dedi.
+    Arkadaşı bu görüşün yanlış olduğunu göstermek istiyor. Arkadaşının kullanabileceği
+    <strong>en güçlü kanıt</strong> hangisidir?</div>
+    <ol class="sec">
+      <li>A) Kemiklerin sert olması</li>
+      <li>B) Kırılan bir kemiğin zamanla kendi kendine kaynaması</li>
+      <li>C) İskelette çok sayıda kemik bulunması</li>
+      <li>D) Kemiklerin beyaza yakın renkte olması</li>
+    </ol>
+  </div>
+
+  <div class="dipnot">
+    Ölçülen çıktılar: FB.5.3.1.1 · FB.5.3.1.2 · FB.5.3.2.1 · FB.5.3.2.2 — Sayfa 2/2 —
+    <span class="uyari-ibare">Alıştırma, tarama ve deneme amaçlıdır; ortak yazılı
+    sınavda çoktan seçmeli soru kullanılamaz.</span>
+    Yapay zekâ desteğiyle hazırlanmıştır; uygulamadan önce öğretmen incelemesi gerekir.
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Fen Bilimleri 5 — Dereceli Puanlama Anahtarı</title>
+<style>
+  :root{--murekkep:#1a1a2e; --vurgu:#0f4c81; --acik:#e8f0f7;
+        --cizgi:#c9d4de; --puan:#0f4c81; --uyari:#8a3b12;}
+  *{box-sizing:border-box; margin:0; padding:0;}
+  @page{size:A4; margin:14mm 12mm;}
+  html,body{font-family:'Segoe UI',Calibri,Arial,sans-serif;
+    color:var(--murekkep); font-size:10pt; line-height:1.42;}
+  @media screen{
+    body{background:#666; padding:20px;}
+    .sayfa{width:210mm; min-height:297mm; margin:0 auto 20px;
+      background:#fff; padding:14mm 12mm; box-shadow:0 2px 8px rgba(0,0,0,.3);}
+  }
+  @media print{.sayfa{page-break-after:always;} .sayfa:last-child{page-break-after:auto;}}
+  .ust-serit{display:flex; justify-content:space-between; align-items:flex-end;
+    border-bottom:3px solid var(--vurgu); padding-bottom:6px; margin-bottom:10px;}
+  .ust-serit h1{font-size:15pt; color:var(--vurgu);}
+  .ust-serit .meta{font-size:9pt; text-align:right; color:#444;}
+  h2.bolum{background:var(--vurgu); color:#fff; font-size:11pt;
+    padding:4px 10px; margin:14px 0 6px; border-radius:3px; page-break-after:avoid;}
+  .soru-blok{page-break-inside:avoid; margin-bottom:12px;}
+  .cikti-satiri{font-size:9pt; color:#444; background:var(--acik);
+    padding:3px 8px; border-radius:3px; margin-bottom:5px;}
+  .ornek{border-left:4px solid var(--vurgu); background:#f7fafd;
+    padding:6px 10px; margin:5px 0; font-size:9.5pt;}
+  .ornek strong{color:var(--vurgu);}
+  table.puanlama{width:100%; border-collapse:collapse; margin:5px 0; font-size:9.5pt;}
+  table.puanlama th{background:var(--acik); font-size:9pt; text-align:left;}
+  table.puanlama th, table.puanlama td{border:1px solid var(--cizgi); padding:4px 7px; vertical-align:top;}
+  table.puanlama td.p{width:16mm; text-align:center; font-weight:700; color:var(--puan);}
+  table.puanlama tr.alt td{background:#fafcfe; font-weight:700;}
+  table.hata{width:100%; border-collapse:collapse; margin:5px 0 2px; font-size:9.5pt;}
+  table.hata th{background:#f4e9e1; color:var(--uyari); font-size:9pt; text-align:left;}
+  table.hata th, table.hata td{border:1px solid var(--cizgi); padding:4px 7px; vertical-align:top;}
+  table.ozet{width:100%; border-collapse:collapse; margin:6px 0; font-size:9.5pt;}
+  table.ozet th{background:var(--acik); font-size:9pt;}
+  table.ozet th, table.ozet td{border:1px solid var(--cizgi); padding:4px 7px; text-align:center;}
+  table.ozet td.sol{text-align:left;}
+  table.ozet tr.toplam td{background:var(--acik); font-weight:700;}
+  .kutu{border:2px solid var(--vurgu); background:var(--acik); border-radius:6px;
+    padding:9px 13px; margin:9px 0; page-break-inside:avoid; font-size:9.5pt;}
+  .kutu .etiket{font-weight:700; color:var(--vurgu); font-size:9pt;
+    text-transform:uppercase; letter-spacing:.05em; display:block; margin-bottom:3px;}
+  ul{margin:3px 0 3px 18px;} li{margin:2px 0;}
+  .dipnot{font-size:8.5pt; color:#555; border-top:1px solid var(--cizgi);
+    margin-top:10px; padding-top:4px;}
+</style>
+</head>
+<body>
+
+<!-- ================== SAYFA 1 ================== -->
+<div class="sayfa">
+  <div class="ust-serit">
+    <h1>Dereceli Puanlama Anahtarı</h1>
+    <div class="meta">Fen Bilimleri · 5. Sınıf · 1–4. Ünite<br>
+      <strong>Öğretmen belgesidir — öğrenciye dağıtılmaz</strong></div>
+  </div>
+
+  <div class="kutu">
+    <span class="etiket">Puanlama ilkesi</span>
+    Her alt maddede <strong>sonuç kadar gerekçe de puanlanır</strong>. Öğrenci
+    doğru sonuca ulaşmış ama gerekçeyi yazmamışsa yalnız sonuç basamağının puanı
+    verilir. Farklı ama bilimsel olarak doğru ifadeler tam puan alır; anahtar
+    kelimenin birebir yazılması aranmaz.
+  </div>
+
+  <h2 class="bolum">Soru 1 — Ay’ın evreleri ve hareketleri (16 puan)</h2>
+  <div class="soru-blok">
+    <div class="cikti-satiri"><strong>FB.5.1.2.1.</strong> Ay’ın özellikleri, dönme ve
+      dolanma hareketleri ile ilgili bilimsel çıkarım yapabilme —
+      süreç bileşeni b) verileri kaydeder, c) verileri değerlendirir</div>
+
+    <div class="ornek"><strong>a) Örnek tam yanıt:</strong> Ay’ın görünen aydınlık
+      kısmı 3. günden 15. güne kadar giderek büyümüştür (ince → yarım → yarımdan
+      büyük → tam yuvarlak). Bunun sebebi Ay’ın Dünya çevresinde dolanmasıdır;
+      dolandıkça Ay’ın Güneş tarafından aydınlatılan yüzünün Dünya’dan görünen
+      kısmı değişir, bu yüzden evreler oluşur.</div>
+    <table class="puanlama">
+      <tr><th>Ölçüt</th><th>Puan</th></tr>
+      <tr><td>Aydınlık kısmın giderek büyüdüğünü/arttığını verilere dayanarak yazar</td><td class="p">4</td></tr>
+      <tr><td>Değişimin sebebini Ay’ın Dünya çevresindeki dolanma hareketine bağlar</td><td class="p">4</td></tr>
+      <tr class="alt"><td>a) alt toplam</td><td class="p">8</td></tr>
+    </table>
+
+    <div class="ornek"><strong>b) Örnek tam yanıt:</strong> Ay’ın hep aynı yüzünün
+      görünmesi, Ay’ın kendi ekseni etrafındaki dönme süresi ile Dünya çevresindeki
+      dolanma süresinin birbirine eşit olmasından kaynaklanır. Yani Ay hem döner
+      hem dolanır; bu iki hareket aynı sürede tamamlandığı için Dünya’dan hep aynı
+      yüzünü görürüz.</div>
+    <table class="puanlama">
+      <tr><th>Ölçüt</th><th>Puan</th></tr>
+      <tr><td>Ay’ın iki hareketini (kendi ekseni etrafında dönme + Dünya çevresinde dolanma) adlandırır</td><td class="p">4</td></tr>
+      <tr><td>İki hareketin sürelerinin eşit olması nedeniyle aynı yüzün görüldüğünü açıklar</td><td class="p">4</td></tr>
+      <tr class="alt"><td>b) alt toplam</td><td class="p">8</td></tr>
+    </table>
+
+    <table class="hata">
+      <tr><th>Beklenen yaygın hata</th><th>Puan kararı</th></tr>
+      <tr><td>Evrelerin sebebini “Dünya’nın gölgesinin Ay’a düşmesi” sanmak (tutulma ile evreyi karıştırma)</td>
+          <td>Sebep puanı (4) verilmez; değişimi doğru betimlediyse o basamak korunur.</td></tr>
+      <tr><td>“Ay dönmüyor, o yüzden aynı yüzünü görüyoruz” demek</td>
+          <td>Adlandırma puanı (4) verilmez; ikinci basamak da alınamaz.</td></tr>
+      <tr><td>Ay’ın kendi ışığı olduğunu ima eden ifadeler</td>
+          <td>Puan kırılmaz ancak dönütte mutlaka düzeltilir (Ay Güneş ışığını yansıtır).</td></tr>
+    </table>
+  </div>
+
+  <h2 class="bolum">Soru 2 — Kuvvetin ölçülmesi, kütle-ağırlık ayrımı (16 puan)</h2>
+  <div class="soru-blok">
+    <div class="cikti-satiri"><strong>FB.5.2.1.1.</strong> Kuvveti büyüklüğü ile
+      tanımlayabilme — süreç bileşeni b) dinamometre ile ölçer,
+      c) Newton (N) birimi ile tanımlar</div>
+
+    <div class="ornek"><strong>a) Örnek tam yanıt:</strong> Su matarası (9 N).
+      Dinamometrede okunan en büyük değer ona aittir.</div>
+    <table class="puanlama">
+      <tr><th>Ölçüt</th><th>Puan</th></tr>
+      <tr><td>“Su matarası” yanıtını verir (yalnız 9 N yazması da kabul)</td><td class="p">4</td></tr>
+      <tr class="alt"><td>a) alt toplam</td><td class="p">4</td></tr>
+    </table>
+
+    <div class="ornek"><strong>b) Örnek tam yanıt:</strong> Hata, ölçülen büyüklüğün
+      yanlış adlandırılmasıdır. Dinamometre kütleyi değil <strong>ağırlığı</strong>,
+      yani cisme etki eden yer çekimi kuvvetini ölçer. Newton (N) kuvvet birimidir;
+      kütle kilogram (kg) ile ifade edilir. Doğru cümle: <em>“Su matarasının ağırlığını
+      9 N buldum.”</em></div>
+    <table class="puanlama">
+      <tr><th>Ölçüt</th><th>Puan</th></tr>
+      <tr><td>Hatayı “kütle yerine ağırlık ölçülmesi/adlandırılması” olarak belirler</td><td class="p">4</td></tr>
+      <tr><td>Newton’un kuvvet (ağırlık) birimi olduğunu, kütle biriminin kg olduğunu belirtir</td><td class="p">4</td></tr>
+      <tr><td>Cümleyi doğru biçimde yeniden yazar (“…ağırlığını 9 N buldum.”)</td><td class="p">4</td></tr>
+      <tr class="alt"><td>b) alt toplam</td><td class="p">12</td></tr>
+    </table>
+
+    <table class="hata">
+      <tr><th>Beklenen yaygın hata</th><th>Puan kararı</th></tr>
+      <tr><td>Kütle ile ağırlığı eş anlamlı sayma (“ikisi aynı şey”)</td>
+          <td>İlk iki basamak (8) verilmez; cümleyi doğru yazdıysa yalnız 4 puan.</td></tr>
+      <tr><td>Hatayı sayısal sanma (“9 değil 8 olmalıydı”)</td>
+          <td>b) maddesinden puan verilmez; hata kavramsaldır.</td></tr>
+      <tr><td>Ağırlığı kg ile ifade etme</td><td>Birim basamağı (4) verilmez.</td></tr>
+    </table>
+  </div>
+
+  <div class="dipnot">Sayfa 1/3 — Öğretmen belgesi. Yapay zekâ desteğiyle
+    hazırlanmıştır; uygulamadan önce öğretmen incelemesi gerekir.</div>
+</div>
+
+<!-- ================== SAYFA 2 ================== -->
+<div class="sayfa">
+  <h2 class="bolum">Soru 3 — Sürtünme kuvveti ve genelleme (18 puan)</h2>
+  <div class="soru-blok">
+    <div class="cikti-satiri"><strong>FB.5.2.3.1.</strong> Sürtünme kuvvetinin çeşitli
+      ortamlardaki etkilerine yönelik tümevarımsal akıl yürütebilme —
+      süreç bileşeni a) örüntü oluşturur, b) genelleme yapar</div>
+
+    <div class="ornek"><strong>a) Örnek tam yanıt:</strong> Halı. Araba halıda en kısa
+      yolu (40 cm) almıştır; yani hareketine karşı koyan sürtünme kuvveti en fazla
+      orada olmuştur.</div>
+    <table class="puanlama">
+      <tr><th>Ölçüt</th><th>Puan</th></tr>
+      <tr><td>“Halı” yanıtını verir</td><td class="p">3</td></tr>
+      <tr><td>Kararını en kısa yol (40 cm) verisine dayandırır</td><td class="p">3</td></tr>
+      <tr class="alt"><td>a) alt toplam</td><td class="p">6</td></tr>
+    </table>
+
+    <div class="ornek"><strong>b) Örnek tam yanıt:</strong> Sürtünme kuvveti arttıkça
+      cismin aldığı yol azalır. (Ya da: sürtünme azaldıkça cisim daha uzun yol alır.)</div>
+    <table class="puanlama">
+      <tr><th>Ölçüt</th><th>Puan</th></tr>
+      <tr><td>İki büyüklük arasındaki ters ilişkiyi kurar</td><td class="p">4</td></tr>
+      <tr><td>İlişkiyi tek zemine değil bütün sonuçlara dayanan genel bir kural olarak yazar</td><td class="p">2</td></tr>
+      <tr class="alt"><td>b) alt toplam</td><td class="p">6</td></tr>
+    </table>
+
+    <div class="ornek"><strong>c) Örnek tam yanıt:</strong> Yaklaşık 200–300 cm arası
+      beklerim. Islak seramik çok kaygan bir yüzeydir, sürtünmesi buz pistine yakın
+      derecede azdır; bu yüzden araba parkede aldığı yoldan (180 cm) daha fazla,
+      buz pistindekine (310 cm) yakın bir yol alır.
+      <br><em>Kabul edilen ikinci yanıt:</em> 150–200 cm civarı — “ıslak seramik
+      parke kadar kaygan olur” gerekçesi de tutarlıdır ve tam puan alır.</div>
+    <table class="puanlama">
+      <tr><th>Ölçüt</th><th>Puan</th></tr>
+      <tr><td>Tablodaki değerlerle tutarlı bir sayısal tahmin yazar (halıdan/asfalttan büyük)</td><td class="p">3</td></tr>
+      <tr><td>Tahminini ıslak/kaygan yüzeyde sürtünmenin az olmasıyla gerekçelendirir</td><td class="p">3</td></tr>
+      <tr class="alt"><td>c) alt toplam</td><td class="p">6</td></tr>
+    </table>
+
+    <table class="hata">
+      <tr><th>Beklenen yaygın hata</th><th>Puan kararı</th></tr>
+      <tr><td>Sürtünmeyi en fazla en uzun yolun alındığı zeminde sanma (buz pistini işaretleme) — ilişkiyi ters kurma</td>
+          <td>a) maddesinden puan verilmez; b) de aynı ters ilişkiyle yazıldıysa oradan da verilmez.</td></tr>
+      <tr><td>Genelleme yerine tek örneği tekrar etme (“halıda az yol aldı”)</td>
+          <td>b) maddesinde yalnız 2 puanlık genelleme basamağı verilmez; ilişki doğruysa 4 puan verilir.</td></tr>
+      <tr><td>Sabit hızda hareket için sürekli kuvvet gerektiğini varsayan açıklamalar</td>
+          <td>Puan kırılmaz; dönütte ele alınır (bu düzeyde hedeflenen kavram değildir).</td></tr>
+    </table>
+  </div>
+
+  <h2 class="bolum">Soru 4 — Bitki ve hayvan hücresi karşılaştırma (16 puan)</h2>
+  <div class="soru-blok">
+    <div class="cikti-satiri"><strong>FB.5.3.1.1.</strong> Bitki ve hayvan hücrelerini
+      temel kısımları ve özellikleri açısından karşılaştırabilme —
+      süreç bileşeni b) benzer özellikleri listeler, c) farklı özellikleri listeler</div>
+
+    <div class="ornek"><strong>a) Örnek tam yanıt:</strong> 2. hücre bitki hücresidir.
+      Çünkü tabloda yalnız 2. hücrede hücre duvarı ve kloroplast vardır; bu iki yapı
+      hayvan hücresinde bulunmaz.</div>
+    <table class="puanlama">
+      <tr><th>Ölçüt</th><th>Puan</th></tr>
+      <tr><td>“2. hücre” yanıtını verir</td><td class="p">3</td></tr>
+      <tr><td>Gerekçe olarak hücre duvarı ve kloroplastı gösterir (ikisinden biri: 3 puan)</td><td class="p">5</td></tr>
+      <tr class="alt"><td>a) alt toplam</td><td class="p">8</td></tr>
+    </table>
+
+    <div class="ornek"><strong>b) Örnek tam yanıt:</strong> Ortak yapılar: hücre zarı,
+      çekirdek, sitoplazma (herhangi ikisi). Bu ortaklık, bitki ve hayvan hücrelerinin
+      farklı canlılara ait olsalar da temel yapılarının aynı olduğunu, ikisinin de
+      canlılığın temel birimi olan hücre olduğunu gösterir.</div>
+    <table class="puanlama">
+      <tr><th>Ölçüt</th><th>Puan</th></tr>
+      <tr><td>Ortak iki yapıyı doğru yazar (her biri 2 puan)</td><td class="p">4</td></tr>
+      <tr><td>Ortaklığın anlamını açıklar (temel yapının/canlılığın ortak olması)</td><td class="p">4</td></tr>
+      <tr class="alt"><td>b) alt toplam</td><td class="p">8</td></tr>
+    </table>
+
+    <table class="hata">
+      <tr><th>Beklenen yaygın hata</th><th>Puan kararı</th></tr>
+      <tr><td>Hücre duvarı ile hücre zarını karıştırma (“1. hücrede zar var, demek ki bitki”)</td>
+          <td>Yanıt ve gerekçe puanı verilmez; dönütte iki yapı ayrımı çalışılır.</td></tr>
+      <tr><td>Ortak yapı olarak kloroplast/hücre duvarı yazma</td>
+          <td>O maddenin 2 puanı verilmez; diğer doğru yapı puanlanır.</td></tr>
+      <tr><td>b) maddesinde yalnız yapıları listeleyip açıklama yazmama</td>
+          <td>Yalnız 4 puan verilir; açıklama basamağı (4) alınamaz.</td></tr>
+    </table>
+  </div>
+
+  <div class="dipnot">Sayfa 2/3 — Öğretmen belgesi. Yapay zekâ desteğiyle
+    hazırlanmıştır; uygulamadan önce öğretmen incelemesi gerekir.</div>
+</div>
+
+<!-- ================== SAYFA 3 ================== -->
+<div class="sayfa">
+  <h2 class="bolum">Soru 5 — Hücre-doku-organ-sistem-organizma (18 puan)</h2>
+  <div class="soru-blok">
+    <div class="cikti-satiri"><strong>FB.5.3.1.2.</strong> Hücre-doku-organ-sistem-organizma
+      kavramlarını yapılandırabilme — süreç bileşeni a) hiyerarşik ilişkileri ortaya
+      koyar, b) bilgileri uyumlu bir bütün olarak ortaya koyar</div>
+
+    <div class="ornek"><strong>a) Örnek tam yanıt:</strong> mide hücresi → kas dokusu →
+      mide → sindirim sistemi → insan</div>
+    <table class="puanlama">
+      <tr><th>Ölçüt</th><th>Puan</th></tr>
+      <tr><td>Beş kavramı da doğru sırada yazar</td><td class="p">8</td></tr>
+      <tr><td><em>Kısmi:</em> sıralamada yalnız bir kavram yanlış yerde</td><td class="p">5</td></tr>
+      <tr><td><em>Kısmi:</em> hücre → doku → organ ilişkisini doğru kurmuş ama üst basamaklar karışık</td><td class="p">3</td></tr>
+      <tr class="alt"><td>a) alt toplam</td><td class="p">8</td></tr>
+    </table>
+
+    <div class="ornek"><strong>b) Örnek tam yanıt:</strong> Ali’nin cümlesi yanlıştır.
+      Vücuttaki en küçük yapı organ değil <strong>hücredir</strong>; hücre canlılığın
+      temel birimidir. Bir yapının gözle görülebilmesi onun en küçük olduğu anlamına
+      gelmez — hücreler çok küçük olduğu için mikroskopla görülür. Organlar, dokuların;
+      dokular da hücrelerin bir araya gelmesiyle oluşur.</div>
+    <table class="puanlama">
+      <tr><th>Ölçüt</th><th>Puan</th></tr>
+      <tr><td>Cümlenin yanlış olduğunu belirtir</td><td class="p">3</td></tr>
+      <tr><td>En küçük yapının hücre olduğunu, hücrenin canlılığın temel birimi olduğunu yazar</td><td class="p">4</td></tr>
+      <tr><td>“Gözle görülmek” ölçütünün geçersizliğini açıklar (hücre mikroskopla görülür)</td><td class="p">3</td></tr>
+      <tr class="alt"><td>b) alt toplam</td><td class="p">10</td></tr>
+    </table>
+
+    <table class="hata">
+      <tr><th>Beklenen yaygın hata</th><th>Puan kararı</th></tr>
+      <tr><td>Doku ile organı yer değiştirme (mide → kas dokusu sırası)</td>
+          <td>a) maddesinde kısmi puan (5) uygulanır.</td></tr>
+      <tr><td>Sistemi organizmadan büyük sanma (“sindirim sistemi → insan” yerine tersi)</td>
+          <td>a) maddesinde kısmi puan (5) uygulanır.</td></tr>
+      <tr><td>b) maddesinde yalnız “yanlıştır” deyip gerekçe yazmama</td>
+          <td>Yalnız 3 puan verilir.</td></tr>
+    </table>
+  </div>
+
+  <h2 class="bolum">Soru 6 — Işığı geçirme durumuna göre sınıflandırma (16 puan)</h2>
+  <div class="soru-blok">
+    <div class="cikti-satiri"><strong>FB.5.4.2.1.</strong> Maddeleri ışığı geçirme
+      durumlarına göre sınıflandırabilme — süreç bileşeni b) ayrıştırır,
+      c) gruplandırır, ç) etiketler</div>
+
+    <div class="ornek"><strong>a) Örnek tam yanıt:</strong>
+      <br><strong>Saydam:</strong> temiz cam — ışığı geçirir, arkası net görünür.
+      <br><strong>Yarı saydam:</strong> buzlu cam, yağlı kâğıt — ışığın bir kısmını
+      geçirir, arkası bulanık görünür.
+      <br><strong>Saydam olmayan (opak):</strong> tahta levha — ışığı geçirmez.</div>
+    <table class="puanlama">
+      <tr><th>Ölçüt</th><th>Puan</th></tr>
+      <tr><td>Üç grubu doğru adlandırır (her ad 1 puan)</td><td class="p">3</td></tr>
+      <tr><td>Maddeleri doğru gruplara yerleştirir (dört maddenin her biri 1,5 puan)</td><td class="p">6</td></tr>
+      <tr class="alt"><td>a) alt toplam</td><td class="p">9</td></tr>
+    </table>
+
+    <div class="ornek"><strong>b) Örnek tam yanıt:</strong> Tahta levha saydam olmayan
+      bir maddedir, ışığı hiç geçirmez. Işık kaynaktan çıktıktan sonra doğrusal
+      yayıldığı için levhanın arkasına dolanamaz; levhanın engellediği bölgeye ışık
+      hiç ulaşmaz ve orada tam gölge oluşur.</div>
+    <table class="puanlama">
+      <tr><th>Ölçüt</th><th>Puan</th></tr>
+      <tr><td>Tahtanın ışığı geçirmeyen (opak) bir madde olduğunu belirtir</td><td class="p">4</td></tr>
+      <tr><td>Işığın doğrusal yayılması nedeniyle engelin arkasına ulaşamadığını açıklar</td><td class="p">3</td></tr>
+      <tr class="alt"><td>b) alt toplam</td><td class="p">7</td></tr>
+    </table>
+
+    <table class="hata">
+      <tr><th>Beklenen yaygın hata</th><th>Puan kararı</th></tr>
+      <tr><td>Buzlu camı/yağlı kâğıdı saydam sayma (ışığı geçirdiği için)</td>
+          <td>Yerleştirme puanı (her biri 1,5) verilmez; “arkası bulanık” ölçütü dönütte vurgulanır.</td></tr>
+      <tr><td>Gölgeyi “ışığın maddeye çarpıp yok olması” gibi açıklama</td>
+          <td>İkinci basamak (3) verilmez; ilk basamak korunur.</td></tr>
+      <tr><td>Işığın engelin etrafından dolaşabileceğini ima etme</td>
+          <td>Doğrusal yayılma basamağı (3) verilmez.</td></tr>
+    </table>
+  </div>
+
+  <h2 class="bolum">Puan Özeti</h2>
+  <table class="ozet">
+    <tr><th>Soru</th><th>Çıktı</th><th>a)</th><th>b)</th><th>c)</th><th>Soru toplamı</th></tr>
+    <tr><td>1</td><td class="sol">FB.5.1.2.1</td><td>8</td><td>8</td><td>—</td><td>16</td></tr>
+    <tr><td>2</td><td class="sol">FB.5.2.1.1</td><td>4</td><td>12</td><td>—</td><td>16</td></tr>
+    <tr><td>3</td><td class="sol">FB.5.2.3.1</td><td>6</td><td>6</td><td>6</td><td>18</td></tr>
+    <tr><td>4</td><td class="sol">FB.5.3.1.1</td><td>8</td><td>8</td><td>—</td><td>16</td></tr>
+    <tr><td>5</td><td class="sol">FB.5.3.1.2</td><td>8</td><td>10</td><td>—</td><td>18</td></tr>
+    <tr><td>6</td><td class="sol">FB.5.4.2.1</td><td>9</td><td>7</td><td>—</td><td>16</td></tr>
+    <tr class="toplam"><td colspan="5">TOPLAM</td><td>100</td></tr>
+  </table>
+
+  <div class="kutu">
+    <span class="etiket">Uygulama notu</span>
+    <ul>
+      <li>Konu soru dağılım tablosu sınavdan önce öğrencilerle paylaşılmalıdır.</li>
+      <li>Soru 3-c ve Soru 5-b tahmin/gerekçe sorularıdır: farklı ama tutarlı
+        gerekçeler tam puan alır, tek doğru cevap aranmaz.</li>
+      <li>Sınav sonrası dönütte en çok puan kaybedilen basamağı sınıfla paylaşmak,
+        ilgili süreç bileşenini yeniden çalışmak için doğrudan kanıt sağlar.</li>
+    </ul>
+  </div>
+
+  <div class="dipnot">
+    Ölçülen çıktılar: FB.5.1.2.1 · FB.5.2.1.1 · FB.5.2.3.1 · FB.5.3.1.1 ·
+    FB.5.3.1.2 · FB.5.4.2.1 — Sayfa 3/3 — Öğretmen belgesi.
+    Yapay zekâ desteğiyle hazırlanmıştır; uygulamadan önce öğretmen incelemesi gerekir.
+  </div>
+</div>
+
+</body>
+</html>
