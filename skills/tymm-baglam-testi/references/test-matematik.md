@@ -49,7 +49,10 @@ mahalle, atölye.
 - **Düzey 3 (İleri):** üretim/atölye planlaması, kaynak paylaşımı,
   şifre-kod tasarımı, gerçek veriyle çalışma (MGM sıcaklık serisi, TÜİK
   nüfus/tüketim verisi, okul enerji tüketimi), kural sınırlarının
-  sorgulanması.
+  sorgulanması. **Katmanlı bağlam:** İleri düzeyde bağlam, öğrencinin
+  ilgili veriyi ayıklaması gereken zenginlikte kurulur — fazla sütunlu
+  tablo, işe yaramayan ek koşul, birden çok tarife. Uzunluk işlevsel
+  olduğu sürece kısaltılmaz (bkz. `kilavuz-ilkeleri.md` §5, silme testi).
 
 **Yasaklı bağlamlar:** borsa/VİOP, döviz-yatırım getirisi, golf/binicilik
 gibi dar erişimli sporlar, marka adı geçen kurgular, belirli bir gelir

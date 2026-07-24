@@ -51,7 +51,9 @@ kurulur; ezber bilgi sorusu değil, veriden/gözlemden çıkarım sorusudur.
 
 **Bağlam aileleri:** Düzey 1 günlük gözlem/olgu · Düzey 2 tablo/grafik
 okuma, basit deney · Düzey 3 değişken kontrolü, tahmin-sınama, kanıt
-değerlendirme.
+değerlendirme. **İleri düzeyde katmanlı bağlam** kur: çok satırlı veri
+seti, birden çok gözlem kaydı veya çelişen iki kaynak — öğrenci ilgili
+veriyi ayıklasın. İşlevsel uzunluk kısaltılmaz (`kilavuz-ilkeleri.md` §5).
 
 **Yanılgı envanteri (üniteye göre seç):**
 - Güneş sistemi/tutulmalar: tutulmanın her ay olacağını sanma; mevsim

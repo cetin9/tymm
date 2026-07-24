@@ -14,3 +14,4 @@ T12,Kılavuz uyumu,Aynı bağlamdan yazılan sorular bağımsız çözülebiliyo
 T13,Kılavuz uyumu,Seçenekler uzunluk/dil/sayı biçimi bakımından homojen ve bağlamdan birebir alıntı içermiyor,Seçenek taraması
 T14,Kılavuz uyumu,Bağlamlar erişilebilir ve tarafsız (dar erişimli alan/marka/gelir varsayımı yok); görseller yeni veri taşıyor,Bağlam ve görsel taraması
 T15,İzlenebilirlik,Anahtarda soru başına süreç bileşeni harfi ve bağlam adı kayıtlı; gerçek veri kullanıldıysa kaynak belirtilmiş,Anahtar tabloları
+T16,Bağlam uzunluğu,Bağlam zenginliği düzeye ölçekli: İleri düzey soruları katmanlı (ayıklanacak/çeldirici veri içeren) bağlam taşıyor; uzunluk dekoratif değil işlevsel (silme testini geçiyor),İleri düzey soru→bağlam incelemesi

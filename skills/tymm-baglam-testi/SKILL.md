@@ -84,6 +84,16 @@ Aynı kavram üç düzeyde de yoklanır; değişen şey bağlamın soyutluğu ve
 sayısıdır. Düzeyler etiketiyle basılır; öğrenciye "kolay/zor" değil
 "Temel/Gelişen/İleri" dili kullanılır.
 
+**Bağlam zenginliği düzeye göre ölçeklenir** (ayrıntı: `kilavuz-ilkeleri.md`
+§5). Temel'de tek veri, en kısa bağlam. Gelişen'de en az iki veri
+birleştirilir. **İleri'de katmanlı bağlam zorunludur:** öğrencinin
+ayıklaması gereken, işe yaramayan/çeldirici veri de içeren zengin bağlam
+kurulur — MEB örnek soruları bu yüzden uzundur ve bu doğrudur. İleri düzey
+soruları fazla kısa/tek adımlı kalıyorsa yeniden yazılır. Uzunluk düzey
+etiketiyle değil, ölçülen düşünme adımıyla artar. Gerektiğinde **bağlam
+seti** kullan: tek zengin bağlamdan 2-3 bağımsız soru (ipucu zinciri
+yasağıyla).
+
 ## Adım 3 — Soru yazım kuralları
 
 Ayrıntısı `references/kilavuz-ilkeleri.md` dosyasındadır; aşağıdakiler

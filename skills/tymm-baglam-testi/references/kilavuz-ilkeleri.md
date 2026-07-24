@@ -98,11 +98,36 @@ Bağlam ayrıca:
 - Sorular, bağlamdaki **tek bir cümleyi bulmakla** çözülecek biçimde
   yazılmaz; öğrenci en az iki veriyi ilişkilendirmelidir (3.5.2).
 
-## 5. Bilişsel yük (2.4.3, 2.5.4)
+## 5. Bilişsel yük ve bağlam uzunluğu (2.4.3, 2.5.4, 3.2)
 
-- Çözüm için zorunlu olmayan görsel, süs detay ve karmaşık cümle yapısı
-  ayıklanır. Soru, okuma-anlama becerisini değil hedeflenen alan becerisini
-  ölçer.
+**Ölçülen değişken uzunluk değil, işlevsel yüktür.** Kısa bağlam iyi, uzun
+bağlam kötü değildir. Kötü olan **dekoratif** uzunluktur (süs görsel, tekrar
+eden cümle, çözüme katkısız detay). İşlevsel uzunluk — öğrencinin ayıklaması,
+birleştirmesi veya yorumlaması gereken veri — gerektiği kadar uzun olabilir
+ve üst düzey sorularda uzun **olmalıdır**.
+
+**Silme testi (kısaltma ölçütü):** "Kısa mı?" diye değil, her cümle için
+*"bu cümleyi silsem soru hâlâ çözülür mü?"* diye sor. Silinince çözülüyorsa
+dekoratiftir → at. Çözülemiyorsa yük taşır → ne kadar uzun olursa olsun kalsın.
+
+**Uzunluk düzeye göre ölçeklenir:**
+- **Temel (KB1):** tek veri, en kısa bağlam. Uzatmak burada gereksiz yüktür.
+- **Gelişen (KB2):** öğrenci en az iki veriyi birleştirir; bağlam doğal
+  olarak büyür.
+- **İleri (KB3) / problem çözme / sorgulama:** **katmanlı bağlam zorunludur.**
+  Kılavuz açıktır: "öğrenciye tüm değişkenlerin ayıklanıp hazır sunulduğu
+  pürüzsüz bir ortam sağlanmamalıdır." Bağlamda işe yaramayan/çeldirici veri
+  de bulunur; öğrenci ilgili olanı **ayıklamak** zorunda kalır. Bu, MEB örnek
+  sorularının neden uzun olduğunun asıl sebebidir ve doğrudur.
+
+**Bağlam seti — uzunluğu amortize eden araç (2.4.2):** Tek zengin bağlamdan
+(uzun metin, tablo, iki kaynak) **2-3 bağımsız soru** çıkar. Böylece okuma
+maliyeti tek soruya değil birkaç soruya yayılır. İpucu zinciri yasağı burada
+da geçerlidir: sorular ortak veriye bağlanır ama birbirinden bağımsız
+çözülebilir. Sorgulama/eleştirel düşünme için çok kaynaklı bağlam (çelişen
+iki kısa metin, tablo + haber, birincil + ikincil kaynak) tercih edilir.
+
+Bunlara karşın **dekoratif yük her zaman ayıklanır:**
 - **Görsel metni tekrar etmez, yeni veri sunar.** "Masada üç elma var"
   yazıp yanına üç elma çizmek yüktür; "elmaların çürüme oranı" grafiği
   işlevseldir.
@@ -112,9 +137,11 @@ Bağlam ayrıca:
   sayfada soru diğer sayfada olmaz (A4 çıktıda sayfa bölünmesi kuralı).
 - Anlatım bozukluğu veya birden çok anlama gelen ifade geçerlik tehdididir;
   düzeltilir.
-- Bilişsel görüşme bulgusu: öğrenciler **uzun metinli veya görsel yoğun**
-  soruları okumadan "zor" etiketleyip motivasyon kaybediyor. Bağlam,
-  ölçülen beceri için gereken en kısa uzunlukta tutulur.
+- Bilişsel görüşme bulgusu: öğrenciler uzun metinli veya **görsel yoğun**
+  soruları okumadan "zor" etiketleyip motivasyon kaybediyor. Bu refleks
+  görsel gürültüden ve tekrar eden detaydan doğar — zengin veriden değil.
+  Çözüm bağlamı kısaltmak değil, **dekoratif yükü** atıp veriyi sade
+  sunmaktır.
 
 ## 6. Yayın öncesi kontrol listesi (2.4.4)
 

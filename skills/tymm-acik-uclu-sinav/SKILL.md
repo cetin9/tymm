@@ -81,6 +81,12 @@ Bu yüzden ilk belge budur:
 - **Kademelendirme:** soruların yaklaşık yarısı tek bileşenli uygulama
   (temel), kalanı ilişkilendirme ve muhakeme/gerekçelendirme ister; en az
   2 soru "neden/nasıl/gerekçelendir" tipindedir.
+- **Bağlam zenginliği kademeye göre ölçeklenir** (`kilavuz-ilkeleri.md` §5):
+  temel sorularda tek veri; muhakeme/gerekçelendirme sorularında **katmanlı
+  bağlam** — öğrencinin ayıklaması gereken, işe yaramayan veri de içeren
+  zengin durum. Kılavuz üst düzey için "pürüzsüz, hazır sunulmuş ortam"
+  yasaktır der. MEB örnek sorularının uzunluğu bu katmanlılıktan gelir;
+  uzunluk dekoratif değil işlevsel olduğu sürece kısaltılmaz.
 - **Alt basamaklı sorular:** bir soru a-b-c alt maddelerine bölünebilir;
   alt maddeler bağımsız puanlanır ve ipucu zinciri kurmaz (a'yı yapamayan
   b'yi yapabilmelidir).
