@@ -1,4 +1,24 @@
-# Araçlar — kazanım verisi üretim hattı
+# Araçlar
+
+- `pdf_metin_cikar.py` + `kazanim_uret.py` — kazanım verisi üretim hattı
+- `denetim.py` — üretim çıktılarının otomatik (deterministik) denetimi
+
+## denetim.py — çıktı denetimi (Katman 1)
+
+Bir üretim paketini (klasör) alıp TYMM/yönetmelik kurallarının makineyle
+denetlenebilen kısmını koşar; kural kural ✓/⚠/✗ raporu verir.
+
+```bash
+python tools/denetim.py <paket-klasörü> ...   # belirli paket(ler)
+python tools/denetim.py                        # argümansız: ornekler/*/
+```
+Çıkış kodu HATA varsa 1. Kural listesi ve muhakeme katmanı (Katman 2) için
+`evals/DENETIM.md`. Yeni kural eklerken hem temiz hem kasıtlı bozuk paketle
+sına (araç bozuğu yakalamıyorsa işe yaramaz).
+
+---
+
+## Kazanım üretim hattı
 
 Resmî tema/ünite PDF'lerinden `references/kazanimlar/` dosyalarını üreten
 betikler. Program güncellenirse (veya 8. sınıf TYMM'ye geçince) bu hat

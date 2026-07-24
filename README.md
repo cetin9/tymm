@@ -44,9 +44,13 @@ skills/tymm-ders-farklilastirma/
   SKILL.md                     Destekleme + Zenginleştirme etkinlik paketleri (resmî desen)
 KULLANIM.md                    Öğretmenler için istem rehberi (açık/örtük/kapsam dışı örnekler)
 ornekler/                      Denetimden geçmiş referans paketler (sınıfta denenmiş örnek çıktılar)
+tools/
+  denetim.py                     Otomatik çıktı denetimi (Katman 1 — deterministik)
+  pdf_metin_cikar.py + kazanim_uret.py   Kazanım verisi üretim hattı
 evals/
+  DENETIM.md                     Üç katmanlı denetim yapısı (tetikleme + otomatik + muhakeme)
   tymm-ders-planlama/rubrik-matematik.csv   (14 kriter)
-  tymm-baglam-testi/rubrik-matematik.csv    (15 kriter)
+  tymm-baglam-testi/rubrik-matematik.csv    (16 kriter)
   tymm-acik-uclu-sinav/rubrik-matematik.csv (10 kriter)
   tymm-ders-farklilastirma/rubrik-matematik.csv (10 kriter)
   tetikleme/tetikleme-seti.csv              (33 istem — KULLANIM.md ile aynı set)

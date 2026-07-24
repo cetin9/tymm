@@ -81,9 +81,18 @@ tabanlı onar ("ya da" gibi meşru ikilileri birleştirme).
 
 ## Çalışma döngüsü
 
-Üret → `evals/` altındaki rubrikle puanla (planlama M01-M14, test T01-T10) →
-bulguyu beceri dosyasına geri yaz. Beceri metnine kural eklemeden önce kuralın
-hangi üretim hatasından doğduğunu not et.
+Üret → **üç denetim** → bulguyu beceri dosyasına geri yaz:
+1. Tetikleme (`evals/tetikleme/tetikleme-seti.csv`);
+2. **Katman 1 otomatik:** `python tools/denetim.py <paket>` (mekanik kurallar —
+   kod varlığı, puan, hepsi/hiçbiri, denge, sızıntı, yönetmelik ibaresi);
+3. **Katman 2 muhakeme:** rubrikle (planlama 14, test 16, açık uçlu 10,
+   farklılaştırma 10) işlevsellik/çeldirici/bilimsel doğruluk/katmanlılık.
+
+Ayrıntı ve kural→rubrik eşlemesi: `evals/DENETIM.md`. Sınıfta yakalanan
+gerçek hatalar (soğan-kloroplast, "hiçbiri" kayması, katmansız İleri düzey)
+Katman 2'den çıkar — otomatik denetim onları göremez. Beceri metnine kural
+eklemeden önce kuralın hangi üretim hatasından doğduğunu not et; denetimden
+geçmiş referans paketler `ornekler/` altındadır.
 
 ## Yol haritası
 
