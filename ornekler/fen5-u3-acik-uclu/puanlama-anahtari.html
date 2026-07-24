@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Fen 5 · Ünite 3 — Dereceli Puanlama Anahtarı</title>
+<style>
+  :root{--murekkep:#1a1a2e; --vurgu:#0f4c81; --acik:#e8f0f7; --cizgi:#c9d4de; --puan:#0f4c81; --uyari:#8a3b12;}
+  *{box-sizing:border-box; margin:0; padding:0;}
+  @page{size:A4; margin:14mm 12mm;}
+  html,body{font-family:'Segoe UI',Calibri,Arial,sans-serif; color:var(--murekkep); font-size:10pt; line-height:1.42;}
+  @media screen{body{background:#666; padding:20px;} .sayfa{width:210mm; min-height:297mm; margin:0 auto 20px; background:#fff; padding:14mm 12mm; box-shadow:0 2px 8px rgba(0,0,0,.3);}}
+  @media print{.sayfa{page-break-after:always;} .sayfa:last-child{page-break-after:auto;}}
+  .ust-serit{display:flex; justify-content:space-between; align-items:flex-end; border-bottom:3px solid var(--vurgu); padding-bottom:6px; margin-bottom:10px;}
+  .ust-serit h1{font-size:15pt; color:var(--vurgu);}
+  .ust-serit .meta{font-size:9pt; text-align:right; color:#444;}
+  h2.bolum{background:var(--vurgu); color:#fff; font-size:11pt; padding:4px 10px; margin:14px 0 6px; border-radius:3px; page-break-after:avoid;}
+  .soru-blok{page-break-inside:avoid; margin-bottom:12px;}
+  .cikti-satiri{font-size:9pt; color:#444; background:var(--acik); padding:3px 8px; border-radius:3px; margin-bottom:5px;}
+  .ornek{border-left:4px solid var(--vurgu); background:#f7fafd; padding:6px 10px; margin:5px 0; font-size:9.5pt;}
+  .ornek strong{color:var(--vurgu);}
+  table.puanlama{width:100%; border-collapse:collapse; margin:5px 0; font-size:9.5pt;}
+  table.puanlama th{background:var(--acik); font-size:9pt; text-align:left;}
+  table.puanlama th, table.puanlama td{border:1px solid var(--cizgi); padding:4px 7px; vertical-align:top;}
+  table.puanlama td.p{width:16mm; text-align:center; font-weight:700; color:var(--puan);}
+  table.puanlama tr.alt td{background:#fafcfe; font-weight:700;}
+  table.hata{width:100%; border-collapse:collapse; margin:5px 0 2px; font-size:9.5pt;}
+  table.hata th{background:#f4e9e1; color:var(--uyari); font-size:9pt; text-align:left;}
+  table.hata th, table.hata td{border:1px solid var(--cizgi); padding:4px 7px; vertical-align:top;}
+  table.ozet{width:100%; border-collapse:collapse; margin:6px 0; font-size:9.5pt;}
+  table.ozet th{background:var(--acik); font-size:9pt;}
+  table.ozet th, table.ozet td{border:1px solid var(--cizgi); padding:4px 7px; text-align:center;}
+  table.ozet td.sol{text-align:left;}
+  table.ozet tr.toplam td{background:var(--acik); font-weight:700;}
+  .kutu{border:2px solid var(--vurgu); background:var(--acik); border-radius:6px; padding:9px 13px; margin:9px 0; page-break-inside:avoid; font-size:9.5pt;}
+  .kutu .etiket{font-weight:700; color:var(--vurgu); font-size:9pt; text-transform:uppercase; letter-spacing:.05em; display:block; margin-bottom:3px;}
+  ul{margin:3px 0 3px 17px;} li{margin:2px 0;}
+  .dipnot{font-size:8.5pt; color:#555; border-top:1px solid var(--cizgi); margin-top:10px; padding-top:4px;}
+</style>
+</head>
+<body>
+
+<!-- SAYFA 1 -->
+<div class="sayfa">
+  <div class="ust-serit">
+    <h1>Dereceli Puanlama Anahtarı</h1>
+    <div class="meta">Fen Bilimleri · 5. Sınıf · 3. Ünite<br><strong>Öğretmen belgesidir — öğrenciye dağıtılmaz</strong></div>
+  </div>
+
+  <div class="kutu">
+    <span class="etiket">Puanlama ilkesi</span>
+    Her alt maddede <strong>sonuç kadar gerekçe de puanlanır</strong>. Doğru sonuca
+    ulaşıp gerekçeyi yazmayan öğrenci yalnız sonuç basamağını alır. Farklı ama bilimsel
+    olarak doğru ifadeler tam puan alır; anahtar kelimenin birebir yazılması aranmaz.
+  </div>
+
+  <h2 class="bolum">Soru 1 — Bitki-hayvan hücresi karşılaştırma (13 puan)</h2>
+  <div class="soru-blok">
+    <div class="cikti-satiri"><strong>FB.5.3.1.1.</strong> b) benzer özellikleri listeler · c) farklı özellikleri listeler</div>
+    <div class="ornek"><strong>a) Örnek tam yanıt:</strong> Ortak yapılar (herhangi ikisi):
+      hücre zarı, çekirdek, sitoplazma.</div>
+    <table class="puanlama">
+      <tr><th>Ölçüt</th><th>Puan</th></tr>
+      <tr><td>Tablodan iki ortak yapıyı doğru yazar (her biri 3 puan)</td><td class="p">6</td></tr>
+      <tr class="alt"><td>a) alt toplam</td><td class="p">6</td></tr>
+    </table>
+    <div class="ornek"><strong>b) Örnek tam yanıt:</strong> 1. hücre bitki hücresidir.
+      Çünkü tabloda yalnız 1. hücrede <strong>hücre duvarı</strong> ve <strong>kloroplast</strong>
+      vardır; bu iki yapı bitki hücresine özgüdür, hayvan (2.) hücresinde bulunmaz.</div>
+    <table class="puanlama">
+      <tr><th>Ölçüt</th><th>Puan</th></tr>
+      <tr><td>“1. hücre” yanıtını verir</td><td class="p">3</td></tr>
+      <tr><td>Kararını tablodaki hücre duvarı ve kloroplasta dayandırır (ikisinden biri: 2 puan)</td><td class="p">4</td></tr>
+      <tr class="alt"><td>b) alt toplam</td><td class="p">7</td></tr>
+    </table>
+    <table class="hata">
+      <tr><th>Beklenen yaygın hata</th><th>Puan kararı</th></tr>
+      <tr><td>“1. hücre” der ama gerekçeyi ortak yapılara (zar/çekirdek) bağlar</td><td>Gerekçe puanı (4) verilmez; bunlar iki hücrede de var.</td></tr>
+      <tr><td>2. hücreyi bitki sayma (kloroplast/duvar yokken)</td><td>Seçim puanı (3) verilmez.</td></tr>
+    </table>
+  </div>
+
+  <h2 class="bolum">Soru 2 — Hücre-doku-organ-sistem-organizma (25 puan)</h2>
+  <div class="soru-blok">
+    <div class="cikti-satiri"><strong>FB.5.3.1.2.</strong> a) hiyerarşik ilişkiyi ortaya koyar · b) uyumlu bütün olarak ortaya koyar</div>
+    <div class="ornek"><strong>a) Örnek tam yanıt:</strong> kalp kası hücresi → kas dokusu →
+      kalp → dolaşım sistemi → insan.</div>
+    <table class="puanlama">
+      <tr><th>Ölçüt</th><th>Puan</th></tr>
+      <tr><td>Beş kavramı doğru sırada dizer (bir kavram yanlış yerde: 6 puan)</td><td class="p">10</td></tr>
+      <tr class="alt"><td>a) alt toplam</td><td class="p">10</td></tr>
+    </table>
+    <div class="ornek"><strong>b) Örnek tam yanıt:</strong> “kalp” bir <strong>organdır</strong>;
+      farklı dokuların (kas dokusu vb.) birlikte çalışmasıyla oluşur. “insan” bir
+      <strong>organizmadır</strong>; birlikte çalışan sistemlerin bir araya gelmesiyle oluşur.</div>
+    <table class="puanlama">
+      <tr><th>Ölçüt</th><th>Puan</th></tr>
+      <tr><td>“kalp”→organ, “insan”→organizma olarak adlandırır (her biri 2 puan)</td><td class="p">4</td></tr>
+      <tr><td>Bu basamakların nelerden oluştuğunu açıklar (organ←farklı dokular, organizma←sistemler)</td><td class="p">3</td></tr>
+      <tr class="alt"><td>b) alt toplam</td><td class="p">7</td></tr>
+    </table>
+    <div class="ornek"><strong>c) Örnek tam yanıt:</strong> Cümle yanlıştır. En küçük yapı
+      organ değil <strong>hücredir</strong>; hücre canlılığın temel birimidir. Bir yapının
+      gözle görülebilmesi onun en küçük olduğunu göstermez — hücreler çok küçük olduğu için
+      ancak mikroskopla görülür.</div>
+    <table class="puanlama">
+      <tr><th>Ölçüt</th><th>Puan</th></tr>
+      <tr><td>Cümlenin yanlış olduğunu belirtir</td><td class="p">2</td></tr>
+      <tr><td>En küçük yapının hücre / canlılığın temel birimi olduğunu yazar</td><td class="p">3</td></tr>
+      <tr><td>“Gözle görülmek” ölçütünün geçersizliğini açıklar (hücre mikroskopla görülür)</td><td class="p">3</td></tr>
+      <tr class="alt"><td>c) alt toplam</td><td class="p">8</td></tr>
+    </table>
+    <table class="hata">
+      <tr><th>Beklenen yaygın hata</th><th>Puan kararı</th></tr>
+      <tr><td>Doku ile organı yer değiştirme (kas dokusu ↔ kalp sırası)</td><td>a) maddesinde kısmi puan (6) uygulanır.</td></tr>
+      <tr><td>Sistemi organizmadan büyük dizme (dolaşım sistemi → insan yerine tersi)</td><td>a) maddesinde kısmi puan (6) uygulanır.</td></tr>
+      <tr><td>c) maddesinde yalnız “yanlıştır” deyip gerekçe yazmama</td><td>Yalnız 2 puan verilir.</td></tr>
+    </table>
+  </div>
+
+  <div class="dipnot">Sayfa 1/3 — Öğretmen belgesi. Yapay zekâ desteğiyle hazırlanmıştır; uygulamadan önce öğretmen incelemesi gerekir.</div>
+</div>
+
+<!-- SAYFA 2 -->
+<div class="sayfa">
+  <h2 class="bolum">Soru 3 — Destek-hareket yapılarını sınıflandırma (13 puan)</h2>
+  <div class="soru-blok">
+    <div class="cikti-satiri"><strong>FB.5.3.2.1.</strong> a) nitelikleri tanımlar · b) ayrıştırır · c) gruplandırır</div>
+    <div class="ornek"><strong>a) Örnek tam yanıt:</strong> Kemik: kafatası, omurga ·
+      Eklem: dirsek, diz · Kas: kol kası, kalp kası.</div>
+    <table class="puanlama">
+      <tr><th>Ölçüt</th><th>Puan</th></tr>
+      <tr><td>Altı yapıyı doğru gruba yerleştirir (her yapı 1,5 puan)</td><td class="p">9</td></tr>
+      <tr class="alt"><td>a) alt toplam</td><td class="p">9</td></tr>
+    </table>
+    <div class="ornek"><strong>b) Örnek tam yanıt:</strong> Diz eklemi hareketli (oynar) bir
+      eklemdir; bacağın bükülüp açılmasını sağlar. Kafatası kemikleri arasındaki eklemler ise
+      oynamaz eklemlerdir, hareket etmez.</div>
+    <table class="puanlama">
+      <tr><th>Ölçüt</th><th>Puan</th></tr>
+      <tr><td>Dizi hareketli, kafatası eklemini oynamaz olarak ayırt eder</td><td class="p">4</td></tr>
+      <tr class="alt"><td>b) alt toplam</td><td class="p">4</td></tr>
+    </table>
+    <table class="hata">
+      <tr><th>Beklenen yaygın hata</th><th>Puan kararı</th></tr>
+      <tr><td>Kalp kasını “organ/kemik” grubuna koyma</td><td>O yapının 1,5 puanı verilmez.</td></tr>
+      <tr><td>Bütün eklemleri hareketli sanma (kafatasına “hareketli” deme)</td><td>b) maddesinden puan verilmez.</td></tr>
+    </table>
+  </div>
+
+  <h2 class="bolum">Soru 4 — Kasların çalışması (12 puan)</h2>
+  <div class="soru-blok">
+    <div class="cikti-satiri"><strong>FB.5.3.2.1.</strong> a) nitelikleri tanımlar · b) ayrıştırır</div>
+    <div class="ornek"><strong>a) Örnek tam yanıt:</strong> Hata, kasın “ittiği”nin
+      yazılmasıdır. Kas kasıldığında kısalır ve bağlı olduğu kemiği <strong>kendine doğru
+      çeker</strong>; itme yapamaz. Doğrusu: “Kolumu bükerken kasım kolumu çekti.”</div>
+    <table class="puanlama">
+      <tr><th>Ölçüt</th><th>Puan</th></tr>
+      <tr><td>Hatanın “kas iter” olduğunu belirler</td><td class="p">3</td></tr>
+      <tr><td>Kasın kısalıp kemiği çektiğini doğru yazar</td><td class="p">3</td></tr>
+      <tr class="alt"><td>a) alt toplam</td><td class="p">6</td></tr>
+    </table>
+    <div class="ornek"><strong>b) Örnek tam yanıt:</strong> Kaslar yalnız çeker, itemez.
+      Bu yüzden kolu bükerken ön kas kasılıp çeker; kolu tekrar açmak için ters yöndeki
+      (arka) kasın kasılıp çekmesi gerekir. Tabloda görüldüğü gibi biri kasılırken diğeri
+      gevşer; bu nedenle kaslar karşılıklı çiftler hâlinde çalışır.</div>
+    <table class="puanlama">
+      <tr><th>Ölçüt</th><th>Puan</th></tr>
+      <tr><td>Kasların itemediğini, zıt hareketin karşı kasla olduğunu açıklar</td><td class="p">4</td></tr>
+      <tr><td>Açıklamasını tablodaki “biri kasılırken diğeri gevşer” verisine dayandırır</td><td class="p">2</td></tr>
+      <tr class="alt"><td>b) alt toplam</td><td class="p">6</td></tr>
+    </table>
+    <table class="hata">
+      <tr><th>Beklenen yaygın hata</th><th>Puan kararı</th></tr>
+      <tr><td>“Kaslar hem iter hem çeker” demek</td><td>a) maddesinden çekme puanı (3) verilmez.</td></tr>
+      <tr><td>Kolu hareket ettirenin kemik olduğunu sanma</td><td>İlgili basamak verilmez; hareketi kas sağlar.</td></tr>
+    </table>
+  </div>
+
+  <div class="dipnot">Sayfa 2/3 — Öğretmen belgesi. Yapay zekâ desteğiyle hazırlanmıştır; uygulamadan önce öğretmen incelemesi gerekir.</div>
+</div>
+
+<!-- SAYFA 3 -->
+<div class="sayfa">
+  <h2 class="bolum">Soru 5 — Sistem sağlığı ve kaynak değerlendirme (25 puan)</h2>
+  <div class="soru-blok">
+    <div class="cikti-satiri"><strong>FB.5.3.2.2.</strong> a) kaynakları belirler · c) bulduğu bilgileri doğrular</div>
+    <div class="ornek"><strong>a) Örnek tam yanıt:</strong> 1 ve 4 numaralı kaynaklar.</div>
+    <table class="puanlama">
+      <tr><th>Ölçüt</th><th>Puan</th></tr>
+      <tr><td>1 ve 4'ü güvenilir kaynak olarak seçer (her biri 4 puan)</td><td class="p">8</td></tr>
+      <tr class="alt"><td>a) alt toplam</td><td class="p">8</td></tr>
+    </table>
+    <div class="ornek"><strong>b) Örnek tam yanıt:</strong> 2 güvenilmez: ürün satan bir firma
+      tarafsız değildir, amacı satıştır; “başka hiçbir şeye gerek yok” ifadesi abartılıdır.
+      3 güvenilmez: beğeni sayısı doğruluk kanıtı değildir, bilimsel dayanağı ve kaynağı yoktur.</div>
+    <table class="puanlama">
+      <tr><th>Ölçüt</th><th>Puan</th></tr>
+      <tr><td>2 ve 3'ü güvenilmez olarak seçer</td><td class="p">3</td></tr>
+      <tr><td>Her biri için ayrı, geçerli gerekçe yazar (her gerekçe 3 puan)</td><td class="p">6</td></tr>
+      <tr class="alt"><td>b) alt toplam</td><td class="p">9</td></tr>
+    </table>
+    <div class="ornek"><strong>c) Örnek tam yanıt (iki öneri):</strong> Kalsiyum/D vitamini
+      açısından dengeli beslenmek; düzenli hareket/egzersiz yapmak; doğru duruşa dikkat etmek;
+      ağır çantayı iki omuza dengeli asmak (herhangi ikisi).</div>
+    <table class="puanlama">
+      <tr><th>Ölçüt</th><th>Puan</th></tr>
+      <tr><td>Güvenilir kaynakla tutarlı iki öneri yazar (her biri 4 puan)</td><td class="p">8</td></tr>
+      <tr class="alt"><td>c) alt toplam</td><td class="p">8</td></tr>
+    </table>
+    <table class="hata">
+      <tr><th>Beklenen yaygın hata</th><th>Puan kararı</th></tr>
+      <tr><td>2 veya 3'ü güvenilir sayma</td><td>a) ve b) ilgili basamakları verilmez.</td></tr>
+      <tr><td>b) maddesinde tek ortak gerekçe yazma (“ikisi de yanlış”)</td><td>Yalnız bir gerekçe puanı (3) verilir.</td></tr>
+      <tr><td>c) maddesinde güvenilmez kaynaktan öneri yazma (“süt içme”)</td><td>O öneri puanı verilmez.</td></tr>
+    </table>
+  </div>
+
+  <h2 class="bolum">Soru 6 — Eksik veriyle karar (12 puan)</h2>
+  <div class="soru-blok">
+    <div class="cikti-satiri"><strong>FB.5.3.1.1.</strong> c) farklı özellikleri listeler — eksik veriyle karar (katmanlı)</div>
+    <div class="ornek"><strong>a) Örnek tam yanıt:</strong> Hayır, kesin karar verilemez.
+      Kloroplastın olmaması tek başına yeterli değildir; bitkinin kök gibi ışık almayan
+      kısımlarında da kloroplast bulunmaz. Ayrıca hücre duvarı “görülemedi” yazıyor — bu,
+      yok olduğu değil, gözlenemediği anlamına gelir.</div>
+    <table class="puanlama">
+      <tr><th>Ölçüt</th><th>Puan</th></tr>
+      <tr><td>“Kesin karar verilemez” yanıtını verir</td><td class="p">2</td></tr>
+      <tr><td>Gerekçeyi eksik veriye bağlar (duvar görülemedi / kloroplast tek ölçüt değil)</td><td class="p">4</td></tr>
+      <tr class="alt"><td>a) alt toplam</td><td class="p">6</td></tr>
+    </table>
+    <div class="ornek"><strong>b) Örnek tam yanıt:</strong> Hücre duvarının bulunup
+      bulunmadığı netleştirilmelidir: preparat yeniden veya daha yüksek büyütmede
+      incelenmeli, gerekirse boyama yapılmalıdır. Hücre duvarı varsa hücre bitki hücresidir.</div>
+    <table class="puanlama">
+      <tr><th>Ölçüt</th><th>Puan</th></tr>
+      <tr><td>Hücre duvarını netleştirecek bir ek gözlem önerir</td><td class="p">6</td></tr>
+      <tr class="alt"><td>b) alt toplam</td><td class="p">6</td></tr>
+    </table>
+    <table class="hata">
+      <tr><th>Beklenen yaygın hata</th><th>Puan kararı</th></tr>
+      <tr><td>“Kloroplast yoksa hayvan hücresidir” (tek ölçütle karar)</td><td>a) maddesinden puan verilmez.</td></tr>
+      <tr><td>“Görülemedi = yoktur” sayma</td><td>Gerekçe puanı (4) verilmez.</td></tr>
+    </table>
+  </div>
+
+  <h2 class="bolum">Puan Özeti</h2>
+  <table class="ozet">
+    <tr><th>Soru</th><th>Çıktı</th><th>Süreç bileşeni</th><th>Puan</th></tr>
+    <tr><td>1</td><td class="sol">FB.5.3.1.1</td><td class="sol">b, c</td><td>13</td></tr>
+    <tr><td>2</td><td class="sol">FB.5.3.1.2</td><td class="sol">a, b</td><td>25</td></tr>
+    <tr><td>3</td><td class="sol">FB.5.3.2.1</td><td class="sol">a, b, c</td><td>13</td></tr>
+    <tr><td>4</td><td class="sol">FB.5.3.2.1</td><td class="sol">a, b</td><td>12</td></tr>
+    <tr><td>5</td><td class="sol">FB.5.3.2.2</td><td class="sol">a, c</td><td>25</td></tr>
+    <tr><td>6</td><td class="sol">FB.5.3.1.1</td><td class="sol">c</td><td>12</td></tr>
+    <tr class="toplam"><td colspan="3">TOPLAM</td><td>100</td></tr>
+  </table>
+
+  <div class="kutu">
+    <span class="etiket">Uygulama notu</span>
+    <ul>
+      <li>Konu soru dağılım tablosu sınavdan önce öğrencilerle paylaşılmalıdır.</li>
+      <li>Soru 2-c, 4 ve 6 muhakeme/gerekçe sorularıdır: farklı ama tutarlı gerekçeler tam puan alır.</li>
+      <li>En çok puan kaybedilen basamak, ilgili süreç bileşeninin yeniden çalışılması gerektiğini gösterir.</li>
+    </ul>
+  </div>
+
+  <div class="dipnot">
+    Ölçülen çıktılar: FB.5.3.1.1 · FB.5.3.1.2 · FB.5.3.2.1 · FB.5.3.2.2 — Sayfa 3/3 — Öğretmen belgesi.
+    Yapay zekâ desteğiyle hazırlanmıştır; uygulamadan önce öğretmen incelemesi gerekir.
+  </div>
+</div>
+</body>
+</html>

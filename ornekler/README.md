@@ -38,3 +38,21 @@ sağlamak.
 - `puanlama-anahtari.html` — örnek yanıt + süreç bileşenine bağlı kısmi puan + yaygın hata
 
 Denetimde içerik hatası bulunmadı; anahtar tam doğru. Referans olarak eklendi.
+
+### `fen5-u3-acik-uclu/` — 3 belge
+5. sınıf Fen, **3. Ünite** (Canlıların Yapısına Yolculuk) için yönetmeliğe
+uygun **açık uçlu ortak yazılı** — düzey testleri/kâğıtlarla aynı konu
+(FB.5.3.1.1 · FB.5.3.1.2 · FB.5.3.2.1 · FB.5.3.2.2). 6 soru, 100 puan; her
+çıktı tam 25 puan.
+- `konu-soru-dagilimi.html` · `sinav.html` · `puanlama-anahtari.html`
+
+**Denetim düzeltmeleri (Katman 2 muhakeme):**
+1. Soru 1-b: hücreler "yaprak/yanak" diye adlandırılınca "hangi canlıya
+   ait?" sorusu tabloyu okumadan (ad → bitki) cevaplanabiliyordu →
+   hücreler anonimleştirildi (1./2. hücre); sınıflandırma verilerden yapılır.
+2. Soru 2-b: kavram adları düzeyi ele veriyordu ("kalp kası **hücresi**",
+   "kas **dokusu**") → b) yalnız "kalp"(organ) ve "insan"(organizma)
+   basamaklarına ve bunların nasıl oluştuğuna odaklandı.
+Her iki düzeltmenin kök ilkesi — *sınıflandırma sorusunda adlandırma
+cevabı sızdırır* — `kilavuz-ilkeleri.md` §2'ye üretim uyarısı olarak
+işlendi.
