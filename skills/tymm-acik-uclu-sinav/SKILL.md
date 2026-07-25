@@ -117,6 +117,25 @@ bırakılır. Öğrenci kağıdına anahtar içeriği veya stili sızmaz. Üç b
 turda teslim edilir; teslim notunda konu soru dağılım tablosunun sınavdan
 önce öğrencilerle paylaşılması gerektiği hatırlatılır.
 
+## Adım 6 — Teslimden önce denetim (zorunlu)
+
+Teslimden ÖNCE her soruyu şu dört kontrolden geçir (ayrıntı:
+`../tymm-baglam-testi/references/kilavuz-ilkeleri.md` §6):
+
+1. **İşlevsellik + adlandırma sızıntısı:** Soru bağlam/veri okunmadan
+   çözülüyor mu? Sınıflandırma sorusunda örneği ADIYLA verip cevabı
+   sızdırdın mı? (§2 üretim uyarısı; örneği anonimleştir.)
+2. **Bilimsel doğruluk + örnek yanıt:** Olgu doğru mu; her sorunun örnek tam
+   yanıtı tutarlı ve tek mi?
+3. **Yönetmelik + puanlama:** Yalnız açık uçlu/kısa cevaplı (çoktan seçmeli
+   YOK); kısmi puan basamaklarının toplamı soru puanına, sorular 100'e
+   kapanıyor mu?
+4. **İzlenebilirlik:** Her soru süreç bileşenine yazılmış; hiçbir çıktı 25
+   puanı aşmıyor; kod/ifade birebir mi?
+
+Karşılanmayan madde varsa soruyu yeniden yaz. **Bu öz-denetim öğretmen
+incelemesinin yerini tutmaz.**
+
 ## Kapsam dışı
 
 Çoktan seçmeli test/tarama/deneme (`tymm-baglam-testi`), ders planı ve

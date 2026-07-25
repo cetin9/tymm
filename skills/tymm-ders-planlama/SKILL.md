@@ -192,6 +192,24 @@ dosyanın basılıp dağıtılacağı).
 
 ---
 
+## Adım 5 — Teslimden önce denetim (zorunlu)
+
+Belgeleri teslim etmeden ÖNCE şu dört kontrolü yap:
+
+1. **Kavram izlenebilirliği + adlandırma:** Çalışma kağıdında adlandırılan
+   her kavram plan akışında kurulmuş mu? Sınıflandırma/tanıma sorusunda
+   örneği ADIYLA verip cevabı sızdırdın mı? (Örneği anonimleştir: 1./2. hücre.)
+2. **Bilimsel doğruluk:** Olgusal içerik (astronomi, hücre, kuvvet…) doğru mu?
+3. **Cevap sızıntısı + puan:** Öğrenci kağıdında cevap/çözüm YOK; anahtar ayrı
+   belgede mi? Kağıt 100 puana kapanıyor mu?
+4. **Veri sadakati:** Çıktı kodu/ifadesi ve süreç bileşenleri kazanım
+   dosyasından birebir mi?
+
+Karşılanmayan madde varsa düzelt. **Bu öz-denetim öğretmen incelemesinin
+yerini tutmaz.**
+
+---
+
 ## Kapsam dışı
 
 - Mevcut bir dersi/kağıdı kademelere ayırma (`tymm-ders-farklilastirma`

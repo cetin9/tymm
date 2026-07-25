@@ -116,6 +116,24 @@ başlar. Cevap/ölçüt içeriği öğrenci sayfasına sızmaz (Ek 2 değerlendi
 Teslim notunda etkinliklerin örnek olduğu ve sınıfa göre uyarlanabileceği
 bir cümleyle belirtilir.
 
+## Adım 5 — Teslimden önce denetim (zorunlu)
+
+Paketleri teslim etmeden ÖNCE şu dört kontrolü yap:
+
+1. **Hedef korunumu:** Destekleme hedefi düşürmüyor (aynı çıktı);
+   zenginleştirme içerik çerçevesinin dışına (sonraki sınıf konusuna)
+   çıkmıyor mu?
+2. **Kavram seti + adlandırma:** Mevcut materyal verildiyse kavram seti
+   korunmuş mu? Sınıflandırma etkinliğinde örneği ADIYLA verip cevabı
+   sızdırdın mı?
+3. **Yanılgı + bilim:** Desteklemede en az bir yaygın hata etkinlik içinde
+   önleniyor; olgular doğru mu?
+4. **İzlenebilirlik + sızıntı:** Hedef çıktı kodu/ifadesi birebir; Ek 2
+   değerlendirme ölçütleri öğrenci etkinlik sayfasına sızmamış mı?
+
+Karşılanmayan madde varsa düzelt. **Bu öz-denetim öğretmen incelemesinin
+yerini tutmaz.**
+
 ## Kapsam dışı
 
 Sıfırdan ders paketi (`tymm-ders-planlama`), test üretimi

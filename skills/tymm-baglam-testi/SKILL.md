@@ -151,8 +151,26 @@ başına bağlam adı; çeldirici → yanılgı eşleme tablosu; seçenek dağı
 sayımı; gerçek veri kullanıldıysa kaynak satırı; puanlama önerisi (soru
 başına 10 puan).
 
-Belgeleri teslim etmeden önce `kilavuz-ilkeleri.md` §6 kontrol listesini
-tüm sorulara uygula; karşılanmayan madde varsa soruyu yeniden yaz.
+## Adım 5 — Teslimden önce denetim (zorunlu)
+
+Belgeleri teslim etmeden ÖNCE her soruyu şu dört muhakeme kontrolünden
+geçir (ayrıntılı liste: `references/kilavuz-ilkeleri.md` §6):
+
+1. **İşlevsellik + adlandırma sızıntısı:** Soru bağlam/tablo okunmadan
+   çözülebiliyor mu? Sınıflandırma sorusunda örneği ADIYLA verip cevabı
+   sızdırdın mı? (Bkz. §2 üretim uyarısı — "yaprak hücresi → bitki" tuzağı;
+   örneği anonimleştir: 1./2. hücre.)
+2. **Bilimsel doğruluk + tek cevap:** Her sorunun cevabı olgusal doğru ve
+   tek mi? İkinci savunulabilir cevap kaldı mı?
+3. **Çeldirici + biçim:** Çeldiriciler yanılgıdan mı türetilmiş; hepsi/hiçbiri
+   yok, olumsuz kök ≤2, seçenek dengesi tutuyor, "alıştırma/deneme" ibaresi
+   var mı?
+4. **İzlenebilirlik:** Her soru çıktının süreç bileşenine mi yazılmış; çıktı
+   kodu/ifadesi birebir mi?
+
+Karşılanmayan madde varsa soruyu yeniden yaz. **Bu öz-denetim, öğretmenin
+kendi incelemesinin yerini tutmaz** — her belge "uygulamadan önce öğretmen
+incelemesi gerekir" dipnotu taşır.
 
 ## Kapsam dışı
 

@@ -102,6 +102,15 @@ karşı okunur. Rubrikler: `evals/<beceri>/rubrik-matematik.csv`
 | **Kavram izlenebilirliği** | Soruda geçen kavram çıktı+dolgu listesinde mi? | T02 |
 | **Kısmi puan bağı (açık uçlu)** | Basamaklar süreç bileşenine bağlı; toplam = soru puanı | Y07 |
 
+**Skill içine gömülü hâli:** Katman 2'nin en yüksek değerli dört kontrolü,
+her SKILL.md'nin sonundaki **"Teslimden önce denetim (zorunlu)"** adımına
+işaret olarak konmuştur (kural kopyalanmaz, `kilavuz-ilkeleri.md` §6'ya
+yönlendirilir). Böylece skill tek başına claude.ai'a yüklendiğinde bile
+üretimden hemen önce öz-denetim tetiklenir. Not: bu öz-denetim, çıktıyı
+üreten aynı model tarafından yapıldığından **insan incelemesinin ve bu
+belgedeki tam protokolün yerini tutmaz** — otomatik Katman 1 ve elle Katman 2
+depo tarafında çalışmaya devam eder.
+
 **Protokol (adım adım):**
 1. Katman 1'i koştur; HATA varsa önce onları gider (muhakeme turunu boşa
    harcama).
