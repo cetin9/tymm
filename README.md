@@ -251,6 +251,7 @@ kopyalamanız yeterlidir.
 
 ## Lisans ve kaynaklar
 
+- **Geliştiren:** Çetin GÜLTEKİN (İstanbul).
 - **Lisans:** Apache 2.0 — tam metin `LICENSE`, atıf ve türev bildirimi
   `NOTICE` dosyalarındadır.
 - **Mimari:** anthropics/k12-teacher-skills (Apache 2.0) uyarlaması
