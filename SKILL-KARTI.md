@@ -63,7 +63,7 @@ TYMM ile çalışan Türk ortaokul (5-8) öğretmenleri. Çıktı ve arayüz Tü
 - **Claude Code:** `skills/` altındaki klasörleri `~/.claude/skills/`
   içine kopyalayın.
 
-Repo: `<GITHUB-URL-BURAYA>`
+Repo: `https://github.com/cetin9/tymm`
 
 ## Uyarılar
 
