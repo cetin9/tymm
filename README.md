@@ -12,7 +12,31 @@ modelin ezberinden değil, doğrulanmış program verisinden üretilir. Veri
 dosyası bulunmayan sınıf/branşlar için beceri yine çalışır ve plana bir
 doğrulama uyarısı ekler.
 
-## Kapsam (v0.6)
+## Kimler için ve önemli notlar
+
+**Kimler için:** TYMM ile çalışan ortaokul (5-8) öğretmenleri. Claude'a
+(claude.ai ya da Claude Code) bir beceri olarak yüklenir; öğretmenin doğal
+dildeki isteğiyle ders planı, çalışma kâğıdı, düzeyli test, açık uçlu ortak
+yazılı veya farklılaştırma paketi üretir.
+
+- ⚠️ **Yapay zekâ desteğiyle üretilir; öğretmen incelemesi şarttır.** Her
+  belge bu ibareyi taşır. Beceri, çıktıyı üretmeden önce program verisini
+  okur ve teslimden önce kendi kendini denetler, ama **bilimsel doğruluğun
+  ve uygunluğun son onayı öğretmenindir.**
+- 📋 **MEB ile resmî bir bağlantısı yoktur.** Bağımsız, açık kaynak bir
+  uyarlamadır. "TYMM", "Türkiye Yüzyılı Maarif Modeli" ve program içeriği
+  MEB'e aittir.
+- 📚 **Kazanım verisi** (`references/kazanimlar/`) kamuya açık resmî MEB
+  öğretim programlarından (tymm.meb.gov.tr) aktarılmıştır; kullanmadan önce
+  güncel resmî kaynakla teyit ediniz. Her dosyanın başında doğrulama durumu
+  bulunur.
+- 🚫 **Telifli kaynaklar dahil DEĞİLDİR.** Ders kitapları, farklılaştırma
+  kitapları ve resmî PDF'ler (`sources/`) telifi MEB'e ait olduğundan bu
+  depoda yer almaz (`.gitignore`). Beceri bunlar olmadan da çalışır.
+- 📄 **Lisans:** Apache 2.0 (bkz. `LICENSE` ve `NOTICE`). anthropics/
+  k12-teacher-skills mimarisinin türevidir.
+
+## Kapsam (v0.8)
 
 - Dört beceri: **tymm-ders-planlama**, **tymm-baglam-testi**,
   **tymm-acik-uclu-sinav**, **tymm-ders-farklilastirma**
@@ -227,7 +251,11 @@ kopyalamanız yeterlidir.
 
 ## Lisans ve kaynaklar
 
-- **Mimari:** anthropics/k12-teacher-skills (Apache 2.0)
+- **Lisans:** Apache 2.0 — tam metin `LICENSE`, atıf ve türev bildirimi
+  `NOTICE` dosyalarındadır.
+- **Mimari:** anthropics/k12-teacher-skills (Apache 2.0) uyarlaması
+- **MEB ile resmî bağlantısı yoktur;** telifli MEB kaynakları (`sources/`)
+  dağıtıma dahil değildir.
 - **Öğrenme çıktısı verisi (doğrulanmış):**
   - tymm.meb.gov.tr — resmî ünite sayfaları ve öğretim programları
   - MEB Konu Soru Dağılım Tabloları (Ekim 2025) — çıktı + süreç bileşenleri

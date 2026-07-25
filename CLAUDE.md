@@ -1,9 +1,9 @@
 # CLAUDE.md — TYMM Öğretim Becerileri Proje Anayasası
 
 Bu depo, Anthropic'in açık kaynak **k12-teacher-skills** mimarisinin (Apache 2.0)
-Türkiye Yüzyılı Maarif Modeli'ne (TYMM) uyarlamasıdır. Kullanıcı (Çetin)
-İstanbul'da bir eğitimci; hedef kitle TYMM ile çalışan ortaokul öğretmenleridir.
-Tüm çıktılar ve iletişim Türkçedir.
+Türkiye Yüzyılı Maarif Modeli'ne (TYMM) uyarlamasıdır. Proje bir eğitimci
+tarafından geliştirilmektedir; hedef kitle TYMM ile çalışan ortaokul
+öğretmenleridir. Tüm çıktılar ve iletişim Türkçedir.
 
 ## Beceriler
 

@@ -1,0 +1,27 @@
+TYMM Öğretim Becerileri
+Copyright 2026 TYMM Öğretim Becerileri projesi katılımcıları
+
+Bu ürün, aşağıdaki açık kaynak çalışmanın mimarisinin Türkiye Yüzyılı
+Maarif Modeli'ne (TYMM) uyarlanmış bir türevidir:
+
+  k12-teacher-skills
+  Copyright Anthropic, PBC ve Learning Commons
+  https://github.com/anthropics/k12-teacher-skills
+  Apache License 2.0
+
+Uyarlamada yapılan başlıca değişiklikler: Learning Commons Knowledge Graph
+bağlayıcısının yerini statik öğrenme çıktısı (kazanım) dosyaları almış;
+beceriler TYMM'nin öğrenme çıktısı + süreç bileşeni yapısına, MEB Ölçme ve
+Değerlendirme Yönetmeliği kurallarına ve TYMM Bağlam Temelli Çoktan Seçmeli
+Soru Yazım Kılavuzu ilkelerine göre yeniden yazılmıştır.
+
+--- Müfredat verisi hakkında ---
+
+`skills/*/references/kazanimlar/` altındaki öğrenme çıktısı kodları ve
+ifadeleri, T.C. Millî Eğitim Bakanlığı'nın kamuya açık resmî TYMM öğretim
+programlarından (tymm.meb.gov.tr) aktarılmıştır. "TYMM", "Türkiye Yüzyılı
+Maarif Modeli", program içeriği ve resmî yayınların telif hakları MEB'e
+aittir. Bu proje MEB ile resmî olarak bağlantılı değildir.
+
+Telifli MEB kaynakları (ders kitapları, farklılaştırma etkinlik kitapları,
+resmî PDF'ler — `sources/`) bu dağıtıma DAHİL DEĞİLDİR.
