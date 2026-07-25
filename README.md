@@ -91,7 +91,17 @@ evals/
 Claude Code kullanıyorsanız klasörü `~/.claude/skills/` altına
 kopyalamanız yeterlidir.
 
-## Yeni sınıf/branş ekleme
+> **Öğretmen olarak tek yapmanız gereken budur.** Herhangi bir veri veya
+> ayar dosyasına dokunmanıza gerek yoktur — dört branşın 5-6-7. sınıf
+> verisi pakette hazırdır ve kapsam dışı istekler bile (ör. 8. sınıf)
+> doğrulama uyarısıyla üretilir. Aşağıdaki bölüm yalnızca **katkı
+> vermek/kapsamı büyütmek** isteyenler içindir.
+
+## Katkı: kapsamı genişletme (geliştiriciler için)
+
+Bu bölüm **öğretmen-kullanıcılar için değildir**; skill'i kullanmak için
+gerekli değildir. Yalnızca projeye **yeni sınıf/branş verisi eklemek**
+isteyenler (ör. 8. sınıf ya da İngilizce) içindir:
 
 1. `references/kazanimlar/<sinif>-sinif-<brans>.md` dosyasını, mevcut
    dosyanın sonundaki şablona göre oluşturun (tema tablosu + kodlu çıktılar).
