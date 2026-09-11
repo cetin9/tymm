@@ -99,8 +99,12 @@ def _secenekler(ham):
 
 
 def c_test_paketi(dosyalar, R):
-    testler = {a: v for a, v in dosyalar.items() if re.match(r"test-duzey-\d", a)}
-    anahtar = {a: v for a, v in dosyalar.items() if "test-anahtari" in a}
+    # test dosyaları: düzeyli (test-duzey-N) VEYA eşdeğer form (…form-A/B/C…)
+    testler = {a: v for a, v in dosyalar.items()
+               if re.search(r"test-duzey-\d|form-[A-Za-z0-9]", a)}
+    anahtar = {a: v for a, v in dosyalar.items()
+               if "anahtar" in a and "form-" not in a
+               and "puanlama" not in a and "ogrenme-kanitlari" not in a}
     if not testler:
         return
     for ad, (ham, txt) in sorted(testler.items()):
@@ -132,10 +136,10 @@ def c_test_paketi(dosyalar, R):
             R.hata("T-sizinti", ad, f"Öğrenci testinde anahtar izi: {', '.join(sizan)}")
     # anahtar ayrı mı
     if not anahtar:
-        R.hata("T-anahtar", "*", "test-anahtari.html yok (anahtar ayrı dosyada olmalı)")
+        R.hata("T-anahtar", "*", "Ayrı cevap anahtarı dosyası yok (…anahtari.html)")
         return
     R.ok("T-anahtar", "*", "Anahtar ayrı dosyada")
-    # seçenek dengesi (anahtardan)
+    # seçenek dengesi (anahtardan) — her 10'luk blokta hiçbir harf >4/<1
     aad, (aham, _) = next(iter(anahtar.items()))
     diz = re.findall(r'<td class="dogru">([A-D])</td>', aham)
     if diz and len(diz) % 10 == 0:
@@ -143,11 +147,11 @@ def c_test_paketi(dosyalar, R):
             blok = diz[i:i+10]
             say = {h: blok.count(h) for h in "ABCD"}
             kotu = [h for h, n in say.items() if n > 4 or n < 1]
-            duzey = i // 10 + 1
+            no = i // 10 + 1
             if kotu:
-                R.hata("T-denge", aad, f"Düzey {duzey} seçenek dengesi bozuk: {say}")
+                R.hata("T-denge", aad, f"{no}. blok (10 soru) seçenek dengesi bozuk: {say}")
             else:
-                R.ok("T-denge", aad, f"Düzey {duzey} dengesi uygun: {say}")
+                R.ok("T-denge", aad, f"{no}. blok dengesi uygun: {say}")
 
 
 def c_calisma_kagidi(dosyalar, R):
