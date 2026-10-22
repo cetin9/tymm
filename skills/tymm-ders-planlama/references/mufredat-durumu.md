@@ -13,17 +13,19 @@ durumu (öğretmen tarafından teyit edilmiştir):**
 
 | Sınıf | Müfredat | Terminoloji | Kod deseni |
 |-------|----------|-------------|------------|
-| 5 | **TYMM** | Öğrenme çıktısı + süreç bileşenleri | `FB.5.1.1.1` (4 parçalı) |
-| 6 | **TYMM** | Öğrenme çıktısı + süreç bileşenleri | `FB.6.1.1.1` (4 parçalı) |
-| 7 | **TYMM** (2026-27'de geçti) | Öğrenme çıktısı + süreç bileşenleri | `FB.7.1.1.1` (4 parçalı) |
+| 5 | **TYMM** | Öğrenme çıktısı + süreç bileşenleri | `FB.5.1.1` (2026-27 programı, 3 parçalı; eski veri `FB.5.1.1.1`) |
+| 6 | **TYMM** | Öğrenme çıktısı + süreç bileşenleri | `FB.6.1.1` (2026-27, 3 parçalı; eski veri 4 parçalı) |
+| 7 | **TYMM** (2026-27'de geçti) | Öğrenme çıktısı + süreç bileşenleri | `FB.7.1.1` (2026-27, 3 parçalı; eski veri 4 parçalı) |
 | 8 | **Eski program** | Kazanım | `F.8.1.1.1` (nokta öncesi tek harf) |
 
 > **NOTLAR:**
-> - `kazanimlar/` klasöründe 5-6-7. sınıf **dört branşın** (matematik,
->   Türkçe, fen, sosyal) verisi resmî tema/ünite sayfalarından birebir
->   mevcuttur. Türkçe dosyalarında süreç bileşeni dökümü yoktur (resmî
->   tema sayfaları yayımlamaz); Türkçe'de süreç bileşeni gerektiğinde
->   doğrulama notu düşülür.
+> - **2026-2027 verisi (22 Ekim 2026'da yenilendi):** MEB programı yeniledi. Fen kodları 3 parçalıya geçti; 5. sınıf Türkçe 100 → 81 çıktıya indi; birçok çıktı ifadesi ve süreç bileşeni değişti (ayrıntı: depo kökünde `evals/KAZANIM-FARK-2026-2027.md`).
+> - `kazanimlar/` klasöründe 5-6-7. sınıf **altı branşın** verisi vardır. Kaynaklar:
+>   - **Türkçe, Matematik, Fen, Sosyal, İngilizce 5-6:** resmî tymm.meb.gov.tr ünite sayfaları, birebir. Tam program PDF'leriyle kod kod karşılaştırıldı.
+>   - **Din Kültürü:** DÖGM 2026-27 çerçeve yıllık planı. TYMM sitesindeki DKAB sayfaları ders kitabı ve ortak sınav tablosuyla çelişiyor.
+>   - **İngilizce 7:** okulda eski program uygulanıyor; MEB 2026-27 planından alındı (`E7.x.y` kodları).
+> - Bu veri ÖDSGM ortak sınav senaryo tablolarıyla çapraz doğrulandı: `tools/kazanim_capraz_dogrula.py`. Bir kodu kullanmadan önce kazanım dosyasında olduğundan emin ol.
+> - Türkçe dosyalarında süreç bileşeni dökümü yoktur (resmî tema sayfaları yayımlamaz). Türkçe'de süreç bileşeni gerektiğinde doğrulama notu düşülür.
 > - 8. sınıf eski programdadır: "öğrenme çıktısı" değil **"kazanım"** denir,
 >   süreç bileşeni katmanı zorlanmaz, LGS hazırlık bağlamı geçerli olabilir.
 > - 2027-2028'de 8. sınıfın da geçmesi beklenir; o yıl bu tablo yeniden

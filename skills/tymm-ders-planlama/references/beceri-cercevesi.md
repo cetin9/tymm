@@ -116,6 +116,7 @@ OB7 Veri Okuryazarlığı · OB8 Sürdürülebilirlik Okuryazarlığı · OB9 Sa
    kullanılır; tema künyesinde olmayan bir kod eklemek gerekiyorsa Varsayımlar
    satırında gerekçelendirilir ve yukarıdaki listeden seçilir.
 2. Kod + resmî ad birlikte yazılır (ör. "KB2.10. Çıkarım Yapma"); ad kısaltılmaz.
-3. Fen çıktı kodu 4 parçalıdır (FB.5.2.3.1); matematik, Türkçe ve sosyal bilgiler
-   3 parçalıdır (MAT.6.1.1 / T.6.1.1 / SB.6.1.1). Süreç bileşenleri (a, b, c, ç)
+3. Çıktı kodları (2026-2027) üç parçalıdır: FB.5.2.3 / MAT.6.1.1 / SB.6.1.1 /
+   DKAB.5.1.2; Türkçe alan harfiyle T.O.5.6, İngilizce ENG.5.1.R2 (7. sınıf
+   İngilizce eski programda: E7.1.R1). Eski 4 parçalı Fen kodu geçersizdir. Süreç bileşenleri (a, b, c, ç)
    yalnızca kazanım dosyasından birebir aktarılır; bu dosyadan üretilmez.

@@ -85,10 +85,11 @@ simülasyon kullanılan çıktılarda adlandırılır.
 ## Kazanım verisi ve kod deseni
 
 `references/kazanimlar/<sinif>-sinif-fen-bilimleri.md` kullanılır
-(mevcut: 5 ve 6. sınıf, 1. dönem üniteleri doğrulanmış).
+(mevcut: 5, 6 ve 7. sınıfın tüm üniteleri, 2026-2027 programı).
 
-**Kod deseni dört parçalıdır:** `FB.<sınıf>.<ünite>.<bölüm>.<çıktı no>` —
-ör. FB.5.2.3.1. Üç parçalı kod yazmak hatadır.
+**Kod deseni üç parçalıdır (2026-2027):** `FB.<sınıf>.<ünite>.<çıktı no>`.
+Örnek: FB.5.2.3. 2025-2026'daki dört parçalı kodlar (FB.5.2.3.1) artık
+geçersizdir; kullanmak hatadır.
 
 **Süreç bileşenleri resmîdir:** Çıktının altındaki a) b) c) ç) d) maddeleri
 programda tanımlıdır; kazanım dosyasından **birebir** alınır, uydurulmaz.

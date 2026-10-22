@@ -1,19 +1,16 @@
-# 6. Sınıf Matematik — TYMM Öğrenme Çıktısı Verisi
+# 6. Sınıf Matematik — TYMM Öğrenme Çıktısı Verisi (2026-2027)
 
-**Kaynak (doğrulanmış):** MEB Türkiye Yüzyılı Maarif Modeli — Ortaokul
-Matematik Dersi Öğretim Programı, resmî tema sayfaları (tymm.meb.gov.tr).
-Öğrenme çıktıları ve süreç bileşenleri (a, b, c, ç…) birebir aktarılmıştır.
+**Kaynak (doğrulanmış):** MEB Türkiye Yüzyılı Maarif Modeli resmî ünite/tema sayfaları (tymm.meb.gov.tr), 2026-10-22 tarihinde sayfa HTML'inden otomatik aktarıldı (`tools/kazanim_html_uret.py`). Öğrenme çıktıları ve süreç bileşenleri (a, b, c, ç…) **birebir**; asla yeniden yazılmaz.
 
-> **KOD DESENİ:** `MAT.<sınıf>.<tema>.<çıktı no>` — üç parçalı. TYMM'de
-> ölçmenin konusu çıktı + süreç bileşenleridir; bileşenler bu dosyadan
-> aynen alınır, asla yeniden yazılmaz.
+> **KOD DESENİ (2026-2027):** `MAT.6.…` — kodlar sayfadaki gibidir. 2025-2026 verisindeki eski kodlar (ör. Fen'de 4 parçalı) geçersizdir.
+> Ortak yazılı sınavlarda geçerli kapsam, ÖDSGM konu-soru dağılım tablosudur (`tymm-acik-uclu-sinav/references/senaryolar/`).
 
-Toplam tema (dosya): 7 · Öğrenme çıktısı: 24 · Ders saati (temalar toplamı): 172
+Toplam tema: 7 · Öğrenme çıktısı: 24 · Ders saati (toplam): 172
 
 ## Tema tablosu
 
-| Kod | Tema | Çıktı | Saat |
-|-----|------|-------|------|
+| Kod/No | Ad | Çıktı | Saat |
+|---|---|---|---|
 | MAT.6.1 (1) | SAYILAR VE NİCELİKLER (1) | 4 | 15 |
 | MAT.6.1 (2) | SAYILAR VE NİCELİKLER (2) | 4 | 38 |
 | MAT.6.2 | İŞLEMLERLE CEBİRSEL DÜŞÜNME VE DEĞİŞİMLER | 3 | 33 |
@@ -24,15 +21,18 @@ Toplam tema (dosya): 7 · Öğrenme çıktısı: 24 · Ders saati (temalar topla
 
 ## MAT.6.1 (1) — SAYILAR VE NİCELİKLER (1)
 
+**Kaynak sayfa:** https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/456  
 **Ders saati:** 15  
-**Alan becerileri:** MAB1. Matematiksel Muhakeme (KB2.10. Çıkarım Yapma, MAB1.1. Matematiksel Doğrulama veya İspat Yapma)  
+**Alan becerileri:** MAB1. Matematiksel Muhakeme  
 **Kavramsal beceriler:** KB2.4. Çözümleme, KB2.10. Çıkarım yapma, KB2.14. Yorumlama  
-**Eğilimler:** E1.1. Merak, E2.5. Oyunseverlik, E3.3. Yaratıcılık, E3.6. Analitik Düşünme, E3.7. Sistematik Olma, E3.9. Şüphe Duyma   
+**Eğilimler:** E1.1. Merak, E2.5. Oyunseverlik, E3.3. Yaratıcılık, E3.6. Analitiklik, E3.7. Sistematiklik, E3.9. Şüphe Duyma  
 **SDB:** SDB2.1. İletişim, SDB2.2. İş Birliği, SDB2.3. Sosyal Farkındalık  
 **Değerler:** D9. Merhamet , D14. Saygı  
 **Okuryazarlık:** OB1. Bilgi Okuryazarlığı, OB4. Görsel Okuryazarlık  
+**Disiplinler arası:**   
 **Beceriler arası ilişkiler:** MAB3. Matematiksel Temsil, MAB5. Matematiksel Araç ve Teknoloji ile Çalışma  
-**Anahtar kavramlar:** asal çarpanlar, asal sayılar, bölünebilme, çarpanlar, katlar, ortak bölen, ortak kat
+**İçerik çerçevesi:** Doğal Sayıların Çarpanları ve Katları: · Bir Doğal Sayının Çarpanları ve Katları · Bölünebilme Kriterleri · Asal Sayılar ve Asal Çarpanlar  
+**Anahtar kavramlar:** asal çarpanlar, asal sayılar, bölünebilme, çarpanlar, katlar, ortak bölen, ortak kat  
 
 **MAT.6.1.1.** Karşılaştığı problem durumlarında bir doğal sayının çarpan ve katlarına yönelik muhakeme yapabilme
 - a) Karşılaştığı durumlarda bir doğal sayının çarpan ve katlarına yönelik varsayımlarda bulunur.
@@ -59,35 +59,32 @@ Toplam tema (dosya): 7 · Öğrenme çıktısı: 24 · Ders saati (temalar topla
 - b) İncelediği ortak kat veya ortak bölen ilişkilerini çizim, tablo ve sayı doğrusu gibi matematiksel temsillerle ifade eder.
 - c) İki sayının ortak katlarını ve ortak bölenlerini kendi ifadelerini kullanarak açıklar.
 
-
 ## MAT.6.1 (2) — SAYILAR VE NİCELİKLER (2)
 
+**Kaynak sayfa:** https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/457  
 **Ders saati:** 38  
 **Alan becerileri:** MAB2. Matematiksel Problem Çözme  
-**Kavramsal beceriler:** KB2.14. Yorumlama, KB2.16.1. Tümevarımsal Akıl Yürütme, KB2.17. Değerlendirme  
-**Eğilimler:** E1.1. Merak, E2.5. Oyunseverlik, E3.2. Odaklanma, E3.3. Yaratıcılık, E3.4. Gerçeği Arama, E3.6. Analitik Düşünme, E3.10. Eleştirel Bakma   
-**SDB:** SDB1.2. Öz Düzenleme/Kendini Düzenleme, SDB1.3. Öz Yansıtma/Kendine Uyarlama, SDB2.1. İletişim, SDB2.2. İş Birliği, SDB2.3. Sosyal Farkındalık  
+**Kavramsal beceriler:** KB2.14. Yorumlama, KB2.16.Muhakeme (Akıl Yürütme) (KB2.16.1.Tümevarımsal Akıl Yürütme) , KB2.17. Değerlendirme  
+**Eğilimler:** E1.1. Merak, E2.5. Oyunseverlik, E3.2. Odaklanma, E3.3. Yaratıcılık, E3.4. Gerçeği Arama, E3.6. Analitiklik, E3.10. Eleştirel Bakma  
+**SDB:** SDB1.2. Kendini Düzenleme (Öz Düzenleme), SDB1.3. Kendine Uyarlama (Öz Yansıtma), SDB2.1. İletişim, SDB2.2. İş Birliği, SDB2.3. Sosyal Farkındalık  
 **Değerler:** D4. Dostluk, D5. Duyarlılık, D14.Saygı, D16. Sorumluluk, D17. Tasarruf, D18. Temizlik, D19.Vatanseverlik  
 **Okuryazarlık:** OB1. Bilgi Okuryazarlığı, OB3. Finansal Okuryazarlık, OB8. Sürdürülebilirlik Okuryazarlığı  
-**Beceriler arası ilişkiler:** MAB3. Matematiksel Temsil, MAB5. Matematiksel Araç ve Teknoloji İle Çalışma, KB2.9. Genelleme, KB2.10. Çıkarım Yapma, KB2.15. Yansıtma  
-**Anahtar kavramlar:** basamak değeri, uzunluk ölçme
+**Disiplinler arası:** Sosyal Bilgiler  
+**Beceriler arası ilişkiler:** MAB3. Matematiksel Temsil, MAB5. Matematiksel Araç ve Teknoloji İle Çalışma, KB2.9. Genelleme, KB2.10. Çıkarım Yapma, KB2.15. Yansıtma, KB2.14. Yorumlama  
+**İçerik çerçevesi:** Kesirlerle İşlemler: · Ondalık Gösterimleri Çözümleme · Kesir-Bölme İlişkisi · Kesirlerle Dört İşlem İçeren Problem Çözme · Uzunluk Ölçme  
+**Anahtar kavramlar:** basamak değeri, uzunluk ölçme  
 
-**MAT.6.1.5.** Gerçek yaşam durumlarında ondalık gösterimlerin basamak değerlerini kesir lerden yararlanarak yorumlayabilme
+**MAT.6.1.5.** Gerçek yaşam durumlarında ondalık gösterimlerin basamak değerlerini kesirlerden yararlanarak yorumlayabilme
 - a) Ondalık gösterimlerin basamak değerlerini inceler.
 - b) Ondalık gösterimlerin basamak değerlerini paydası 10, 100 ve 1000 olan kesirlerin toplamlarını kullanarak yeniden ifade eder.
 - c) Ondalık gösterimlerin basamak değerlerini kendi cümleleriyle açıklar.
 
 **MAT.6.1.6.** Kesir ve bölme işlemi arasındaki ilişkiye yönelik tümevarımsal akıl yürütebilme
-- a) Kağıt-kalemle ve hesap makinesinde bölme işlemi gerçekleştirerek kesirlerin ondalık gösterimlerine ilişkin gözlem yapar.
+- a) Kâğıt-kalemle ve hesap makinesinde bölme işlemi gerçekleştirerek kesirlerin ondalık gösterimlerine ilişkin gözlem yapar.
 - b) Kesirlerin sonlu ve devirli ondalık gösterimlerine ait örüntüleri belirler.
 - c) Örüntülerde keşfedilen ilişkileri geneller.
 
-**MAT.6.1.7.** Karşılaştığı günlük hayat ya da matematiksel durumlarda standart uzunluk ölçme birimlerini değerlendirebilme
-- a) Standart ölçme birimlerini kullanarak ölçme yapar.
-- b) Ölçme sonuçlarını belirlediği ölçme birimleri ile karşılaştırır.
-- c) Karşılaştırmalarına ilişkin yargıda bulunur.
-
-**MAT.6.1.8.** Gerçek yaşam durumlarında karşılaşılan kesir, ondalık ve yüzde gösterimleri ile ilgili dört işlem gerektiren problemleri çözebilme
+**MAT.6.1.7.** Gerçek yaşam durumlarında karşılaşılan kesir, ondalık ve yüzde gösterimleri ile ilgili dört işlem gerektiren problemleri çözebilme
 - a) Kesir, ondalık ve yüzde gösterimleri ile ilgili dört işlem problemlerinde sayı ve işlem bileşenlerini belirler.
 - b) Kesir, ondalık ve yüzde gösterimleri ile ilgili dört işlem problemlerinde verilenler ile istenenlerin gerektirdiği işlemler arasındaki ilişkiyi belirler.
 - c) Kesir, ondalık ve yüzde gösterimleri ile ilgili dört işlem problemlerinde problem bağlamına uygun temsilleri (şekil, tablo, diyagram gibi) kullanır.
@@ -97,20 +94,28 @@ Toplam tema (dosya): 7 · Öğrenme çıktısı: 24 · Ders saati (temalar topla
 - f) Çözüm yollarını kontrol eder ve çözüme ulaştırmayan stratejiyi değiştirir.
 - g) Problemlerin çözümü için kullandığı veya geliştirdiği stratejileri gözden geçirerek kısa yolları değerlendirir.
 - ğ) Kullandığı strateji veya stratejileri farklı problemlerin çözümlerine geneller.
-- h) Genellemenin geçerliliğini değerlendirir
+- h) Genellemenin geçerliliğini değerlendirir.
 
+**MAT.6.1.8.** Karşılaştığı günlük hayat ya da matematiksel durumlarda standart uzunluk ölçme birimlerini değerlendirebilme
+- a) Uzunluk ölçme birimlerinden metreyi ölçüt olarak belirler.
+- b) Standart ölçme birimlerini kullanarak ölçme yapar.
+- c) Ölçme sonuçlarını belirlediği ölçme birimleri ile karşılaştırır.
+- ç) Karşılaştırmalarına ilişkin yargıda bulunur.
 
 ## MAT.6.2 — İŞLEMLERLE CEBİRSEL DÜŞÜNME VE DEĞİŞİMLER
 
+**Kaynak sayfa:** https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/458  
 **Ders saati:** 33  
-**Alan becerileri:** MAB1. Matematiksel Muhakeme (KB2.4. Çözümleme, KB2.14. Yorumlama, KB2.10. Çıka rım Yapma)  
+**Alan becerileri:** MAB1. Matematiksel Muhakeme  
 **Kavramsal beceriler:** KB2.14. Yorumlama  
-**Eğilimler:** E2.5. Oyunseverlik, E3.2. Odaklanma   
+**Eğilimler:** E2.5. Oyunseverlik, E3.2. Odaklanma  
 **SDB:** SDB2.1. İletişim, SDB2.3. Sosyal Farkındalık  
 **Değerler:** D5. Duyarlılık, D9. Merhamet, D17. Tasarruf, D20. Yardımseverlik  
 **Okuryazarlık:** OB3. Finansal Okuryazarlık  
+**Disiplinler arası:**   
 **Beceriler arası ilişkiler:** MAB3. Matematiksel Temsil, KB2.9. Genelleme  
-**Anahtar kavramlar:** algoritma, cebirsel ifadeler, değişken, katsayı, sabit terim, terim
+**İçerik çerçevesi:** Cebirsel İfadeler: · Bilinmeyen Nicelikler · Örüntü · Cebirsel İfadeler ve Algoritma  
+**Anahtar kavramlar:** algoritma, cebirsel ifadeler, değişken, katsayı, sabit terim, terim  
 
 **MAT.6.2.1.** Gerçek yaşam durumlarında bilinen niceliklerden bilinmeyen niceliklere ilişkin muhakeme yapabilme
 - a) Gerçek yaşam durumlarında nicelikleri belirler.
@@ -133,18 +138,20 @@ Toplam tema (dosya): 7 · Öğrenme çıktısı: 24 · Ders saati (temalar topla
 - b) İncelediği durumlardaki algoritmik yapıyı tablo temsiline veya cebirsel ifadelere dönüştürür.
 - c) Dönüştürdüğü algoritmik yapının içerdiği matematiksel ilişkileri sözel olarak ifade eder.
 
-
 ## MAT.6.3 — GEOMETRİK ŞEKİLLER
 
+**Kaynak sayfa:** https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/459  
 **Ders saati:** 20  
 **Alan becerileri:** MAB2. Matematiksel Problem Çözme  
 **Kavramsal beceriler:** KB2.5. Sınıflandırma, KB2.10. Çıkarım Yapma  
-**Eğilimler:** E2.5. Oyunseverlik, E3.7. Sistematik Olma   
-**SDB:** SDB1.2. Öz Düzenleme/Kendini Düzenleme, SDB2.1. İletişim, SDB3.3. Sorumlu Karar Verme  
+**Eğilimler:** E2.5. Oyunseverlik, E3.7. Sistematiklik  
+**SDB:** SDB1.2. Kendini Düzenleme (Öz Düzenleme), SDB2.1. İletişim, SDB3.3. Sorumlu Karar Verme  
 **Değerler:** D3. Çalışkanlık, D4. Dostluk, D16. Sorumluluk  
 **Okuryazarlık:** OB2. Dijital Okuryazarlık  
+**Disiplinler arası:** Görsel Sanatlar, Teknoloji ve Tasarım  
 **Beceriler arası ilişkiler:** MAB5. Matematiksel Araç ve Teknoloji ile Çalışma  
-**Anahtar kavramlar:** dış ters açılar, eşkenar dörtgen, iç ters açılar, paralelkenar, yamuk, yöndeş açılar
+**İçerik çerçevesi:** İki Paralel Doğrunun Bir Kesen ile Oluşturduğu Açılar · Üçgenin Açıları · Yamuk, Paralelkenar, Eşkenar Dörtgen, Dikdörtgen ve Karenin Kenar, Açı ve Köşegen Özellikleri  
+**Anahtar kavramlar:** dış ters açılar, eşkenar dörtgen, iç ters açılar, paralelkenar, yamuk, yöndeş açılar  
 
 **MAT.6.3.1.** Düzlemde iki paralel doğru ve bir kesen ile oluşan açıları sınıflandırabilme
 - a) Düzlemde iki paralel doğru ve bir kesen ile oluşan açıları belirler.
@@ -178,20 +185,22 @@ Toplam tema (dosya): 7 · Öğrenme çıktısı: 24 · Ders saati (temalar topla
 - ğ) Kullandığı strateji veya stratejileri farklı problemlerin çözümlerine geneller.
 - h) Genellemenin geçerliliğini matematiksel örneklerle değerlendirir.
 
-
 ## MAT.6.4 — GEOMETRİK NİCELİKLER
 
+**Kaynak sayfa:** https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/460  
 **Ders saati:** 33  
 **Alan becerileri:** MAB2. Matematiksel Problem Çözme  
-**Kavramsal beceriler:** KB2.10. Çıkarım Yapma, KB2.15. Yansıtma, KB2.16.1. Tümevarımsal Akıl Yürütme, KB2.16.3. Analojik Akıl Yürütme  
-**Eğilimler:** E1.1. Merak, E3.4. Gerçeği Arama   
+**Kavramsal beceriler:** KB2.10. Çıkarım Yapma, KB2.15. Yansıtma, KB2.16.Muhakeme (Akıl Yürütme) (KB2.16.1. Tümevarımsal Akıl Yürütme) , KB2.16.Muhakeme (Akıl Yürütme) (KB2.16.3. Analojik Akıl Yürütme)  
+**Eğilimler:** E1.1. Merak, E3.4. Gerçeği Arama  
 **SDB:** SDB1.3. Öz Yansıtma/Kendine Uyarlama, SDB2.1. İletişim, SDB2.2. İş Birliği, SDB3.1. Uyum, SDB3.3. Sorumlu Karar Verme  
 **Değerler:** D7. Estetik, D10. Mütevazılık, D14. Saygı  
 **Okuryazarlık:** OB2.Dijital Okuryazarlık, OB4. Görsel Okuryazarlık  
+**Disiplinler arası:** Görsel Sanatlar, Teknoloji ve Tasarım  
 **Beceriler arası ilişkiler:** MAB3. Matematiksel Temsil, MAB5. Matematiksel Araç ve Teknoloji ile Çalışma  
-**Anahtar kavramlar:** dekametrekare, desimetrekare, hektometrekare, kilometrekare, merkez açı, metrekare, milimetrekare, paralelkenarın alanı, pi sayısı, santimetrekare, üçgenin alanı, yay, yükseklik
+**İçerik çerçevesi:** Uzunluk ve Alan Ölçme Birimleri Arasındaki İlişki · Paralelkenar ve Üçgenin Alanı · Çemberin ve Çapın Uzunlukları Arasındaki İlişki · Çemberde Merkez Açı ve Gördüğü Yay Uzunluğu  
+**Anahtar kavramlar:** dekametrekare, desimetrekare, hektometrekare, kilometrekare, merkez açı, metrekare, milimetrekare, paralelkenarın alanı, pi sayısı, santimetrekare, üçgenin alanı, yay, yükseklik  
 
-**MAT.6.4.1.** Uzunluk ve alan ölçme birimleri arasındaki ilişkilerle ilgili analojik akıl yürüte bilme
+**MAT.6.4.1.** Uzunluk ve alan ölçme birimleri arasındaki ilişkilerle ilgili analojik akıl yürütebilme
 - a) Uzunluk ve alan ölçme birimleri arasındaki ilişkileri gözlemler.
 - b) Uzunluk ve alan ölçme birimleri arasındaki ilişkiyi tespit eder.
 - c) Uzunluk ve alan ölçme birimleri arasında kurulan ilişkiden hareketle alan ölçme birimleri arasındaki ilişkiye dair çıkarım yapar.
@@ -227,7 +236,8 @@ Toplam tema (dosya): 7 · Öğrenme çıktısı: 24 · Ders saati (temalar topla
 - ç) Matematiksel temsillere dönüştürdüğü problemi kendi ifadeleri ile açıklar.
 - d) Problemlerin sonucuna ilişkin tahminde bulunur ve işlemleri gerçekleştirmek için stratejiler geliştirir.
 - e) Belirlediği stratejileri çözüm için uygular.
-- f) Çözüm yollarını kontrol eder ve çözüme ulaştırmayan stratejiyi değiştirir. Problemin çözümü için kullandığı veya geliştirdiği stratejileri gözden geçire rek alternatif çözüm yollarını değerlendirir.
+- f) Çözüm yollarını kontrol eder ve çözüme ulaştırmayan stratejiyi değiştirir.
+- g) Problemin çözümü için kullandığı veya geliştirdiği stratejileri gözden geçirerek alternatif çözüm yollarını değerlendirir.
 - ğ) Kullandığı strateji veya stratejileri farklı problemlerin çözümlerine geneller.
 - g) Genellemenin geçerliliğini matematiksel örneklerle değerlendirir.
 
@@ -236,49 +246,52 @@ Toplam tema (dosya): 7 · Öğrenme çıktısı: 24 · Ders saati (temalar topla
 - b) Merkez açıların ölçüleri ile gördükleri yayların uzunlukları arasındaki ilişkiye dair örüntü bulur.
 - c) Merkez açının ölçüsü ile gördüğü yayın uzunluğu arasındaki ilişkiye dair genelleme yapar.
 
-
 ## MAT.6.5 — İSTATİSTİKSEL ARAŞTIRMA SÜRECİ
 
+**Kaynak sayfa:** https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/461  
 **Ders saati:** 24  
 **Alan becerileri:** MAB4. Veri ile Çalışma ve Veriye Dayalı Karar Verme  
 **Kavramsal beceriler:** KB2.18.Tartışma  
-**Eğilimler:** E3.4. Gerçeği Arama, E3.5. Açık Fikirlilik, E3.6. Analitik Düşünme, E3.7. Sistematik Olma, E3.9. Şüphe Duyma, E3.10. Eleştirel Bakma   
-**SDB:** SDB1.2. Öz Düzenleme/Kendini Düzenleme, SDB2.2. İş Birliği, SDB2.3. Sosyal Farkındalık, SDB3.2. Esneklik, SDB3.3. Sorumlu Karar Verme  
+**Eğilimler:** E3.4. Gerçeği Arama, E3.5. Açık Fikirlilik, E3.6. Analitiklik, E3.7. Sistematiklik, E3.9. Şüphe Duyma, E3.10. Eleştirel Bakma  
+**SDB:** SDB1.2. Kendini Düzenleme (Öz Düzenleme), SDB2.2. İş Birliği, SDB2.3. Sosyal Farkındalık, SDB3.2. Esneklik, SDB3.3. Sorumlu Karar Verme  
 **Değerler:** D1. Adalet, D3. Çalışkanlık, D5. Duyarlılık, D6. Dürüstlük, D8. Mahremiyet, D14. Saygı, D17. Tasarruf  
 **Okuryazarlık:** OB2. Dijital Okuryazarlık, OB3. Finansal Okuryazarlık  
+**Disiplinler arası:** Sosyal Bilgiler, Fen Bilimleri  
 **Beceriler arası ilişkiler:** MAB5. Matematiksel Araç ve Teknoloji ile Çalışma, KB3.3. Eleştirel Düşünme  
-**Anahtar kavramlar:** aritmetik ortalama, dağılım, değişebilirlik, kök-yaprak gösterimi, merkez, nicel (kesikli) değişken, ortanca, tepe değer, veri
+**İçerik çerçevesi:** Kategorik ve Nicel (Kesikli) Veri Dağılımları  
+**Anahtar kavramlar:** aritmetik ortalama, dağılım, değişebilirlik, kök-yaprak gösterimi, merkez, nicel (kesikli) veri, ortanca, tepe değer  
 
 **MAT.6.5.1.** Kategorik veya nicel (kesikli) veri ile çalışabilme ve veriye dayalı karar verebilme
 - a) Kategorik veya nicel (kesikli) veriye dayanan istatistiksel araştırma gerektiren durumları fark eder.
 - b) Kategorik veya nicel (kesikli) veriye dayanan betimleme veya karşılaştırma gerektirebilecek araştırma soruları oluşturur.
 - c) Kategorik veya nicel (kesikli) veriye ulaşmak için plan yapar.
-- ç) Kategorik veya nicel (kesikli) veriye ve araştırma sorusuna uygun anket soruları hazırlar.
-- d) Anketi kullanarak veri toplar veya hazır veriye ulaşır.
-- e) Veri görselleştirme (kök-yaprak gösterimi, nokta grafiği gibi) ve özetleme (aritmetik ortalama, ortanca ve tepe değer) araçlarını seçme gerekçelerini belirtir.
-- f) Toplanan veriyi uygun araçlarla analiz eder.
-- g) Araştırma sonuçlarını elde eder.
-- ğ) Araştırmada ulaştığı sonuçlara yönelik gerekçeler sunar.
-- h) Araştırma sonuçlarının araştırma sorusuna ne düzeyde cevap verdiğini değerlendirir. ı) Araştırma süreci adımlarını değerlendirerek araştırma sürecine uygun olmayan adımları yeniden planlar.
+- ç) Araştırma sorusuna uygun hazırlanan anket sorularını kullanarak veri toplar veya hazır veriye ulaşır.
+- d) Veri görselleştirme (kök-yaprak gösterimi, nokta grafiği gibi) ve özetleme (aritmetik ortalama, ortanca, tepe değer ve açıklık) araçlarını seçme gerekçelerini belirtir.
+- e) Toplanan veriyi uygun araçlarla analiz eder.
+- f) Araştırmada ulaştığı sonuçlara yönelik gerekçeler sunar.
+- g) Araştırma sonuçlarının araştırma sorusuna ne düzeyde cevap verdiğini değerlendirerek araştırma sürecine uygun olmayan adımları yeniden planlar.
 
 **MAT.6.5.2.** Başkaları tarafından oluşturulan kategorik veya nicel (kesikli) veriye dayalı istatistiksel sonuç veya yorumları tartışabilme
 - a) Başkaları tarafından oluşturulan kategorik veya nicel (kesikli) veriye dayalı istatistiksel sonuç veya yorumlara yönelik istatistiksel temellendirme yapar.
 - b) Başkaları tarafından oluşturulan kategorik veya nicel (kesikli) veriye dayalı istatistiksel sonuç veya yorumlara yönelik hataları ya da yanlılıkları tespit eder.
 - c) Başkaları tarafından oluşturulan kategorik veya nicel (kesikli) veriye dayalı istatistiksel sonuç veya yorumları çürütür ya da kabul eder.
 
-
 ## MAT.6.6 — VERİDEN OLASILIĞA
 
+**Kaynak sayfa:** https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/462  
 **Ders saati:** 9  
+**Alan becerileri:**   
 **Kavramsal beceriler:** KB2.11. Gözleme Dayalı Tahmin Etme  
-**Eğilimler:** E1.1. Merak, E2.5. Oyunseverlik   
+**Eğilimler:** E1.1. Merak, E2.5. Oyunseverlik  
 **SDB:** SDB2.2. İş Birliği  
 **Değerler:** D3. Çalışkanlık  
-**Okuryazarlık:** OB2. Dijital Okuryazarlık, OB4. Görsel Okuryazarlık  
-**Beceriler arası ilişkiler:** MAB3. Matematiksel Temsil, MAB5. Matematiksel Araç ve Teknoloji İle Çalışma  
-**Anahtar kavramlar:** çıktı, deney, göreli sıklık
+**Okuryazarlık:** OB2. Dijital Okuryazarlık, OB4. Görsel Okuryazarlık, OB7. Veri Okuryazarlığı  
+**Disiplinler arası:** Sosyal Bilgiler, Fen Bilimleri  
+**Beceriler arası ilişkiler:** MAB3. Matematiksel Temsil, MAB4. Veri ile Çalışma ve Veriye Dayalı Karar Verme, MAB5. Matematiksel Araç ve Teknoloji İle Çalışma  
+**İçerik çerçevesi:** Deneysel Olasılık  
+**Anahtar kavramlar:** çıktı, deney, göreli sıklık  
 
 **MAT.6.6.1.** Bir olayın olasılığını gözleme dayalı tahmin edebilme
 - a) Bir olayın olasılığı ile deneylerden elde ettiği veriyi ilişkilendirir.
 - b) Deneye ait tekrar sayısı ile deneyin çıktılarının göreli sıklıklarının ilişkisine yönelik çıkarım yapar.
-- c) Çıkarımlardan hareketle olasılık değerini hesaplama için göreli sıklığın kullanımına yönelik yargıda bulunu
+- c) Çıkarımlardan hareketle olasılık değerini belirleme için göreli sıklığın kullanımına yönelik yargıda bulunur.

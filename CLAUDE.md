@@ -54,17 +54,28 @@ Tüm çıktılar ve iletişim Türkçedir.
   program (kazanım terminolojisi). `references/mufredat-durumu.md` her
   üretimde zorunlu ilk okumadır.
 
-## Veri durumu (v0.7.1)
+## Veri durumu (2026-2027, 22 Ekim 2026'da yenilendi)
 
 | Veri | Durum |
 |------|-------|
-| Matematik 5/6/7 | ✅ resmî tema sayfalarından birebir (23/24/30 çıktı; süreç bileşenleri dahil; sınıf başına 172 tema-saat + 8 okul temelli = 180) |
-| Fen 5/6/7 | ✅ tüm üniteler resmî ünite sayfalarından birebir (28/36/36 çıktı; süreç bileşenleri dahil) |
-| Sosyal 5/6/7 | ✅ tüm öğrenme alanları resmî sayfalardan birebir (19/18/17 çıktı; süreç bileşenleri dahil) |
-| Türkçe 5/6/7 | ✅ çıktı düzeyinde resmî tema sayfalarından birebir (100/100/102 tekil kod); ⚠️ süreç bileşeni dökümü tema sayfalarında yayımlanmıyor — gerekirse doğrulama notu düşülür |
+| kazanimlar/ 5/6/7 · Türkçe, Mat, Fen, Sosyal, İngilizce 5-6 | ✅ tymm.meb.gov.tr ünite sayfaları HTML'inden birebir (`tools/kazanim_html_uret.py`); tam program PDF'leriyle kod kod karşılaştırıldı (Mat/Fen/Sosyal birebir). Türkçe 5 T.O.5.14 sitede eksik → tam programdan eklendi. Türkçe'de süreç bileşeni yayımlanmıyor. |
+| kazanimlar/ Din Kültürü 5/6/7 | ✅ DÖGM 2026-27 çerçeve planından (`tools/kazanim_ozel_uret.py`). TYMM sitesindeki DKAB sayfaları kitap + plan + ÖDSGM senaryosuyla çelişiyor; site kullanılmaz. |
+| kazanimlar/ İngilizce 7 | ✅ ESKİ program (E7.x.y, 10 ünite), MEB 2026-27 planından. 7. sınıf İngilizce okulda eski programda ve OYSS dışında. |
+| Çapraz doğrulama | ✅ `tools/kazanim_capraz_dogrula.py`: 18 ders-sınıf senaryo tablosunun tüm satırları kod+ifade+tema ile tutuyor (tek fark T.Y.5.2 ifade varyantı; program ifadesi esas). Eski↔yeni fark: `evals/KAZANIM-FARK-2026-2027.md`. |
+| tema-sirasi.md | ✅ 2026-27 resmî planlardan 5-7 × 6 ders, 1. yazılı sınırı işaretli (`tools/tema_sirasi_uret.py`) |
 | beceri-cercevesi.md | ✅ birincil kaynaklardan; yalnız D2/D12 ad eşleşmesi alfabetik çıkarım (dosyada işaretli) |
+| Yenileme sırası | `kazanim_html_uret.py` → `kazanim_ozel_uret.py` → `kazanim_capraz_dogrula.py` (0 HATA olmalı) → `kazanim_fark.py` → `--kur` / kopyala → `tema_sirasi_uret.py` → `acik_uclu_kaynak_uret.py` |
+| Açık uçlu: senaryolar 5/6/7 | ✅ ÖDSGM 2026-2027 1. dönem konu-soru dağılım tabloları, 6 ders (`tymm-acik-uclu-sinav/references/senaryolar/`) |
+| Açık uçlu: program + kitap 5 | ✅ 2026-2027 ünite programları + MEB ders kitabı metinleri, 6 ders; `kitap-dizini.md` tema→sayfa (`tymm-acik-uclu-sinav/references/program/`, `kitap/`). 6-7. sınıfta kitap yok. |
 
 ## Kaynaklar
+
+**2026-2027 kaynakları tek merkezde:** `C:\Users\cetin\Projects\MEB-KAYNAK\2026-2027\`
+(program, kitap, farklılaştırma, çerçeve, yıllık plan, `07-ortak-sinav` senaryo
+tabloları; bkz. oradaki README ve `_KAYNAK.md` dosyaları). Metin çıkarımı LMS
+deposunda yapılır (`lms/content-gen/kaynak/`). Açık uçlu becerinin verisi
+`python tools/acik_uclu_kaynak_uret.py` ile oradan yeniden üretilir.
+`sources/` klasörü 2025-2026 arşividir.
 
 Resmî PDF'ler kullanıcının "TYMM" Google Drive klasöründedir; Claude Code'da
 klasör yerel olarak `sources/` altına indirilmiş kabul edilir. Beklenen yapı:
@@ -92,7 +103,7 @@ Ayrıntı ve kural→rubrik eşlemesi: `evals/DENETIM.md`. Sınıfta yakalanan
 gerçek hatalar (soğan-kloroplast, "hiçbiri" kayması, katmansız İleri düzey)
 Katman 2'den çıkar — otomatik denetim onları göremez. Beceri metnine kural
 eklemeden önce kuralın hangi üretim hatasından doğduğunu not et; denetimden
-geçmiş referans paketler `ornekler/` altındadır.
+geçmiş referans paketler `ornekler/` altındadır (2025-26 paketleri `ornekler-arsiv-2025-2026/`, kodları eski).
 
 ## Yol haritası
 

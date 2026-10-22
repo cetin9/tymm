@@ -1,34 +1,28 @@
-# 6. Sınıf Türkçe — TYMM Öğrenme Çıktısı Verisi
+# 6. Sınıf Türkçe — TYMM Öğrenme Çıktısı Verisi (2026-2027)
 
-**Kaynak (doğrulanmış):** MEB Türkiye Yüzyılı Maarif Modeli — Ortaokul Türkçe
-Dersi Öğretim Programı, resmî tema sayfaları (tymm.meb.gov.tr). Çıktı kodları
-ve ifadeleri birebir aktarılmıştır.
+**Kaynak (doğrulanmış):** MEB Türkiye Yüzyılı Maarif Modeli resmî ünite/tema sayfaları (tymm.meb.gov.tr), 2026-10-22 tarihinde sayfa HTML'inden otomatik aktarıldı (`tools/kazanim_html_uret.py`). Öğrenme çıktıları ve süreç bileşenleri (a, b, c, ç…) **birebir**; asla yeniden yazılmaz.
 
-> **KOD DESENİ:** `T.<alan>.<sınıf>.<çıktı no>` — alan: D (Dinleme/İzleme),
-> O (Okuma), K (Konuşma), Y (Yazma). Türkçe sarmal yapıdadır: aynı çıktı
-> birden çok temada yeniden işlenir; tema, çıktının hangi metin/bağlam
-> evreninde çalışılacağını belirler.
+> **KOD DESENİ (2026-2027):** `T.[DOKY].6.…` — kodlar sayfadaki gibidir. 2025-2026 verisindeki eski kodlar (ör. Fen'de 4 parçalı) geçersizdir.
+> Ortak yazılı sınavlarda geçerli kapsam, ÖDSGM konu-soru dağılım tablosudur (`tymm-acik-uclu-sinav/references/senaryolar/`).
 
-> **SÜREÇ BİLEŞENİ NOTU:** Türkçe resmî tema sayfaları çıktıları süreç
-> bileşeni (a, b, c…) dökümü olmadan listeler. Bu dosyadaki ifadeler çıktı
-> düzeyinde birebirdir; süreç bileşeni gerektiğinde resmî program PDF'inden
-> teyit edilmeli, belgeye doğrulama notu düşülmelidir.
+> **SÜREÇ BİLEŞENİ NOTU:** Türkçe resmî tema sayfaları çıktıları süreç bileşeni dökümü olmadan listeler; ifadeler çıktı düzeyinde birebirdir. Türkçe sarmal yapıdadır: aynı çıktı birden çok temada yeniden işlenir.
 
-Toplam tema: 6 · Tekil çıktı kodu: 100 · Ders saati (temalar toplamı): 206
+Toplam tema: 6 · Öğrenme çıktısı: 153 · Ders saati (toplam): 206
 
 ## Tema tablosu
 
-| Sıra | Tema | Saat |
-|------|------|------|
-| 1 | DİLİMİZİN ZENGİNLİĞİ | 35 |
-| 2 | BAĞIMSIZLIK YOLU | 35 |
-| 3 | FARKLI DÜNYALAR | 34 |
-| 4 | İLETİŞİM VE SOSYAL İLİŞKİLER | 34 |
-| 5 | BİLİM VE TEKNOLOJİ | 34 |
-| 6 | LİDER RUHLAR | 34 |
+| Kod/No | Ad | Çıktı | Saat |
+|---|---|---|---|
+| TEMA 1 | DİLİMİZİN ZENGİNLİĞİ | 28 | 35 |
+| TEMA 2 | BAĞIMSIZLIK YOLU | 33 | 35 |
+| TEMA 3 | FARKLI DÜNYALAR | 27 | 34 |
+| TEMA 4 | İLETİŞİM VE SOSYAL İLİŞKİLER | 22 | 34 |
+| TEMA 5 | BİLİM VE TEKNOLOJİ | 22 | 34 |
+| TEMA 6 | LİDER RUHLAR | 21 | 34 |
 
 ## TEMA 1 — DİLİMİZİN ZENGİNLİĞİ
 
+**Kaynak sayfa:** https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/104  
 **Ders saati:** 35  
 **Alan becerileri:** Anlama TAB1. Dinleme/İzleme, TAB2. Okuma Anlatma TAB3. Konuşma, TAB4. Yazma  
 **Kavramsal beceriler:** KB2.4. Çözümleme, KB2.5. Sınıflandırma, KB2.11. Gözleme Dayalı Tahmin Etme, KB2.15. Yansıtma, KB2.17. Değerlendirme, KB3.3. Eleştirel Düşünme  
@@ -42,6 +36,7 @@ Toplam tema: 6 · Tekil çıktı kodu: 100 · Ders saati (temalar toplamı): 206
 **Anahtar kavramlar:** Türkçe, türkü, tekerleme, bilmece, mâni, ninni, atasözleri ve deyimler, merak, açık fikirlilik, akıcı okuma, söz varlığı, anahtar kelime, yüzey anlam, tahmin, kendini uyarlama (öz yansıtma)  
 
 ### Dinleme/İzleme
+
 - **T.D.6.1.** Dinlemede/izlemede materyal seçimini yönetebilme
 - **T.D.6.2.** Dinlemede/izlemede strateji ve yöntem seçimlerini yönetebilme
 - **T.D.6.4.** Dinlediğinde/izlediğinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme
@@ -49,8 +44,8 @@ Toplam tema: 6 · Tekil çıktı kodu: 100 · Ders saati (temalar toplamı): 206
 - **T.D.6.15.** Bilgilendirici metinde anahtar kelimeleri belirlemeye yönelik çözümleme yapabilme
 - **T.D.6.19.** Dinlediğinden/izlediğinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme
 - **T.D.6.25.** Dinleme/izleme sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme
-
 ### Okuma
+
 - **T.O.6.1.** Okumada materyal seçimini yönetebilme
 - **T.O.6.2.** Sesli ve sessiz okurken akıcı okuma unsurlarını yönetebilme
 - **T.O.6.3.** Okumada strateji ve yöntem seçimlerini yönetebilme
@@ -60,16 +55,16 @@ Toplam tema: 6 · Tekil çıktı kodu: 100 · Ders saati (temalar toplamı): 206
 - **T.O.6.16.** Bilgilendirici metinde anahtar kelimeleri belirlemeye yönelik çözümleme yapabilme
 - **T.O.6.21.** Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme
 - **T.O.6.27.** Okuma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme
-
 ### Konuşma
+
 - **T.K.6.1.** Konuşma sürecini yönetebilme
 - **T.K.6.2.** Konuşma yöntem ve tekniklerine yönelik seçimlerini yönetebilme
 - **T.K.6.3.** Konuşmasında amaç ve içeriğe yönelik seçimlerini yönetebilme
 - **T.K.6.9.** Konuşmasında sesini uygun şekilde kullanabilme
 - **T.K.6.22.** Konuşmasını zenginleştirecek biçimde söz varlığını kullanabilme
 - **T.K.6.26.** Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme
-
 ### Yazma
+
 - **T.Y.6.1.** Yazma sürecini yönetebilme
 - **T.Y.6.2.** Yazma strateji, yöntem ve tekniklerine yönelik seçimlerini yönetebilme
 - **T.Y.6.3.** Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme
@@ -77,9 +72,9 @@ Toplam tema: 6 · Tekil çıktı kodu: 100 · Ders saati (temalar toplamı): 206
 - **T.Y.6.21.** Yazım kuralları ve noktalama işaretlerini uygulayabilme
 - **T.Y.6.22.** Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme
 
-
 ## TEMA 2 — BAĞIMSIZLIK YOLU
 
+**Kaynak sayfa:** https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/118  
 **Ders saati:** 35  
 **Alan becerileri:** Anlama TAB1. Dinleme/İzleme, TAB2. Okuma Anlatma TAB3. Konuşma, TAB4. Yazma  
 **Kavramsal beceriler:** KB2.3. Özetleme, KB2.4. Çözümleme, KB2.5. Sınıflandırma, KB2.7. Karşılaştırma, KB2.10. Çıkarım Yapma, KB2.11. Gözleme Dayalı Tahmin Etme, KB2.14. Yorumlama, KB2.15. Yansıtma  
@@ -93,6 +88,7 @@ Toplam tema: 6 · Tekil çıktı kodu: 100 · Ders saati (temalar toplamı): 206
 **Anahtar kavramlar:** Millî Mücadele, Cumhuriyet, karşılaştırma, sınıflandırma, özetleme, yüzey anlam, derin anlam, çalışkanlık, vatanseverlik, azim ve kararlılık, bağımsızlık, millî bilinç  
 
 ### Dinleme/İzleme
+
 - **T.D.6.2.** Dinlemede/izlemede strateji ve yöntem seçimlerini yönetebilme
 - **T.D.6.3.** Dinleyeceğinin/izleyeceğinin içeriğine yönelik tahminde bulunabilme
 - **T.D.6.6.** Görselle iletilen anlamı belirleyebilme
@@ -101,8 +97,8 @@ Toplam tema: 6 · Tekil çıktı kodu: 100 · Ders saati (temalar toplamı): 206
 - **T.D.6.9.** Dinlediğini/izlediğini kendi içinde karşılaştırabilme
 - **T.D.6.11.** Dinlediğindeki/izlediğindeki unsurları sınıflandırabilme
 - **T.D.6.25.** Dinleme/izleme sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme
-
 ### Okuma
+
 - **T.O.6.3.** Okumada strateji ve yöntem seçimlerini yönetebilme
 - **T.O.6.5.** Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme
 - **T.O.6.8.** Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme
@@ -112,8 +108,8 @@ Toplam tema: 6 · Tekil çıktı kodu: 100 · Ders saati (temalar toplamı): 206
 - **T.O.6.12.** Metindeki unsurları sınıflandırabilme
 - **T.O.6.23.** Okuduğunu özetleyebilme
 - **T.O.6.27.** Okuma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme
-
 ### Konuşma
+
 - **T.K.6.1.** Konuşma sürecini yönetebilme
 - **T.K.6.4.** Konuşmasında ön bilgilerinden yararlanabilme
 - **T.K.6.5.** Konuşmasında uygun tepki verebilme
@@ -123,8 +119,8 @@ Toplam tema: 6 · Tekil çıktı kodu: 100 · Ders saati (temalar toplamı): 206
 - **T.K.6.15.** Sözlü olarak özetleyebilme
 - **T.K.6.25.** Konuşmasında beden dilini ve mekânı etkili kullanabilme
 - **T.K.6.26.** Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme
-
 ### Yazma
+
 - **T.Y.6.1.** Yazma sürecini yönetebilme
 - **T.Y.6.3.** Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme
 - **T.Y.6.4.** Yazılı üretim ve yazılı etkileşiminde ön bilgilerinden yararlanabilme
@@ -133,13 +129,13 @@ Toplam tema: 6 · Tekil çıktı kodu: 100 · Ders saati (temalar toplamı): 206
 - **T.Y.6.21.** Yazım kuralları ve noktalama işaretlerini uygulayabilme
 - **T.Y.6.22.** Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme
 
-
 ## TEMA 3 — FARKLI DÜNYALAR
 
+**Kaynak sayfa:** https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/124  
 **Ders saati:** 34  
 **Alan becerileri:** Anlama TAB1. Dinleme/İzleme, TAB2. Okuma Anlatma TAB3. Konuşma, TAB4. Yazma  
-**Kavramsal beceriler:** KB2.3. Özetleme, KB2.4. Çözümleme, KB2.5. Sınıflandırma, KB2.7. Karşılaştırma, KB2.10. Çıkarım Yapma, KB2.14. Yorumlama, KB2.15. Yansıtma, KB2.18 Tartışma, KB3.3. Eleştirel Düşünme  
-**Eğilimler:** E1.1. Merak, E1.2. Bağımsızlık, E1.5. Kendine Güvenme (Öz Güven), E2.1. Empati, E2.2. Sorumluluk, E2.3. Girişkenlik, E3.1. Uzmanlaşma, E3.2. Odaklanma, E3.3. Yaratıcılık, E3.4. Gerçeği Arama, E3.5. Açık Fikirlilik, E3.7. Sistematik Olma, E3.8. Soru Sorma, E3.11. Özgün Düşünme  
+**Kavramsal beceriler:** KB2.3. Özetleme, KB2.4. Çözümleme, KB2.5. Sınıflandırma, KB2.7. Karşılaştırma, KB2.10. Çıkarım Yapma , KB2.14. Yorumlama, KB2.15. Yansıtma, KB2.18 Tartışma, KB3.3. Eleştirel Düşünme  
+**Eğilimler:** E1.1. Merak, E1.2. Bağımsızlık, E1.5. Kendine Güvenme (Öz Güven), E2.1.Empati, E2.2. Sorumluluk, E2.3. Girişkenlik, E3.1. Uzmanlaşma, E3.2. Odaklanma, E3.3. Yaratıcılık, E3.4. Gerçeği Arama, E3.5. Açık Fikirlilik, E3.7. Sistematik Olma, E3.8. Soru Sorma, E3.11. Özgün Düşünme  
 **SDB:** SDB1.1. Kendini Tanıma (Öz Farkındalık), SDB1.2. Kendini Düzenleme (Öz Düzenleme), SDB1.3. Kendini Uyarlama (Öz Yansıtma), SDB2.1. İletişim, SDB2.2. İş Birliği, SDB2.3. Sosyal Farkındalık, SDB3.2. Esneklik, SDB3.3. Sorumlu Karar Verme  
 **Değerler:** D4. Dostluk, D7. Estetik, D14. Saygı, D19. Vatanseverlik  
 **Okuryazarlık:** OB1. Bilgi Okuryazarlığı, OB2. Dijital Okuryazarlık, OB4. Görsel Okuryazarlık, OB5. Kültür Okuryazarlığı, OB7. Veri Okuryazarlığı  
@@ -149,6 +145,7 @@ Toplam tema: 6 · Tekil çıktı kodu: 100 · Ders saati (temalar toplamı): 206
 **Anahtar kavramlar:** farklı ülkeler, görgü kuralları, geleneksel el sanatları, mutfak kültürü, giyim kuşam, halk dansları, beden dili, merak, empati, açık fikirlilik, çıkarım, karşılaştırma, tartışma, görsel okuma, düşünceyi geliştirme yolları, çoklu ortam ögeleri, yorumlama, sınıflandırma, yaratıcılık  
 
 ### Dinleme/İzleme
+
 - **T.D.6.1.** Dinlemede/izlemede materyal seçimini yönetebilme
 - **T.D.6.8.** Dinlediğinin/izlediğinin derin anlamını belirlemeye yönelik üst düzey çıkarımlar yapabilme
 - **T.D.6.9.** Dinlediğini/izlediğini kendi içinde karşılaştırabilme
@@ -157,24 +154,24 @@ Toplam tema: 6 · Tekil çıktı kodu: 100 · Ders saati (temalar toplamı): 206
 - **T.D.6.20.** Çoklu ortam ögelerine yönelik çözümleme yapabilme
 - **T.D.6.21.** Dinlediğini/izlediğini özetleyebilme
 - **T.D.6.25.** Dinleme/izleme sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme
-
 ### Okuma
+
 - **T.O.6.1.** Okumada materyal seçimini yönetebilme
 - **T.O.6.7.** Görselle iletilen anlamı belirleyebilme
 - **T.O.6.17.** Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme
 - **T.O.6.18.** Şiirin biçim özelliklerini belirlemeye yönelik çözümleme yapabilme
 - **T.O.6.19.** Bilgilendirici metinde düşünceyi geliştirme yollarını belirlemeye yönelik çözümleme yapabilme
 - **T.O.6.27.** Okuma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme
-
 ### Konuşma
+
 - **T.K.6.1.** Konuşma sürecini yönetebilme
 - **T.K.6.6.** Konuşmasında çoklu ortam ögeleriyle içerik oluşturabilme
 - **T.K.6.13.** Konuşmasında sınıflandırma yapabilme
 - **T.K.6.14.** Yorumunu sözlü olarak ifade edebilme
 - **T.K.6.17.** Sözlü olarak tartışmaya katılabilme
 - **T.K.6.26.** Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme
-
 ### Yazma
+
 - **T.Y.6.1.** Yazma sürecini yönetebilme
 - **T.Y.6.7.** Yaratıcı yazı yazabilme
 - **T.Y.6.9.** Yazısında karşılaştırma yapabilme
@@ -183,9 +180,9 @@ Toplam tema: 6 · Tekil çıktı kodu: 100 · Ders saati (temalar toplamı): 206
 - **T.Y.6.21.** Yazım kuralları ve noktalama işaretlerini uygulayabilme
 - **T.Y.6.22.** Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme
 
-
 ## TEMA 4 — İLETİŞİM VE SOSYAL İLİŞKİLER
 
+**Kaynak sayfa:** https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/270  
 **Ders saati:** 34  
 **Alan becerileri:** Anlama TAB1. Dinleme/İzleme, TAB2. Okuma Anlatma TAB3. Konuşma, TAB4. Yazma  
 **Kavramsal beceriler:** KB2.3. Özetleme, KB2.4. Çözümleme, KB2.10. Çıkarım Yapma, KB2.14. Yorumlama, KB2.15. Yansıtma, KB3.3. Eleştirel Düşünme  
@@ -199,28 +196,29 @@ Toplam tema: 6 · Tekil çıktı kodu: 100 · Ders saati (temalar toplamı): 206
 **Anahtar kavramlar:** iletişim, etkili iletişim, kitle iletişim araçları, metin yapıları, yorumlama, önemli bilgileri belirleyebilme, özetleme, geçiş ve bağlantı ifadeleri, hazırlıklı konuşma, çoklu ortam ögeleri, yazım kuralları, noktalama işaretleri, empati, sorumluluk, güven, girişkenlik  
 
 ### Dinleme/İzleme
+
 - **T.D.6.1.** Dinlemede/izlemede materyal seçimini yönetebilme
 - **T.D.6.2.** Dinlemede/izlemede strateji ve yöntem seçimlerini yönetebilme
 - **T.D.6.12.** Dinlediğini/izlediğini yorumlayabilme
 - **T.D.6.14.** Bilgilendirici metinlerde metin yapılarından hareketle önemli bilgileri belirlemeye yönelik çözümleme yapabilme
 - **T.D.6.25.** Dinleme/izleme sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme
-
 ### Okuma
+
 - **T.O.6.1.** Okumada materyal seçimini yönetebilme
 - **T.O.6.3.** Okumada strateji ve yöntem seçimlerini yönetebilme
 - **T.O.6.13.** Metni yorumlayabilme
 - **T.O.6.15.** Bilgilendirici metinlerde metin yapılarından hareketle önemli bilgileri belirlemeye yönelik çözümleme yapabilme
 - **T.O.6.22.** Çoklu ortam ögelerine yönelik çözümleme yapabilme
 - **T.O.6.27.** Okuma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme
-
 ### Konuşma
+
 - **T.K.6.1.** Konuşma sürecini yönetebilme
 - **T.K.6.20.** Hazırlıklı konuşmasını yapılandırabilme
 - **T.K.6.21.** Konuşmasında düşünceyi geliştirme yollarını kullanabilme
 - **T.K.6.24.** Uygun geçiş ve bağlantı ifadelerini kullanabilme
 - **T.K.6.26.** Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme
-
 ### Yazma
+
 - **T.Y.6.1.** Yazma sürecini yönetebilme
 - **T.Y.6.3.** Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme
 - **T.Y.6.6.** Yazısında çoklu ortam ögeleriyle içerik oluşturabilme
@@ -228,9 +226,9 @@ Toplam tema: 6 · Tekil çıktı kodu: 100 · Ders saati (temalar toplamı): 206
 - **T.Y.6.21.** Yazım kuralları ve noktalama işaretlerini uygulayabilme
 - **T.Y.6.22.** Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme
 
-
 ## TEMA 5 — BİLİM VE TEKNOLOJİ
 
+**Kaynak sayfa:** https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/278  
 **Ders saati:** 34  
 **Alan becerileri:** Anlama TAB1. Dinleme/İzleme, TAB2. Okuma Anlatma TAB3. Konuşma, TAB4. Yazma  
 **Kavramsal beceriler:** KB2.4. Çözümleme, KB2.11. Gözleme Dayalı Tahmin Etme, KB2.15. Yansıtma, KB3.3. Eleştirel Düşünme  
@@ -244,26 +242,27 @@ Toplam tema: 6 · Tekil çıktı kodu: 100 · Ders saati (temalar toplamı): 206
 **Anahtar kavramlar:** bilim, teknoloji, gelecek, bilim insanları, yapay zekâ, çözümleme, söz sanatları, açık ve örtük ifade, geçiş ve bağlantı ifadeleri, tartışma, merak, azim ve kararlılık, uzmanlaşma, şüphe duyma, eleştirel bakma, analitik düşünme  
 
 ### Dinleme/İzleme
+
 - **T.D.6.2.** Dinlemede/izlemede strateji ve yöntem seçimlerini yönetebilme
 - **T.D.6.13.** Öyküleyici metinlerdeki hikâye unsurlarını belirlemeye yönelik çözümleme yapabilme
 - **T.D.6.16.** Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme
 - **T.D.6.18.** Dinlediğindeki/izlediğindeki söz sanatlarını belirlemeye yönelik çözümleme yapabilme
 - **T.D.6.25.** Dinleme/izleme sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme
-
 ### Okuma
+
 - **T.O.6.3.** Okumada strateji ve yöntem seçimlerini yönetebilme
 - **T.O.6.14.** Öyküleyici metinlerdeki hikâye unsurlarını belirlemeye yönelik çözümleme yapabilme
 - **T.O.6.20.** Metindeki söz sanatlarını belirlemeye yönelik çözümleme yapabilme
 - **T.O.6.27.** Okuma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme
-
 ### Konuşma
+
 - **T.K.6.1.** Konuşma sürecini yönetebilme
 - **T.K.6.10.** Sözlü sunum yapabilme
 - **T.K.6.11.** Konuşmasında tahminlerinden yararlanabilme
 - **T.K.6.23.** Konuşmasında açık ve örtük ifadeleri kullanabilme
 - **T.K.6.26.** Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme
-
 ### Yazma
+
 - **T.Y.6.1.** Yazma sürecini yönetebilme
 - **T.Y.6.3.** Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme
 - **T.Y.6.8.** Yazılı üretim ve yazılı etkileşiminde tahminlerinden yararlanabilme
@@ -273,9 +272,9 @@ Toplam tema: 6 · Tekil çıktı kodu: 100 · Ders saati (temalar toplamı): 206
 - **T.Y.6.21.** Yazım kuralları ve noktalama işaretlerini uygulayabilme
 - **T.Y.6.22.** Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme
 
-
 ## TEMA 6 — LİDER RUHLAR
 
+**Kaynak sayfa:** https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/282  
 **Ders saati:** 34  
 **Alan becerileri:** Anlama TAB1. Dinleme/İzleme, TAB2. Okuma Anlatma TAB3. Konuşma, TAB4. Yazma  
 **Kavramsal beceriler:** KB2.3. Özetleme, KB2.4. Çözümleme, KB2.7. Karşılaştırma, KB2.15. Yansıtma, KB2.17. Değerlendirme, KB3.2. Problem Çözme, KB3.3. Eleştirel Düşünme  
@@ -289,27 +288,28 @@ Toplam tema: 6 · Tekil çıktı kodu: 100 · Ders saati (temalar toplamı): 206
 **Anahtar kavramlar:** bilim, sanat, spor, girişimcilik, finansal okuryazarlık, zaman yönetimi, planlama, meslekler, değerlendirme, eleştirme, probleme çözüm üretebilme, merak, azim ve kararlılık, empati, sorumluluk, girişkenlik, uzmanlaşma, yaratıcılık, açık fikirlilik, özgün düşünme  
 
 ### Dinleme/İzleme
+
 - **T.D.6.1.** Dinlemede/izlemede materyal seçimini yönetebilme
 - **T.D.6.22.** Dinlediğini/izlediğini değerlendirebilme
 - **T.D.6.23.** Dinlediğini/izlediğini eleştirebilme
 - **T.D.6.24.** Dinlediğindeki/izlediğindeki probleme çözüm üretebilme
 - **T.D.6.25.** Dinleme/izleme sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme
-
 ### Okuma
+
 - **T.O.6.1.** Okumada materyal seçimini yönetebilme
 - **T.O.6.24.** Okuduğunu değerlendirebilme
 - **T.O.6.25.** Metni eleştirebilme
 - **T.O.6.26.** Metindeki probleme çözüm üretebilme
 - **T.O.6.27.** Okuma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme
-
 ### Konuşma
+
 - **T.K.6.1.** Konuşma sürecini yönetebilme
 - **T.K.6.16.** Değerlendirmesini sözlü olarak ifade edebilme
 - **T.K.6.18.** Eleştirisini sözlü olarak ifade edebilme
 - **T.K.6.19.** Problem çözümüne yönelik konuşma yapabilme
 - **T.K.6.26.** Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme
-
 ### Yazma
+
 - **T.Y.6.1.** Yazma sürecini yönetebilme
 - **T.Y.6.13.** Değerlendirmesini yazılı olarak ifade edebilme
 - **T.Y.6.15.** Eleştirisini yazılı olarak ifade edebilme

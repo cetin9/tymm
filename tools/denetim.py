@@ -24,8 +24,11 @@ except Exception:
 SCRIPT_DIR = Path(__file__).resolve().parent
 ROOT = SCRIPT_DIR.parent
 KAZ = ROOT / "skills" / "tymm-ders-planlama" / "references" / "kazanimlar"
+AU = ROOT / "skills" / "tymm-acik-uclu-sinav" / "references"  # 2026-2027: senaryolar/ + program/
 
-KOD_RE = r"(?:FB\.\d\.\d+\.\d+\.\d+|MAT\.\d\.\d+\.\d+|SB\.\d\.\d+\.\d+|T\.[DOKY]\.\d\.\d+)"
+# FB 2026-2027'de 3 parçalı (FB.5.1.2), eski veri 4 parçalı (FB.5.1.1.1) — ikisi de tanınır
+KOD_RE = (r"(?:FB\.\d\.\d+\.\d+(?:\.\d+)?|MAT\.\d\.\d+\.\d+|SB\.\d\.\d+\.\d+|T\.[DOKY]\.\d\.\d+"
+          r"|DKAB\.\d\.\d+\.\d+|ENG\.\d\.\d+\.[A-Z]+\d+)(?![\d])")
 IBARE = "Alıştırma, tarama ve deneme amaçlıdır"
 YZ_BILDIRIM = "Yapay zekâ desteğiyle hazırlanmıştır"
 IC_AD_SIZINTI = ["tymm-baglam-testi", "tymm-ders-planlama", "tymm-acik-uclu-sinav",
@@ -67,7 +70,8 @@ def c_dipnot(dosyalar, R):
 
 def c_kod_varligi(dosyalar, R):
     """G03 veri sadakati: her çıktı kodu kazanım dosyasında var mı; desen doğru mu."""
-    brans = {"FB": "fen-bilimleri", "MAT": "matematik", "SB": "sosyal-bilgiler", "T": "turkce"}
+    brans = {"FB": "fen-bilimleri", "MAT": "matematik", "SB": "sosyal-bilgiler", "T": "turkce",
+             "DKAB": "din-kulturu-ve-ahlak-bilgisi", "ENG": "ingilizce"}
     kodlar = set()
     for _, (_, txt) in dosyalar.items():
         kodlar |= set(re.findall(KOD_RE, txt))
@@ -75,23 +79,25 @@ def c_kod_varligi(dosyalar, R):
         R.uyari("G03-veri", "*", "Belgede çıktı kodu bulunamadı (dipnot eksik olabilir)")
         return
     onbellek = {}
+    def oku(yol):
+        if yol not in onbellek:
+            onbellek[yol] = yol.read_text(encoding="utf-8") if yol.exists() else None
+        return onbellek[yol]
+    dogrulanan = 0
     for kod in sorted(kodlar):
         p = kod.split(".")
         pre = p[0]
         sinif = p[2] if pre == "T" else p[1]
         dosya = f"{sinif}-sinif-{brans[pre]}.md"
-        yol = KAZ / dosya
-        if yol not in onbellek:
-            onbellek[yol] = yol.read_text(encoding="utf-8") if yol.exists() else None
-        icerik = onbellek[yol]
-        if icerik is None:
-            R.uyari("G03-veri", "*", f"{kod}: kazanım dosyası yok ({dosya}) — doğrulanamadı")
-        elif kod not in icerik:
-            R.hata("G03-veri", "*", f"{kod}: {dosya} içinde YOK — uydurma/yanlış kod olabilir")
-    if all((KAZ / f"{(k.split('.')[2] if k.split('.')[0]=='T' else k.split('.')[1])}-sinif-{brans[k.split('.')[0]]}.md").exists()
-           and k in (KAZ / f"{(k.split('.')[2] if k.split('.')[0]=='T' else k.split('.')[1])}-sinif-{brans[k.split('.')[0]]}.md").read_text(encoding='utf-8')
-           for k in kodlar):
-        R.ok("G03-veri", "*", f"{len(kodlar)} çıktı kodunun tümü kazanım dosyalarında doğrulandı")
+        kaynaklar = [y for y in (KAZ / dosya, AU / "program" / dosya, AU / "senaryolar" / dosya) if oku(y) is not None]
+        if not kaynaklar:
+            R.uyari("G03-veri", "*", f"{kod}: veri dosyası yok ({dosya}) — doğrulanamadı")
+        elif not any(re.search(re.escape(kod) + r"(?!\.?\d)", oku(y)) for y in kaynaklar):
+            R.hata("G03-veri", "*", f"{kod}: {dosya} (kazanım/program/senaryo) içinde YOK — uydurma/yanlış kod olabilir")
+        else:
+            dogrulanan += 1
+    if dogrulanan == len(kodlar):
+        R.ok("G03-veri", "*", f"{len(kodlar)} çıktı kodunun tümü veri dosyalarında doğrulandı")
 
 
 def _secenekler(ham):
