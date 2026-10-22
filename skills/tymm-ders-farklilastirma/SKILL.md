@@ -12,7 +12,7 @@ description: >
   bitirenlere ek etkinlik", "zorlananlar için basitleştir" dediğinde
   kullan. SIFIRDAN yeni ders isteniyorsa YÜKLEME — o tymm-ders-planlama
   işidir (farklılaştırma zaten her planın standart bölümüdür).
-license: Apache-2.0 (kaynak: anthropics/k12-teacher-skills mimarisinin uyarlaması)
+license: "Apache-2.0 (kaynak: anthropics/k12-teacher-skills mimarisinin uyarlaması)"
 ---
 
 # TYMM Ders Farklılaştırma

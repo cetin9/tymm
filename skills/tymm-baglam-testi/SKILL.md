@@ -11,7 +11,7 @@ description: >
   çalışma kağıdı veya konu anlatımı istekleri için YÜKLEME (tymm-ders-planlama
   becerisinin işi). Tek tek soru çözme, hazır bir testi puanlama veya soru
   tahlili için de YÜKLEME — bunları doğrudan yanıtla.
-license: Apache-2.0 (kaynak: anthropics/k12-teacher-skills mimarisinin uyarlaması)
+license: "Apache-2.0 (kaynak: anthropics/k12-teacher-skills mimarisinin uyarlaması)"
 ---
 
 # TYMM Bağlam Testi

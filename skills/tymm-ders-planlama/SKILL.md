@@ -3,10 +3,9 @@ name: tymm-ders-planlama
 description: >
   TYMM'ye (Türkiye Yüzyılı Maarif Modeli) hizalı ders planı, öğrenci çalışma
   kağıdı ve öğrenme kanıtları (değerlendirme) sayfası üretir; çıktılar A4
-  baskıya hazır HTML dosyalarıdır. Öğretmene sınıf, tema, konu veya süre
-  hakkında herhangi bir netleştirme sorusu sormadan ÖNCE bu beceriyi yükle.
-  Bir öğretmenin sıfırdan yeni ders içeriği istediği her durumda kullan —
-  sınıf, branş veya konu henüz söylenmemiş olsa bile. Desteklenen branşlar:
+  baskıya hazır HTML dosyalarıdır. Öğretmen sıfırdan yeni ders içeriği
+  istediğinde, sınıf, branş veya konu henüz söylenmemiş olsa bile,
+  netleştirme sorusundan ÖNCE bu beceriyi yükle. Desteklenen branşlar:
   matematik, Türkçe, fen bilimleri, sosyal bilgiler (5-6-7. sınıf öğrenme
   çıktısı verisiyle). Açık isteklerde ("ders planı", "günlük plan", "etkinlik planı") ve örtük öğretmen niyetinde
   ("yarın çarpanlar ve katları işleyeceğim", "6'lara bölünebilme anlatacağım")
@@ -15,7 +14,7 @@ description: >
   (kademeli) materyal isteyen YENİ bir ders yine TEK planlama isteğidir; bu
   beceri o materyalleri ders paketinin içinde üretir. Mevcut bir dersi
   farklılaştırmak bu becerinin kapsamı dışındadır.
-license: Apache-2.0 (kaynak: anthropics/k12-teacher-skills uyarlaması)
+license: "Apache-2.0 (kaynak: anthropics/k12-teacher-skills uyarlaması)"
 ---
 
 <!--

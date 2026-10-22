@@ -41,7 +41,7 @@ for g in (5, 6, 7):
             # sınavın düştüğü hafta (pazartesi..cuma) ve sonrası sınav kapsamı dışında: işaret o haftanın ÖNÜNE konur
             if not yazildi and datetime.date.fromisoformat(h["pzt"]) + datetime.timedelta(days=4) >= t1:
                 gruplar.append(SINAV); yazildi = True
-            u = re.sub(r"\s+", " ", h.get("unite") or "").strip().replace("iŞ", "İŞ") or "—"
+            u = re.sub(r"\s+", " ", h.get("unite") or "").strip().replace("iŞ", "İŞ").replace(" ve ", " VE ") or "—"
             konu = re.sub(r"\s+", " ", h.get("konu") or "").strip()
             if gruplar and gruplar[-1] is not SINAV and gruplar[-1]["u"] == u:
                 gruplar[-1]["son"] = h["h"]

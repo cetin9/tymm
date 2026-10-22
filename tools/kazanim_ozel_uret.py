@@ -22,6 +22,9 @@ bugun = datetime.date.today().isoformat()
 def tr_upper(s): return s.replace("i", "İ").replace("ı", "I").upper()
 def temiz(s): return re.sub(r"\s+", " ", str(s or "")).strip()
 
+# Ünite adı plan ile 2026-27 ders kitabında farklı yazılmışsa kitabınki (kitap sırası ilkesi). Kitap s.144: "KÜLTÜRÜMÜZDEKİ DİNÎ MOTİFLER".
+KITAP_AD = {"KÜLTÜRÜMÜZDE DİNİ MOTİFLER": "KÜLTÜRÜMÜZDEKİ DİNÎ MOTİFLER"}
+
 # ---------------------------------------------------------------- 1) DKAB
 for g in (5, 6, 7):
     xl = glob.glob(str(PK / "din-kulturu-ve-ahlak-bilgisi" / str(g) / "*.xlsx"))[0]
@@ -65,6 +68,7 @@ for g in (5, 6, 7):
     bloklar = []
     for i, u in enumerate(sira, 1):
         U = uniteler[u]; ad = tr_upper(re.sub(r"^\d+\.\s*", "", u))
+        ad = KITAP_AD.get(ad, ad)   # plan adı kitaptakinden farklıysa kitabınki esas
         L.append(f"| ÜNİTE {i} | {ad} | {len(U['cikti'])} | {U['saat']} |")
         bloklar += [f"## ÜNİTE {i} — {ad}", "", f"**Ders saati (plan):** {U['saat']}  ",
                     f"**İçerik çerçevesi:** {' · '.join(U['konu'])}  ", f"**Anahtar kavramlar:** {', '.join(dict.fromkeys(', '.join(U['ak']).split(', ')))}  ", ""]

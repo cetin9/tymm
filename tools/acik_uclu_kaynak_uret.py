@@ -19,8 +19,8 @@ ap = argparse.ArgumentParser()
 ap.add_argument("--meb", default=r"C:\Users\cetin\Projects\MEB-KAYNAK\2026-2027")
 ap.add_argument("--lms-kaynak", default=r"C:\Users\cetin\Projects\lms\content-gen\kaynak")
 ap.add_argument("--senaryo-siniflar", default="5,6,7")
-ap.add_argument("--program-siniflar", default="5")
-ap.add_argument("--kitap-siniflar", default="5")
+ap.add_argument("--program-siniflar", default="5,6,7")
+ap.add_argument("--kitap-siniflar", default="5,6,7")
 a = ap.parse_args()
 MEB, LMS = Path(a.meb), Path(a.lms_kaynak)
 OUT = Path(__file__).resolve().parent.parent / "skills" / "tymm-acik-uclu-sinav" / "references"
@@ -47,6 +47,9 @@ for g in siniflar(a.program_siniflar):
         if not klasor.exists():
             print(f"program yok: {d} {g}"); continue
         L = [f"# {g}. sınıf {d} — TYMM öğretim programı (2026-2027)", ""]
+        if d == "ingilizce" and g == 7:
+            L += ["> **UYARI:** Bu TYMM 7. sınıf İngilizce programıdır ve 2026-2027'de okulda **UYGULANMAZ** (okulda eski program, E7.x.y). "
+                  "7. sınıf İngilizce için `../../tymm-ders-planlama/references/kazanimlar/7-sinif-ingilizce.md` ve kitap esastır.", ""]
         if d == "din-kulturu-ve-ahlak-bilgisi":
             L += [f"> **UYARI:** Bu dosya TYMM sitesindeki DKAB sayfalarından alındı; bazı çıktı ifadeleri ve süreç bileşenleri 2026-2027 ders kitabı, "
                   f"DÖGM yıllık planı ve ÖDSGM senaryo tablosuyla ÇELİŞİR. Çıktı ifadesi ve bileşenler için "
@@ -66,14 +69,15 @@ for g in siniflar(a.program_siniflar):
 import json, datetime
 PLAN = LMS.parent.parent / "apps" / "web" / "src" / "data" / "yillik-plan-2026-2027.json"
 # 1. yazılı tarihleri: ÖDSGM "Okul Geneli Ortak Yazılı Sınav Uygulama Takvimi" (20.10.2026) — derse göre farklı.
-# 2. yazılı takvimi henüz yayımlanmadı (22.10.2026): 5 Ocak 2027 yer tutucudur (7. sınıf Türkçe ülke geneli tarihi).
+# 2. yazılı takvimi henüz yayımlanmadı (23.10.2026): dönem sonu haftası (18 Ocak 2027) varsayılır; 7. sınıf Türkçe ülke geneli 5 Ocak (resmî).
 BIRINCI = {"turkce": (2026, 11, 10), "matematik": (2026, 11, 5), "fen-bilimleri": (2026, 11, 3), "sosyal-bilgiler": (2026, 11, 6),
            "din-kulturu-ve-ahlak-bilgisi": (2026, 11, 13), "ingilizce": (2026, 11, 12)}
 def sinavlar(d, g):
     t1 = datetime.date(*BIRINCI[d]); ek = ""
     if d == "matematik" and g == 6: t1, ek = datetime.date(2026, 11, 11), " — ÜLKE GENELİ"
     return [(f"1. dönem 1. ortak yazılı ({t1.strftime('%d.%m.%Y')}{ek})", t1),
-            ("1. dönem 2. ortak yazılı (tarih henüz yayımlanmadı; ~5 Ocak 2027 varsayıldı)", datetime.date(2027, 1, 5))]
+            (("1. dönem 2. ortak yazılı (05.01.2027 — ÜLKE GENELİ)", datetime.date(2027, 1, 5)) if (d == "turkce" and g == 7) else
+             ("1. dönem 2. ortak yazılı (tarih yayımlanmadı; 18 Ocak 2027 haftası varsayıldı)", datetime.date(2027, 1, 18)))]
 if PLAN.exists():
     veri = json.loads(PLAN.read_text(encoding="utf-8"))["dersler"]
     for g in siniflar(a.program_siniflar):
@@ -103,7 +107,8 @@ ORN = MEB / "08-ornek-sorular"
 if ORN.exists():
     for f in sorted(ORN.glob("*/*/*.md")):
         d, g = f.parent.parent.name, f.parent.name
-        if g == "5" or (g == "6" and "ulke-geneli" in f.name and "mazeret" not in f.name):
+        # 5: hepsi · 6: ülke geneli (mazeret hariç) + MEBİ "Yazılıya Hazırlanıyorum" (2025-26, TYMM)
+        if g == "5" or (g == "6" and (("ulke-geneli" in f.name and "mazeret" not in f.name) or "mebi-" in f.name)):
             dst = OUT / "ornek-sorular" / f"{g}-{d}-{f.name}"; dst.parent.mkdir(parents=True, exist_ok=True)
             dst.write_text(f"<!-- Kaynak: MEB-KAYNAK/2026-2027/08-ornek-sorular/{d}/{g}/{f.name} (resmî ÖDSGM yayını; PyMuPDF ham metni, şekil/tablo düzeni bozuk olabilir) -->\n\n"
                            + f.read_text(encoding="utf-8"), encoding="utf-8")

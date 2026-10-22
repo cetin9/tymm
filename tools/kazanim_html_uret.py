@@ -56,7 +56,9 @@ def satirlar(h):
     for s in h.split("\n"):
         s = re.sub(r"\s+", " ", s).strip()
         if not s: continue
-        out += [p.strip() for p in re.split(r"(?<=[.!?”\"])\s+(?=[a-zçğ]\)\s|(?:FB|MAT|SB|DKAB|ENG|T\.[DOKY])\.\d+\.\d)", s) if p.strip()]
+        # sitede kod içinde boşluk olabiliyor: "ENG.5.7. R 3." / "ENG.5.8.R 4." → "ENG.5.7.R3."
+        s = re.sub(r"\b(ENG\.?\d\.\d+\.)\s*([A-Z]+)\s*(\d+)\.", r"\1\2\3.", s)
+        out += [p.strip() for p in re.split(r"(?<=[.!?”\"])\s+(?=[a-zçğ]\)\s|(?:FB|MAT|SB|DKAB|ENG|T\.[DOKY])\.?\d+\.\d)", s) if p.strip()]
     return out
 
 def alanlar(t):
@@ -71,7 +73,8 @@ def tek(h):
 def ciktilar(h, pre, g):
     """-> [(alan|None, kod, ifade, [bileşen...])]"""
     # kod ile metin arasında boşluk olmayabilir ("FB.7.1.1.Uzay…", "ENG.5.2.S4.Students…")
-    kod_re = re.compile(rf"^({pre}\.{g}\.\d+\.[A-Z]+\d+|{pre}\.{g}(?:\.\d+)+)\.?\s*([^\d\s.].*)$")
+    # önek ile sınıf arasında nokta olmayabilir ("ENG5.7.L1" — İngilizce 5. sınıf 7. tema sayfası) → standart biçime çevrilir
+    kod_re = re.compile(rf"^({pre}\.?{g}\.\d+\.[A-Z]+\d+|{pre}\.?{g}(?:\.\d+)+)\.?\s*([^\d\s.].*)$")
     L = satirlar(h); out = []; alan = None; i = 0; cur = None
     while i < len(L):
         s = L[i]
@@ -79,7 +82,8 @@ def ciktilar(h, pre, g):
             alan = s; cur = None; i += 1; continue
         m = kod_re.match(s)
         if m:
-            cur = [alan, m[1].rstrip("."), m[2].strip(), []]; out.append(cur); i += 1; continue
+            kod = re.sub(rf"^({pre})\.?({g}\.)", r"\1.\2", m[1].rstrip("."))
+            cur = [alan, kod, m[2].strip(), []]; out.append(cur); i += 1; continue
         b = re.match(r"^([a-zçğı])\)\s*(.*)$", s)
         if b and cur is not None:
             metin = b[2]

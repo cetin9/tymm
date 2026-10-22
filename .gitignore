@@ -13,3 +13,6 @@ ciktilar/
 
 # MEB ders kitabı metinleri (telif MEB'e ait; yalnız yerel kullanım). Yeniden üretim: tools/acik_uclu_kaynak_uret.py
 skills/tymm-acik-uclu-sinav/references/kitap/
+
+# Paketlenmiş beceriler (tools/paketle.py)
+dist/

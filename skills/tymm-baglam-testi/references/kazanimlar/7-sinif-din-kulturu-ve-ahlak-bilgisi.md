@@ -1,6 +1,6 @@
 # 7. Sınıf Din Kültürü ve Ahlak Bilgisi — TYMM Öğrenme Çıktısı Verisi (2026-2027)
 
-**Kaynak (doğrulanmış):** Din Öğretimi Genel Müdürlüğü 2026-2027 çerçeve yıllık planı (`2026-2027-din-kulturu-ve-ahlak-bilgisi-7-sinif-cerceve-yillik-plan-MEB.xlsx`), 2026-10-22 tarihinde aktarıldı (`tools/kazanim_ozel_uret.py`). Öğrenme çıktıları ve süreç bileşenleri **birebir**; asla yeniden yazılmaz.
+**Kaynak (doğrulanmış):** Din Öğretimi Genel Müdürlüğü 2026-2027 çerçeve yıllık planı (`2026-2027-din-kulturu-ve-ahlak-bilgisi-7-sinif-cerceve-yillik-plan-MEB.xlsx`), 2026-10-23 tarihinde aktarıldı (`tools/kazanim_ozel_uret.py`). Öğrenme çıktıları ve süreç bileşenleri **birebir**; asla yeniden yazılmaz.
 
 > **KAYNAK NOTU:** TYMM sitesindeki DKAB ünite sayfalarında bazı çıktı ifadeleri farklıdır (ör. "gözleme dayalı tahmin edebilme"). 2026-2027 ders kitabı, DÖGM yıllık planı ve ÖDSGM ortak sınav senaryo tablosu bu dosyadaki ifadeleri kullanır; geçerli olan budur.
 > Ortak yazılı sınavlarda geçerli kapsam, ÖDSGM konu-soru dağılım tablosudur (`tymm-acik-uclu-sinav/references/senaryolar/`).

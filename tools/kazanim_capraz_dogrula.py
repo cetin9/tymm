@@ -30,6 +30,8 @@ def n(s):
     s = "".join(c for c in s if not unicodedata.combining(c)).lower()
     return re.sub(r"[^a-z0-9' ]+", " ", s).split()
 def nj(s): return " ".join(n(s))
+# Öğretmen onaylı bilinen farklar (23.10.2026): senaryo ifadesi kazanımdan farklı ama kazanım (program) ifadesi esas
+ONAYLI = {"T.Y.5.2": "tam program + TYMM sitesi 'teknik seçimlerini' der; senaryo varyantı"}
 hata = uyari = 0
 def H(m):
     global hata; hata += 1; print("  ✗", m)
@@ -73,10 +75,20 @@ for g in SIN:
                 if not m: U(f"senaryo satırı çözümlenemedi: {r['cikti'][:60]}"); continue
                 k, ifade = m[1], m[2]
                 if k not in K["kod"]: H(f"SENARYO kodu kazanımda YOK: {k} — {ifade[:70]}"); continue
-                a1, a2 = nj(ifade), nj(K["kod"][k]["ifade"])
-                if a1 != a2 and not (a1.startswith(a2[:60]) or a2.startswith(a1[:60])):
-                    H(f"{k} ifade farklı:\n      senaryo : {ifade[:150]}\n      kazanım : {K['kod'][k]['ifade'][:150]}")
-                    continue
+                # TAM cümle karşılaştırılır (önek karşılaştırması cümle sonundaki fiil farkını kaçırıyordu).
+                # Boşluk farkı (PDF hece kopması "farkın dalık") yok sayılır; çok küçük fark MEB tablosundaki yazım hatası sayılır.
+                a1, a2 = nj(ifade).replace(" ", ""), nj(K["kod"][k]["ifade"]).replace(" ", "")
+                if a1 != a2:
+                    import difflib
+                    oran = difflib.SequenceMatcher(None, a1, a2).ratio()
+                    kaz_basi = a1.startswith(a2) and len(a1) > len(a2) + 20   # senaryo hücresine bileşen yapışmış
+                    if oran >= 0.985 or kaz_basi:
+                        U(f"{k} senaryo tablosunda yazım farkı (MEB tablosu hatası olabilir; kazanım ifadesi esas): {ifade[:120]}")
+                    elif k in ONAYLI:
+                        U(f"{k} onaylı fark ({ONAYLI[k]}): senaryo '{ifade[:90]}'")
+                    else:
+                        H(f"{k} ifade farklı:\n      senaryo : {ifade[:200]}\n      kazanım : {K['kod'][k]['ifade'][:200]}")
+                        continue
                 if r.get("unite") and d not in ("turkce",):
                     su = nj(re.sub(r"^\d+\.\s*ÜNİTE:\s*", "", r["unite"], flags=re.I))
                     if not any(su == nj(b) or su in nj(b) or nj(b) in su for b in K["kod"][k]["birimler"]):

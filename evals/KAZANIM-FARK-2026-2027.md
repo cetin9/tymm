@@ -12,7 +12,7 @@ Sayılar: **+** yeni kod · **−** kalkan kod · **ifade** çıktı cümlesi de
 | 5 | fen-bilimleri | 28 | 27 | 1 | 2 | 7 | 9 |
 | 5 | sosyal-bilgiler | 19 | 19 | 0 | 0 | 5 | 9 |
 | 5 | din-kulturu-ve-ahlak-bilgisi | 0 | 18 | 18 | 0 | 0 | 0 |
-| 5 | ingilizce | 0 | 161 | 161 | 0 | 0 | 0 |
+| 5 | ingilizce | 0 | 184 | 184 | 0 | 0 | 0 |
 | 6 | turkce | 100 | 100 | 0 | 0 | 0 | 0 |
 | 6 | matematik | 24 | 24 | 0 | 0 | 4 | 6 |
 | 6 | fen-bilimleri | 36 | 36 | 0 | 0 | 4 | 15 |
@@ -525,6 +525,29 @@ Kod şeması değişti: 26 çıktı ifade benzerliğiyle eşlendi (ör. FB.5.1.1
 - ENG.5.6.S4 — Students can construct a new verbal content on “life in the world with basic food types; ordering in a restaurant; food events in the city” by speaking accurate
 - ENG.5.6.S5 — Students can reorganise (reconstruct) and use information about the “life in the world with basic food types; ordering in a restaurant; food events in the city”
 - ENG.5.6.S6 — Students can convey their knowledge, experiences, thoughts, and feelings related to the speaking-expression process about the current content, “life in the worl
+- ENG.5.7.L1 — Students can get ready for the listening/watching-comprehension process for the current content on “life in nature with types of animals in nature; wild animals
+- ENG.5.7.L2 — Students can bring information about the current content on “life in nature with types of animals in nature; wild animals in nature; their habitats” together th
+- ENG.5.7.L3 — Students can make meaning of/derive meaning from the current content on “life in nature with types of animals in nature; wild animals in nature; their habitats”
+- ENG.5.7.L4 — Students can convey their knowledge, experience, thoughts, and feelings examined carefully about the whole listening/watching-comprehension process in relation 
+- ENG.5.7.P1 — Students can select and use the target phonological elements of the current content about “life in nature with types of animals in nature; wild animals in natur
+- ENG.5.7.R1 — Students can get ready for the reading-comprehension process about the current content on “life in nature with types of animals in nature; wild animals in natur
+- ENG.5.7.R2 — Students can bring information about the current content on “life in nature with types of animals in nature; wild animals in nature; their habitats” through ski
+- ENG.5.7.R3 — Students can make meaning of / derive meaning from the current content about “life in nature with types of animals in nature; wild animals in nature; their habi
+- ENG.5.7.R4 — Students can convey their knowledge, experiences, thoughts, and feelings related to the reading-comprehension process about the current content, “life in nature
+- ENG.5.7.V1 — Students can select and use the target vocabulary of the current content about “life in nature with types of animals in nature; wild animals in nature; their ha
+- ENG.5.7.G1 — Students can select and use the target grammatical elements of the current content about “life in nature with types of animals in nature; wild animals in nature
+- ENG.5.7.W1 — Students can get ready for the writing-expression process about the current content on “life in nature with types of animals in nature; wild animals in nature; 
+- ENG.5.7.W2 — Students can understand the model/example for the writing task about the current content on “life in nature with types of animals in nature; wild animals in nat
+- ENG.5.7.W3 — Students can organise a content for the assigned writing task on the current content “life in nature with types of animals in nature; wild animals in nature; th
+- ENG.5.7.W4 — Students can individually construct/form content for the assigned writing task on the current content “life in nature with types of animals in nature; wild anim
+- ENG.5.7.W5 — Students can reorganise (reconstruct) and use information in the new written tasks about the “life in nature with types of animals in nature; wild animals in na
+- ENG.5.7.W6 — Students can reflect on their knowledge, experiences, thoughts, and feelings related to the writing-expression process about the current content, “life in natur
+- ENG.5.7.S1 — Students can get ready for speaking-expression process about the current content on “life in nature with types of animals in nature; wild animals in nature; the
+- ENG.5.7.S2 — Students can use the model/example for producing verbal content about the current content on “life in nature with types of animals in nature; wild animals in na
+- ENG.5.7.S3 — Students can organise a new verbal content on “life in nature with types of animals in nature; wild animals in nature; their habitats” by speaking accurately, e
+- ENG.5.7.S4 — Students can construct a new verbal content on “life in nature with types of animals in nature; wild animals in nature; their habitats” by speaking accurately, 
+- ENG.5.7.S5 — Students can reorganise (reconstruct) and use information about the “life in nature with types of animals in nature; wild animals in nature; their habitats” to 
+- ENG.5.7.S6 — Students can convey their knowledge, experiences, thoughts, and feelings related to the speaking-expression process about the current content, “life in nature w
 - ENG.5.8.L1 — Students can get ready for the listening/watching-comprehension process for the current content on “life in the universe and future with planet Earth; holidays;
 - ENG.5.8.L2 — Students can bring information about the current content on “life in the universe and future with planet Earth; holidays; school holidays, places, activities, a
 - ENG.5.8.L3 — Students can make meaning of/derive meaning from the current content on “life in the universe and future with planet Earth; holidays; school holidays, places, a
@@ -533,7 +556,7 @@ Kod şeması değişti: 26 çıktı ifade benzerliğiyle eşlendi (ör. FB.5.1.1
 - ENG.5.8.R1 — Students can get ready for the reading-comprehension process about the current content on “life in the universe and future with planet Earth; holidays; school h
 - ENG.5.8.R2 — Students can bring information about the current content on “life in the universe and future with planet Earth; holidays; school holidays, places, activities, a
 - ENG.5.8.R3 — Students can make meaning of / derive meaning from the current content about “life in the universe and future with planet Earth; holidays; school holidays, plac
-- ENG.5.8 — R 4. Students can convey their knowledge, experiences, thoughts, and feelings related to the reading-comprehension process about the current content, “life in t
+- ENG.5.8.R4 — Students can convey their knowledge, experiences, thoughts, and feelings related to the reading-comprehension process about the current content, “life in the un
 - ENG.5.8.V1 — Students can select and use the target vocabulary of the current content about “life in the universe and future with planet Earth; holidays; school holidays, pl
 - ENG.5.8.G1 — Students can select and use the target grammatical elements of the current content about “life in the universe and future with planet Earth; holidays; school ho
 - ENG.5.8.W1 — Students can get ready for the writing-expression process about the current content on “life in the universe and future with planet Earth; holidays; school holi

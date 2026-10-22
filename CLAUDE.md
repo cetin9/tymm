@@ -64,7 +64,7 @@ Tüm çıktılar ve iletişim Türkçedir.
 | Çapraz doğrulama | ✅ `tools/kazanim_capraz_dogrula.py`: 18 ders-sınıf senaryo tablosunun tüm satırları kod+ifade+tema ile tutuyor (tek fark T.Y.5.2 ifade varyantı; program ifadesi esas). Eski↔yeni fark: `evals/KAZANIM-FARK-2026-2027.md`. |
 | tema-sirasi.md | ✅ 2026-27 resmî planlardan 5-7 × 6 ders, 1. yazılı sınırı işaretli (`tools/tema_sirasi_uret.py`) |
 | beceri-cercevesi.md | ✅ birincil kaynaklardan; yalnız D2/D12 ad eşleşmesi alfabetik çıkarım (dosyada işaretli) |
-| Yenileme sırası | `kazanim_html_uret.py` → `kazanim_ozel_uret.py` → `kazanim_capraz_dogrula.py` (0 HATA olmalı) → `kazanim_fark.py` → `--kur` / kopyala → `tema_sirasi_uret.py` → `acik_uclu_kaynak_uret.py` |
+| Yenileme sırası | `kazanim_html_uret.py` → `kazanim_ozel_uret.py` → `kazanim_capraz_dogrula.py` (0 HATA olmalı) → `kazanim_fark.py` → kopyala (iki beceri) → `tema_sirasi_uret.py` → `acik_uclu_kaynak_uret.py` → `kitap_dizini_uret.py` → `ingilizce_sozcuk_uret.py` → `senaryo_kartlari_uret.py` → `kitap_kazanim_karsilastir.py` → `paketle.py [--claude-code]`. Sağlık raporu: `evals/SAGLIK-RAPORU-2026-10-23.md` |
 | Açık uçlu: senaryolar 5/6/7 | ✅ ÖDSGM 2026-2027 1. dönem konu-soru dağılım tabloları, 6 ders (`tymm-acik-uclu-sinav/references/senaryolar/`) |
 | Açık uçlu: program + kitap 5 | ✅ 2026-2027 ünite programları + MEB ders kitabı metinleri, 6 ders; `kitap-dizini.md` tema→sayfa (`tymm-acik-uclu-sinav/references/program/`, `kitap/`). 6-7. sınıfta kitap yok. |
 

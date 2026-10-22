@@ -13,7 +13,7 @@ description: >
   öğretmen çoktan seçmeli test/tarama/deneme isterse bu beceri DEĞİL
   tymm-baglam-testi kullanılır. Branşlar: Türkçe, matematik, fen bilimleri,
   sosyal bilgiler, din kültürü ve ahlak bilgisi, İngilizce.
-license: Apache-2.0 (kaynak: anthropics/k12-teacher-skills mimarisinin uyarlaması)
+license: "Apache-2.0 (kaynak: anthropics/k12-teacher-skills mimarisinin uyarlaması)"
 ---
 
 # TYMM Açık Uçlu Ortak Yazılı Sınav
@@ -47,6 +47,11 @@ bulunamazsa "PDF s. 14" yazılır.
    bağlam kurgulama, işlevsellik testi, soru kökü kuralları, bilişsel yük
    ve etik/tarafsızlık ilkeleri açık uçlu sorularda da aynen geçerlidir.
    (Seçenek/çeldirici bölümleri bu beceride uygulanmaz.)
+1b. `references/olcme-ilkeleri.md` dosyasını oku. Bu dosya MEB TYMM
+   Program Okuryazarlığı 5. Modülü'nün açık uçlu ve kısa cevaplı soru
+   yazımı, puanlama ve dereceli puanlama anahtarı hükümlerini özetler.
+   Açık uçlu soruya doğrudan ilişkin resmî kaynak olduğu için, çoktan
+   seçmeli soru yazım kılavuzuyla çeliştiği yerde **bu dosya önceliklidir**.
 2. Branş yanılgı envanterini oku (kısmi puanlama ve "yaygın hata"
    satırları için): matematik →
    `../tymm-baglam-testi/references/test-matematik.md`; diğerleri →
@@ -62,12 +67,28 @@ bulunamazsa "PDF s. 14" yazılır.
    resmî tablosudur. Her sınavda (1. dönem 1. / 2. ortak yazılı) her
    senaryo için hangi çıktıdan **kaç soru** sorulacağını verir. Bu beceride
    kapsam ve soru sayısı **buradan** gelir, uydurulmaz.
+3b. **Senaryo kartı (ÖNCE BUNU OKU):** `references/senaryo-kartlari/<sınıf>-sinif-<ders>.md`
+   dosyasında ilgili sınavın `### Senaryo K` bölümü. Her çıktı için tek satırda şunları verir:
+   - kazanım ifadesi ve soru sayısı,
+   - tema · konu,
+   - planda işlendiği haftalar,
+   - sınavdan önce işlenip işlenmediği (✓ / ⚠),
+   - kitap yeri (cilt, tema sayfa aralığı, varsa konu sayfası).
+
+   Kartlar 180 senaryonun hepsi için önceden üretildi ve kontrol edildi.
+   Bu bölüm okunduktan sonra yalnız gereken kitap sayfalarına gidilir.
+   ⚠ işaretli çıktı varsa (2026-27'de yalnız Din 6, DKAB.6.2.1, 1. yazılı
+   Senaryo 1 ve 4), teslim notunda öğretmene "bu çıktı sınav haftasında
+   işlenmeye başlıyor" diye yazılır.
 4. **Çıktı + süreç bileşenleri:** `../tymm-ders-planlama/references/kazanimlar/<sınıf>-sinif-<ders>.md`
    dosyası (2026-2027, 5-7. sınıf, 6 ders). Bu dosya senaryo tablolarıyla
    kod, ifade ve tema düzeyinde çapraz doğrulandı. Çıktı ifadesi ve süreç
    bileşenleri **buradan birebir** alınır.
-   **Kapsam sınırları için** 5. sınıfta ayrıca
-   `references/program/5-sinif-<ders>.md` dosyasına bakılır. İlgili
+   **Kapsam sınırları için** ayrıca
+   `references/program/<sınıf>-sinif-<ders>.md` dosyasına (5-6-7) bakılır.
+   7. sınıf İngilizce program dosyası TYMM'dir ve okulda **uygulanmaz**;
+   7. sınıf İngilizce için yalnız kazanım dosyası (eski program) ile kitap
+   kullanılır. İlgili
    çıktının bölümünü Grep ile bul, dosyanın tamamını okuma. Burada
    "öğrenme-öğretme uygulamaları" altındaki kapsam sınırları ("değinilir",
    "verilmez", "girilmez") bulunur; bu sınırlar soruyu bağlar. İki dosya
@@ -83,7 +104,7 @@ bulunamazsa "PDF s. 14" yazılır.
    kitabın bilgi kutusundan alınır (ör. "metinde geçen bir kelimenin
    anlamını bağlamdan tahmin etme"). Harf kodu uydurulmaz. Alt maddeler
    aynı çıktının farklı odaklarını ölçer.
-4b. **Kapsam (hangi konular işlendi):** `references/plan-5-sinif.md`
+4b. **Kapsam (hangi konular işlendi):** `references/plan-<sınıf>-sinif.md`
    dosyasında dersin bölümüne bak. ▶ satırı sınav haftasıdır; sınav, o
    satırın **üstündeki tüm haftaları** kapsar. Bir tema sınav haftasından
    önce başladıysa kısmen işlenmiştir; o temanın yalnız işlenmiş konuları
@@ -91,19 +112,28 @@ bulunamazsa "PDF s. 14" yazılır.
    (Türkçe, kısmen İngilizce) hangi temaların kitap ve kavram kaynağı
    olacağı **buradan** belirlenir. Örneğin 5. sınıf Türkçe 1. yazılı =
    Oyun Dünyası + Atatürk'ü Tanımak'ın ilk haftaları (Mustafa, Oğlu
-   Hüseyin'den Emine Ana'ya Mektuplar). Okulun planı farklıysa öğretmenin
-   söylediği geçerlidir.
-5. **Ders kitabı (2026-2027, 5. sınıf):** `references/kitap-dizini.md`
-   dosyasını oku. Senaryodaki her tema için kitap aralığını bul, ilgili
-   sayfaları `references/kitap/5-sinif-<ders>-<cilt>.md` içinden **yalnız o
-   aralıkta** oku (Grep → `--- s.N ---` işareti → Read offset/limit).
+   Hüseyin'den Emine Ana'ya Mektuplar). Öğretmen aksini söylemedikçe okulun
+   zümre planı **MEB çerçeve planıyla aynı** kabul edilir.
+5. **Ders kitabı (2026-2027, 5-6-7. sınıf):** kitap yeri senaryo kartında
+   hazırdır. Kartta yoksa dizin dosyasına bakılır: 5. sınıf için
+   `references/kitap-dizini.md`, 6-7. sınıf için
+   `references/kitap-dizini-6-7.md`. İlgili sayfalar
+   `references/kitap/<sınıf>-sinif-<ders>-<cilt>.md` içinden **yalnız o
+   aralıkta** okunur (Grep → `--- s.N ---` işareti → Read offset/limit).
+   Kitap ile yıllık plan tema sırası 18 ders-sınıfın hepsinde aynıdır
+   (doğrulandı). Türkçe kitaplarındaki metin sırası da planla aynıdır.
    Türkçe'de konu adı yoktur: işlenen temaların aralığında çıktının
    anahtar kavramı aranır (ör. "anahtar kelime", "nokta", "yüzey anlam").
    Kitaptan alınacaklar: kavramların kitaptaki adı ve tanımı, kitabın
    işlediği örnek ve bağlam türleri, birim/sayı yazımı, konunun kitapta
-   nereye kadar işlendiği. 6-7. sınıf kitap metni bu becerinin içinde
-   yoktur. Kullanıcı kitap sayfası verirse onu kullan; vermezse program
-   kapsamıyla ilerle ve belgeye "kitapla teyit edilmedi" notu düşülür.
+   nereye kadar işlendiği.
+   **Kitap ifadesi ile program ifadesi ayrışırsa** (onaylı karar,
+   23.10.2026): sınav belgelerinde çıktı ifadesi **program/kazanım**
+   ifadesidir; konu içeriği, kavram adları ve örnek türleri kitaptan
+   alınır. Bilinen durumlar:
+   - Sosyal 5: SB.5.2.1, 5.2.3 ve 5.6.2'de kitap eski ifadeyi kullanır.
+   - Fen 5: FB.5.3.2, 5.6.2 ve 5.2.4'te fiiller farklıdır.
+   - Türkçe 5: T.Y.5.2'de senaryo tablosunda bir varyant var.
 
 ### OYSS gerçeği (2026-2027, ÖDSGM kılavuzu 20.10.2026)
 
@@ -127,8 +157,10 @@ Sosyal, Din Kültürü, İngilizce (7. sınıf İngilizce **hariç**).
 **1. yazılı tarihleri (resmî takvim):** Fen 3 Kasım · Matematik 5 Kasım ·
 Sosyal 6 Kasım · Türkçe 10 Kasım · İngilizce 12 Kasım · Din Kültürü 13
 Kasım 2026. 6. sınıf Matematik 1. yazılı **ülke geneli**, 11 Kasım. 2.
-yazılı takvimi henüz yayımlanmadı. Kapsam bu tarihlere göre
-`references/plan-5-sinif.md` dosyasından okunur.
+yazılı takvimi henüz yayımlanmadı. Dönem sonu haftası (18 Ocak 2027)
+varsayılır; 7. sınıf Türkçe 2. yazılı ise resmî olarak 5 Ocak'ta, ülke
+geneli yapılır. Kapsam bu tarihlere göre `references/plan-<sınıf>-sinif.md`
+dosyasından okunur.
 
 **Resmî örnek sorular (stil kaynağı):** `references/ornek-sorular/`
 klasöründe şunlar var:
@@ -136,6 +168,14 @@ klasöründe şunlar var:
   çıktısı etiketli).
 - 6. sınıf Türkçe ve Matematik: 2025-2026 ülke geneli sınav kitapçıkları
   (8 açık uçlu soru, puanlamalı).
+- **5-6. sınıf, 6 ders, 4 sınav: MEBİ "Yazılıya Hazırlanıyorum"
+  (2025-2026, TYMM; 41 dosya, ad deseni `…mebi-yaziliya-hazirlaniyorum_<1d1y|1d2y|2d1y|2d2y>_<ders><sınıf>.md`).**
+  Senaryo moduna **en yakın resmî örnekler** bunlardır, çünkü her sorunun
+  üstünde çıktı kodu yazar. Soru yazmadan önce ilgili ders, sınıf ve
+  sınavın dosyasına bakılır. Kodları 2026-27 kazanımlarıyla 216/223
+  uyuşur. Uyuşmayan 7 kod 5. sınıf Türkçe'dedir (T.Y.5.18, 5.19, 5.21,
+  T.O.5.23): bu kodlar 2026-27'de kaldırıldı. Bu dosyalardaki kod
+  numaraları kullanılmaz; kod her zaman kazanım dosyasından alınır.
 Soru yazmadan önce ilgili dersin dosyasına bak: soru kökü uzunluğu,
 bağlam türü, görsel kullanımı ve puanlama dili bu örneklere benzemelidir.
 Örnek sorular **kopyalanmaz**; yalnız biçim ve düzey ölçütüdür. Metin PDF'ten
@@ -234,12 +274,12 @@ tür · puan. Puanlar çıktıların ders saati ağırlığıyla orantılıdır,
 - **Kademelendirme:** soruların yaklaşık yarısı tek bileşenli uygulama
   (temel), kalanı ilişkilendirme ve muhakeme/gerekçelendirme ister; en az
   2 soru "neden/nasıl/gerekçelendir" tipindedir.
-- **Bağlam zenginliği kademeye göre ölçeklenir** (`kilavuz-ilkeleri.md` §5):
-  temel sorularda tek veri; muhakeme/gerekçelendirme sorularında **katmanlı
-  bağlam** — öğrencinin ayıklaması gereken, işe yaramayan veri de içeren
-  zengin durum. Kılavuz üst düzey için "pürüzsüz, hazır sunulmuş ortam"
-  yasaktır der. MEB örnek sorularının uzunluğu bu katmanlılıktan gelir;
-  uzunluk dekoratif değil işlevsel olduğu sürece kısaltılmaz.
+- **Bağlam (5. Modül §5.4.17 öncelikli):** bağlam gerçekçi verilere
+  dayanır, **gereksiz ayrıntı içermez**, problem durumu örtüktür ve soru
+  tek adımda çözülmez. Kolay ve orta sorularda bağlam yalnız gerekli
+  bilgiyi verir. **Zor** düzeyde, çıktının muhakeme bileşeni gerektiriyorsa,
+  öğrencinin ayıklaması gereken en çok bir-iki öğe eklenebilir
+  (`kilavuz-ilkeleri.md` §5). Uzunluk işlevsel olmalıdır, süs değil.
 - **Alt basamaklı sorular:** bir soru a-b-c alt maddelerine bölünebilir;
   alt maddeler bağımsız puanlanır ve ipucu zinciri kurmaz (a'yı yapamayan
   b'yi yapabilmelidir).
@@ -276,10 +316,11 @@ tür · puan. Puanlar çıktıların ders saati ağırlığıyla orantılıdır,
   oluşur", "Ay kendi ekseninde dönmez", "dolanma süresi ile evre
   döngüsünü (29,5 gün) karıştırmak".
 - **Sosyal Bilgiler:** sayılar kitabın yazımıyla verilir (binlik
-  **nokta**: 85.000). "Yaşadığı il" çıktılarında öğretmenin ili biliniyorsa
-  o il kullanılır; bilinmiyorsa soru, öğrencinin kendi ilini yazacağı
-  biçimde kurulur, ya da öğretmene il sorulur. Harita gerektiren sorularda
-  basit SVG kroki kullanılır.
+  **nokta**: 85.000). "Yaşadığı il" çıktılarında il **İstanbul**'dur
+  (öğretmen teyidi, 23.10.2026); başka il söylenirse o kullanılır.
+  İstanbul'a ilişkin veriler (konum, komşu iller, afet riski, ortak miras
+  ögeleri) doğrulanabilir genel bilgiyle sınırlı tutulur; uydurma sayı
+  verilmez. Harita gerektiren sorularda basit SVG kroki kullanılır.
 - **Din Kültürü ve Ahlak Bilgisi:** saygı ifadeleri (cc), (sav), (as)
   kitaptaki gibi yazılır. Sure ve dua metinleri kitaptaki okunuşla
   birebir verilir. Sorular bilgiyi ve yorumu ölçer; öğrencinin kendi
@@ -288,9 +329,14 @@ tür · puan. Puanlar çıktıların ders saati ağırlığıyla orantılıdır,
   olur, gerekirse yanına Türkçe açıklama eklenir. Okuma çıktıları (R)
   özgün kısa metinle, kelime (V) ve dil yapısı (G) çıktıları **seçeneksiz**
   boşluk doldurma ya da kısa yanıtla, yazma çıktıları (W) yönlendirmeli
-  kısa yazma ile ölçülür. Söz varlığı ders kitabının tema sözcük listesiyle
-  sınırlıdır (PDF s. 166+). Kelime havuzundan seçtirme yapılmaz, çünkü bu
-  eşleştirmeye kayar.
+  kısa yazma ile ölçülür. **Söz varlığı:** 5-6. sınıfta
+  `references/ingilizce-sozcuk/<sınıf>-sinif.md` dosyasındaki temanın
+  "Güvenli" listesiyle sınırlıdır. Bu liste, program hedef sözcükleri ile
+  kitabın o tema sayfalarının kesişimidir; kitap program sözcüklerinin
+  ancak %44-71'ini kullanır. "Kullanma" listesindeki sözcük soruya
+  girmez. 7. sınıfta (eski program) kitabın ünite sayfalarındaki sözcükler
+  kullanılır. Kelime havuzundan seçtirme yapılmaz, çünkü bu eşleştirmeye
+  kayar.
 - Yönerge net olur: istenen ürün (işlem, açıklama, çizim, tablo) ve puan
   her sorunun yanında görünür.
 
@@ -300,9 +346,13 @@ tür · puan. Puanlar çıktıların ders saati ağırlığıyla orantılıdır,
 
 - Soru başına **örnek tam yanıt** (birden çok geçerli çözüm varsa en yaygın
   ikisi).
-- **Kısmi puan basamakları:** süreç bileşenlerine bağlanmış ölçütler
-  (ör. "modeli doğru kurdu: 4p · işlemi doğru yürüttü: 4p · sonucu
-  yorumladı: 2p"). Basamak toplamları soru puanına eşittir.
+- **Kısmi puan basamakları (analitik anahtar, 5. Modül §5.4.15):**
+  süreç bileşenlerine bağlanmış ölçütler (ör. "modeli doğru kurdu: 4p ·
+  işlemi doğru yürüttü: 4p · sonucu yorumladı: 2p"). Basamak toplamları
+  soru puanına eşittir. Her soruda 2-4 ölçüt bulunur ve ölçüt adları
+  gözlenebilir davranışı anlatır; "iyi", "güzel" gibi değer yargısı
+  kullanılmaz. Türkçe dışı derslerde yazım ve dil bilgisine en çok soru
+  puanının %10'u verilir.
 - **Yaygın hata satırı:** yanılgı envanterinden, o soruda beklenen hatalar
   ve bunlara puan verilip verilmeyeceği.
 - Toplam puan sayımı (100 kontrolü) ve sınıf içi uygulama notu.

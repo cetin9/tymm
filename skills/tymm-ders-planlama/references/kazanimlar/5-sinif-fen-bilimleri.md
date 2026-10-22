@@ -1,6 +1,6 @@
 # 5. Sınıf Fen Bilimleri — TYMM Öğrenme Çıktısı Verisi (2026-2027)
 
-**Kaynak (doğrulanmış):** MEB Türkiye Yüzyılı Maarif Modeli resmî ünite/tema sayfaları (tymm.meb.gov.tr), 2026-10-22 tarihinde sayfa HTML'inden otomatik aktarıldı (`tools/kazanim_html_uret.py`). Öğrenme çıktıları ve süreç bileşenleri (a, b, c, ç…) **birebir**; asla yeniden yazılmaz.
+**Kaynak (doğrulanmış):** MEB Türkiye Yüzyılı Maarif Modeli resmî ünite/tema sayfaları (tymm.meb.gov.tr), 2026-10-23 tarihinde sayfa HTML'inden otomatik aktarıldı (`tools/kazanim_html_uret.py`). Öğrenme çıktıları ve süreç bileşenleri (a, b, c, ç…) **birebir**; asla yeniden yazılmaz.
 
 > **KOD DESENİ (2026-2027):** `FB.5.…` — kodlar sayfadaki gibidir. 2025-2026 verisindeki eski kodlar (ör. Fen'de 4 parçalı) geçersizdir.
 > Ortak yazılı sınavlarda geçerli kapsam, ÖDSGM konu-soru dağılım tablosudur (`tymm-acik-uclu-sinav/references/senaryolar/`).

@@ -1,0 +1,885 @@
+{
+ "5-turkce": [
+  {
+   "sira": 1,
+   "tema": "OYUN DÜNYASI",
+   "cilt": 1,
+   "bas": 11,
+   "son": 66
+  },
+  {
+   "sira": 2,
+   "tema": "ATATÜRK'Ü TANIMAK",
+   "cilt": 1,
+   "bas": 67,
+   "son": 120
+  },
+  {
+   "sira": 3,
+   "tema": "DUYGULARIMI TANIYORUM",
+   "cilt": 1,
+   "bas": 121,
+   "son": 178
+  },
+  {
+   "sira": 4,
+   "tema": "GELENEKLERİMİZ",
+   "cilt": 2,
+   "bas": 11,
+   "son": 70
+  },
+  {
+   "sira": 5,
+   "tema": "İLETİŞİM VE SOSYAL İLİŞKİLER",
+   "cilt": 2,
+   "bas": 71,
+   "son": 112
+  },
+  {
+   "sira": 6,
+   "tema": "SAĞLIKLI YAŞIYORUM",
+   "cilt": 2,
+   "bas": 113,
+   "son": 160
+  }
+ ],
+ "5-matematik": [
+  {
+   "sira": 1,
+   "tema": "GEOMETRİK ŞEKİLLER",
+   "cilt": 1,
+   "bas": 12,
+   "son": 91
+  },
+  {
+   "sira": 2,
+   "tema": "SAYILAR VE NİCELİKLER (1)",
+   "cilt": 1,
+   "bas": 92,
+   "son": 137
+  },
+  {
+   "sira": 3,
+   "tema": "GEOMETRİK NİCELİKLER",
+   "cilt": 1,
+   "bas": 138,
+   "son": 171
+  },
+  {
+   "sira": 4,
+   "tema": "SAYILAR VE NİCELİKLER (2)",
+   "cilt": 2,
+   "bas": 12,
+   "son": 55
+  },
+  {
+   "sira": 5,
+   "tema": "İSTATİSTİKSEL ARAŞTIRMA SÜRECİ",
+   "cilt": 2,
+   "bas": 56,
+   "son": 113
+  },
+  {
+   "sira": 6,
+   "tema": "iŞLEMLERLE CEBİRSEL DÜŞÜNME",
+   "cilt": 2,
+   "bas": 114,
+   "son": 163
+  },
+  {
+   "sira": 7,
+   "tema": "VERİDEN OLASILIĞA",
+   "cilt": 2,
+   "bas": 164,
+   "son": 189
+  }
+ ],
+ "5-fen-bilimleri": [
+  {
+   "sira": 1,
+   "tema": "GÖKYÜZÜNDEKİ KOMŞULARIMIZ VE BİZ",
+   "cilt": 1,
+   "bas": 18,
+   "son": 57
+  },
+  {
+   "sira": 2,
+   "tema": "KUVVETİ TANIYALIM",
+   "cilt": 1,
+   "bas": 58,
+   "son": 97
+  },
+  {
+   "sira": 3,
+   "tema": "CANLILARIN YAPISINA YOLCULUK",
+   "cilt": 1,
+   "bas": 98,
+   "son": 152
+  },
+  {
+   "sira": 4,
+   "tema": "IŞIĞIN DÜNYASI",
+   "cilt": 2,
+   "bas": 14,
+   "son": 51
+  },
+  {
+   "sira": 5,
+   "tema": "MADDENİN DOĞASI",
+   "cilt": 2,
+   "bas": 52,
+   "son": 103
+  },
+  {
+   "sira": 6,
+   "tema": "YAŞAMIMIZDAKİ ELEKTRİK",
+   "cilt": 2,
+   "bas": 104,
+   "son": 135
+  },
+  {
+   "sira": 7,
+   "tema": "SÜRDÜRÜLEBİLİR YAŞAM VE GERİ DÖNÜŞÜM",
+   "cilt": 2,
+   "bas": 136,
+   "son": 170
+  }
+ ],
+ "5-sosyal-bilgiler": [
+  {
+   "sira": 1,
+   "tema": "BİRLİKTE YAŞAMAK",
+   "cilt": 1,
+   "bas": 11,
+   "son": 48
+  },
+  {
+   "sira": 2,
+   "tema": "EVİMİZ DÜNYA",
+   "cilt": 1,
+   "bas": 49,
+   "son": 98
+  },
+  {
+   "sira": 3,
+   "tema": "ORTAK MİRASIMIZ",
+   "cilt": 1,
+   "bas": 99,
+   "son": 154
+  },
+  {
+   "sira": 4,
+   "tema": "YAŞAYAN DEMOKRASİMİZ",
+   "cilt": 2,
+   "bas": 11,
+   "son": 66
+  },
+  {
+   "sira": 5,
+   "tema": "HAYATIMIZDAKİ EKONOMİ",
+   "cilt": 2,
+   "bas": 67,
+   "son": 118
+  },
+  {
+   "sira": 6,
+   "tema": "TEKNOLOJİ VE SOSYAL BİLİMLER",
+   "cilt": 2,
+   "bas": 119,
+   "son": 150
+  }
+ ],
+ "5-din-kulturu-ve-ahlak-bilgisi": [
+  {
+   "sira": 1,
+   "tema": "ALLAH İNANCI",
+   "cilt": 1,
+   "bas": 14,
+   "son": 55
+  },
+  {
+   "sira": 2,
+   "tema": "NAMAZ",
+   "cilt": 1,
+   "bas": 56,
+   "son": 93
+  },
+  {
+   "sira": 3,
+   "tema": "KUR'AN-I KERİM",
+   "cilt": 1,
+   "bas": 94,
+   "son": 127
+  },
+  {
+   "sira": 4,
+   "tema": "PEYGAMBER KISSALARI",
+   "cilt": 1,
+   "bas": 128,
+   "son": 161
+  },
+  {
+   "sira": 5,
+   "tema": "MİMARİMİZDEKİ DİNÎ MOTİFLER",
+   "cilt": 1,
+   "bas": 162,
+   "son": 198
+  }
+ ],
+ "5-ingilizce": [
+  {
+   "sira": 1,
+   "tema": "SCHOOL LIFE",
+   "cilt": 1,
+   "bas": 28,
+   "son": 41
+  },
+  {
+   "sira": 2,
+   "tema": "CLASSROOM LIFE",
+   "cilt": 1,
+   "bas": 42,
+   "son": 55
+  },
+  {
+   "sira": 3,
+   "tema": "PERSONAL LIFE",
+   "cilt": 1,
+   "bas": 56,
+   "son": 69
+  },
+  {
+   "sira": 4,
+   "tema": "FAMILY LIFE",
+   "cilt": 1,
+   "bas": 70,
+   "son": 83
+  },
+  {
+   "sira": 5,
+   "tema": "LIFE IN THE NEIGHBOURHOOD AND CITY",
+   "cilt": 1,
+   "bas": 84,
+   "son": 97
+  },
+  {
+   "sira": 6,
+   "tema": "LIFE IN THE WORLD",
+   "cilt": 1,
+   "bas": 98,
+   "son": 111
+  },
+  {
+   "sira": 7,
+   "tema": "LIFE IN NATURE",
+   "cilt": 1,
+   "bas": 112,
+   "son": 125
+  },
+  {
+   "sira": 8,
+   "tema": "LIFE IN THE UNIVERSE AND FUTURE",
+   "cilt": 1,
+   "bas": 126,
+   "son": 175
+  }
+ ],
+ "6-turkce": [
+  {
+   "sira": 1,
+   "tema": "DİLİMİZİN ZENGİNLİĞİ",
+   "cilt": 1,
+   "bas": 11,
+   "son": 66
+  },
+  {
+   "sira": 2,
+   "tema": "BAĞIMSIZLIK YOLU",
+   "cilt": 1,
+   "bas": 67,
+   "son": 120
+  },
+  {
+   "sira": 3,
+   "tema": "FARKLI DÜNYALAR",
+   "cilt": 1,
+   "bas": 121,
+   "son": 177
+  },
+  {
+   "sira": 4,
+   "tema": "İLETİŞİM VE SOSYAL İLİŞKİLER",
+   "cilt": 2,
+   "bas": 11,
+   "son": 64
+  },
+  {
+   "sira": 5,
+   "tema": "BİLİM VE TEKNOLOJİ",
+   "cilt": 2,
+   "bas": 65,
+   "son": 112
+  },
+  {
+   "sira": 6,
+   "tema": "LİDER RUHLAR",
+   "cilt": 2,
+   "bas": 113,
+   "son": 160
+  }
+ ],
+ "6-matematik": [
+  {
+   "sira": 1,
+   "tema": "SAYILAR VE NİCELİKLER (1)",
+   "cilt": 1,
+   "bas": 12,
+   "son": 59
+  },
+  {
+   "sira": 2,
+   "tema": "VERİDEN OLASILIĞA",
+   "cilt": 1,
+   "bas": 60,
+   "son": 83
+  },
+  {
+   "sira": 3,
+   "tema": "SAYILAR VE NİCELİKLER (2)",
+   "cilt": 1,
+   "bas": 84,
+   "son": 161
+  },
+  {
+   "sira": 4,
+   "tema": "İSTATİSTİKSEL ARAŞTIRMA SÜRECİ",
+   "cilt": 1,
+   "bas": 162,
+   "son": 224
+  },
+  {
+   "sira": 5,
+   "tema": "GEOMETRİK ŞEKİLLER",
+   "cilt": 2,
+   "bas": 12,
+   "son": 53
+  },
+  {
+   "sira": 6,
+   "tema": "İŞLEMLERLE CEBİRSEL DÜŞÜNME VE DEĞİŞİMLER",
+   "cilt": 2,
+   "bas": 54,
+   "son": 97
+  },
+  {
+   "sira": 7,
+   "tema": "GEOMETRİK NİCELİKLER",
+   "cilt": 2,
+   "bas": 98,
+   "son": 166
+  }
+ ],
+ "6-fen-bilimleri": [
+  {
+   "sira": 1,
+   "tema": "GÜNEŞ SİSTEMİ VE TUTULMALAR",
+   "cilt": 1,
+   "bas": 16,
+   "son": 43
+  },
+  {
+   "sira": 2,
+   "tema": "KUVVETİN ETKİSİNDE HAREKET",
+   "cilt": 1,
+   "bas": 44,
+   "son": 79
+  },
+  {
+   "sira": 3,
+   "tema": "CANLILARDA SİSTEMLER",
+   "cilt": 1,
+   "bas": 80,
+   "son": 133
+  },
+  {
+   "sira": 4,
+   "tema": "IŞIĞIN YANSIMASI VE RENKLER",
+   "cilt": 1,
+   "bas": 134,
+   "son": 190
+  },
+  {
+   "sira": 5,
+   "tema": "MADDENİN AYIRT EDİCİ ÖZELLİKLERİ",
+   "cilt": 2,
+   "bas": 12,
+   "son": 63
+  },
+  {
+   "sira": 6,
+   "tema": "ELEKTRİĞİN İLETİMİ VE DİRENÇ",
+   "cilt": 2,
+   "bas": 64,
+   "son": 95
+  },
+  {
+   "sira": 7,
+   "tema": "SÜRDÜRÜLEBİLİR YAŞAM VE ETKİLEŞİM",
+   "cilt": 2,
+   "bas": 96,
+   "son": 130
+  }
+ ],
+ "6-sosyal-bilgiler": [
+  {
+   "sira": 1,
+   "tema": "BİRLİKTE YAŞAMAK",
+   "cilt": 1,
+   "bas": 11,
+   "son": 52
+  },
+  {
+   "sira": 2,
+   "tema": "EVİMİZ DÜNYA",
+   "cilt": 1,
+   "bas": 53,
+   "son": 106
+  },
+  {
+   "sira": 3,
+   "tema": "ORTAK MİRASIMIZ",
+   "cilt": 1,
+   "bas": 107,
+   "son": 187
+  },
+  {
+   "sira": 4,
+   "tema": "YAŞAYAN DEMOKRASİMİZ",
+   "cilt": 2,
+   "bas": 11,
+   "son": 46
+  },
+  {
+   "sira": 5,
+   "tema": "HAYATIMIZDAKİ EKONOMİ",
+   "cilt": 2,
+   "bas": 47,
+   "son": 86
+  },
+  {
+   "sira": 6,
+   "tema": "TEKNOLOJİ VE SOSYAL BİLİMLER",
+   "cilt": 2,
+   "bas": 87,
+   "son": 116
+  }
+ ],
+ "6-din-kulturu-ve-ahlak-bilgisi": [
+  {
+   "sira": 1,
+   "tema": "PEYGAMBER VE İLAHİ KİTAP İNANCI",
+   "cilt": 1,
+   "bas": 12,
+   "son": 43
+  },
+  {
+   "sira": 2,
+   "tema": "RAMAZAN VE ORUÇ",
+   "cilt": 1,
+   "bas": 44,
+   "son": 75
+  },
+  {
+   "sira": 3,
+   "tema": "AHLAKİ DAVRANIŞLAR",
+   "cilt": 1,
+   "bas": 76,
+   "son": 113
+  },
+  {
+   "sira": 4,
+   "tema": "PEYGAMBERLİĞİNDEN ÖNCE HZ. MUHAMMED",
+   "cilt": 1,
+   "bas": 114,
+   "son": 143
+  },
+  {
+   "sira": 5,
+   "tema": "KÜLTÜRÜMÜZDE DİNİ MOTİFLER",
+   "cilt": 1,
+   "bas": 144,
+   "son": 189
+  }
+ ],
+ "6-ingilizce": [
+  {
+   "sira": 1,
+   "tema": "SCHOOL LIFE",
+   "cilt": 1,
+   "bas": 12,
+   "son": 40
+  },
+  {
+   "sira": 2,
+   "tema": "CLASSROOM LIFE",
+   "cilt": 1,
+   "bas": 41,
+   "son": 54
+  },
+  {
+   "sira": 3,
+   "tema": "PERSONAL LIFE",
+   "cilt": 1,
+   "bas": 55,
+   "son": 68
+  },
+  {
+   "sira": 4,
+   "tema": "FAMILY LIFE",
+   "cilt": 1,
+   "bas": 69,
+   "son": 82
+  },
+  {
+   "sira": 5,
+   "tema": "LIFE IN THE NEIGHBOURHOOD AND CITY",
+   "cilt": 1,
+   "bas": 83,
+   "son": 96
+  },
+  {
+   "sira": 6,
+   "tema": "LIFE IN THE WORLD AND CULTURE",
+   "cilt": 1,
+   "bas": 97,
+   "son": 110
+  },
+  {
+   "sira": 7,
+   "tema": "LIFE IN NATURE",
+   "cilt": 1,
+   "bas": 111,
+   "son": 124
+  },
+  {
+   "sira": 8,
+   "tema": "LIFE IN THE UNIVERSE AND FUTURE",
+   "cilt": 1,
+   "bas": 125,
+   "son": 167
+  }
+ ],
+ "7-turkce": [
+  {
+   "sira": 1,
+   "tema": "HAYAT BOYU GELİŞİM",
+   "cilt": 1,
+   "bas": 12,
+   "son": 73
+  },
+  {
+   "sira": 2,
+   "tema": "BİR HİLAL UĞRUNA",
+   "cilt": 1,
+   "bas": 74,
+   "son": 119
+  },
+  {
+   "sira": 3,
+   "tema": "İLETİŞİM VE SOSYAL İLİŞKİLER",
+   "cilt": 1,
+   "bas": 120,
+   "son": 177
+  },
+  {
+   "sira": 4,
+   "tema": "TÜRK SANATI",
+   "cilt": 2,
+   "bas": 12,
+   "son": 65
+  },
+  {
+   "sira": 5,
+   "tema": "OKUMA KÜLTÜRÜ",
+   "cilt": 2,
+   "bas": 66,
+   "son": 115
+  },
+  {
+   "sira": 6,
+   "tema": "HAK VE SORUMLULUKLAR",
+   "cilt": 2,
+   "bas": 116,
+   "son": 171
+  }
+ ],
+ "7-matematik": [
+  {
+   "sira": 1,
+   "tema": "SAYILAR VE NİCELİKLER (1)",
+   "cilt": 1,
+   "bas": 13,
+   "son": 116
+  },
+  {
+   "sira": 2,
+   "tema": "GEOMETRİK NİCELİKLER (1)",
+   "cilt": 1,
+   "bas": 117,
+   "son": 158
+  },
+  {
+   "sira": 3,
+   "tema": "İSTATİSTİKSEL ARAŞTIRMA SÜRECİ",
+   "cilt": 1,
+   "bas": 159,
+   "son": 200
+  },
+  {
+   "sira": 4,
+   "tema": "DÖNÜŞÜM",
+   "cilt": 1,
+   "bas": 201,
+   "son": 224
+  },
+  {
+   "sira": 5,
+   "tema": "GEOMETRİK ŞEKİLLER",
+   "cilt": 2,
+   "bas": 13,
+   "son": 34
+  },
+  {
+   "sira": 6,
+   "tema": "SAYILAR VE NİCELİKLER (2)",
+   "cilt": 2,
+   "bas": 35,
+   "son": 72
+  },
+  {
+   "sira": 7,
+   "tema": "VERİDEN OLASILIĞA",
+   "cilt": 2,
+   "bas": 73,
+   "son": 90
+  },
+  {
+   "sira": 8,
+   "tema": "İŞLEMLERLE CEBİRSEL DÜŞÜNME VE DEĞİŞİMLER",
+   "cilt": 2,
+   "bas": 91,
+   "son": 170
+  },
+  {
+   "sira": 9,
+   "tema": "GEOMETRİK NİCELİKLER (2)",
+   "cilt": 2,
+   "bas": 171,
+   "son": 216
+  }
+ ],
+ "7-fen-bilimleri": [
+  {
+   "sira": 1,
+   "tema": "UZAY ÇAĞI",
+   "cilt": 1,
+   "bas": 13,
+   "son": 56
+  },
+  {
+   "sira": 2,
+   "tema": "KUVVET VE ENERJİYİ KEŞFEDELİM",
+   "cilt": 1,
+   "bas": 57,
+   "son": 86
+  },
+  {
+   "sira": 3,
+   "tema": "VÜCUDUMUZDAKİ SİSTEMLER",
+   "cilt": 1,
+   "bas": 87,
+   "son": 153
+  },
+  {
+   "sira": 4,
+   "tema": "IŞIĞIN KIRILMASI VE MERCEKLER",
+   "cilt": 2,
+   "bas": 13,
+   "son": 42
+  },
+  {
+   "sira": 5,
+   "tema": "MADDENİN DOĞASINA YOLCULUK",
+   "cilt": 2,
+   "bas": 43,
+   "son": 102
+  },
+  {
+   "sira": 6,
+   "tema": "ELEKTRİKLENME",
+   "cilt": 2,
+   "bas": 103,
+   "son": 128
+  },
+  {
+   "sira": 7,
+   "tema": "SÜRDÜRÜLEBİLİR YAŞAM VE ENERJİ",
+   "cilt": 2,
+   "bas": 129,
+   "son": 166
+  }
+ ],
+ "7-sosyal-bilgiler": [
+  {
+   "sira": 1,
+   "tema": "BİRLİKTE YAŞAMAK",
+   "cilt": 1,
+   "bas": 11,
+   "son": 56
+  },
+  {
+   "sira": 2,
+   "tema": "EVİMİZ DÜNYA",
+   "cilt": 1,
+   "bas": 57,
+   "son": 84
+  },
+  {
+   "sira": 3,
+   "tema": "ORTAK MİRASIMIZ",
+   "cilt": 1,
+   "bas": 85,
+   "son": 166
+  },
+  {
+   "sira": 4,
+   "tema": "YAŞAYAN DEMOKRASİMİZ",
+   "cilt": 2,
+   "bas": 11,
+   "son": 72
+  },
+  {
+   "sira": 5,
+   "tema": "HAYATIMIZDAKİ EKONOMİ",
+   "cilt": 2,
+   "bas": 73,
+   "son": 112
+  },
+  {
+   "sira": 6,
+   "tema": "TEKNOLOJİ ve SOSYAL BİLİMLER",
+   "cilt": 2,
+   "bas": 113,
+   "son": 151
+  }
+ ],
+ "7-din-kulturu-ve-ahlak-bilgisi": [
+  {
+   "sira": 1,
+   "tema": "MELEK VE AHİRET İNANCI",
+   "cilt": 1,
+   "bas": 12,
+   "son": 47
+  },
+  {
+   "sira": 2,
+   "tema": "HAC, UMRE VE KURBAN",
+   "cilt": 1,
+   "bas": 48,
+   "son": 85
+  },
+  {
+   "sira": 3,
+   "tema": "İSLAM DÜŞÜNCESİNDE YORUMLAR",
+   "cilt": 1,
+   "bas": 86,
+   "son": 121
+  },
+  {
+   "sira": 4,
+   "tema": "PEYGAMBER OLARAK HZ. MUHAMMED",
+   "cilt": 1,
+   "bas": 122,
+   "son": 161
+  },
+  {
+   "sira": 5,
+   "tema": "YAŞAYAN DÜNYA DİNLERİ",
+   "cilt": 1,
+   "bas": 162,
+   "son": 204
+  }
+ ],
+ "7-ingilizce": [
+  {
+   "sira": 1,
+   "tema": "Appearance And Personality",
+   "cilt": 1,
+   "bas": 12,
+   "son": 26
+  },
+  {
+   "sira": 2,
+   "tema": "Sports",
+   "cilt": 1,
+   "bas": 27,
+   "son": 44
+  },
+  {
+   "sira": 3,
+   "tema": "Biographies",
+   "cilt": 1,
+   "bas": 45,
+   "son": 62
+  },
+  {
+   "sira": 4,
+   "tema": "Wild Animals",
+   "cilt": 1,
+   "bas": 63,
+   "son": 80
+  },
+  {
+   "sira": 5,
+   "tema": "Television",
+   "cilt": 1,
+   "bas": 81,
+   "son": 98
+  },
+  {
+   "sira": 6,
+   "tema": "Celebrations",
+   "cilt": 1,
+   "bas": 99,
+   "son": 116
+  },
+  {
+   "sira": 7,
+   "tema": "Dreams",
+   "cilt": 1,
+   "bas": 117,
+   "son": 134
+  },
+  {
+   "sira": 8,
+   "tema": "Public Buildings",
+   "cilt": 1,
+   "bas": 135,
+   "son": 152
+  },
+  {
+   "sira": 9,
+   "tema": "Environment",
+   "cilt": 1,
+   "bas": 153,
+   "son": 170
+  },
+  {
+   "sira": 10,
+   "tema": "Planets",
+   "cilt": 1,
+   "bas": 171,
+   "son": 192
+  }
+ ]
+}

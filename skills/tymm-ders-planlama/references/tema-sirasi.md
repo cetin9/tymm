@@ -1,6 +1,6 @@
 # Tema İşleniş Sırası — 2026-2027 resmî çerçeve yıllık planları
 
-**Kaynak:** MEB 2026-2027 taslak çerçeve yıllık planları (TEGM zip'i 03.09.2026; Din Kültürü DÖGM 31.08.2026), `MEB-KAYNAK/2026-2027/05-yillik-plan/`. Üretim: `tools/tema_sirasi_uret.py` (2026-10-22).
+**Kaynak:** MEB 2026-2027 taslak çerçeve yıllık planları (TEGM zip'i 03.09.2026; Din Kültürü DÖGM 31.08.2026), `MEB-KAYNAK/2026-2027/05-yillik-plan/`. Üretim: `tools/tema_sirasi_uret.py` (2026-10-23).
 
 **Neden önemli:** İşleniş sırası tema/ünite numarasını izlemez (ör. 5. sınıf Matematik yıla MAT.5.3 Geometrik Şekiller ile başlar). Ortak yazılı senaryoları, "bu hafta hangi konudayız" ve karışık tekrar kapsamı bu sıraya göre belirlenir, tema numarasına göre değil.
 
@@ -64,17 +64,17 @@
 
 | Hafta | Ünite/Tema | Konular |
 |---|---|---|
-| 1-5 | BİRLİKTE YAŞAMAK |  |
-| 6 | BİRLİKTE YAŞAMAK → EVİMİZ DÜNYA |  |
-| 7 | EVİMİZ DÜNYA |  |
+| 1-5 | BİRLİKTE YAŞAMAK | Gruplar ve Roller · Kültürel Özelliklere Saygı ve Birlikte Yaşama Kültürü · Yardımlaşma ve Dayanışma Faaliyetlerinin Toplumsal Birliğe Etkisi |
+| 6 | BİRLİKTE YAŞAMAK → EVİMİZ DÜNYA | Yardımlaşma ve Dayanışma Faaliyetlerinin Toplumsal Birliğe Etkisi |
+| 7 | EVİMİZ DÜNYA | Yaşadığı İlin Göreceli Konumu |
 | ▶ | **1. dönem 1. yazılı (06.11) — kapsam bu satırın üstü** | |
-| 8-13 | EVİMİZ DÜNYA |  |
-| 14-19 | ORTAK MİRASIMIZ |  |
-| 20 | ORTAK MİRASIMIZ → YAŞAYAN DEMOKRASİMİZ |  |
-| 21-27 | YAŞAYAN DEMOKRASİMİZ |  |
-| 28 | YAŞAYAN DEMOKRASİMİZ → HAYATIMIZDAKİ EKONOMİ |  |
-| 29-34 | HAYATIMIZDAKİ EKONOMİ |  |
-| 35-37 | TEKNOLOJİ VE SOSYAL BİLİMLER |  |
+| 8-13 | EVİMİZ DÜNYA | Yaşadığı İlde Doğal ve Beşerî Çevredeki Değişim · Yaşadığı İlde Meydana Gelebilecek Afetlerin Etkileri · Ülkemize Komşu Devletler |
+| 14-19 | ORTAK MİRASIMIZ | Ortak Miras Ögeleri · Anadolu’nun İlk Yerleşim Yerlerinde Sosyal Hayat · Mezopotamya ve Anadolu Medeniyetlerinin Ortak Mirasa Katkıları |
+| 20 | ORTAK MİRASIMIZ → YAŞAYAN DEMOKRASİMİZ | Mezopotamya ve Anadolu Medeniyetlerinin Ortak Mirasa Katkıları |
+| 21-27 | YAŞAYAN DEMOKRASİMİZ | Etkin Vatandaşın Özellikleri ve Önemi · Temel Haklar, Sorumluluklar ve Önemi · İhtiyaç Durumunda veya Sorunların Çözümünde Başvurulabilecek Kurumlar |
+| 28 | YAŞAYAN DEMOKRASİMİZ → HAYATIMIZDAKİ EKONOMİ | İhtiyaç Durumunda veya Sorunların Çözümünde Başvurulabilecek Kurumlar |
+| 29-34 | HAYATIMIZDAKİ EKONOMİ | Kaynakların Verimli Kullanımı · Bütçe Oluşturma · Yaşadığım İldeki Ekonomik Faaliyetler |
+| 35-37 | TEKNOLOJİ VE SOSYAL BİLİMLER | Teknolojik Gelişmelerin Toplum Hayatına Etkileri · Teknolojik Ürünlerin Bilinçli Kullanımı |
 
 ## Din Kültürü ve Ahlak Bilgisi 5
 
@@ -164,21 +164,21 @@
 
 | Hafta | Ünite/Tema | Konular |
 |---|---|---|
-| 1-5 | BİRLİKTE YAŞAMAK |  |
-| 6 | BİRLİKTE YAŞAMAK → EVİMİZ DÜNYA |  |
-| 7 | EVİMİZ DÜNYA |  |
+| 1-5 | BİRLİKTE YAŞAMAK | Zaman İçinde Değişen Gruplar ve Roller · Kültürel Bağlarımızın ve Millî Değerlerimizin Toplumsal Birlikteliğe Etkisi · Toplumsal Sorunlar ve Çözümler Önerileri |
+| 6 | BİRLİKTE YAŞAMAK → EVİMİZ DÜNYA | Toplumsal Sorunlar ve Çözümler Önerileri |
+| 7 | EVİMİZ DÜNYA | Ülkemizin, Kıtaların ve Okyanusların Konum Özellikleri |
 | ▶ | **1. dönem 1. yazılı (06.11) — kapsam bu satırın üstü** | |
-| 8-11 | EVİMİZ DÜNYA |  |
-| 12 | EVİMİZ DÜNYA → ORTAK MİRASIMIZ |  |
-| 13-17 | ORTAK MİRASIMIZ |  |
-| 18 | ORTAK MİRASIMIZ YAŞAYAN DEMOKRASİMİZ |  |
-| 19 | ORTAK MİRASIMIZ |  |
-| 20 | ORTAK MİRASIMIZ → YAŞAYAN DEMOKRASİMİZ |  |
-| 21-25 | YAŞAYAN DEMOKRASİMİZ |  |
-| 26 | YAŞAYAN DEMOKRASİMİZ İ → HAYATIMIZDAKİ EKONOMİ |  |
-| 27-31 | HAYATIMIZDAKİ EKONOMİ |  |
-| 32 | HAYATIMIZDAKİ EKONOMİ → TEKNOLOJİ VE SOSYAL BİLİMLER |  |
-| 33-37 | TEKNOLOJİ VE SOSYAL BİLİMLER |  |
+| 8-11 | EVİMİZ DÜNYA | Doğal ve Beşerî Çevre Özellikleri Arasındaki İlişki · Ülkemizin Türk Dünyasıyla Kültürel İş birlikleri |
+| 12 | EVİMİZ DÜNYA → ORTAK MİRASIMIZ | Ülkemizin Türk Dünyasıyla Kültürel İş birlikleri |
+| 13-17 | ORTAK MİRASIMIZ | Türkistan’da Kurulan İlk Türk Devletlerinin Medeniyetimize Katkıları · VII-XIII. Yüzyıllar Arasında İslam Medeniyetinin İnsanlığın Ortak Mirasına Katkıları · İslamiyet’in Kabulüyle Türklerin Sosyal ve Kültürel Hayatlarında Meydana Gelen Değişimler |
+| 18 | ORTAK MİRASIMIZ YAŞAYAN DEMOKRASİMİZ | XI- XIII. Yüzyıllar Arasında Meydana Gelen Askerî Mücadelelerin Anadolu’nun Türkleşmesi ve İslamlaşmasına Katkıları |
+| 19 | ORTAK MİRASIMIZ | XI- XIII. Yüzyıllar Arasında Meydana Gelen Askerî Mücadelelerin Anadolu’nun Türkleşmesi ve İslamlaşmasına Katkıları |
+| 20 | ORTAK MİRASIMIZ → YAŞAYAN DEMOKRASİMİZ | XI- XIII. Yüzyıllar Arasında Meydana Gelen Askerî Mücadelelerin Anadolu’nun Türkleşmesi ve İslamlaşmasına Katkıları |
+| 21-25 | YAŞAYAN DEMOKRASİMİZ | Yönetimin Karar Alma Sürecini Etkileyen Unsurlar · Yönetimin Karar Alma Sürecini Etkileyen Unsurlar Temel Hak ve Sorumlulukların Toplumsal Düzenin Sürdürülmesindeki Önemi · Temel Hak ve Sorumlulukların Toplumsal Düzenin Sürdürülmesindeki Önemi · Dijitalleşme ve Teknolojik Gelişmelerin Vatandaşlık Ha |
+| 26 | YAŞAYAN DEMOKRASİMİZ İ → HAYATIMIZDAKİ EKONOMİ | Dijitalleşme ve Teknolojik Gelişmelerin Vatandaşlık Hak ve Sorumluluklarına Etkileri |
+| 27-31 | HAYATIMIZDAKİ EKONOMİ | Ülkemizin Kaynakları ve Ekonomik Faaliyetler · Ekonomik Faaliyetler ve Meslekler |
+| 32 | HAYATIMIZDAKİ EKONOMİ → TEKNOLOJİ VE SOSYAL BİLİMLER | Tasarlanan Bir Ürünün Yatırım ve Pazarlama Süreci |
+| 33-37 | TEKNOLOJİ VE SOSYAL BİLİMLER | Tasarlanan Bir Ürünün Yatırım ve Pazarlama Süreci · Ulaşım ve İletişim Teknolojilerinin Kültürel Etkileşimdeki Rolü · Telif ve Patent Süreci |
 
 ## Din Kültürü ve Ahlak Bilgisi 6
 
@@ -264,19 +264,18 @@
 
 | Hafta | Ünite/Tema | Konular |
 |---|---|---|
-| 1-5 | BİRLİKTE YAŞAMAK |  |
-| 6 | BİRLİKTE YAŞAMAK → EVİMİZ DÜNYA |  |
-| 7 | EVİMİZ DÜNYA |  |
+| 1-5 | BİRLİKTE YAŞAMAK | Gruplarda ve Sosyal Hayatta İletişimin Önemi · Özel Gereksinimli Bireyler İçin Fırsat Eşitliği · Millî Meseleler Karşısında Türk Toplumunun Tutum ve Davranışları |
+| 6 | BİRLİKTE YAŞAMAK → EVİMİZ DÜNYA | Millî Meseleler Karşısında Türk Toplumunun Tutum ve Davranışları |
+| 7 | EVİMİZ DÜNYA | Küreselleşmenin İnsan ve Toplum Hayatına Etkisi |
 | ▶ | **1. dönem 1. yazılı (06.11) — kapsam bu satırın üstü** | |
-| 8-9 | EVİMİZ DÜNYA |  |
-| 10-17 | ORTAK MİRASIMIZ |  |
-| 18 | ORTAK MİRASIMIZ → YAŞAYAN DEMOKRASİMİZ |  |
-| 19-25 | YAŞAYAN DEMOKRASİMİZ |  |
-| 26 | YAŞAYAN DEMOKRASİMİZ → HAYATIMIZDAKİ EKONOMİ |  |
-| 27-29 | HAYATIMIZDAKİ EKONOMİ |  |
-| 30 | HAYATIMIZDAKİ EKONOMİ → TEKNOLOJİ ve SOSYAL BİLİMLER |  |
-| 31 | TEKNOLOJİ ve SOSYAL BİLİMLER |  |
-| 32-37 | TEKNOLOJİ VE SOSYAL BİLİMLER |  |
+| 8-9 | EVİMİZ DÜNYA | Bölgesel ve Küresel Sorunların Çözümünde Ülkemizin Rolü |
+| 10-17 | ORTAK MİRASIMIZ | Osmanlı Devleti’nin Cihan Devleti Hâline Gelmesini Sağlayan Politikalar · Osmanlı Devleti’nin Uygulamaya Koyduğu Yenilikler · Osmanlı Kültür ve Medeniyeti |
+| 18 | ORTAK MİRASIMIZ → YAŞAYAN DEMOKRASİMİZ | Osmanlı Kültür ve Medeniyeti |
+| 19-25 | YAŞAYAN DEMOKRASİMİZ | Türkiye Cumhuriyeti’nin Nitelikleri · Türkiye Cumhuriyeti’nin Yönetim Yapısı · Ülkemizde Demokrasinin Gelişimi · Demokrasinin Uygulanma Sürecinde Karşılaşılan Sorunlar |
+| 26 | YAŞAYAN DEMOKRASİMİZ → HAYATIMIZDAKİ EKONOMİ | Demokrasinin Uygulanma Sürecinde Karşılaşılan Sorunlar |
+| 27-29 | HAYATIMIZDAKİ EKONOMİ | Millî Kalkınma Hamleleri · Ekonomik Gelişmişlik ile Üretim, Dağıtım ve Tüketim Arasındaki Döngü |
+| 30 | HAYATIMIZDAKİ EKONOMİ → TEKNOLOJİ VE SOSYAL BİLİMLER | Ekonomik Gelişmişlik ile Üretim, Dağıtım ve Tüketim Arasındaki Döngü |
+| 31-37 | TEKNOLOJİ VE SOSYAL BİLİMLER | Bilimsel ve Teknolojik Gelişmelerin Gelecekteki Hayata Etkisi · Sosyal Bilimlerin Çalışma Alanları · Toplumsal Hayatta Karşılaşılabilecek Problemlere Çözüm Üretme |
 
 ## Din Kültürü ve Ahlak Bilgisi 7
 

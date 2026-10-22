@@ -1,6 +1,6 @@
 # 6. Sınıf Din Kültürü ve Ahlak Bilgisi — TYMM Öğrenme Çıktısı Verisi (2026-2027)
 
-**Kaynak (doğrulanmış):** Din Öğretimi Genel Müdürlüğü 2026-2027 çerçeve yıllık planı (`2026-2027-din-kulturu-ve-ahlak-bilgisi-6-sinif-cerceve-yillik-plan-MEB.xlsx`), 2026-10-22 tarihinde aktarıldı (`tools/kazanim_ozel_uret.py`). Öğrenme çıktıları ve süreç bileşenleri **birebir**; asla yeniden yazılmaz.
+**Kaynak (doğrulanmış):** Din Öğretimi Genel Müdürlüğü 2026-2027 çerçeve yıllık planı (`2026-2027-din-kulturu-ve-ahlak-bilgisi-6-sinif-cerceve-yillik-plan-MEB.xlsx`), 2026-10-23 tarihinde aktarıldı (`tools/kazanim_ozel_uret.py`). Öğrenme çıktıları ve süreç bileşenleri **birebir**; asla yeniden yazılmaz.
 
 > **KAYNAK NOTU:** TYMM sitesindeki DKAB ünite sayfalarında bazı çıktı ifadeleri farklıdır (ör. "gözleme dayalı tahmin edebilme"). 2026-2027 ders kitabı, DÖGM yıllık planı ve ÖDSGM ortak sınav senaryo tablosu bu dosyadaki ifadeleri kullanır; geçerli olan budur.
 > Ortak yazılı sınavlarda geçerli kapsam, ÖDSGM konu-soru dağılım tablosudur (`tymm-acik-uclu-sinav/references/senaryolar/`).
@@ -15,7 +15,7 @@ Toplam ünite: 5 · Öğrenme çıktısı: 18 · Ders saati (planda ünitelere d
 | ÜNİTE 2 | RAMAZAN VE ORUÇ | 4 | 14 |
 | ÜNİTE 3 | AHLAKİ DAVRANIŞLAR | 5 | 14 |
 | ÜNİTE 4 | PEYGAMBERLİĞİNDEN ÖNCE HZ. MUHAMMED | 4 | 14 |
-| ÜNİTE 5 | KÜLTÜRÜMÜZDE DİNİ MOTİFLER | 1 | 16 |
+| ÜNİTE 5 | KÜLTÜRÜMÜZDEKİ DİNÎ MOTİFLER | 1 | 16 |
 
 ## ÜNİTE 1 — PEYGAMBER VE İLAHİ KİTAP İNANCI
 
@@ -128,7 +128,7 @@ Toplam ünite: 5 · Öğrenme çıktısı: 18 · Ders saati (planda ünitelere d
 - b) Fil suresinin anlamını kendi hayatı için anlamlı hâle getirir.
 - c) Fil suresinin anlamını değiştirmeyecek şekilde özetler.
 
-## ÜNİTE 5 — KÜLTÜRÜMÜZDE DİNİ MOTİFLER
+## ÜNİTE 5 — KÜLTÜRÜMÜZDEKİ DİNÎ MOTİFLER
 
 **Ders saati (plan):** 16  
 **İçerik çerçevesi:** Geleneğimizde Dinin İzleri · Edebiyatımızda Dinin İzleri · Musikimizde Dinin İzleri  

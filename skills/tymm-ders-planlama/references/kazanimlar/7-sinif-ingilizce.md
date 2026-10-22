@@ -1,6 +1,6 @@
 # 7. Sınıf İngilizce — Kazanım Verisi (2026-2027, ESKİ PROGRAM)
 
-**Kaynak (doğrulanmış):** MEB 2026-2027 İngilizce taslak çerçeve yıllık planı, 7. sınıf sayfası (`2026-2027-ingilizce-7-sinif-cerceve-yillik-plan-MEB.xlsx`), 2026-10-22 tarihinde aktarıldı (`tools/kazanim_ozel_uret.py`). Kazanım kodları ve ifadeleri birebir.
+**Kaynak (doğrulanmış):** MEB 2026-2027 İngilizce taslak çerçeve yıllık planı, 7. sınıf sayfası (`2026-2027-ingilizce-7-sinif-cerceve-yillik-plan-MEB.xlsx`), 2026-10-23 tarihinde aktarıldı (`tools/kazanim_ozel_uret.py`). Kazanım kodları ve ifadeleri birebir.
 
 > **PROGRAM NOTU:** 7. sınıf İngilizce 2026-2027'de okullarda **eski programla** (2018 İngilizce öğretim programı, 10 ünite) okutulur. ÖDSGM ortak sınav senaryo tablosu ve MEB yıllık planı `E7.<ünite>.<beceri><no>` kodlarını kullanır. TYMM sitesindeki 7. sınıf İngilizce (ENG.7.x, 8 tema) bu yıl okulda **uygulanmaz**. Terminoloji: "kazanım"; süreç bileşeni katmanı yoktur.
 
