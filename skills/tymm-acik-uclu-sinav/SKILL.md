@@ -340,6 +340,39 @@ tür · puan. Puanlar çıktıların ders saati ağırlığıyla orantılıdır,
 - Yönerge net olur: istenen ürün (işlem, açıklama, çizim, tablo) ve puan
   her sorunun yanında görünür.
 
+### Anlaşılırlık kuralları (öğretmen geri bildirimi, 29.10.2026)
+Soruyu yazan, cevabı bildiği için kendi sorusunu hep anlaşılır bulur. Bu
+yüzden aşağıdaki kurallar, bilimsel doğruluktan ayrı olarak uygulanır:
+- **Ders içinde başka anlamı olan sözcük, işaret olarak kullanılmaz.** Ay
+  ünitesinde tişörte/topa "yıldız" konmaz (gökteki yıldızla karışır);
+  "gülen yüz resmi", "kırmızı nokta" gibi nötr işaret seçilir.
+- **Tablo başlığı tam bir soru ya da açık bir ad olur.** "Ece'nin gördüğü
+  yan" gibi kısaltılmış, ne yazılacağı belli olmayan başlık yazılmaz;
+  "Ece resmi görür mü?" + "Her kutuya Görür ya da Görmez yazınız." gibi
+  kutuya yazılacak değer kökte söylenir.
+- **Zihinsel döndürme yükü sınırlanır (5-6. sınıf).** Üstten görünüşte
+  sağ/sol yan, başkasının gözünden görünüş, yön çevirme isteniyorsa
+  bunlar ölçülen çıktının kendisi değilse sorudan çıkarılır; daha basit bir
+  gözlem (görür/görmez, aydınlık/karanlık) sorulur. Anahtar sağ/sol için
+  ayrı puan vermez.
+- **Şekildeki simge, öğrencinin çizmesi istenen cevapla karıştırılamaz.**
+  Ay evresi düzeneklerinde yukarıdan görünüşle çizilmiş yarım koyu toplar
+  "öğrencinin gördüğü şekil" sanılıp kopyalanır. Cevabı istenen konumlar
+  boş "?" daire olur; şekle "toplar yukarıdan görünüyor" notu eklenir;
+  önce evrenin adı, sonra çizim istenir.
+- **Kökte geçen her nesne şekilde de vardır** (ör. "sınıfın kapısı"),
+  şekildeki her etiket metinde de aynı adla geçer.
+- **Yön, sayma, karşılaştırma isteklerinde ölçüt kökte verilir**
+  ("saatin dönme yönüyle aynı / tersine yazınız"), öğrenci tahmin etmez.
+- **Sezgiye ters cevaplı maddelere 5. sınıf düzeyinde ipucu konur**
+  ("Mert'in yüzü tur boyunca sırayla hangi duvarlara bakar?").
+- **Kök, öğrenciyi yanlış terime itmez** (kökte "kendi çevresinde dönüyor"
+  deyip anahtarda "dolanma" beklenmez).
+- **Bir cümleye bir iş:** çok işli uzun kökler bölünür; "değerlendiriniz"
+  gibi soyut fiiller yerine somut soru sorulur ("… doğru mu? Neden?").
+- **Şekil yazıları baskıda okunur** (en az ~8 punto); bilgi yalnız renkle
+  verilmez.
+
 ## Adım 4 — Dereceli puanlama anahtarı
 
 `puanlama-anahtari.html` ayrı belgedir ve şunları içerir:
@@ -381,7 +414,7 @@ oluşturulur.
 
 ## Adım 6 — Teslimden önce denetim (zorunlu)
 
-Teslimden ÖNCE her soruyu şu beş kontrolden geçir (ayrıntı:
+Teslimden ÖNCE her soruyu şu altı kontrolden geçir (ayrıntı:
 `../tymm-baglam-testi/references/kilavuz-ilkeleri.md` §6):
 
 1. **İşlevsellik + adlandırma sızıntısı:** Soru bağlam/veri okunmadan
@@ -401,6 +434,15 @@ Teslimden ÖNCE her soruyu şu beş kontrolden geçir (ayrıntı:
    geçiyor mu?
    Kitaptaki bir etkinlik birebir kopyalanmış mı? Program/kitap kapsam
    sınırı ("verilmez") aşılmış mı?
+6. **Öğrenci gözüyle anlaşılırlık (ayrı göz, anahtarı görmeden):** Kâğıt
+   PDF'e basılır; görsel ve şekiller görüntü olarak incelenir. Anahtarı
+   görmemiş biri her soruyu ortalama bir öğrenci (5. sınıf: 10-11 yaş)
+   gibi okur ve şunu sorar: ne istendiğini ilk okumada anlıyor mu, tabloya
+   ne yazacağını biliyor mu, şekildeki her simge ve etiket metinle aynı mı,
+   iki anlamlı sözcük var mı, kök onu başka bir cevaba itiyor mu? Yukarıdaki
+   "Anlaşılırlık kuralları" listesi bu kontrolün ölçütüdür. Bilimsel/sayısal
+   doğruluk incelemesi bu kontrolün yerini tutmaz: soru doğru olup yine de
+   anlaşılmaz olabilir.
 
 Paket bir klasöre yazıldıysa `python tools/denetim.py <klasör>` mekanik
 kontrolü çalıştırılır (depo içindeyken).
