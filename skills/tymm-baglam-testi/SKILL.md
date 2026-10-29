@@ -136,6 +136,59 @@ Ayrıntısı `references/kilavuz-ilkeleri.md` dosyasındadır; aşağıdakiler
   1'den az doğru olamaz; sayısal seçenekler artan sırada dizilir. Anahtar
   yazıldıktan sonra dağılımı say ve gerekirse seçenek yerlerini değiştir.
 
+### Yaşamla bağ ilkesi: "Bu ne işimize yarayacak?" (öğretmen isteği, 29.10.2026)
+
+Öğrencilerin yıllardır sorduğu "Öğretmenim, bu ne işimize yarayacak, nerede
+kullanacağız?" sorusuna sorunun kendisi cevap verir. Soru, öğrencinin bilgiyi
+gerçek hayatta karşılaşabileceği bir durumda **kullanıp kullanamadığını** ölçer.
+Dayanak: Maarif Modeli'nin bağlam ve beceri temelli ölçme anlayışı (5. Modül
+§5.4.17) ve bağlam temelli soru yazım kılavuzu. Bu ilke bağlam kurallarının
+yerine geçmez, onları yönlendirir.
+
+1. **Önce yaşam haritası.** Soru yazmadan önce konunun kısa bir yaşam
+   haritasını çıkar: bu bilgi ya da beceri 10-13 yaşındaki bir öğrencinin
+   hayatında nerede karşısına çıkar? Örnek alanlar: ev ve mutfak, okul,
+   oyun ve spor, alışveriş ve para, yolculuk ve trafik, doğa ve hava,
+   sağlık ve güvenlik, teknoloji, aile işleri. En az üç gerçek durum yaz.
+   Her biri için şunu cevapla: "Bu bilgiyi bilmeyen kişi o durumda neyi
+   yapamaz ya da neyi yanlış yapar?" Cevabı güçlü olan durumlar soruya dönüşür.
+2. **Bağlam bilgiyi kullandırır, süslemez.** Öğrenci durumda bir karar
+   verir, bir sorunu çözer, bir öneriyi ya da iddiayı değerlendirir, bir
+   hatayı fark eder ya da bir sonucu tahmin eder. Bağlam çıkarılınca soru
+   anlamsızlaşmalı, bilgi çıkarılınca da çözülememelidir (işlevsellik
+   testi). "Ali'nin 3/7 pizzası var" gibi süs bağlam bu ilkeyi karşılamaz.
+3. **Gerçekçilik.** İnsanların gerçekten yaptığı işi kur: telefonun şarj
+   göstergesini okumak, tarifteki ölçüyü ayarlamak, kaygan zeminde önlem
+   almak, iki seçenekten daha uygununu seçmek. Sayılar, ölçüler, süreler ve
+   fiyatlar makul olur. Durum öğrencinin tanıdığı bir çevrededir: ev, okul,
+   mahalle, park, market, otobüs. Dar erişimli ya da gelir varsayan
+   durumlar kullanılmaz (bağlam erişilebilirlik kuralı).
+4. **Cevap durumdaki kişiye işe yarar.** Sorunun sonucu, o kişiye bir şey
+   kazandırır: doğru seçimi yapar, kazayı önler, israfı azaltır, zamanı
+   doğru planlar. Öğrenci cevabı bulunca "Demek bunun için öğreniyormuşuz."
+   diyebilmelidir.
+5. **Zorlama yok.** Konunun doğal bir yaşam karşılığı yoksa ya da bağlam
+   yalnız süs olacaksa yaşam durumu uydurulmaz. O soru şu iki yoldan biriyle
+   yazılır: (a) bilginin bilimdeki ya da matematikteki iç kullanımını
+   gösteren bir problem durumu (deney, model, örüntü, gözlem); (b) sade ve
+   net bir soru. Anahtarda "Yaşamla bağ: yok (gerekçe)" yazılır.
+   Zorlanmış bir yaşam bağlamı, bağlamsız sorudan daha kötüdür.
+6. **Kitapla uyum.** Kitabın konuyu bağladığı yaşam durumlarını izle (kitap
+   sayfasını anahtara yaz), ama kitabın örneğini kopyalama. Kişi, sayı ve
+   durum değiştirilir. Kavramlar kitabın adlandırmasıyla sınırlıdır.
+7. **Kayıt.** Anahtarda her soru için tek cümlelik bir "Yaşamla bağ:"
+   satırı bulunur. Bu satır durumu ve bilginin o durumda ne işe yaradığını
+   söyler (ör. "Yaşamla bağ: Kaygan zeminde ayakkabı tabanının
+   desenine bakmak; sürtünmeyi artıran taban kaymayı önler."). Öğretmen bu
+   satırı sınıfta "Ne işe yarar?" sorusuna cevap olarak kullanabilir.
+8. **Denetimde yeri.** Teslimden önce her soruya iki soru sorulur: "Bu
+   durum gerçekte olur mu, öğrenci tanır mı?" ve "Bilgiyi bilmek bu durumda
+   gerçekten fark yaratıyor mu?" İkisinden birinin cevabı hayırsa soru
+   yeniden kurgulanır ya da 5. maddeye göre yaşam bağlamsız yazılır.
+9. **Pilot dersleri (29.10.2026, kör incelemeden).** (a) Karar soran sorularda doğru şık biçimce ayrışmaz: sonuçlar ("binebilir/binemez", "alır/almaz") seçeneklere ikişer dağıtılır, bir çeldirici "sonuç doğru, gerekçe yanlış" olur. (b) Çeldiricinin kapsamı da denetlenir: yanlış şık bile kapsam dışı bir hesaba (ör. 5. sınıfta bir sayının yüzdesini bulma) dayanamaz. (c) Aynı bilgi ya da fikir (ör. "ıslaklık sürtünmeyi azaltır") bir testte en çok iki soruda kullanılır. (d) Mevcut sorularla tekrar sözcük düzeyinde değil, bağlam düzeyinde aranır (aynı ıslak basamak, aynı fren). (e) Kök ile doğru şık çelişmez (kök "kaydırarak" diyorsa doğru cevap tekerlek olamaz). (f) Uydurma ölçümler fiziksel olarak gerçekçidir (okul dinamometresi 0-10 N; hafif cisimler). (g) Gündelik dille yazılan ölçüt cümleleri ("en büyük kısmı") iki anlama gelebilir; ölçüt açık yazılır ("kaçta kaçı").
+
+**Düzeylere göre:** Düzey 1 (Temel) de yaşam durumundan gelir, ama tek adımlıdır ve kısadır. Düzey 2 iki bilgiyi birleştirip bir seçim yaptırır. Düzey 3 karar, tahmin ya da iddia değerlendirmesi ister. Çeldiriciler, o yaşam durumunda insanların gerçekten yaptığı hatalardan da türetilebilir (ör. "Islak zeminde düz tabanlı ayakkabı daha az kaydırır" yanılgısı). Platformdaki dereceli konu testlerinde (Çok kolay → Çok zor) aynı ölçek uygulanır.
+
 ## Adım 4 — Çıktı üretimi
 
 A4 şablon kuralları geçerlidir (`tymm-ders-planlama` ile aynı şablon
@@ -147,7 +200,7 @@ dosyalarına anahtar belgesine ait hiçbir parça — içerik, tablo VEYA stil
 tanımı — kopyalanmaz; her dosya yalnızca kendi kullandığı stilleri taşır.
 **Anahtar daima ayrı dosyadadır** ve şunları içerir: düzey × soru × doğru harf tablosu; soru
 başına hedef çıktı + **süreç bileşeni harfi** ve kademe (KB) etiketi; soru
-başına bağlam adı; çeldirici → yanılgı eşleme tablosu; seçenek dağılım
+başına bağlam adı ve "Yaşamla bağ:" satırı; çeldirici → yanılgı eşleme tablosu; seçenek dağılım
 sayımı; gerçek veri kullanıldıysa kaynak satırı; puanlama önerisi (soru
 başına 10 puan).
 
